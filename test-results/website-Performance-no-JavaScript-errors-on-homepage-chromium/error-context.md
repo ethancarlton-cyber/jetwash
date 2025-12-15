@@ -1,0 +1,215 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - heading "JetWash Haywards Heath" [level=2] [ref=e5]
+      - navigation [ref=e6]:
+        - link "Home" [ref=e7] [cursor=pointer]:
+          - /url: index.html
+        - link "Areas" [ref=e8] [cursor=pointer]:
+          - /url: areas.html
+        - link "Pricing" [ref=e9] [cursor=pointer]:
+          - /url: pricing.html
+        - link "FAQ" [ref=e10] [cursor=pointer]:
+          - /url: faq.html
+        - link "Free Quote" [ref=e11] [cursor=pointer]:
+          - /url: quote.html
+      - 'link "Call: 07000 000000" [ref=e12] [cursor=pointer]':
+        - /url: tel:07000000000
+  - generic [ref=e14]:
+    - heading "Professional Jetwashing Services in Haywards Heath & West Sussex" [level=1] [ref=e15]
+    - paragraph [ref=e16]: Transform your driveways, patios, and property exteriors with expert pressure washing. Serving Haywards Heath, Lindfield, Cuckfield, Burgess Hill & surrounding areas.
+    - generic [ref=e17]:
+      - link "Get Your Free Quote" [ref=e18] [cursor=pointer]:
+        - /url: quote.html
+      - 'link "Call Now: 07000 000000" [ref=e19] [cursor=pointer]':
+        - /url: tel:07000000000
+    - generic [ref=e20]:
+      - generic [ref=e21]: Same-Day Quotes
+      - generic [ref=e22]: Fully Insured
+      - generic [ref=e23]: No Obligation
+  - generic [ref=e25]:
+    - heading "Our Jetwashing Services" [level=2] [ref=e26]
+    - paragraph [ref=e27]: Professional pressure washing services across West Sussex. We clean all types of surfaces safely and effectively.
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - heading "Driveway Cleaning" [level=3] [ref=e30]
+        - paragraph [ref=e31]: Remove oil stains, dirt, and grime from block paving, tarmac, and concrete driveways. Restore your driveway to like-new condition.
+        - link "Learn More →" [ref=e32] [cursor=pointer]:
+          - /url: driveway-cleaning.html
+      - generic [ref=e33]:
+        - heading "Patio Cleaning" [level=3] [ref=e34]
+        - paragraph [ref=e35]: Eliminate black spots, moss, and algae from patios. Make your outdoor space safe and beautiful again.
+        - link "Learn More →" [ref=e36] [cursor=pointer]:
+          - /url: patio-cleaning.html
+      - generic [ref=e37]:
+        - heading "Block Paving Cleaning" [level=3] [ref=e38]
+        - paragraph [ref=e39]: Specialist cleaning for block paved areas. Remove weeds, restore colour, and protect your investment.
+        - link "Learn More →" [ref=e40] [cursor=pointer]:
+          - /url: block-paving-cleaning.html
+      - generic [ref=e41]:
+        - heading "Render Cleaning" [level=3] [ref=e42]
+        - paragraph [ref=e43]: Gentle soft washing for rendered walls and building exteriors. Remove green algae and black staining safely.
+        - link "Learn More →" [ref=e44] [cursor=pointer]:
+          - /url: render-cleaning.html
+      - generic [ref=e45]:
+        - heading "Decking Cleaning" [level=3] [ref=e46]
+        - paragraph [ref=e47]: Restore wooden and composite decking. Remove slippery algae and restore natural colour.
+        - link "Learn More →" [ref=e48] [cursor=pointer]:
+          - /url: decking-cleaning.html
+      - generic [ref=e49]:
+        - heading "Commercial Jetwashing" [level=3] [ref=e50]
+        - paragraph [ref=e51]: Professional pressure washing for businesses, car parks, and commercial properties in West Sussex.
+        - link "Learn More →" [ref=e52] [cursor=pointer]:
+          - /url: commercial-jetwashing.html
+  - generic [ref=e54]:
+    - heading "Areas We Serve" [level=2] [ref=e55]
+    - paragraph [ref=e56]: Professional jetwashing services across Haywards Heath and surrounding areas within a 20-mile radius.
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - heading "Haywards Heath (RH16)" [level=3] [ref=e59]:
+          - link "Haywards Heath (RH16)" [ref=e60] [cursor=pointer]:
+            - /url: areas/haywards-heath.html
+        - paragraph [ref=e61]: Complete coverage throughout Haywards Heath including all residential and commercial areas.
+      - generic [ref=e62]:
+        - heading "Lindfield (RH16)" [level=3] [ref=e63]:
+          - link "Lindfield (RH16)" [ref=e64] [cursor=pointer]:
+            - /url: areas/lindfield.html
+        - paragraph [ref=e65]: Specialist jetwashing for Lindfield's Victorian and Edwardian properties with driveways and patios.
+      - generic [ref=e66]:
+        - heading "Cuckfield (RH17)" [level=3] [ref=e67]:
+          - link "Cuckfield (RH17)" [ref=e68] [cursor=pointer]:
+            - /url: areas/cuckfield.html
+        - paragraph [ref=e69]: Expert cleaning services for Cuckfield's historic village properties and premium homes.
+      - generic [ref=e70]:
+        - heading "Burgess Hill (RH15)" [level=3] [ref=e71]:
+          - link "Burgess Hill (RH15)" [ref=e72] [cursor=pointer]:
+            - /url: areas/burgess-hill.html
+        - paragraph [ref=e73]: Pressure washing for modern estates and block paved driveways throughout Burgess Hill.
+      - generic [ref=e74]:
+        - heading "Hassocks (BN6)" [level=3] [ref=e75]:
+          - link "Hassocks (BN6)" [ref=e76] [cursor=pointer]:
+            - /url: areas/hassocks.html
+        - paragraph [ref=e77]: Professional cleaning services for residential properties in Hassocks and Hurstpierpoint.
+      - generic [ref=e78]:
+        - heading "Crawley (RH10/RH11)" [level=3] [ref=e79]:
+          - link "Crawley (RH10/RH11)" [ref=e80] [cursor=pointer]:
+            - /url: areas/crawley.html
+        - paragraph [ref=e81]: Residential and commercial jetwashing services throughout Crawley and surrounding areas.
+    - paragraph [ref=e82]:
+      - link "View all service areas →" [ref=e83] [cursor=pointer]:
+        - /url: areas.html
+  - generic [ref=e85]:
+    - heading "Why Choose Our Jetwashing Services?" [level=2] [ref=e86]
+    - generic [ref=e87]:
+      - generic [ref=e88]:
+        - heading "Local Experts" [level=3] [ref=e89]
+        - paragraph [ref=e90]: Based in Haywards Heath, we understand West Sussex properties and the specific cleaning challenges in our area.
+      - generic [ref=e91]:
+        - heading "Professional Equipment" [level=3] [ref=e92]
+        - paragraph [ref=e93]: Commercial-grade pressure washing equipment for superior results without damaging your property.
+      - generic [ref=e94]:
+        - heading "Fully Insured" [level=3] [ref=e95]
+        - paragraph [ref=e96]: Complete public liability insurance for your peace of mind and property protection.
+      - generic [ref=e97]:
+        - heading "Transparent Pricing" [level=3] [ref=e98]
+        - paragraph [ref=e99]: Clear pricing with no hidden costs. Free, no-obligation quotes for all services.
+      - generic [ref=e100]:
+        - heading "Same-Day Response" [level=3] [ref=e101]
+        - paragraph [ref=e102]: Quick quote turnaround and flexible scheduling to suit your timeline.
+      - generic [ref=e103]:
+        - heading "Quality Guarantee" [level=3] [ref=e104]
+        - paragraph [ref=e105]: We're not satisfied until you are. Professional service and outstanding results every time.
+  - generic [ref=e107]:
+    - heading "Expert Jetwashing in Haywards Heath" [level=2] [ref=e108]
+    - paragraph [ref=e109]: We provide professional pressure washing and jetwashing services throughout Haywards Heath, Lindfield, Cuckfield, Burgess Hill, and surrounding West Sussex areas. With years of experience cleaning driveways, patios, block paving, and building exteriors, we deliver exceptional results for both residential and commercial clients.
+    - paragraph [ref=e110]: Our service area covers a 20-mile radius from Haywards Heath (RH16), including all RH postcodes (RH15, RH16, RH17, RH10, RH11, RH12, RH13, RH19) and surrounding BN postcodes (BN5, BN6, BN7, BN8). Whether you have a small patio that needs cleaning or a large commercial car park, we have the expertise and equipment to handle any jetwashing project.
+    - paragraph [ref=e111]: West Sussex properties face unique cleaning challenges from moss, algae, and weather-related staining. Our professional pressure washing services are specifically designed to tackle these issues safely and effectively, restoring your property's appearance and value.
+    - heading "Common Jetwashing Applications in Haywards Heath" [level=3] [ref=e112]
+    - list [ref=e113]:
+      - listitem [ref=e114]: Block paved driveways (extremely common in Mid Sussex developments)
+      - listitem [ref=e115]: Patio cleaning and black spot removal
+      - listitem [ref=e116]: Rendered walls and building facades
+      - listitem [ref=e117]: Tarmac and concrete driveway cleaning
+      - listitem [ref=e118]: Decking restoration and maintenance
+      - listitem [ref=e119]: Oil stain removal from driveways
+      - listitem [ref=e120]: Commercial premises and car parks
+      - listitem [ref=e121]: Garden paths and outdoor areas
+    - paragraph [ref=e122]: We serve properties throughout the area including Victorian homes in Lindfield, modern estates in Burgess Hill, historic properties in Cuckfield, and everything in between. Our flexible scheduling means we can work around your availability, and our same-day quote service ensures you can plan your project quickly.
+  - generic [ref=e124]:
+    - heading "Ready to Transform Your Property?" [level=2] [ref=e125]
+    - paragraph [ref=e126]: Get your free, no-obligation quote today. Same-day response guaranteed.
+    - generic [ref=e127]:
+      - link "Get Free Quote" [ref=e128] [cursor=pointer]:
+        - /url: quote.html
+      - 'link "Call: 07000 000000" [ref=e129] [cursor=pointer]':
+        - /url: tel:07000000000
+  - contentinfo [ref=e130]:
+    - generic [ref=e131]:
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - heading "Services" [level=4] [ref=e134]
+          - list [ref=e135]:
+            - listitem [ref=e136]:
+              - link "Driveway Cleaning" [ref=e137] [cursor=pointer]:
+                - /url: driveway-cleaning.html
+            - listitem [ref=e138]:
+              - link "Patio Cleaning" [ref=e139] [cursor=pointer]:
+                - /url: patio-cleaning.html
+            - listitem [ref=e140]:
+              - link "Block Paving Cleaning" [ref=e141] [cursor=pointer]:
+                - /url: block-paving-cleaning.html
+            - listitem [ref=e142]:
+              - link "Render Cleaning" [ref=e143] [cursor=pointer]:
+                - /url: render-cleaning.html
+            - listitem [ref=e144]:
+              - link "Decking Cleaning" [ref=e145] [cursor=pointer]:
+                - /url: decking-cleaning.html
+            - listitem [ref=e146]:
+              - link "Commercial Services" [ref=e147] [cursor=pointer]:
+                - /url: commercial-jetwashing.html
+        - generic [ref=e148]:
+          - heading "Service Areas" [level=4] [ref=e149]
+          - list [ref=e150]:
+            - listitem [ref=e151]:
+              - link "Haywards Heath" [ref=e152] [cursor=pointer]:
+                - /url: areas/haywards-heath.html
+            - listitem [ref=e153]:
+              - link "Lindfield" [ref=e154] [cursor=pointer]:
+                - /url: areas/lindfield.html
+            - listitem [ref=e155]:
+              - link "Cuckfield" [ref=e156] [cursor=pointer]:
+                - /url: areas/cuckfield.html
+            - listitem [ref=e157]:
+              - link "Burgess Hill" [ref=e158] [cursor=pointer]:
+                - /url: areas/burgess-hill.html
+            - listitem [ref=e159]:
+              - link "Hassocks" [ref=e160] [cursor=pointer]:
+                - /url: areas/hassocks.html
+            - listitem [ref=e161]:
+              - link "All Areas" [ref=e162] [cursor=pointer]:
+                - /url: areas.html
+        - generic [ref=e163]:
+          - heading "Information" [level=4] [ref=e164]
+          - list [ref=e165]:
+            - listitem [ref=e166]:
+              - link "Pricing Guide" [ref=e167] [cursor=pointer]:
+                - /url: pricing.html
+            - listitem [ref=e168]:
+              - link "FAQ" [ref=e169] [cursor=pointer]:
+                - /url: faq.html
+            - listitem [ref=e170]:
+              - link "Free Quote" [ref=e171] [cursor=pointer]:
+                - /url: quote.html
+        - generic [ref=e172]:
+          - heading "Contact" [level=4] [ref=e173]
+          - paragraph [ref=e174]: Serving Haywards Heath & West Sussex
+          - paragraph [ref=e175]:
+            - text: "Phone:"
+            - link "07000 000000" [ref=e176] [cursor=pointer]:
+              - /url: tel:07000000000
+          - paragraph [ref=e177]: "Coverage: 20-mile radius from RH16"
+      - paragraph [ref=e179]: © 2025 JetWash Haywards Heath. Professional pressure washing services in West Sussex.
+```

@@ -1,0 +1,15 @@
+# Robots.txt for JetWash Haywards Heath
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://jetwash-haywards-heath.netlify.app/sitemap.xml
+
+# Crawl-delay (optional, uncomment if needed)
+# Crawl-delay: 1
+
+# Disallow specific paths if needed in future
+# Disallow: /admin/
+# Disallow: /private/
