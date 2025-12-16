@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form validation for quote form
     const quoteForm = document.getElementById('quoteForm');
 
+    // Get input elements (used throughout the script)
+    const postcodeInput = document.getElementById('postcode');
+    const postcodeError = document.getElementById('postcodeError');
+    const phoneInput = document.getElementById('phone');
+    const phoneError = document.getElementById('phoneError');
+
     if (quoteForm) {
         // UK Postcode validation regex
         const postcodeRegex = /^[A-Z]{1,2}[0-9]{1,2}[A-Z]?\s?[0-9][A-Z]{2}$/i;
@@ -54,9 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Real-time validation for postcode
-        const postcodeInput = document.getElementById('postcode');
-        const postcodeError = document.getElementById('postcodeError');
-
         if (postcodeInput && postcodeError) {
             postcodeInput.addEventListener('blur', function() {
                 const result = validatePostcode(this.value);
@@ -73,9 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Real-time validation for phone
-        const phoneInput = document.getElementById('phone');
-        const phoneError = document.getElementById('phoneError');
-
         if (phoneInput && phoneError) {
             phoneInput.addEventListener('blur', function() {
                 const result = validatePhone(this.value);
