@@ -123,29 +123,29 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
 
-            // If all validations pass, submit the form
+            // If all validations pass, submit the form to Web3Forms
             if (isValid) {
-                // In production, this would submit to Formspree/EmailJS/Netlify Forms
-                // For now, show success message
+                const formData = new FormData(quoteForm);
 
-                // Uncomment for real submission to Formspree:
-                // const formData = new FormData(quoteForm);
-                // fetch(quoteForm.action, {
-                //     method: 'POST',
-                //     body: formData,
-                //     headers: {
-                //         'Accept': 'application/json'
-                //     }
-                // }).then(response => {
-                //     if (response.ok) {
-                //         showSuccessMessage();
-                //     } else {
-                //         alert('There was a problem submitting your form. Please call us instead.');
-                //     }
-                // });
-
-                // For demo purposes, just show success
-                showSuccessMessage();
+                fetch(quoteForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        showSuccessMessage();
+                    } else {
+                        alert('There was a problem submitting your form. Please call us at 07000 000000 instead.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Form submission error:', error);
+                    alert('There was a problem submitting your form. Please call us at 07000 000000 instead.');
+                });
             }
         });
 
