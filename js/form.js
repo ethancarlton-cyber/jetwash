@@ -191,23 +191,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add loading animation to buttons on click
-    document.querySelectorAll('.btn').forEach(button => {
-        button.addEventListener('click', function() {
-            // Only add loading to submit buttons
-            if (this.type === 'submit') {
-                const originalText = this.textContent;
-                this.textContent = 'Submitting...';
-                this.disabled = true;
-
-                // Re-enable after 5 seconds (fallback)
-                setTimeout(() => {
-                    this.textContent = originalText;
-                    this.disabled = false;
-                }, 5000);
-            }
-        });
-    });
+    // Button loading state is now handled in the form submit handler above
+    // (Removed duplicate listener that was causing conflicts)
 
     // Phone number formatting (add spaces for readability)
     if (phoneInput) {
