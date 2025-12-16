@@ -125,7 +125,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // If all validations pass, submit the form to Web3Forms
             if (isValid) {
+                // Show loading state
+                const submitButton = quoteForm.querySelector('button[type="submit"]');
+                const originalButtonText = submitButton.textContent;
+                submitButton.textContent = 'Sending...';
+                submitButton.disabled = true;
+
                 const formData = new FormData(quoteForm);
+
+                console.log('Submitting form to:', quoteForm.action);
 
                 fetch(quoteForm.action, {
                     method: 'POST',
@@ -134,17 +142,25 @@ document.addEventListener('DOMContentLoaded', function() {
                         'Accept': 'application/json'
                     }
                 })
-                .then(response => response.json())
+                .then(response => {
+                    console.log('Response status:', response.status);
+                    return response.json();
+                })
                 .then(data => {
+                    console.log('Response data:', data);
                     if (data.success) {
                         showSuccessMessage();
                     } else {
-                        alert('There was a problem submitting your form. Please call us at 07000 000000 instead.');
+                        submitButton.textContent = originalButtonText;
+                        submitButton.disabled = false;
+                        alert('Error: ' + (data.message || 'Form submission failed. Please call us at 07000 000000 instead.'));
                     }
                 })
                 .catch(error => {
                     console.error('Form submission error:', error);
-                    alert('There was a problem submitting your form. Please call us at 07000 000000 instead.');
+                    submitButton.textContent = originalButtonText;
+                    submitButton.disabled = false;
+                    alert('Network error: Could not submit form. Please call us at 07000 000000 or try again later.');
                 });
             }
         });
