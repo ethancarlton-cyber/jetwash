@@ -9,6 +9,8 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 
 **Target Radius**: 20 miles from RH1 (Redhill/Reigate)
 
+**Live Site**: https://jetwash-psi.vercel.app
+
 **CRITICAL**: This is a ZERO-COST project. Every tool, service, and platform MUST have a free tier that meets our needs. Do not suggest paid options.
 
 ---
@@ -16,15 +18,14 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 ## Tech Stack (100% Zero Cost - NO EXCEPTIONS)
 
 ### Hosting & Deployment (FREE)
-- **Hosting**: Netlify (RECOMMENDED) / GitHub Pages / Vercel
+- **Hosting**: Vercel (CURRENT) / GitHub Pages
   - All offer FREE hosting forever
   - Automatic HTTPS/SSL included
   - No credit card required
   - Unlimited bandwidth on free tier
 - **Domain**: FREE subdomain initially
-  - Netlify: *.netlify.app
+  - Vercel: *.vercel.app (CURRENT: jetwash-psi.vercel.app)
   - GitHub: *.github.io
-  - Vercel: *.vercel.app
   - Custom domain ONLY after generating £200+ revenue
 - **SSL**: Automatic HTTPS (FREE on all platforms)
 
@@ -36,13 +37,12 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 - **No dependencies**: Everything self-contained
 
 ### Lead Capture - Email Notifications (FREE)
-**OPTION 1: Netlify Forms (RECOMMENDED)**
-- FREE tier: 100 submissions/month
+**OPTION 1: Web3Forms (CURRENT)**
+- FREE tier: 250 submissions/month
 - Email notifications: FREE & built-in
 - Form spam protection: FREE
-- Dashboard to view leads: FREE
-- Setup: Zero code changes needed
-- **CHOOSE THIS** - Easiest and completely free
+- No server required
+- **CURRENTLY USING**
 
 **OPTION 2: Formspree (Alternative)**
 - FREE tier: 50 submissions/month
@@ -60,9 +60,8 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 
 ### Analytics & Monitoring (FREE)
 - **Google Analytics**: FREE forever, unlimited pageviews
-- **Google Search Console**: FREE, essential for SEO
+- **Google Search Console**: FREE, essential for SEO (CONFIGURED)
 - **Bing Webmaster Tools**: FREE
-- **Netlify Analytics**: FREE basic tier (if using Netlify)
 
 ---
 
@@ -166,23 +165,14 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 
 ## FREE Deployment Instructions
 
-### Deploy to Netlify (RECOMMENDED - 100% FREE)
+### Deploy to Vercel (CURRENT - 100% FREE)
 
-**Method 1: Drag & Drop (2 minutes)**
-1. Go to netlify.com - Sign up (FREE, no card needed)
-2. Drag `jetWash` folder to deploy zone
-3. DONE - Get free URL: something.netlify.app
-
-**Method 2: GitHub Connection (Better for updates)**
+**Method: GitHub Connection**
 1. Push to GitHub (repo: https://github.com/ethancarlton-cyber/jetwash)
-2. Connect Netlify to GitHub (FREE)
+2. Connect Vercel to GitHub (FREE)
 3. Auto-deploy on every push (FREE)
 
-**Enable FREE Email Notifications:**
-1. After first form submission
-2. Netlify Dashboard → Forms → Notifications
-3. Add email notification (FREE)
-4. Receive lead emails instantly (FREE)
+**Live URL**: https://jetwash-psi.vercel.app
 
 **Total Cost: £0/month forever**
 
@@ -224,12 +214,11 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 ## FREE Tools & Services Summary
 
 ### Must Use (All FREE Forever):
-- ✅ Netlify hosting (FREE 100GB bandwidth/month)
-- ✅ Netlify Forms (FREE 100 submissions/month)
-- ✅ Email notifications (FREE built into Netlify)
+- ✅ Vercel hosting (FREE unlimited bandwidth)
+- ✅ Web3Forms (FREE 250 submissions/month)
 - ✅ GitHub repo hosting (FREE unlimited)
 - ✅ Google Analytics (FREE unlimited)
-- ✅ Google Search Console (FREE)
+- ✅ Google Search Console (FREE) - CONFIGURED
 - ✅ SSL/HTTPS certificate (FREE automatic)
 
 ### Optional FREE Tools:
@@ -239,10 +228,9 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 - ✅ Google Sheets (FREE - track leads)
 
 ### NEVER Pay For:
-- ❌ Hosting (use Netlify FREE)
+- ❌ Hosting (use Vercel FREE)
 - ❌ Domain (use free subdomain until ROI)
-- ❌ Form backend (use Netlify Forms FREE)
-- ❌ Email service (use Netlify notifications FREE)
+- ❌ Form backend (use Web3Forms FREE)
 - ❌ SSL certificate (automatic FREE)
 - ❌ Analytics (use Google Analytics FREE)
 - ❌ SEO tools (use Search Console FREE)
@@ -262,31 +250,26 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 ### Metrics to Track (All FREE tools)
 - Google Analytics: Page views, bounce rate (FREE)
 - Search Console: Keyword rankings, clicks (FREE)
-- Netlify: Form submissions (FREE)
+- Web3Forms: Form submissions (FREE)
 - Spreadsheet: Lead value, conversion (FREE - Google Sheets)
 
 ---
 
-## Next Steps (All FREE)
+## Current Status
 
-### Immediate:
-1. ✅ Website built
-2. ✅ Tests passing (94%)
-3. ⏭️ Deploy to Netlify (FREE)
-4. ⏭️ Set up email notifications (FREE)
-5. ⏭️ Submit sitemap to Search Console (FREE)
+### Completed ✅
+1. ✅ Website built and deployed
+2. ✅ Live at: https://jetwash-psi.vercel.app
+3. ✅ Google Search Console configured
+4. ✅ Sitemap submitted
+5. ✅ Homepage indexed on Google
 
-### Week 1:
-1. Google Search Console setup (FREE)
-2. Google Analytics setup (FREE)
-3. Submit to Bing Webmaster (FREE)
-4. Test form submissions (FREE)
-
-### Month 1-3:
-1. Monitor rankings (FREE tools)
-2. Generate first leads (FREE traffic)
-3. Sell first leads (REVENUE!)
-4. Prove the model works
+### Next Steps:
+1. Google Analytics setup (FREE)
+2. Submit to Bing Webmaster (FREE)
+3. Monitor rankings (FREE tools)
+4. Generate first leads (FREE traffic)
+5. Sell first leads (REVENUE!)
 
 ### Month 4+ (ONLY after £200+ revenue):
 1. Consider custom domain (£10/year)
@@ -306,8 +289,8 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 - If no FREE alternative exists, skip it until revenue
 
 **What "FREE Forever" Means:**
-- Netlify: 100GB bandwidth/month FREE forever
-- Forms: 100 submissions/month FREE forever
+- Vercel: Unlimited bandwidth FREE forever
+- Web3Forms: 250 submissions/month FREE forever
 - GitHub: Unlimited repos FREE forever
 - Analytics: Unlimited pageviews FREE forever
 - Search Console: All features FREE forever
@@ -320,56 +303,10 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 ---
 
 **Created**: 2025-12-15
-**Last Updated**: 2025-12-15
+**Last Updated**: 2025-12-19
 **Target Area**: RH1 Redhill & Reigate (20-mile radius)
 **Budget**: £0 until ROI
-**Launch Platform**: Netlify (FREE)
+**Launch Platform**: Vercel (FREE)
+**Live URL**: https://jetwash-psi.vercel.app
 **Monthly Cost**: £0
 **Revenue Target**: £500+ in first 6 months (zero investment)
-
----
-
-## Location Update Progress (Haywards Heath → Redhill & Reigate)
-
-**Status**: IN PROGRESS
-
-### Completed ✅
-- [x] index.html - Fully updated for RH1 area (meta tags, schema markup, content, footer)
-- [x] quote.html - Fully updated (postcode examples, location references, footer)
-- [x] driveway-cleaning.html - Fully updated (meta tags, schema, content, footer)
-
-### In Progress 🔄
-- [ ] patio-cleaning.html - Updating for RH1 area
-- [ ] block-paving-cleaning.html - Updating for RH1 area
-- [ ] render-cleaning.html - Updating for RH1 area
-- [ ] decking-cleaning.html - Updating for RH1 area
-- [ ] commercial-jetwashing.html - Updating for RH1 area
-- [ ] areas.html - Complete rewrite for RH1 area coverage
-- [ ] Location pages - Rebuild for RH1 area towns
-  - [ ] Create: areas/redhill.html
-  - [ ] Create: areas/reigate.html
-  - [ ] Create: areas/horley.html
-  - [ ] Create: areas/dorking.html
-  - [ ] Create: areas/banstead.html
-  - [ ] Update: areas/crawley.html (keep, still in range)
-  - [ ] Delete: areas/haywards-heath.html, lindfield.html, cuckfield.html, burgess-hill.html, hassocks.html
-- [ ] Info pages
-  - [ ] faq.html - Update location references in answers
-  - [ ] pricing.html - Update location references
-- [ ] Technical files
-  - [ ] sitemap.xml - Update URLs for new location pages
-  - [ ] package.json - Update description
-
-### Key Changes Made
-**From**: Haywards Heath, RH16, West Sussex, Mid Sussex
-**To**: Redhill & Reigate, RH1, Surrey
-
-**Primary Service Towns**:
-- Redhill (RH1)
-- Reigate (RH2)
-- Horley (RH6)
-- Dorking (RH4/RH5)
-- Banstead (SM7)
-- Crawley (RH10/RH11)
-
-**Postcode Coverage**: RH1-RH11, CR3, SM7, KT17-KT24, SM1-SM3
