@@ -1,5 +1,5 @@
 # Robots.txt for JetWash Redhill & Reigate
-# Allow all search engines to crawl the site
+# Allow all search engines and AI crawlers to index the site
 
 User-agent: *
 Allow: /
@@ -7,9 +7,41 @@ Allow: /
 # Sitemap location
 Sitemap: https://jetwash-psi.vercel.app/sitemap.xml
 
-# Crawl-delay (optional, uncomment if needed)
-# Crawl-delay: 1
+# AI Crawlers - Explicitly allow for AI search visibility
+# These crawlers power ChatGPT, Claude, Perplexity, and other AI search tools
 
-# Disallow specific paths if needed in future
-# Disallow: /admin/
-# Disallow: /private/
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Traditional search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Disallow non-content directories
+Disallow: /node_modules/
+Disallow: /test-results/
+Disallow: /playwright-report/
