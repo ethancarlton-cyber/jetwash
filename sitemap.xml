@@ -203,4 +203,26 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- NEW Guide Pages - January 2026 -->
+  <url>
+    <loc>https://jetwash-psi.vercel.app/guides/pressure-washing-vs-jet-washing.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://jetwash-psi.vercel.app/guides/is-pressure-washing-worth-it.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://jetwash-psi.vercel.app/guides/prepare-driveway-for-pressure-washing.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
