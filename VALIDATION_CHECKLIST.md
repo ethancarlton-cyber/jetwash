@@ -326,4 +326,130 @@ NO VALIDATION ←─────────────────────
 
 ---
 
+## B2B SOLO OPERATOR VALIDATION (Special Section)
+
+### Why B2B Validation is Different
+
+| B2C Validation | B2B Solo Operator Validation |
+|----------------|------------------------------|
+| Ask "would you pay?" | Ask "what do you pay NOW?" |
+| Look for complaints | Look for CURRENT spending |
+| Test with landing page | Test with cold outreach |
+| Freemium model | Paid from day 1 |
+| Large community = signal | Industry associations = signal |
+
+### B2B-Specific Validation Steps
+
+#### Step 1: Verify Current Spending
+
+- [ ] **Find what they pay now**
+  - Current software costs (document exact prices)
+  - Manual labor costs (hours × rate)
+  - Compliance/penalty costs
+  - **If they pay $0 now, they won't pay you**
+
+- [ ] **Identify budget holder**
+  - Who makes purchasing decisions?
+  - Is it the user or someone else?
+  - What's their approval threshold?
+
+#### Step 2: Industry-Specific Research
+
+- [ ] **Find industry associations**
+  - Trade associations
+  - Licensing bodies
+  - Professional groups
+  - These are concentrated customer pools
+
+- [ ] **Check industry publications**
+  - Trade magazines
+  - Industry blogs
+  - Conference topics
+  - What problems do they write about?
+
+- [ ] **Find industry influencers**
+  - YouTube channels
+  - Podcast hosts
+  - Forum moderators
+  - These can accelerate validation
+
+#### Step 3: Competitive Intelligence
+
+- [ ] **Map the incumbent landscape**
+  - Who are the top 3-5 players?
+  - What do they charge?
+  - When were they founded?
+  - What's their NPS/reviews?
+
+- [ ] **Find the price gap**
+  - Is there a tier between free and enterprise?
+  - What features are missing at low end?
+  - What features are overkill at high end?
+
+- [ ] **Check for lock-in tactics**
+  - Data export fees?
+  - Long-term contracts?
+  - These = unhappy customers who WILL switch
+
+#### Step 4: B2B Cold Outreach Test
+
+- [ ] **Find 50 potential customers**
+  - LinkedIn Sales Navigator
+  - Industry directories
+  - Google Maps (for local businesses)
+  - Association member lists
+
+- [ ] **Send cold outreach (email/LinkedIn)**
+  - Don't pitch product
+  - Ask about their current workflow
+  - Offer to "learn about their challenges"
+  - **Goal: 5-10 conversations**
+
+- [ ] **Track response rates**
+  - <5% response = weak problem
+  - 5-15% response = moderate interest
+  - >15% response = strong pain point
+
+#### Step 5: Pricing Validation
+
+- [ ] **Test price anchoring**
+  - "Current solutions cost $X, we're building at $Y"
+  - Watch for reaction
+  - "Too cheap" = they doubt quality
+  - "Perfect" = you found the gap
+
+- [ ] **Attempt pre-sales**
+  - "First 10 customers get 50% off forever"
+  - Credit card on file = real validation
+  - Even $1 = better than $0
+
+### B2B Validation Scorecard
+
+| Criterion | 0 = Fail | 1 = Weak | 2 = Strong |
+|-----------|----------|----------|------------|
+| **Current Spending** | $0/month | <$50/month | >$50/month |
+| **Incumbent Issues** | Happy users | Some complaints | Active hatred |
+| **Price Gap** | None | Narrow | Wide ($50+ difference) |
+| **Industry Access** | No contacts | Some contacts | Deep network |
+| **Cold Outreach Response** | <5% | 5-15% | >15% |
+| **Pre-Sales** | $0 | Verbal commits | Credit cards |
+| **Compliance Need** | Optional | Helpful | Required |
+| **Market Growth** | Declining | Stable | Growing |
+| **Switching Cost** | High | Medium | Low |
+| **Build Feasibility** | >3 months | 1-3 months | <1 month |
+
+**TOTAL: ___/20**
+
+### B2B Red Flags
+
+- [ ] **Regulated industry** requiring certifications you don't have
+- [ ] **Long sales cycles** (>3 months to close)
+- [ ] **Committee buying** (need multiple approvals)
+- [ ] **Integration requirements** (must connect to X system)
+- [ ] **Incumbent has lock-in** (multi-year contracts, data hostage)
+- [ ] **Industry is declining** (fewer businesses each year)
+- [ ] **Customers expect free** (already have free option they like)
+
+---
+
 *Last Updated: January 2026*
