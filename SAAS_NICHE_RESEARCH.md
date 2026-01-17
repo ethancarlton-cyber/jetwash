@@ -460,6 +460,347 @@ Based on all research, viable opportunities seem to require:
 
 ---
 
+---
+
+## STRATEGIC PIVOT: Solo Business Software (B2B Micro-Niches)
+
+### Why B2C Failed, Why B2B Might Work
+
+| B2C (Hobbyists) - FAILED | B2B (Solo Businesses) - NEW APPROACH |
+|--------------------------|--------------------------------------|
+| Hunt for free tools | Business expense = budget exists |
+| Time is free | Time is money = will pay to save time |
+| No consequences for free | Tax deductible, easier to justify |
+| Can use hobby-grade tools | Need professional-grade tools |
+| Complaints ≠ willingness to pay | Already paying = proven willingness |
+
+### The Target: Solo Operators in Ignored Niches
+
+**Ideal characteristics:**
+1. **Old, established software** that hasn't been updated in years
+2. **Expensive legacy pricing** ($50-200/month when should be $20-30)
+3. **Desktop-only** when mobile work is essential
+4. **No modern features** (no cloud sync, bad UX, no integrations)
+5. **Captive audience** - they HAVE to use something
+6. **Low competition** - big SaaS ignores because market is "too small"
+
+### Categories to Research
+
+**1. Niche Professionals with Specific Software Needs**
+- Notaries (journal, scheduling, mobile signings)
+- Process servers (tracking, GPS proof, affidavits)
+- Home inspectors (reports, photos, checklists)
+- Appraisers (real estate, auto, jewelry, antiques)
+- Court reporters (transcription, invoicing)
+- Arborists/tree service (estimates, compliance)
+- Surveyors (field data, reports)
+
+**2. Mobile Service Trades**
+- Mobile mechanics
+- Appliance repair
+- Locksmiths
+- Pool service
+- Pest control
+- Mobile car detailers
+- Carpet/window cleaners
+
+**3. Appointment-Based Solo Services**
+- Massage therapists
+- Personal trainers
+- Music teachers
+- Dog groomers
+- Photographers/videographers
+
+**4. Small-Scale Asset Management**
+- Small landlords (1-10 units)
+- Vacation rental hosts
+- Storage unit owners
+- Boat/RV storage operators
+
+### Research Signals to Find
+
+- "Last updated 2018" or older
+- Pricing: $50+/month for simple features
+- "No mobile app" when mobile is essential
+- Desktop-only in mobile-first workflows
+- Reviews: "clunky," "outdated," "overpriced"
+- "Too expensive for what it does"
+- Industry-specific software that's been ignored
+
+---
+
+## SOLO BUSINESS B2B RESEARCH RESULTS
+
+### Comprehensive Research Summary (6 Parallel Agents)
+
+We researched 50+ niches across 6 categories. Here are the TOP opportunities that passed skeptical validation:
+
+---
+
+### TIER 1: HIGHEST POTENTIAL (Pursue Immediately)
+
+#### 1. SMALL LANDLORDS (1-10 Units) — Score: 8.5/10
+
+**The Gap:**
+- FREE options exist (Innago, TurboTenant) but are limited
+- Enterprise tools start at $40-280/month with 50+ unit minimums
+- **Clear gap at $9-25/month** for small landlords
+
+**Market Size:** 5-10 MILLION small landlords in USA
+
+**Pain Points Documented:**
+- AppFolio/Buildium designed for 50+ units
+- 88% of spreadsheets have input errors
+- $99 setup fees per bank account (Buildium)
+
+**What They Need (Simple MVP):**
+1. Rent collection with automated reminders
+2. Tenant portal (pay, submit requests)
+3. Simple expense tracking
+4. Document storage
+5. **Price: $9-15/month, no per-unit fees**
+
+**Why This Works:**
+- B2B = they have budget
+- Tax deductible = easier to justify
+- Massive market (millions)
+- Clear price gap proven
+
+---
+
+#### 2. PEST CONTROL (Solo Operators) — Score: 8/10
+
+**The Gap:**
+- GorillaDesk at $49/month even for solo is expensive
+- **No $15-30/month option exists**
+- Per-technician pricing penalizes solos
+
+**Market Size:** $28.5B (US), 33,000+ businesses, **fastest growing trade at 5-8% CAGR**
+
+**Pain Points Documented:**
+- Briostack: "pricing still too much for what it does"
+- Generic field service doesn't fit pest control workflow
+- EPA compliance documentation is specialized need
+- Chemical inventory tracking required
+
+**What They Need (Simple MVP):**
+1. Chemical application documentation (EPA compliance)
+2. Recurring service scheduling
+3. Customer signature + photo documentation
+4. Equipment maintenance tracking
+5. **Price: $19-29/month (fixed, not per-tech)**
+
+**Why This Works:**
+- Fastest growing trade (5-8% vs 2-3% others)
+- Largest market ($28.5B)
+- Explicit underserving of solo operators
+- Compliance = sticky (can't leave easily)
+
+---
+
+#### 3. HOME INSPECTOR SOFTWARE — Score: 7.5/10
+
+**The Gap:**
+- Spectora ($109/month) is market leader but **GLITCHY**
+- "Very glitchy, adds 20% more time to inspections"
+- No phone support, customer service "terrible"
+- **Gap at $49-79/month for reliable alternative**
+
+**Market Size:** 10,579+ home inspectors, **$25B market by 2029**, growing 8% CAGR
+
+**Pain Points Documented:**
+- Photo upload replaces original with stock image
+- Syncing issues, frequent bugs
+- "Zero phone support"
+- Ownership "intentionally hides bug reports"
+
+**What They Need:**
+1. **Reliable** report generation (no crashes)
+2. Photo-centric workflow
+3. Beautiful reports (Spectora's strength)
+4. Phone/chat support (gap in market)
+5. **Price: $49-79/month**
+
+**Why This Works:**
+- Market leader is vulnerable (bugs, poor support)
+- Low barriers (no certification needed)
+- Growing market (8% CAGR)
+- VC confidence up 32% in home inspection startups
+
+---
+
+#### 4. PRIVATE TUTORS — Score: 8.5/10
+
+**The Gap:**
+- Calendly only does scheduling
+- Specialized software (Wise, TutorBird) targets tutoring centers
+- **Solo independent tutors underserved**
+- Need AI-powered progress reports
+
+**Market Size:** 1.5 MILLION+ tutors, $28.85B growth opportunity 2025-2029
+
+**Pain Points Documented:**
+- Tutors manually track progress in spreadsheets
+- Parents want automated insights
+- No integrated curriculum tracking
+- Test prep segment growing 12.5% CAGR
+
+**What They Need:**
+1. AI-generated parent progress reports
+2. Curriculum/skill tracking
+3. Attendance and session notes
+4. Test prep specialization
+5. **Price: $20-30/month (undercut Wise at $50-150)**
+
+**Why This Works:**
+- Massive market (1.5M+ practitioners)
+- AI = clear differentiation
+- Parents are the buyer (willing to pay for child's education)
+- Test prep is fastest growing segment
+
+---
+
+### TIER 2: STRONG OPPORTUNITIES (Research More)
+
+#### 5. DENTAL PRACTICE SOFTWARE (Small Practices) — Score: 95/100
+
+**The Incumbent Problem:**
+- Dentrix "feels like Windows 95"
+- Eaglesoft freezes mid-work, crashes, system glitches
+- Both are desktop-only, require server management
+- **Pricing: $200-500/month with poor UX**
+
+**Market Size:** 84,000+ independent dental practices (56% of total)
+
+**Why It's Tier 2 (Not Tier 1):**
+- Highly regulated (HIPAA compliance)
+- Integration requirements with labs, insurance
+- High switching costs (data migration)
+- Need domain expertise
+
+**Opportunity:** Cloud-based, modern UI at $250-350/month with real phone support
+
+---
+
+#### 6. AUTO BODY SHOP SOFTWARE — Score: 94/100
+
+**The Incumbent Problem:**
+- Mitchell RepairCenter: "1990's product, obsolete as flip-phone"
+- NOT cloud-based, crashes mid-estimate losing work
+- Contract lock-in: shops can't leave even during bankruptcy
+- "Absolute worst company service we have ever encountered"
+
+**Market Size:** 40,000+ collision repair shops, $34.73B market
+
+**Why It's Tier 2:**
+- DRP certification requirement (need insurer relationships)
+- High complexity (estimate systems, parts databases)
+- Entrenched incumbents with lock-in contracts
+
+**Opportunity:** Cloud-based, tablet-friendly, flexible contracts at $300-400/month
+
+---
+
+#### 7. BOAT/RV STORAGE — Score: 7.5/10
+
+**The Gap:**
+- Generic self-storage software doesn't fit
+- Market is 25-30 years behind self-storage
+- **Growing 12.5% CAGR**
+- First-mover advantage available
+
+**Market Size:** $2.3-2.6B, 1,798 facilities (doubled since 2023)
+
+**What They Need:**
+- Vehicle intake (VIN, photos, registration)
+- Covered vs. outdoor assignment
+- Seasonal pricing
+- Damage tracking
+5. **Price: $50/month**
+
+---
+
+#### 8. CHIROPRACTIC SOFTWARE — Score: 92/100
+
+**The Incumbent Problem:**
+- Cloud-based: $200-$3,000/month
+- On-premise: $500-$30,000+ one-time
+- **DATA EXPORT FEES: $200,000+ to leave**
+- "Outdated interface, system slowdowns"
+
+**Market Size:** 70,000+ chiropractors, $20.6B market, franchises growing 28.5% CAGR
+
+**Opportunity:** Transparent pricing ($99-199/month), NO data export fees, target franchises
+
+---
+
+### TIER 3: SKIP (Well-Served or Structural Problems)
+
+| Niche | Why Skip |
+|-------|----------|
+| **Notary Public** | Consolidation (DocuSign, Porch Group), Notarize dominates |
+| **Process Server** | E-service disruption (courts going electronic) |
+| **Court Reporter** | Profession shrinking, AI disruption (CoCounsel) |
+| **Land Surveyor** | Hardware lock-in (Trimble/Hexagon duopoly) |
+| **Appraiser** | CoreLogic monopoly, vendor lock-in |
+| **Pool Service** | Pooli Pro already FREE for solos |
+| **Window Cleaning** | 8+ options, well-served |
+| **Mobile Car Detail** | 9+ options, saturated |
+| **Locksmith** | Market declining -11.5% |
+| **Photographers** | 7+ solutions, mature market |
+| **Private Chefs** | Market too small (10-15K) |
+| **Mobile Pet Services** | 20+ competitors, Time To Pet dominates |
+
+---
+
+### LEGACY SOFTWARE DISRUPTION TARGETS
+
+These are specific named products that could be disrupted:
+
+| Software | Industry | Age | Price | Key Complaint | Score |
+|----------|----------|-----|-------|---------------|-------|
+| TOTAL A la Mode | Appraisal | 20+ yrs | $1,599+ | Crashes, slow, bugs | 9/10 |
+| AMS360 | Insurance | 30+ yrs | $1,000+/mo | "Ancient to core", $10K data export | 9/10 |
+| Dentrix | Dental | 35 yrs | $200-500/mo | "Windows 95" interface | 8.5/10 |
+| Mitchell RepairCenter | Auto Body | 25+ yrs | Lock-in | "1990s product", contract lock-in | 9/10 |
+| Medisoft | Medical | 26 yrs | $629-4,579 | Broken reporting, freezes | 8/10 |
+| Sage Timberline | Construction | 55 yrs | $3,500+ | Old, remote access issues | 8/10 |
+| McLeod LoadMaster | Trucking | 40+ yrs | $30-100K/yr | Dated, overbuilt for small carriers | 8/10 |
+
+---
+
+### FINAL RANKING: TOP 5 OPPORTUNITIES
+
+| Rank | Opportunity | Score | Market | Gap | Build Time |
+|------|-------------|-------|--------|-----|------------|
+| 1 | **Small Landlords (1-10 units)** | 8.5/10 | 5-10M landlords | $9-25/mo tier empty | 8-12 wks |
+| 2 | **Pest Control (solo ops)** | 8/10 | $28.5B, 5-8% CAGR | $15-30/mo tier empty | 8-12 wks |
+| 3 | **Private Tutors** | 8.5/10 | 1.5M tutors, $28.85B growth | AI progress reports | 10-14 wks |
+| 4 | **Home Inspectors** | 7.5/10 | $25B by 2029 | Reliable $49-79/mo | 10-14 wks |
+| 5 | **Boat/RV Storage** | 7.5/10 | $2.6B, 12.5% CAGR | First-mover | 8-12 wks |
+
+---
+
+### KEY INSIGHT: B2B Solo Operators Are the Sweet Spot
+
+**What Works:**
+1. **Business = Budget exists** (tax deductible)
+2. **Time = Money** (will pay to save time)
+3. **Already paying** for something (proven willingness)
+4. **Price gap** between free and enterprise
+5. **Compliance/legal requirements** = sticky (can't leave easily)
+6. **Growing market** (not declining)
+
+**What the Pooli Pro Model Teaches Us:**
+- FREE core features (not limited trial)
+- Pay on transaction/usage, not subscription
+- Mobile-first from day one
+- Industry-specific workflows
+- Minimal learning curve
+
+---
+
 *Last Updated: January 2026*
-*Research Method: Community-first discovery, not keyword research*
+*Research Method: Community-first discovery + B2B solo operator focus*
 *Validation Method: Skeptical research with comprehensive competitor analysis*
+*Agents Used: 6 parallel research agents covering 50+ niches*
