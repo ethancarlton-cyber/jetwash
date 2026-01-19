@@ -28,3 +28,6 @@ node_modules/
 # Temporary files
 *.tmp
 .cache/
+
+# Scripts with API keys (never commit)
+scripts/
