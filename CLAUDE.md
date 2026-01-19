@@ -3,7 +3,7 @@
 ## Project Overview
 Local jetwashing/pressure washing lead generation website targeting the RH1 (Redhill & Reigate, Surrey) area and surrounding 20-mile radius.
 
-**Business Model**: Generate leads (name, postcode, phone number) and sell to local tradesmen.
+**Business Model**: Generate leads (name, postcode, phone number) via form submissions and sell to local tradesmen.
 
 **Budget**: £0 - EVERYTHING MUST BE FREE. No spending until ROI achieved.
 
@@ -12,6 +12,35 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 **Live Site**: https://jetwash-psi.vercel.app
 
 **CRITICAL**: This is a ZERO-COST project. Every tool, service, and platform MUST have a free tier that meets our needs. Do not suggest paid options.
+
+---
+
+## IMPORTANT: Anonymous Lead-Gen Model
+
+**This is NOT an actual jetwashing business.** This is an anonymous lead generation website.
+
+### Constraints:
+- ❌ **NO Google Business Profile** - Requires address verification, exposes identity
+- ❌ **NO phone number** - Only form submissions wanted
+- ❌ **NO personal information** - Remain fully anonymous
+- ❌ **NO local business citations** - These require verification
+- ✅ **Form submissions ONLY** - All leads via Web3Forms
+
+### SEO Strategy (Content-Focused):
+Since we can't use local business signals (GBP, NAP, citations), our strategy focuses on:
+1. **Content marketing** - Blog articles targeting informational/commercial keywords
+2. **On-page SEO** - Title tags, meta descriptions, internal linking
+3. **Backlinks** - HARO, guest posts, Reddit/Quora (no personal info needed)
+4. **Long-tail keywords** - "how much does X cost", "how often should I X"
+
+### Keywords to Target (No Map Pack Trigger):
+- "driveway cleaning cost UK"
+- "patio cleaning prices"
+- "how often clean driveway"
+- "pressure washing vs jet washing"
+- "is pressure washing worth it"
+- "block paving cleaning cost"
+- "best time to clean patio UK"
 
 ---
 
@@ -263,6 +292,17 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 3. ✅ Google Search Console configured
 4. ✅ Sitemap submitted
 5. ✅ Homepage indexed on Google
+6. ✅ **Google tracking impressions** (31 Dec 2025) - Pages appearing in search results!
+
+### Baseline Metrics (02 Jan 2026 - Week 2)
+| Metric | Value | Notes |
+|--------|-------|-------|
+| Total Impressions | 5 | Pages showing in search results |
+| Total Clicks | 0 | Expected at current position |
+| Average CTR | 0% | Will improve as position improves |
+| Average Position | 42.6 | Page 4-5 of Google, need to reach page 1 |
+
+**Target by Week 12:** Position <20, first clicks, 50+ impressions
 
 ### Next Steps:
 1. Google Analytics setup (FREE)
@@ -275,6 +315,36 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 1. Consider custom domain (£10/year)
 2. Consider professional photos (£100-200)
 3. Consider small ads budget (£100/month)
+
+---
+
+## Claude Code Agent Usage Guidelines
+
+### Agent-First Approach for Context Management
+
+**IMPORTANT**: When working on tasks for this project, Claude Code should prioritize using agents (via the Task tool) to maximize context efficiency and improve task execution.
+
+**When to Use Agents:**
+- **Exploration tasks**: Use `subagent_type=Explore` when searching the codebase, understanding architecture, or investigating multiple files
+- **Research tasks**: Use `subagent_type=general-purpose` for multi-step research, documentation lookup, or information gathering
+- **Planning tasks**: Use `subagent_type=Plan` for implementation strategy and architectural decisions
+- **Parallel work**: Launch multiple agents in parallel when tasks are independent (use single message with multiple Task calls)
+
+**Benefits of Agent Usage:**
+- Better context compartmentalization - each agent focuses on a specific subtask
+- Improved context management - agents work with isolated context windows
+- Parallel processing - multiple agents can work simultaneously
+- Cleaner main conversation - research/exploration details stay in agent context
+
+**Example Scenarios:**
+- ❌ Don't: Use Grep/Glob directly for open-ended codebase exploration
+- ✅ Do: Use Task tool with Explore agent to investigate how features work
+- ❌ Don't: Read multiple files sequentially to understand a system
+- ✅ Do: Launch Explore agent to analyze the system architecture
+- ❌ Don't: Manually search for documentation across multiple sources
+- ✅ Do: Launch general-purpose agent to research and compile information
+
+**Default Behavior:** When in doubt, prefer spawning an agent over doing the work directly in the main conversation. This keeps the main context clean and focused on high-level coordination.
 
 ---
 
@@ -303,7 +373,7 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 ---
 
 **Created**: 2025-12-15
-**Last Updated**: 2025-12-19
+**Last Updated**: 2026-01-02
 **Target Area**: RH1 Redhill & Reigate (20-mile radius)
 **Budget**: £0 until ROI
 **Launch Platform**: Vercel (FREE)
