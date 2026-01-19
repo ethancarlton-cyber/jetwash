@@ -31,3 +31,6 @@ node_modules/
 
 # Scripts with API keys (never commit)
 scripts/
+
+# Backup files
+images-backup/

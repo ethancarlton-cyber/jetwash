@@ -1,7 +1,7 @@
 {
   "name": "jetwash",
   "version": "1.0.0",
-  "description": "Professional jetwashing and pressure washing lead generation website targeting the Haywards Heath (RH16) and West Sussex area.",
+  "description": "Professional jetwashing and pressure washing lead generation website targeting the Redhill & Reigate (RH1) and Surrey area.",
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@playwright/test": "^1.57.0",
     "http-server": "^14.1.1",
-    "playwright": "^1.57.0"
+    "playwright": "^1.57.0",
+    "sharp": "^0.34.5"
   }
 }

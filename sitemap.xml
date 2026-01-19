@@ -160,6 +160,41 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://jetwash-psi.vercel.app/areas/merstham.html</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://jetwash-psi.vercel.app/areas/earlswood.html</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://jetwash-psi.vercel.app/areas/salfords.html</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://jetwash-psi.vercel.app/areas/nutfield.html</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://jetwash-psi.vercel.app/areas/chipstead.html</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Guide Pages -->
   <url>
     <loc>https://jetwash-psi.vercel.app/guides/how-often-clean-driveway.html</loc>
