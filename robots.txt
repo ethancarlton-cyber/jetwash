@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://jetwash-psi.vercel.app/sitemap.xml
+Sitemap: https://samedayjetwash.com/sitemap.xml
 
 # AI Crawlers - Explicitly allow for AI search visibility
 # These crawlers power ChatGPT, Claude, Perplexity, and other AI search tools
