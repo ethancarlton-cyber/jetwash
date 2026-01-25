@@ -214,12 +214,12 @@ a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('../images/hero-banner.png') center/cover no-repeat;
-    background-color: #f0f9ff;
-    color: var(--navy);
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.9) 0%, rgba(8, 145, 178, 0.85) 100%),
+                url('../images/hero-driveway.png') center/cover no-repeat;
+    color: var(--white);
     padding: var(--spacing-xxl) 0;
     text-align: center;
-    min-height: 400px;
+    min-height: 500px;
     display: flex;
     align-items: center;
 }
@@ -229,7 +229,7 @@ a:hover {
 }
 
 .hero h1 {
-    color: var(--navy);
+    color: var(--white);
     margin-bottom: var(--spacing-md);
 }
 

@@ -10,11 +10,11 @@ test.describe('Branding Implementation', () => {
 
     // Check logo src
     const logoSrc = await logo.getAttribute('src');
-    expect(logoSrc).toBe('images/logo.png');
+    expect(logoSrc).toBe('images/hero-banner.png');
 
     // Check logo alt text
     const logoAlt = await logo.getAttribute('alt');
-    expect(logoAlt).toContain('JetWash');
+    expect(logoAlt).toContain('Same Day JetWash');
 
     console.log('✓ Logo displays correctly');
   });
@@ -31,7 +31,7 @@ test.describe('Branding Implementation', () => {
       return window.getComputedStyle(el).backgroundImage;
     });
 
-    expect(backgroundStyle).toContain('hero-banner.png');
+    expect(backgroundStyle).toContain('hero-driveway.png');
 
     console.log('✓ Hero banner displays as background');
   });
@@ -64,7 +64,7 @@ test.describe('Branding Implementation', () => {
       await expect(logo).toBeVisible();
 
       const logoSrc = await logo.getAttribute('src');
-      expect(logoSrc).toBe('images/logo.png');
+      expect(logoSrc).toBe('images/hero-banner.png');
 
       console.log(`✓ Logo consistent on ${pagePath}`);
     }
