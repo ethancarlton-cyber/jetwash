@@ -153,14 +153,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     } else {
                         submitButton.textContent = originalButtonText;
                         submitButton.disabled = false;
-                        alert('Error: ' + (data.message || 'Form submission failed. Please call us at 07000 000000 instead.'));
+                        alert('Error: ' + (data.message || 'Form submission failed. Please call us at 01737 652515 instead.'));
                     }
                 })
                 .catch(error => {
                     console.error('Form submission error:', error);
                     submitButton.textContent = originalButtonText;
                     submitButton.disabled = false;
-                    alert('Network error: Could not submit form. Please call us at 07000 000000 or try again later.');
+                    alert('Network error: Could not submit form. Please call us at 01737 652515 or try again later.');
                 });
             }
         });
