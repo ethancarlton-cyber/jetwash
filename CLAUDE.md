@@ -9,7 +9,7 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 
 **Target Radius**: 20 miles from RH1 (Redhill/Reigate)
 
-**Live Site**: https://jetwash-psi.vercel.app
+**Live Site**: https://samedayjetwash.com
 
 **CRITICAL**: This is a ZERO-COST project. Every tool, service, and platform MUST have a free tier that meets our needs. Do not suggest paid options.
 
@@ -53,7 +53,7 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
   - No credit card required
   - Unlimited bandwidth on free tier
 - **Domain**: FREE subdomain initially
-  - Vercel: *.vercel.app (CURRENT: jetwash-psi.vercel.app)
+  - Vercel: *.vercel.app (CURRENT: samedayjetwash.com)
   - GitHub: *.github.io
   - Custom domain ONLY after generating £200+ revenue
 - **SSL**: Automatic HTTPS (FREE on all platforms)
@@ -201,7 +201,7 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 2. Connect Vercel to GitHub (FREE)
 3. Auto-deploy on every push (FREE)
 
-**Live URL**: https://jetwash-psi.vercel.app
+**Live URL**: https://samedayjetwash.com
 
 **Total Cost: £0/month forever**
 
@@ -288,7 +288,7 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 
 ### Completed ✅
 1. ✅ Website built and deployed
-2. ✅ Live at: https://jetwash-psi.vercel.app
+2. ✅ Live at: https://samedayjetwash.com
 3. ✅ Google Search Console configured
 4. ✅ Sitemap submitted
 5. ✅ Homepage indexed on Google
@@ -346,6 +346,26 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 
 **Default Behavior:** When in doubt, prefer spawning an agent over doing the work directly in the main conversation. This keeps the main context clean and focused on high-level coordination.
 
+### Agent Teams Permission Bug (Feb 2026) - STILL OPEN
+
+**STATUS (Feb 8, 2026)**: Agent Team teammates do NOT properly inherit the lead's permission settings. No fix as of v2.1.37. Tracked: [#23679](https://github.com/anthropics/claude-code/issues/23679), [#23983](https://github.com/anthropics/claude-code/issues/23983), [#23447](https://github.com/anthropics/claude-code/issues/23447), [#23676](https://github.com/anthropics/claude-code/issues/23676)
+
+**Workaround (tested working Feb 8, 2026)**: Set `defaultMode: "bypassPermissions"` in `.claude/settings.local.json`:
+
+```json
+{
+  "permissions": {
+    "defaultMode": "bypassPermissions"
+  }
+}
+```
+
+Requires session restart. Tested 2x - WebSearch works for in-process teammates with this setting.
+
+**Fallback**: Standalone Task subagents (no `team_name`) always inherit permissions correctly.
+
+**What does NOT work**: `allow` rules (#23679), PermissionRequest hooks (#23983).
+
 ---
 
 ## Important Notes
@@ -377,6 +397,6 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 **Target Area**: RH1 Redhill & Reigate (20-mile radius)
 **Budget**: £0 until ROI
 **Launch Platform**: Vercel (FREE)
-**Live URL**: https://jetwash-psi.vercel.app
+**Live URL**: https://samedayjetwash.com
 **Monthly Cost**: £0
 **Revenue Target**: £500+ in first 6 months (zero investment)

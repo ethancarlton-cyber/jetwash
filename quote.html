@@ -12,6 +12,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="canonical" href="https://samedayjetwash.com/quote.html">
 
     <!-- Open Graph Meta Tags -->
@@ -37,9 +39,11 @@
             <div class="logo">
                 <a href="index.html"><img src="images/hero-banner.png" alt="JetWash" height="50"></a>
             </div>
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
             <nav class="nav">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="areas.html" class="nav-link">Areas</a>
+                <a href="guides.html" class="nav-link">Guides</a>
                 <a href="pricing.html" class="nav-link">Pricing</a>
                 <a href="faq.html" class="nav-link">FAQ</a>
                 <a href="quote.html" class="nav-link nav-cta active">Free Quote</a>
@@ -87,7 +91,7 @@
 
                         <div class="form-group">
                             <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="07XXX XXXXXX" pattern="^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$">
+                            <input type="tel" id="phone" name="phone" required placeholder="07XXX XXXXXX or 01XXX XXXXXX" pattern="^(\+44\s?[1-37]\d{2,3}|\(?0[1-37]\d{2,3}\)?)\s?\d{3}\s?\d{3,4}$">
                             <span class="error-message" id="phoneError"></span>
                         </div>
 
@@ -125,8 +129,14 @@
 
                     <div id="formSuccess" class="success-message" style="display: none;">
                         <h3>Your 2-Hour Callback Guarantee is Active!</h3>
-                        <p>We'll call you within 2 hours during business hours (Mon-Sat 8am-6pm). Evening or Sunday? We'll call first thing next morning.</p>
+                        <p>We've received your request and <strong>will call you within 2 hours</strong> during business hours (Mon-Sat 8am-6pm). Evening or Sunday submission? We'll call first thing next morning.</p>
                         <p><strong>Keep your phone handy</strong> - our team is reviewing your request now.</p>
+                        <p style="margin-top: 1rem;">While you wait, check out our free guides:</p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li><a href="guides/driveway-cleaning-cost-uk.html">Driveway Cleaning Cost UK 2026</a></li>
+                            <li><a href="guides/diy-vs-professional-pressure-washing.html">DIY vs Professional Pressure Washing</a></li>
+                            <li><a href="guides.html">View all guides</a></li>
+                        </ul>
                     </div>
                 </div>
 
@@ -244,9 +254,11 @@
                 <div class="footer-col">
                     <h4>Information</h4>
                     <ul>
+                        <li><a href="guides.html">Guides & Tips</a></li>
                         <li><a href="pricing.html">Pricing Guide</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                         <li><a href="quote.html">Free Quote</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
 
@@ -259,12 +271,18 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Same Day JetWash Reigate. Professional pressure washing services in Surrey.</p>
+                <p>&copy; 2026 Same Day JetWash Reigate. Professional pressure washing services in Surrey.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/form.js"></script>
+    <script src="js/nav.js"></script>
     <script src="js/analytics.js"></script>
+    <div class="sticky-cta-bar">
+        <a href="quote.html" class="sticky-cta-btn">Get Free Quote</a>
+        <a href="tel:01737652515" class="sticky-cta-phone">Call Now</a>
+    </div>
+
 </body>
 </html>

@@ -34,3 +34,5 @@ scripts/
 
 # Backup files
 images-backup/
+.vercel
+.env*.local

@@ -3,7 +3,7 @@
 ## Business Details for Submissions
 
 **Business Name:** Same Day JetWash Reigate
-**Website:** https://jetwash-psi.vercel.app
+**Website:** https://samedayjetwash.com
 **Service Area:** Redhill, Reigate, Horley, Dorking, Banstead, Crawley, Caterham, Epsom, Oxted, Leatherhead (20-mile radius from RH1)
 **Services:** Driveway Cleaning, Patio Cleaning, Block Paving Cleaning, Render Cleaning, Decking Cleaning, Commercial Jetwashing
 **Category:** Pressure Washing / Cleaning Services / Home Services
@@ -124,7 +124,7 @@ These sites help build NAP (Name, Address, Phone) consistency:
 ### Consistency is Key
 Always use EXACTLY the same:
 - Business name: "Same Day JetWash Reigate"
-- Website: https://jetwash-psi.vercel.app
+- Website: https://samedayjetwash.com
 - Description: Keep consistent across all listings
 
 ### Standard Description (Copy/Paste)

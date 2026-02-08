@@ -1,6 +1,6 @@
 # Same Day JetWash Reigate - Lead Generation Website
 
-**LIVE**: https://jetwash-psi.vercel.app
+**LIVE**: https://samedayjetwash.com
 
 Professional same-day jetwashing and pressure washing lead generation website targeting Reigate, Redhill (RH1) and Surrey area.
 
@@ -111,7 +111,7 @@ The site is deployed via GitHub integration:
 1. Push changes to GitHub (https://github.com/ethancarlton-cyber/jetwash)
 2. Vercel auto-deploys on every push
 
-**Live URL**: https://jetwash-psi.vercel.app
+**Live URL**: https://samedayjetwash.com
 
 ### Deploy Commands
 

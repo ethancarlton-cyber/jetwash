@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const postcodeRegex = /^[A-Z]{1,2}[0-9]{1,2}[A-Z]?\s?[0-9][A-Z]{2}$/i;
 
         // UK Phone validation regex (mobile and landline)
-        const phoneRegex = /^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$/;
+        const phoneRegex = /^(\+44\s?[1-37]\d{2,3}|\(?0[1-37]\d{2,3}\)?)\s?\d{3}\s?\d{3,4}$/;
 
         // Service area postcodes (all served prefixes)
         const validPostcodeAreas = ['RH', 'BN', 'GU', 'CR', 'SM', 'KT'];

@@ -59,14 +59,14 @@
 
 #### 1. Submit Sitemap to Google Search Console
 1. Go to https://search.google.com/search-console
-2. Select property: jetwash-psi.vercel.app
+2. Select property: samedayjetwash.com
 3. Navigate to: Indexing > Sitemaps
 4. Enter: `sitemap.xml`
 5. Click Submit
 
 #### 2. Request Indexing for Key Pages
 In GSC, go to URL Inspection and request indexing for:
-- Homepage: https://jetwash-psi.vercel.app/
+- Homepage: https://samedayjetwash.com/
 - New guides (priority):
   - /guides/how-to-clean-indian-sandstone-patio.html
   - /guides/moss-removal-from-driveways.html
@@ -144,4 +144,4 @@ Start with these free high-authority directories:
 - [Google Search Console](https://search.google.com/search-console)
 - [Google Analytics](https://analytics.google.com/)
 - [Directory Submission Checklist](./DIRECTORY-SUBMISSION-CHECKLIST.md)
-- [Live Site](https://jetwash-psi.vercel.app/)
+- [Live Site](https://samedayjetwash.com/)

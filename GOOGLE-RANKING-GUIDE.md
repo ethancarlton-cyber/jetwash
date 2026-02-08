@@ -14,7 +14,7 @@ This is **THE MOST IMPORTANT** step. Without this, Google doesn't know your site
 
 ### What You Need:
 - A Google account (Gmail) - **This is your ONLY required account**
-- Your live website URL: `https://jetwash-psi.vercel.app`
+- Your live website URL: `https://samedayjetwash.com`
 
 ### How to Do It:
 
@@ -25,7 +25,7 @@ This is **THE MOST IMPORTANT** step. Without this, Google doesn't know your site
 **2. Add Your Property:**
 - Click "Add Property"
 - Select **"URL prefix"** (NOT "Domain")
-- Enter: `https://jetwash-psi.vercel.app`
+- Enter: `https://samedayjetwash.com`
 - Click "Continue"
 
 **3. Verify Ownership (HTML File Method):**
@@ -53,11 +53,11 @@ This is **THE MOST IMPORTANT** step. Without this, Google doesn't know your site
 **5. Request Indexing for Key Pages:**
 - Click "URL Inspection" (top search bar)
 - Enter these URLs one at a time:
-  - `https://jetwash-psi.vercel.app/`
-  - `https://jetwash-psi.vercel.app/quote.html`
-  - `https://jetwash-psi.vercel.app/driveway-cleaning.html`
-  - `https://jetwash-psi.vercel.app/patio-cleaning.html`
-  - `https://jetwash-psi.vercel.app/areas/haywards-heath.html`
+  - `https://samedayjetwash.com/`
+  - `https://samedayjetwash.com/quote.html`
+  - `https://samedayjetwash.com/driveway-cleaning.html`
+  - `https://samedayjetwash.com/patio-cleaning.html`
+  - `https://samedayjetwash.com/areas/haywards-heath.html`
 - For each URL, click "Request Indexing"
 - Google will say: "Indexing requested"
 
@@ -77,7 +77,7 @@ Backlinks = other websites linking to yours = higher Google rankings.
 - Fill in:
   - Business Name: Same Day JetWash Reigate
   - Category: Pressure Washing / Cleaning Services
-  - Website: https://jetwash-psi.vercel.app
+  - Website: https://samedayjetwash.com
   - Service Area: Reigate, Redhill, Surrey
   - Description: Fast, reliable pressure washing in Reigate & Surrey. Same-day quotes.
 - Submit (no payment needed)
@@ -127,7 +127,7 @@ Backlinks = other websites linking to yours = higher Google rankings.
 
 **3. Ubersuggest (Free - 3 searches/day)**
 - Go to: https://neilpatel.com/ubersuggest
-- Enter your domain: jetwash-psi.vercel.app
+- Enter your domain: samedayjetwash.com
 - See keyword rankings (limited free version)
 
 ---
@@ -235,7 +235,7 @@ Backlinks = other websites linking to yours = higher Google rankings.
    - Which keywords show your site
 
 3. **Manual Search**
-   - Search "site:jetwash-psi.vercel.app" in Google
+   - Search "site:samedayjetwash.com" in Google
    - Shows all your indexed pages
 
 ### Good Signs (Week 4-8):

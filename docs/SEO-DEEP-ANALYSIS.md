@@ -108,7 +108,7 @@ The JetWash site has solid foundations but is missing critical elements for loca
 Name: Same Day JetWash Reigate
 Address: Redhill, Surrey RH1 (service area)
 Phone: [NEED TO ADD - currently hidden]
-Website: https://jetwash-psi.vercel.app
+Website: https://samedayjetwash.com
 ```
 
 **Decision Needed:**
@@ -191,9 +191,9 @@ Website: https://jetwash-psi.vercel.app
   "name": "Same Day JetWash Reigate",
   "telephone": "+44-XXXX-XXXXXX",
   "email": "info@example.com",
-  "url": "https://jetwash-psi.vercel.app",
-  "logo": "https://jetwash-psi.vercel.app/images/logo.png",
-  "image": "https://jetwash-psi.vercel.app/images/og-image.jpg",
+  "url": "https://samedayjetwash.com",
+  "logo": "https://samedayjetwash.com/images/logo.png",
+  "image": "https://samedayjetwash.com/images/og-image.jpg",
   "description": "Same-day professional pressure washing in Surrey...",
   "address": {
     "@type": "PostalAddress",

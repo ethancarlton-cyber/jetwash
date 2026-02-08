@@ -74,7 +74,7 @@ Thank you for your time. I look forward to hearing from you.
 Best regards,
 [Name]
 Same Day JetWash Reigate
-https://jetwash-psi.vercel.app
+https://samedayjetwash.com
 ```
 
 ### Other Business Associations to Contact
@@ -109,7 +109,7 @@ I run a local pressure washing company based in Redhill, and I'd like to offer o
 
 We would be happy to provide [free/heavily discounted] cleaning of your [car park/paths/outdoor areas] as part of our community support programme.
 
-In return, we would appreciate a mention on your website or newsletter with a link to our site: https://jetwash-psi.vercel.app
+In return, we would appreciate a mention on your website or newsletter with a link to our site: https://samedayjetwash.com
 
 This is a genuine offer to give back to the local community - no strings attached!
 
@@ -192,7 +192,7 @@ I found your useful resource page listing [local services/tradespeople] in the S
 
 I run Same Day JetWash Reigate, a professional pressure washing company based in Redhill. We specialize in driveway and patio cleaning for residential customers throughout Surrey.
 
-If you think we'd be a good fit for your list, our website is: https://jetwash-psi.vercel.app
+If you think we'd be a good fit for your list, our website is: https://samedayjetwash.com
 
 Thanks for putting together such a helpful resource!
 
@@ -238,7 +238,7 @@ REDHILL, SURREY - [Date] - [Opening paragraph: Who, What, When, Where, Why]
 
 Same Day JetWash Reigate provides professional pressure washing services throughout Surrey, including driveway cleaning, patio cleaning, block paving restoration, and commercial jetwashing. The company is known for its 2-hour callback guarantee and same-day availability.
 
-For more information, visit https://jetwash-psi.vercel.app
+For more information, visit https://samedayjetwash.com
 
 ###
 
@@ -246,7 +246,7 @@ MEDIA CONTACT:
 [Name]
 Same Day JetWash Reigate
 [Email]
-https://jetwash-psi.vercel.app
+https://samedayjetwash.com
 ```
 
 ---
