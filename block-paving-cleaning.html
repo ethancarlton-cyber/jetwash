@@ -114,12 +114,13 @@
     }
     </script>
 
+    <link rel="preload" href="/css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="logo"><a href="index.html"><img src="images/hero-banner.png" alt="JetWash" height="50"></a></div>
+            <div class="logo"><a href="index.html"><img src="images/hero-banner.png" alt="JetWash" width="200" height="50" fetchpriority="high"></a></div>
             <button class="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
             <nav class="nav">
                 <a href="index.html" class="nav-link">Home</a>
@@ -147,7 +148,7 @@
     <!-- Service Hero Image -->
     <div class="container">
         <div class="service-hero-image">
-            <img src="images/service-block-paving.png" alt="Professional block paving cleaning in Surrey - restored block paved driveway" loading="lazy">
+            <img src="images/service-block-paving.png" alt="Professional block paving cleaning in Surrey - restored block paved driveway" width="1200" height="400" fetchpriority="high">
         </div>
     </div>
 
@@ -193,7 +194,7 @@
 
                     <div class="before-after-section">
                         <h3>See the Difference</h3>
-                        <img src="images/before-after/block-paving-before-after.png" alt="Block paving cleaning before and after comparison - Horley, Surrey" loading="lazy" class="before-after-image">
+                        <img src="images/before-after/block-paving-before-after.png" alt="Block paving cleaning before and after comparison - Horley, Surrey" width="600" height="400" loading="lazy" class="before-after-image">
                         <p class="image-caption">A typical block paving transformation in Surrey</p>
                     </div>
 
@@ -415,8 +416,8 @@
                 <p>&copy; 2026 Same Day JetWash Reigate. Professional pressure washing services in Surrey.</p>
             </div>
         </div>
-    </footer>    <script src="js/nav.js"></script>
-    <script src="js/analytics.js"></script>
+    </footer>    <script src="js/nav.js" defer></script>
+    <script src="js/analytics.js" defer></script>
     <div class="sticky-cta-bar">
         <a href="quote.html" class="sticky-cta-btn">Get Free Quote</a>
         <a href="tel:01737652515" class="sticky-cta-phone">Call Now</a>

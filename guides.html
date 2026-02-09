@@ -31,12 +31,13 @@
     <meta name="twitter:description" content="Free expert guides on pressure washing, driveway cleaning, patio care and exterior maintenance. Practical tips for Surrey homeowners from local professionals.">
     <meta name="twitter:image" content="https://samedayjetwash.com/images/og-image.jpg">
 
+    <link rel="preload" href="/css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="logo"><a href="index.html"><img src="images/hero-banner.png" alt="JetWash" height="50"></a></div>
+            <div class="logo"><a href="index.html"><img src="images/hero-banner.png" alt="JetWash" width="200" height="50" fetchpriority="high"></a></div>
             <button class="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
             <nav class="nav">
                 <a href="index.html" class="nav-link">Home</a>
@@ -243,7 +244,7 @@
         <a href="tel:01737652515" class="sticky-cta-phone">Call Now</a>
     </div>
 
-    <script src="js/nav.js"></script>
-    <script src="js/analytics.js"></script>
+    <script src="js/nav.js" defer></script>
+    <script src="js/analytics.js" defer></script>
 </body>
 </html>
