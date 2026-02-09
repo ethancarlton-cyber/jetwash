@@ -293,6 +293,69 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 4. ✅ Sitemap submitted
 5. ✅ Homepage indexed on Google
 6. ✅ **Google tracking impressions** (31 Dec 2025) - Pages appearing in search results!
+7. ✅ **SEO & CRO Overhaul deployed** (08 Feb 2026) - Major update
+
+### SEO & CRO Overhaul (08 Feb 2026)
+
+**Critical Fixes:**
+- Removed fabricated AggregateRating schema + 3 fake reviews from homepage (Google penalty risk)
+- Replaced fake rating badge with "Professional Pressure Washing - 2-Hour Callback Guarantee"
+- Updated copyright 2025 → 2026 across all pages
+
+**New Pages:**
+- `guides.html` - Hub page linking all 12 guide articles (3 categories)
+- `privacy.html` - GDPR-compliant privacy policy
+
+**Navigation & Footer (all 43 pages):**
+- Hamburger mobile menu + `js/nav.js`
+- "Guides" nav link added sitewide
+- "Privacy Policy" footer link added sitewide
+- "Guides & Tips" footer link added sitewide
+
+**CRO Elements:**
+- Sticky mobile CTA bar ("Get Free Quote" + "Call Now") on all pages
+- 12 inline CTAs across 6 service pages (2 per page)
+- "Helpful Guides" cross-link sections on all 6 service pages
+- Enhanced form success message with guide links on quote.html
+
+**Performance:**
+- Caching headers: CSS/JS 1yr immutable, HTML 1hr + stale-while-revalidate
+- Preconnect hints for Google Fonts on all pages
+- Removed unused form.js from 10 non-form pages
+- Fixed phone regex to accept UK landlines (01xxx/02xxx/03xxx)
+
+**Infrastructure:**
+- Sitemap updated with guides.html + privacy.html
+- Security headers: X-Frame-Options DENY, X-Content-Type-Options, X-XSS-Protection
+
+### SEO Phase 2 - Schema, Meta & Content Expansion (08 Feb 2026)
+
+**Schema Markup (Structured Data):**
+- BreadcrumbList schema added to 9 guide pages + 3 service pages (12 total)
+- FAQPage schema added to top 5 area pages (redhill, reigate, horley, dorking, banstead)
+  - Each with 4 locally-specific Q&As (cost, coverage areas, surface types, local context)
+- HowTo schema added to 3 guide pages:
+  - `prepare-driveway-for-pressure-washing.html` (5 steps, PT2H)
+  - `remove-oil-stains-driveway.html` (4 steps with supplies, PT1H)
+  - `moss-removal-from-driveways.html` (4 steps, P14D)
+
+**Meta Title & Description Optimization (9 pages):**
+- Shortened 7 titles exceeding 60 chars (index, quote, faq, 4 guide pages)
+- Fixed 4 descriptions exceeding 160 chars (quote, 2 guides, tips)
+- Added 2026 freshness signals to 2 guide titles (remove-oil-stains, pressure-washing-vs-jet-washing)
+
+**Area Page Content Expansion (5 pages, ~400 → 1000+ words each):**
+- `areas/redhill.html` - Victorian terraces, Redstone Hill, Merstham/Salfords/Earlswood coverage
+- `areas/reigate.html` - Premium properties, Reigate Hill/South Park/Woodhatch, Indian sandstone
+- `areas/horley.html` - Gatwick proximity, commercial forecourts, airport area coverage
+- `areas/dorking.html` - Mole Valley AONB, damp microclimate, Box Hill/Westcott/Holmwood
+- `areas/banstead.html` - North Downs chalk geology, Chipstead/Kingswood/Tadworth, premium pricing
+- Each page now includes: local property context, common problems section (5 items), pricing guide (6 services), visible FAQ section, internal links to guides
+
+**Sitemap:**
+- All lastmod dates updated to 2026-02-08
+
+**Committed & Deployed:** 23 files, 761 insertions, pushed to origin/main (auto-deploy to Vercel)
 
 ### Baseline Metrics (02 Jan 2026 - Week 2)
 | Metric | Value | Notes |
@@ -304,17 +367,72 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 
 **Target by Week 12:** Position <20, first clicks, 50+ impressions
 
-### Next Steps:
-1. Google Analytics setup (FREE)
-2. Submit to Bing Webmaster (FREE)
-3. Monitor rankings (FREE tools)
-4. Generate first leads (FREE traffic)
-5. Sell first leads (REVENUE!)
+### SEO Phase 3 - Content Expansion (08 Feb 2026)
 
-### Month 4+ (ONLY after £200+ revenue):
-1. Consider custom domain (£10/year)
-2. Consider professional photos (£100-200)
-3. Consider small ads budget (£100/month)
+**4 New Guide Articles:**
+- `guides/patio-cleaning-cost-uk.html` - Patio Cleaning Cost UK 2026
+- `guides/can-pressure-washing-damage-driveway.html` - Can Pressure Washing Damage a Driveway?
+- `guides/block-paving-cleaning-cost-uk.html` - Block Paving Cleaning Cost UK 2026
+- `guides/driveway-cleaning-sealing-cost.html` - Driveway Cleaning & Sealing Cost
+
+**10 Area Pages Expanded to 1000+ Words:**
+- Crawley, Epsom, Caterham, Oxted, Leatherhead, Merstham, Earlswood, Salfords, Nutfield, Chipstead
+- Each with FAQPage schema (4 Q&As), local property context, common problems, pricing sections
+
+**Committed & Deployed:** 24 files changed, +2,585 lines
+
+### SEO Phase 4 - AI SEO Quick Wins (08 Feb 2026)
+
+**BATCH 1: Indexing & Crawlability**
+- Added `OAI-SearchBot` to robots.txt AI crawler directives
+- Created `/llms.txt` (emerging AI search standard describing site for AI crawlers)
+- Set up IndexNow: API key file deployed, 45 URLs submitted to Bing/DuckDuckGo for instant indexing
+- IndexNow script at `scripts/submit-indexnow.ps1` (gitignored, run after future deploys)
+
+**BATCH 2: Schema Markup Upgrades**
+- All 15 area pages: provider `@type` upgraded from `LocalBusiness` to `HomeAndConstructionBusiness`
+- Added `priceRange: "££"`, `openingHoursSpecification` (Mon-Sat 8-6, Sun 9-5), full 15-town `areaServed` array
+- Guide pages already had Article schema, service pages already had FAQPage - verified, no changes needed
+
+**BATCH 3: Technical Performance**
+- `width`/`height` attributes on all `<img>` tags across 45 pages (prevents CLS)
+- `loading="lazy"` on below-fold images, `fetchpriority="high"` on hero images
+- Removed incorrect `loading="lazy"` from hero images on service pages
+- `<link rel="preload" href="/css/style.css">` on all 45 pages
+- Hero image preload on homepage
+- `defer` added to `nav.js` and `analytics.js` on all pages
+- Fixed 3 guide pages missing `nav.js`/`analytics.js` entirely
+- **Image audit**: 13 images over 200KB flagged (411KB-793KB) - compression follow-up needed
+
+**BATCH 4: Content & Featured Snippet Optimisation**
+- 8 guide pages restructured with answer-first openings (direct answer within 60 words)
+- 6 comparison/pricing HTML tables added to guide pages (triggers table featured snippets)
+- 200+ contextual internal links added across all 37 content pages with descriptive anchor text
+
+**BATCH 5: Answer Engine Optimisation (AEO)**
+- Created `/pressure-washing-guide.html` - 2000+ word pillar page (topical authority hub)
+  - Links to all 6 service pages, all 16 guides, all 15 area pages
+  - Pricing tables, DIY vs pro comparison, surface guide, area grid
+  - Article + BreadcrumbList schema
+  - Featured on guides.html hub with highlighted card
+- Enhanced homepage About section with equipment/expertise E-E-A-T details
+- Added pillar page to sitemap.xml (priority 0.9)
+
+**Committed & Deployed:** 5 commits, 45+ files changed, pushed to origin/main
+
+### Current Site Stats
+- **Total pages**: 50 (homepage + 6 services + 15 areas + 16 guides + pillar page + 6 info pages)
+- **Schema coverage**: FAQPage on 46 pages, Article on 16 guides, HomeAndConstructionBusiness on 15 areas
+- **Internal links**: 200+ contextual links across content pages
+
+### Next Steps:
+1. **Compress images** - 13 images over 200KB (convert PNGs to WebP for 50-80% size reduction)
+2. **Register with Bing Webmaster Tools** - submit sitemap, verify ownership
+3. **Monitor GSC** for indexing progress (37 pages were "discovered not indexed")
+4. **Run IndexNow** after any future content updates: `powershell -ExecutionPolicy Bypass -File scripts/submit-indexnow.ps1`
+5. **Add table styling to CSS** - tables may need responsive styling for mobile
+6. Generate first leads (FREE traffic)
+7. Sell first leads (REVENUE!)
 
 ---
 
@@ -393,7 +511,7 @@ Requires session restart. Tested 2x - WebSearch works for in-process teammates w
 ---
 
 **Created**: 2025-12-15
-**Last Updated**: 2026-01-02
+**Last Updated**: 2026-02-08
 **Target Area**: RH1 Redhill & Reigate (20-mile radius)
 **Budget**: £0 until ROI
 **Launch Platform**: Vercel (FREE)
