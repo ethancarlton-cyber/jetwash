@@ -36,3 +36,7 @@ scripts/
 images-backup/
 .vercel
 .env*.local
+
+# Test artifacts
+playwright-report/
+test-results/
