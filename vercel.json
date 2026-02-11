@@ -9,6 +9,16 @@
       "source": "/areas/index.html",
       "destination": "/areas.html",
       "permanent": true
+    },
+    {
+      "source": "/guides/",
+      "destination": "/guides.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/index.html",
+      "destination": "/guides.html",
+      "permanent": true
     }
   ],
   "headers": [
