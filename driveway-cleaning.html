@@ -37,16 +37,43 @@
       "@context": "https://schema.org",
       "@type": "Service",
       "serviceType": "Driveway Cleaning",
+      "name": "Professional Driveway Cleaning Services",
+      "description": "Expert pressure washing for driveways including block paving, tarmac, and concrete surfaces. Includes moss removal, oil stain treatment, and re-sanding.",
       "provider": {
-        "@type": "LocalBusiness",
+        "@type": "HomeAndConstructionBusiness",
         "name": "Same Day JetWash Reigate",
-        "telephone": "+441737652515"
+        "telephone": "+441737652515",
+        "priceRange": "££",
+        "url": "https://samedayjetwash.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Redhill",
+          "addressRegion": "Surrey",
+          "postalCode": "RH1",
+          "addressCountry": "GB"
+        }
       },
       "areaServed": {
-        "@type": "City",
-        "name": "Redhill"
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "51.2362",
+          "longitude": "-0.1625"
+        },
+        "geoRadius": "32000"
       },
-      "description": "Professional driveway cleaning and pressure washing services for block paving, tarmac, and concrete driveways in Redhill, Reigate and Surrey."
+      "offers": {
+        "@type": "Offer",
+        "priceRange": "£120-£350",
+        "priceCurrency": "GBP",
+        "availability": "https://schema.org/InStock",
+        "description": "Driveway cleaning prices vary by size, surface type, and condition. Typical range £120-350 for residential driveways."
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://samedayjetwash.com/quote.html",
+        "servicePhone": "+441737652515"
+      }
     }
     </script>
 

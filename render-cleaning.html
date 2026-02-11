@@ -36,14 +36,43 @@
       "@context": "https://schema.org",
       "@type": "Service",
       "serviceType": "Render Cleaning",
-      "provider": {"@type": "LocalBusiness", "name": "Same Day JetWash Reigate",
-        "telephone": "+441737652515"},
-      "areaServed": [
-        {"@type": "City", "name": "Redhill"},
-        {"@type": "City", "name": "Reigate"},
-        {"@type": "City", "name": "Surrey"}
-      ],
-      "description": "Professional render cleaning and soft washing services in Redhill, Reigate and Surrey."
+      "name": "Professional Render Cleaning & Soft Washing Services",
+      "description": "Expert soft washing for render, removing green algae and black staining. Safe for K-Rend, pebbledash, and all modern render types. Low-pressure biocide treatment.",
+      "provider": {
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Same Day JetWash Reigate",
+        "telephone": "+441737652515",
+        "priceRange": "££",
+        "url": "https://samedayjetwash.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Redhill",
+          "addressRegion": "Surrey",
+          "postalCode": "RH1",
+          "addressCountry": "GB"
+        }
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "51.2362",
+          "longitude": "-0.1625"
+        },
+        "geoRadius": "32000"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceRange": "£200-£600",
+        "priceCurrency": "GBP",
+        "availability": "https://schema.org/InStock",
+        "description": "Render cleaning prices vary by property size, render type, and extent of staining. Typical range £200-600 for residential properties."
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://samedayjetwash.com/quote.html",
+        "servicePhone": "+441737652515"
+      }
     }
     </script>
 
