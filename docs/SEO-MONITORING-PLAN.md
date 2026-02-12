@@ -161,6 +161,71 @@ This monitoring plan tracks the impact of Phase 1 SEO fixes implemented on Febru
 
 ---
 
+## Manual Indexing Progress Tracker
+
+**Purpose**: Track manual indexing requests submitted to Google Search Console to speed up discovery of Phase 1 changes and clean URL migration.
+
+**GSC Quota**: ~10-15 requests per day maximum
+
+### Day 1 - February 12, 2026 ✅
+
+**Submitted (11 URLs)**:
+1. ✅ https://samedayjetwash.com/
+2. ✅ https://samedayjetwash.com/pressure-washing-guide
+3. ✅ https://samedayjetwash.com/guides/diy-vs-professional-pressure-washing
+4. ✅ https://samedayjetwash.com/guides/block-paving-sealing-guide
+5. ✅ https://samedayjetwash.com/guides/stain-removal-guide-driveways-patios
+6. ✅ https://samedayjetwash.com/areas/rh2
+7. ✅ https://samedayjetwash.com/areas/rh4
+8. ✅ https://samedayjetwash.com/areas/rh6
+9. ✅ https://samedayjetwash.com/areas/rh8
+10. ✅ https://samedayjetwash.com/areas/sm7
+11. ✅ https://samedayjetwash.com/guides/driveway-cleaning-cost-uk
+
+**Status**: Quota reached (11/~15 used)
+
+### Day 2 - February 13, 2026 (Pending)
+
+**To Submit (11 URLs remaining)**:
+1. ⏳ https://samedayjetwash.com/guides/how-often-clean-driveway
+2. ⏳ https://samedayjetwash.com/guides/remove-oil-stains-driveway
+3. ⏳ https://samedayjetwash.com/guides/moss-removal-from-driveways
+4. ⏳ https://samedayjetwash.com/guides/prepare-driveway-for-pressure-washing
+5. ⏳ https://samedayjetwash.com/guides/pressure-washing-vs-jet-washing
+6. ⏳ https://samedayjetwash.com/guides/best-time-patio-cleaning
+7. ⏳ https://samedayjetwash.com/guides/patio-cleaning-cost-uk
+8. ⏳ https://samedayjetwash.com/guides/can-pressure-washing-damage-driveway
+9. ⏳ https://samedayjetwash.com/guides/block-paving-cleaning-cost-uk
+10. ⏳ https://samedayjetwash.com/guides/driveway-cleaning-sealing-cost
+11. ⏳ https://samedayjetwash.com/guides
+
+**Instructions**: Submit all remaining URLs on Day 2. If quota exceeded, continue on Day 3.
+
+### Day 3+ - Additional Pages (If Needed)
+
+**Service Pages** (Lower priority - these are already indexed):
+- https://samedayjetwash.com/driveway-cleaning
+- https://samedayjetwash.com/patio-cleaning
+- https://samedayjetwash.com/block-paving-cleaning
+- https://samedayjetwash.com/render-cleaning
+- https://samedayjetwash.com/decking-cleaning
+- https://samedayjetwash.com/commercial-jetwashing
+
+**Area Pages** (Lower priority - main ones already submitted):
+- https://samedayjetwash.com/areas/redhill
+- https://samedayjetwash.com/areas/reigate
+- https://samedayjetwash.com/areas/horley
+- https://samedayjetwash.com/areas/dorking
+- https://samedayjetwash.com/areas/banstead
+
+**Notes**:
+- All URLs use clean format (no .html extensions)
+- Old .html URLs redirect automatically (301)
+- Focus on guides and orphaned postcodes first (highest priority)
+- Service and main area pages likely already indexed, lower priority
+
+---
+
 ## Monitoring Schedule
 
 ### Week 1-2: Immediate Impact Monitoring (Daily Checks)
