@@ -45,7 +45,22 @@
       "permanent": true
     },
     {
+      "source": "/areas/:path/",
+      "destination": "/areas/:path",
+      "permanent": true
+    },
+    {
+      "source": "/guides/:path/",
+      "destination": "/guides/:path",
+      "permanent": true
+    },
+    {
       "source": "/:path.html",
+      "destination": "/:path",
+      "permanent": true
+    },
+    {
+      "source": "/:path/",
       "destination": "/:path",
       "permanent": true
     }

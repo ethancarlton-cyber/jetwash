@@ -33,11 +33,11 @@ This monitoring plan tracks the impact of Phase 1 SEO fixes implemented on Febru
 - [x] Section appears on homepage (line 341-385)
 - [x] Section title "Expert Cleaning Guides" displays correctly
 - [x] All 4 guide cards render properly:
-  - [x] Complete Pressure Washing Guide (`pressure-washing-guide.html`)
-  - [x] DIY vs Professional Pressure Washing (`guides/diy-vs-professional-pressure-washing.html`)
-  - [x] Block Paving Sealing Guide (`guides/block-paving-sealing-guide.html`)
-  - [x] Stain Removal Guide (`guides/stain-removal-guide-driveways-patios.html`)
-- [x] "View all cleaning guides →" link points to `guides.html`
+  - [x] Complete Pressure Washing Guide (`/pressure-washing-guide`)
+  - [x] DIY vs Professional Pressure Washing (`/guides/diy-vs-professional-pressure-washing`)
+  - [x] Block Paving Sealing Guide (`/guides/block-paving-sealing-guide`)
+  - [x] Stain Removal Guide (`/guides/stain-removal-guide-driveways-patios`)
+- [x] "View all cleaning guides →" link points to `/guides`
 - [x] All links verified to exist on filesystem
 - [ ] Mobile responsiveness tested (320px, 375px, 768px widths)
 - [ ] Section styling matches existing homepage sections
@@ -46,11 +46,11 @@ This monitoring plan tracks the impact of Phase 1 SEO fixes implemented on Febru
 #### Service Areas Enhancements
 - [x] 5 new postcode cards added to existing areas section
 - [x] All postcode links verified:
-  - [x] RH2 Postcode Area → `areas/rh2.html`
-  - [x] RH4 Postcode Area → `areas/rh4.html`
-  - [x] RH6 Postcode Area → `areas/rh6.html`
-  - [x] RH8 Postcode Area → `areas/rh8.html`
-  - [x] SM7 Postcode Area → `areas/sm7.html`
+  - [x] RH2 Postcode Area → `/areas/rh2`
+  - [x] RH4 Postcode Area → `/areas/rh4`
+  - [x] RH6 Postcode Area → `/areas/rh6`
+  - [x] RH8 Postcode Area → `/areas/rh8`
+  - [x] SM7 Postcode Area → `/areas/sm7`
 - [x] Total area cards: 11 (increased from 6)
 - [x] "View all service areas →" link still functional
 - [ ] Mobile responsiveness tested
@@ -59,8 +59,8 @@ This monitoring plan tracks the impact of Phase 1 SEO fixes implemented on Febru
 
 #### Duplicate Page Deletion
 - [x] `driveway-cleaning-redhill.html` deleted from filesystem
-- [x] Proper page `areas/redhill.html` exists and functional
-- [x] Canonical tag on `areas/redhill.html` correct: `https://samedayjetwash.com/areas/redhill.html`
+- [x] Proper page `/areas/redhill` exists and functional
+- [x] Canonical tag on `areas/redhill.html` correct: `https://samedayjetwash.com/areas/redhill`
 - [x] No broken internal links pointing to deleted page (was orphaned)
 - [ ] 404 error confirmed for deleted URL (if accessed directly)
 
@@ -465,11 +465,11 @@ This monitoring plan tracks the impact of Phase 1 SEO fixes implemented on Febru
 2. Filter for homepage: `/`
    - Sessions, bounce rate, avg. time on page
    - Track user flow to guide/area sections
-3. Filter for guide pages: `/guides/` or `pressure-washing-guide.html`
+3. Filter for guide pages: `/guides/` or `/pressure-washing-guide`
    - Track traffic increase from baseline
    - Monitor engagement (time on page, bounce rate)
    - Identify top-performing guides
-4. Filter for postcode pages: `/areas/rh2.html`, `/areas/rh4.html`, etc.
+4. Filter for postcode pages: `/areas/rh2`, `/areas/rh4`, etc.
    - Track first visits (from zero baseline)
    - Monitor engagement metrics
    - Conversion tracking (if set up)

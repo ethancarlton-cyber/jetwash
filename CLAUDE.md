@@ -436,6 +436,47 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 
 ---
 
+## URL Structure Standard
+
+**CRITICAL**: All URLs MUST be clean (no .html extension)
+
+### Clean URL Architecture
+- **Hosting**: Vercel automatically serves HTML files without `.html` extension via rewrites
+- **Standard**: All internal links MUST use clean URLs
+- **Examples**:
+  - ✅ `/driveway-cleaning` (correct)
+  - ✅ `/guides/stain-removal` (correct)
+  - ✅ `/areas/redhill` (correct)
+  - ❌ `/driveway-cleaning.html` (NEVER use .html extension)
+
+### Implementation
+- **HTML files**: Named with `.html` extension (e.g., `driveway-cleaning.html`)
+- **href attributes**: ALWAYS use clean URLs without `.html`
+  ```html
+  <!-- Correct -->
+  <a href="/driveway-cleaning">Driveway Cleaning</a>
+
+  <!-- WRONG -->
+  <a href="/driveway-cleaning.html">Driveway Cleaning</a>
+  ```
+- **Vercel configuration**: Handles all rewrites/redirects automatically (see `vercel.json`)
+
+### Why Clean URLs?
+1. **SEO**: Clean URLs are more user-friendly and rank better
+2. **Professionalism**: Modern websites use clean URLs
+3. **Flexibility**: Easy to change underlying technology without breaking links
+4. **Consistency**: Matches user expectations and industry standards
+
+### Vercel Configuration
+Vercel automatically:
+- Serves `.html` files at clean URLs
+- Redirects `.html` requests to clean URLs (301 permanent)
+- Configured via `vercel.json` rewrites and redirects
+
+**See**: `Projects/jetwash/URL-STRUCTURE.md` for comprehensive documentation
+
+---
+
 ## Claude Code Agent Usage Guidelines
 
 ### Agent-First Approach for Context Management
