@@ -44,7 +44,9 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-# Disallow non-content directories
+# Disallow non-content directories and dev files
 Disallow: /node_modules/
 Disallow: /test-results/
 Disallow: /playwright-report/
+Disallow: /google98e7646257fb1f88.html
+Disallow: /scripts/

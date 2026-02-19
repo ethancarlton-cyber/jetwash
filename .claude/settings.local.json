@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(cmd /c \"del /f nul 2>nul\")",
+      "Bash(powershell -command:*)",
+      "Bash(powershell:*)",
+      "Bash(cmd /c \"powershell -Command \"\"Add-Type -AssemblyName System.Drawing; $files = Get-ChildItem ''c:\\\\Users\\\\devel\\\\Desktop\\\\jetWash\\\\imagesstock\\\\*.jpg''; foreach\\($f in $files\\) { $img = [System.Drawing.Image]::FromFile\\($f.FullName\\); Write-Output \\($f.Name + '': '' + $img.Width + ''x'' + $img.Height\\); $img.Dispose\\(\\) }\"\"\")",
+      "Bash(file:*)",
+      "Bash(where:*)",
+      "Bash(where ffmpeg)",
+      "Bash(npm install:*)",
+      "Bash(node resize-images.js:*)",
+      "Bash(ls -la \"c:\\\\Users\\\\devel\\\\Desktop\\\\jetWash\\\\areas\"\" 2>&1 || echo \"Directory check completed \")",
+      "Bash(ls:*)"
+    ]
+  }
+}

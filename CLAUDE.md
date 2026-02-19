@@ -477,33 +477,42 @@ Vercel automatically:
 
 ---
 
-## Claude Code Agent Usage Guidelines
+## Execution Model — Teams First
 
-### Agent-First Approach for Context Management
+**ANY task beyond a quick 1-minute fix MUST use TeamCreate.** This is a live site — quality and consistency matter.
 
-**IMPORTANT**: When working on tasks for this project, Claude Code should prioritize using agents (via the Task tool) to maximize context efficiency and improve task execution.
+| Task | Team? | Why |
+|------|-------|-----|
+| Fix a typo in one page | No | Trivial |
+| Quick GSC/analytics lookup | No | Single check |
+| New content pages (2+) | **Yes** | Parallel writing, consistency checks |
+| SEO batch updates | **Yes** | Multi-file edits across 45+ pages |
+| Schema/structured data changes | **Yes** | Affects many pages, easy to miss one |
+| New guide articles | **Yes** | Writing + SEO + internal linking |
+| Area page expansions | **Yes** | Parallel writing, consistent format |
+| Performance/technical fixes | **Yes** | Multi-file, regression risk |
 
-**When to Use Agents:**
-- **Exploration tasks**: Use `subagent_type=Explore` when searching the codebase, understanding architecture, or investigating multiple files
-- **Research tasks**: Use `subagent_type=general-purpose` for multi-step research, documentation lookup, or information gathering
-- **Planning tasks**: Use `subagent_type=Plan` for implementation strategy and architectural decisions
-- **Parallel work**: Launch multiple agents in parallel when tasks are independent (use single message with multiple Task calls)
+### Team Shapes (always includes validator)
+- **Content batch**: lead + writer(s) + **validator** (checks SEO, consistency, clean URLs, schema)
+- **SEO updates**: lead + editor(s) + **validator** (verifies all pages updated, no broken links, schema valid)
+- **Technical fixes**: lead + implementer + **tester** (checks all 45+ pages, verifies no regressions)
+- **Research/analysis**: lead + researcher(s) + **validator** (cross-checks data, verifies sources)
 
-**Benefits of Agent Usage:**
-- Better context compartmentalization - each agent focuses on a specific subtask
-- Improved context management - agents work with isolated context windows
-- Parallel processing - multiple agents can work simultaneously
-- Cleaner main conversation - research/exploration details stay in agent context
+### Mandatory Validation Step
+- **Every team MUST have a validator/tester as the final step**
+- The validator must be a **separate teammate** — no self-validation
+- **Content work**: Check all pages for consistent formatting, clean URLs (no .html), valid schema markup, working internal links
+- **SEO updates**: Verify changes applied to ALL target pages, sitemap updated, no broken references
+- **Technical fixes**: Check all 45+ pages for regressions, verify mobile/desktop, check performance
+- Validation task must be blocked on all prior tasks (use `addBlockedBy`)
+- Work is NOT done until the validator approves
+- If validation fails → fix issues → re-validate
 
-**Example Scenarios:**
-- ❌ Don't: Use Grep/Glob directly for open-ended codebase exploration
-- ✅ Do: Use Task tool with Explore agent to investigate how features work
-- ❌ Don't: Read multiple files sequentially to understand a system
-- ✅ Do: Launch Explore agent to analyze the system architecture
-- ❌ Don't: Manually search for documentation across multiple sources
-- ✅ Do: Launch general-purpose agent to research and compile information
-
-**Default Behavior:** When in doubt, prefer spawning an agent over doing the work directly in the main conversation. This keeps the main context clean and focused on high-level coordination.
+### Rules
+- Lead coordinates via TaskCreate/TaskUpdate and SendMessage
+- Teammates claim tasks, work, and report back
+- Always shut down teams when done (SendMessage type: shutdown_request)
+- Standalone Task agents are ONLY for single quick lookups (<1 min)
 
 ### Agent Teams Permission Bug (Feb 2026) - STILL OPEN
 
