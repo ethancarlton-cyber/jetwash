@@ -1,6 +1,7 @@
 # JetWash SEO — Remaining Manual TODOs
 
 > **Created**: 2026-02-21 (after SEO Phase 6 completion)
+> **Updated**: 2026-02-21 (after SEO Phase 7 completion — items 3, 4, 6, 10, 11 completed)
 > **Purpose**: Prioritized list of actions that require manual effort and cannot be automated in code.
 
 ---
@@ -37,35 +38,11 @@
 
 ## HIGH (Do Within 2 Weeks)
 
-### 3. Core Web Vitals Audit via PageSpeed Insights
-**What**: After deploying Phase 6 (with compressed images), run PageSpeed Insights on:
-- Homepage
-- 2-3 service pages
-- 2-3 guide pages
-- 2-3 area pages
+### ~~3. Core Web Vitals Audit via PageSpeed Insights~~ COMPLETED (Phase 7)
+CWV audit completed via PageSpeed Insights. Baseline scores documented.
 
-Check LCP, FID/INP, CLS scores. Document any failing metrics.
-
-**Why**: CWV is a confirmed Google ranking factor. Image compression in Phase 6 should improve LCP significantly. Need to verify and document baseline metrics.
-
-**Priority**: HIGH — do after deploying Phase 6 changes
-**Effort**: 30-45 minutes
-
-### 4. Consolidate Overlapping DIY-vs-Professional Guides
-**What**: Review these 3 guide pairs that cover similar territory and decide whether to merge, differentiate, or leave as-is:
-- "Can pressure washing damage your driveway?" vs service-specific damage warnings
-- Driveway cleaning cost guide vs driveway cleaning & sealing cost guide
-- Patio cleaning cost guide vs block paving cleaning cost guide
-
-Options for each:
-- **Merge**: Combine into one stronger page, 301 redirect the other
-- **Differentiate**: Ensure distinct keyword targeting and unique content angles
-- **Leave**: If they target genuinely different search intents
-
-**Why**: Keyword cannibalization — Google may not know which page to rank. Consolidating into fewer, stronger pages typically improves rankings for both queries.
-
-**Priority**: HIGH — editorial decision required, affects content strategy
-**Effort**: 1-2 hours (research + decision + implementation)
+### ~~4. Consolidate Overlapping DIY-vs-Professional Guides~~ COMPLETED (Phase 7)
+3 overlapping guides differentiated: main DIY-vs-professional page kept, service-tiers refocused on service levels, hire-vs-professional refocused on hire costs. Seasonal overlap also fixed (seasonal-guide vs best-time-patio-cleaning).
 
 ---
 
@@ -83,15 +60,8 @@ Options for each:
 **Priority**: MEDIUM — ongoing effort, compound returns over time
 **Effort**: 2-3 hours initial setup, then 30 min/week ongoing
 
-### 6. Seasonal Guide Content Overlap
-**What**: Review whether seasonal angles (spring cleaning, winter prep, autumn leaf stain removal) overlap with existing guides. Decide:
-- Are there seasonal content gaps worth filling?
-- Do any existing guides need seasonal sections added?
-
-**Why**: Seasonal content captures time-sensitive search traffic. But adding too many similar pages causes cannibalization.
-
-**Priority**: MEDIUM — plan for seasonal content calendar
-**Effort**: 1 hour (editorial decision)
+### ~~6. Seasonal Guide Content Overlap~~ COMPLETED (Phase 7)
+Seasonal guide overlap resolved: seasonal-guide broadened to all surfaces, best-time-patio-cleaning narrowed to patio-specific detail. Cross-links added between the two.
 
 ### 7. Weekly Monitoring per SEO-MONITORING-PLAN.md
 **What**: Follow the monitoring cadence in `Projects/jetwash/docs/SEO-MONITORING-PLAN.md`:
@@ -130,21 +100,11 @@ Track: impressions, clicks, CTR, average position for key terms.
 **Priority**: LOW — nice to have, not critical
 **Effort**: 2-3 hours (design + implementation)
 
-### 10. Terms of Service Page
-**What**: Create a basic terms.html page covering service terms, liability, booking conditions.
+### ~~10. Terms of Service Page~~ COMPLETED (Phase 7)
+terms.html created and added to footer sitewide.
 
-**Why**: Trust signal, especially for local service businesses. Not urgent for SEO but good practice.
-
-**Priority**: LOW
-**Effort**: 1-2 hours
-
-### 11. Remove Meta Keywords Tags
-**What**: Some pages may still have `<meta name="keywords">` tags. These have been ignored by Google since 2009.
-
-**Why**: Harmless but messy. Removing them is pure cleanup — no SEO impact. Only do if editing those files for another reason.
-
-**Priority**: LOW — zero impact, pure housekeeping
-**Effort**: 15 minutes (search and remove)
+### ~~11. Remove Meta Keywords Tags~~ COMPLETED (Phase 7)
+All meta keywords tags removed from every page.
 
 ---
 
@@ -153,8 +113,10 @@ Track: impressions, clicks, CTR, average position for key terms.
 | Priority | Items | Total Effort |
 |----------|-------|-------------|
 | URGENT | 2 (GSC investigation, manual indexing) | 1-2 hours |
-| HIGH | 2 (CWV audit, guide consolidation) | 2-3 hours |
-| MEDIUM | 4 (backlinks, seasonal content, monitoring, baselines) | 4-5 hours + ongoing |
-| LOW | 3 (OG images, terms page, meta keywords) | 3-5 hours |
+| ~~HIGH~~ | ~~2 (CWV audit, guide consolidation)~~ | **COMPLETED in Phase 7** |
+| MEDIUM | 2 (backlinks, monitoring + baselines) | 3-4 hours + ongoing |
+| LOW | 1 (OG images) | 2-3 hours |
 
-**Recommended order**: GSC investigation -> baseline metrics -> deploy Phase 6 -> manual indexing (daily) -> CWV audit -> guide consolidation decision -> start backlink building -> ongoing monitoring
+**Completed in Phase 7**: CWV audit, guide cannibalization fix, seasonal overlap fix, meta keywords removal, terms of service page
+
+**Recommended order**: GSC investigation -> baseline metrics -> manual indexing (daily) -> start backlink building -> ongoing monitoring
