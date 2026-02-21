@@ -1573,19 +1573,23 @@ a:hover {
 /* =============== SKIP LINK =============== */
 .skip-link {
     position: absolute;
-    top: -40px;
+    top: -100px;
     left: 0;
     background: var(--secondary-color);
     color: #fff;
     padding: 8px 16px;
-    z-index: 100;
+    z-index: 9999;
     transition: top 0.3s;
     border-radius: 0 0 var(--border-radius-sm) 0;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .skip-link:focus {
     top: 0;
     color: #fff;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* =============== SCROLL REVEAL ANIMATIONS =============== */
