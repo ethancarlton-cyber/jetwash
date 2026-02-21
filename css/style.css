@@ -175,12 +175,6 @@ a:hover {
     gap: var(--spacing-sm);
 }
 
-.logo h2 {
-    margin: 0;
-    font-size: 1.25rem;
-    color: var(--primary-color);
-}
-
 .logo a {
     color: var(--primary-color);
     text-decoration: none;
@@ -188,9 +182,27 @@ a:hover {
     align-items: center;
 }
 
-.logo img {
-    height: 42px;
-    width: auto;
+.logo-text {
+    font-family: 'Raleway', var(--font-primary);
+    font-weight: 800;
+    font-size: clamp(1.25rem, 3vw, 1.625rem);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.logo-text .logo-part1 {
+    color: var(--primary-color);
+}
+
+.logo-text .logo-sep {
+    color: var(--accent-color);
+    margin: 0 4px;
+}
+
+.logo-text .logo-part2 {
+    color: var(--secondary-color);
 }
 
 .nav {
