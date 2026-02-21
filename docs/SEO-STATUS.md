@@ -1,8 +1,8 @@
 # JetWash SEO Status & Next Steps
 
-**Last Updated:** 2026-01-19
+**Last Updated:** 2026-02-21
 
-## Current Status: Phase 1-4 Complete + Deep SEO Update
+## Current Status: Phase 6 Complete — Full Technical SEO Overhaul
 
 ### Google Search Console Stats (Before - 28 days ending Jan 18, 2026)
 - Impressions: 205
@@ -51,9 +51,30 @@
 - [x] Created link building strategy document (LINK-BUILDING-STRATEGY.md)
 - [x] Compressed all images (69% reduction: 27.4MB → 8.5MB)
 
+### Phase 6: Technical SEO Fixes + Content Expansion (2026-02-21)
+
+6-agent specialist team executed 8 parallel task phases:
+
+- [x] **Canonical URLs**: Added `<link rel="canonical">` to all ~50 HTML pages (was missing on most subpages)
+- [x] **Cleanup**: Deleted orphan tips.html, updated robots.txt with Disallow for dev directories (images-backup, imagesstock, scripts, test-results, playwright-report), created .vercelignore
+- [x] **Image compression**: All 28 oversized images (>200KB) compressed
+- [x] **OG tags**: Open Graph meta tags added to all subpages (og:title, og:description, og:url, og:image, og:type, og:site_name)
+- [x] **Hub navigation**: Postcode pages (RH2, RH4, RH6, RH8, SM7) added to areas.html with "Browse by Postcode" section
+- [x] **H1 standardization**: Postcode pages standardized to "Jetwashing Services [Postcode] ([Town])" format
+- [x] **HowTo schema**: Added to 5 step-by-step guide pages (concrete, tarmac, algae, weed, resin cleaning)
+- [x] **Date metadata**: datePublished + dateModified added to all guide Article schemas
+- [x] **Content freshness**: All 2025 date references updated to 2026 in titles, body text, pricing
+- [x] **Thin page expansion**: Betchworth + Godstone area pages expanded from ~300 lines to full 1000+ word pages with FAQPage schema, local context, pricing, cross-links
+- [x] **Keyword differentiation**: Town vs postcode pages cross-linked with distinct keyword targeting for 5 overlapping pairs (reigate/RH2, horley/RH6, dorking/RH4, banstead/SM7, oxted/RH8)
+
+**Files changed**: 50+ HTML files + new .vercelignore
+**Files deleted**: tips.html
+
 ---
 
 ## Next Steps (Manual Tasks)
+
+**See detailed prioritized list: [SEO-REMAINING-TODOS.md](./SEO-REMAINING-TODOS.md)**
 
 ### Immediate (This Week)
 
@@ -124,18 +145,20 @@ Start with these free high-authority directories:
 - **Tracking file:** js/analytics.js
 
 ### Site Structure
-- **Total pages:** 36
+- **Total pages:** 50
 - **Service pages:** 6
-- **Location pages:** 15 (was 10, added 5 new)
-- **Guide pages:** 12
-- **Other pages:** 3 (pricing, faq, quote)
+- **Location pages:** 15 towns + 5 postcodes = 20
+- **Guide pages:** 16
+- **Pillar page:** 1 (pressure-washing-guide.html)
+- **Other pages:** 7 (homepage, pricing, faq, quote, guides hub, privacy, areas hub)
 
 ### Schema Markup Implemented
-- LocalBusiness with GeoCoordinates (homepage)
-- FAQPage (service pages)
+- HomeAndConstructionBusiness with GeoCoordinates (homepage + 15 area pages)
+- FAQPage (service pages + area pages)
 - Service (service & location pages)
-- Article (guide pages)
-- BreadcrumbList (all location pages)
+- Article with datePublished/dateModified (all 16 guide pages)
+- HowTo (5 step-by-step guide pages)
+- BreadcrumbList (all location + guide pages)
 
 ---
 

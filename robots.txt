@@ -50,3 +50,6 @@ Disallow: /test-results/
 Disallow: /playwright-report/
 Disallow: /google98e7646257fb1f88.html
 Disallow: /scripts/
+Disallow: /images-backup/
+Disallow: /imagesstock/
+Disallow: /imagesstock-resized/

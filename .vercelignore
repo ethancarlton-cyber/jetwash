@@ -1,0 +1,16 @@
+node_modules/
+test-results/
+playwright-report/
+images-backup/
+imagesstock/
+imagesstock-resized/
+scripts/
+*.py
+*.md
+form-debug.png
+generate-*.js
+compress_*.py
+update_image_refs.py
+package.json
+package-lock.json
+playwright.config.js
