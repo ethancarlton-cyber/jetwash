@@ -8,12 +8,48 @@
 - Render cleaning (soft washing)
 - Decking cleaning
 - Commercial jetwashing
+- Roof cleaning
+- Gutter cleaning
+- Soft washing
+
+## Tools
+- Cost Calculator: /calculator — Free instant pressure washing cost estimator. Calculates prices based on surface type, area size, condition, and optional extras like sealing and moss removal. Based on UK 2026 market rates.
 
 ## Service Areas
-Reigate, Redhill, Horley, Crawley, Epsom, Banstead, Caterham, Oxted, Leatherhead, Dorking, Merstham, Earlswood, Salfords, Nutfield, Chipstead
+Reigate, Redhill, Horley, Crawley, Epsom, Banstead, Caterham, Oxted, Leatherhead, Dorking, Merstham, Earlswood, Salfords, Nutfield, Chipstead, Godstone, Betchworth
+
+## Coverage
+20-mile radius from RH1 (Redhill, Surrey). All RH postcodes (RH1-RH11), SM7, CR3, KT17-KT24.
 
 ## Guides
-16 detailed guides covering costs, methods, and maintenance for UK homeowners
+16 detailed guides covering costs, methods, and maintenance for UK homeowners:
+- Driveway cleaning cost UK 2026
+- Patio cleaning cost UK 2026
+- Block paving cleaning cost UK 2026
+- Driveway cleaning & sealing cost
+- DIY vs professional pressure washing
+- Block paving sealing guide
+- Stain removal guide for driveways & patios
+- Oil stain removal from driveways
+- Moss removal from driveways
+- Algae removal from driveways & patios
+- Weed removal from block paving
+- Pressure washing vs jet washing
+- Is pressure washing worth it?
+- Can pressure washing damage a driveway?
+- Pressure washing seasonal guide
+- Surface comparison for pressure washing
+
+## Key Pages
+- Homepage: / — Overview of services, areas, and guides
+- Cost Calculator: /calculator — Instant pressure washing cost estimator
+- Pricing Guide: /pricing — Transparent pricing for all services
+- Free Quote: /quote — Request a free, no-obligation quote
+- FAQ: /faq — Common questions about pressure washing
+- Guides Hub: /guides — All cleaning guides and tips
+- Pillar Guide: /pressure-washing-guide — Complete guide to pressure washing in Surrey
 
 ## Contact
-Free quotes via web form at /quote.html
+Free quotes via web form at /quote
+2-hour callback guarantee (Mon-Sat 8am-6pm)
+Available 7 days a week

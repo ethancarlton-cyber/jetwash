@@ -37,6 +37,12 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
 # Traditional search engines
 User-agent: Googlebot
 Allow: /

@@ -294,6 +294,7 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 5. ✅ Homepage indexed on Google
 6. ✅ **Google tracking impressions** (31 Dec 2025) - Pages appearing in search results!
 7. ✅ **SEO & CRO Overhaul deployed** (08 Feb 2026) - Major update
+8. ✅ **Visual redesign deployed** (21 Feb 2026) - Modern navy theme, text logo, Inter + Raleway fonts
 
 ### SEO & CRO Overhaul (08 Feb 2026)
 
@@ -420,10 +421,38 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 
 **Committed & Deployed:** 5 commits, 45+ files changed, pushed to origin/main
 
+### Visual Redesign (21 Feb 2026)
+
+**Complete site-wide visual overhaul across all 67 pages.**
+
+**CSS Redesign:**
+- New color palette: midnight navy (`#1D3557`) primary, vibrant blue (`#2196F3`) accent, green (`#28A745`) trust signals
+- Typography: Inter font with fluid `clamp()` sizing, heavier weights (800-900) for headings
+- Hero section: dark navy gradient with radial glow effects, glassmorphism trust badges
+- Cards: rounded corners (12-16px Bento style), subtle shadow system, hover lift animations
+- Header: frosted glass effect with `backdrop-filter` blur
+- Buttons: pill-shaped with gradient backgrounds, smooth hover transitions
+- Spacing: increased section padding (5-7rem) for more breathing room
+- Scroll animations: `@keyframes fadeInUp` on cards with staggered delays
+- Mobile: improved sticky CTA bar, cleaner hamburger menu
+
+**Text Logo (Option 6):**
+- Replaced hero-banner.webp image logo with CSS text logo
+- Font: Raleway 800, all caps
+- Style: `SAMEDAY | JETWASH` — navy first word, green pipe separator, blue second word
+- Raleway font added to Google Fonts link on all 67 pages
+
+**Fonts loaded (all pages):**
+- Inter (400-900) — body and headings
+- Raleway (800) — logo only
+
+**Committed & Deployed:** 3 commits, 68 files changed, pushed to origin/main
+
 ### Current Site Stats
 - **Total pages**: 50 (homepage + 6 services + 15 areas + 16 guides + pillar page + 6 info pages)
 - **Schema coverage**: FAQPage on 46 pages, Article on 16 guides, HomeAndConstructionBusiness on 15 areas
 - **Internal links**: 200+ contextual links across content pages
+- **Design**: Modern navy theme, Inter + Raleway fonts, glassmorphism, CSS animations
 
 ### Next Steps:
 1. **Compress images** - 13 images over 200KB (convert PNGs to WebP for 50-80% size reduction)
@@ -561,7 +590,7 @@ Requires session restart. Tested 2x - WebSearch works for in-process teammates w
 ---
 
 **Created**: 2025-12-15
-**Last Updated**: 2026-02-08
+**Last Updated**: 2026-02-21
 **Target Area**: RH1 Redhill & Reigate (20-mile radius)
 **Budget**: £0 until ROI
 **Launch Platform**: Vercel (FREE)
