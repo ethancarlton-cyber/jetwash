@@ -448,20 +448,55 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 
 **Committed & Deployed:** 3 commits, 68 files changed, pushed to origin/main
 
+### SEO Phase 5 - Cost Calculator & Backlink Strategy (22 Feb 2026)
+
+**New Page: Interactive Cost Calculator (`calculator.html`)**
+- Surface type selector (driveway, patio, block paving, decking, render, commercial)
+- Area size input with preset buttons (20m², 40m², 60m², 80m²)
+- Condition multiplier (light 1.0x, moderate 1.2x, heavy 1.5x)
+- Optional extras (sealing, moss treatment, weed removal)
+- £80 minimum charge, JS max area cap at 1000m²
+- Preset buttons auto-trigger calculation
+- Schema: FAQPage + HowTo + BreadcrumbList
+- Pricing aligned with pricing.html rates (£3-15/m² depending on surface)
+
+**Internal Linking to Calculator:**
+- index.html: "Instant Cost Estimate" hero CTA button + footer link
+- pricing.html: inline calculator link + footer link
+- 4 guide pages: "Try Cost Calculator" buttons (driveway-cleaning-cost-uk, patio-cleaning-cost-uk, block-paving-cleaning-cost-uk, driveway-cleaning-sealing-cost)
+
+**Outreach Materials Created (`seo/outreach/`):**
+- `medium-article-1-cost-guide.md` — 1,400-word cost guide for Medium (DA 94)
+- `medium-article-2-signs-guide.md` — 1,200-word signs guide for Medium
+- `linkedin-article-roi.md` — 900-word ROI article for LinkedIn (DA 98)
+- `guest-post-drummond.md` — 1,200-word guest post for R Drummond & Son (DA 37, dofollow) + pitch email
+- `directory-listings.md` — Short/medium/long descriptions + service list + areas
+- `DIRECTORY-SUBMISSION-CHECKLIST.md` — 15 directories with step-by-step instructions, priority order
+- `haro-templates.md` — 3 journalist response templates (using Qwoted, SourceBottle, Featured.com)
+- `trade-directory-profiles.md` — Checkatrade + MyBuilder profiles (SKIPPED — trade vetting required)
+
+**Other Updates:**
+- `robots.txt` — Added CCBot and Applebot to AI crawler allow list
+- `llms.txt` — Complete rewrite with tools, coverage, guides, key pages
+- `sitemap.xml` — Added calculator page (priority 0.9)
+- Fixed broken `/areas/bletchingley` link in godstone.html (page doesn't exist)
+
+**Committed & Deployed:** 20 files changed, +1,861 lines, pushed to origin/main
+
 ### Current Site Stats
-- **Total pages**: 50 (homepage + 6 services + 15 areas + 16 guides + pillar page + 6 info pages)
-- **Schema coverage**: FAQPage on 46 pages, Article on 16 guides, HomeAndConstructionBusiness on 15 areas
+- **Total pages**: 51 (homepage + 9 services + 15 areas + 16 guides + pillar page + calculator + 6 info pages)
+- **Schema coverage**: FAQPage on 47 pages, Article on 16 guides, HomeAndConstructionBusiness on 15 areas, HowTo on 4 pages
 - **Internal links**: 200+ contextual links across content pages
 - **Design**: Modern navy theme, Inter + Raleway fonts, glassmorphism, CSS animations
+- **Outreach**: 8 ready-to-publish articles/templates in `seo/outreach/`
 
 ### Next Steps:
-1. **Compress images** - 13 images over 200KB (convert PNGs to WebP for 50-80% size reduction)
-2. **Register with Bing Webmaster Tools** - submit sitemap, verify ownership
-3. **Monitor GSC** for indexing progress (37 pages were "discovered not indexed")
-4. **Run IndexNow** after any future content updates: `powershell -ExecutionPolicy Bypass -File scripts/submit-indexnow.ps1`
-5. **Add table styling to CSS** - tables may need responsive styling for mobile
-6. Generate first leads (FREE traffic)
-7. Sell first leads (REVENUE!)
+1. **Publish outreach content** — Medium articles, LinkedIn article, guest post submission, directory listings
+2. **Monitor GSC** for indexing progress and calculator page pickup
+3. **Run IndexNow** after any future content updates: `powershell -ExecutionPolicy Bypass -File scripts/submit-indexnow.ps1`
+4. **Register with Bing Webmaster Tools** - submit sitemap, verify ownership
+5. Generate first leads (FREE traffic)
+6. Sell first leads (REVENUE!)
 
 ---
 
