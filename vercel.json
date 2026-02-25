@@ -1,28 +1,15 @@
 {
-  "rewrites": [
-    {
-      "source": "/areas/:path",
-      "destination": "/areas/:path.html"
-    },
-    {
-      "source": "/guides/:path",
-      "destination": "/guides/:path.html"
-    },
-    {
-      "source": "/:path",
-      "destination": "/:path.html"
-    }
-  ],
+  "cleanUrls": true,
   "redirects": [
     {
       "source": "/tips",
       "destination": "/guides",
-      "statusCode": 308
+      "permanent": true
     },
     {
       "source": "/tips.html",
       "destination": "/guides",
-      "statusCode": 308
+      "permanent": true
     },
     {
       "source": "/index.html",
@@ -45,16 +32,6 @@
       "permanent": true
     },
     {
-      "source": "/areas/:path.html",
-      "destination": "/areas/:path",
-      "permanent": true
-    },
-    {
-      "source": "/guides/:path.html",
-      "destination": "/guides/:path",
-      "permanent": true
-    },
-    {
       "source": "/areas/:path/",
       "destination": "/areas/:path",
       "permanent": true
@@ -62,11 +39,6 @@
     {
       "source": "/guides/:path/",
       "destination": "/guides/:path",
-      "permanent": true
-    },
-    {
-      "source": "/:path.html",
-      "destination": "/:path",
       "permanent": true
     },
     {
