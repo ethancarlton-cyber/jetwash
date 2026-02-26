@@ -22,12 +22,27 @@
       "permanent": true
     },
     {
-      "source": "/guides/",
+      "source": "/guides/index.html",
       "destination": "/guides",
       "permanent": true
     },
     {
-      "source": "/guides/index.html",
+      "source": "/guides/:path.html",
+      "destination": "/guides/:path",
+      "permanent": true
+    },
+    {
+      "source": "/areas/:path.html",
+      "destination": "/areas/:path",
+      "permanent": true
+    },
+    {
+      "source": "/:path.html",
+      "destination": "/:path",
+      "permanent": true
+    },
+    {
+      "source": "/guides/",
       "destination": "/guides",
       "permanent": true
     },
