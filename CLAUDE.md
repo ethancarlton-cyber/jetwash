@@ -490,11 +490,37 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 - **Design**: Modern navy theme, Inter + Raleway fonts, glassmorphism, CSS animations
 - **Outreach**: 8 ready-to-publish articles/templates in `seo/outreach/`
 
+### Autonomous SEO System (Active)
+
+**Invoke**: `/seo` — runs the autonomous SEO loop (one task per 12-minute cycle)
+
+| Command | Action |
+|---------|--------|
+| `/seo` | Execute next priority task (full cycle: pick → do → validate → discover → report) |
+| `/seo audit` | Full technical SEO audit across all pages |
+| `/seo strategy` | Quarterly strategy review and goal setting |
+| `/seo discover` | Discovery-only scan (find new tasks, don't execute) |
+| `/seo status` | Show queue status and recent run history |
+| `/seo dry-run` | Preview next task without modifying files |
+
+**Tracker**: `docs/seo/tracker.json` — single source of truth for all SEO tasks
+**Skill**: `.claude/skills/seo/SKILL.md` — full skill system with workflows and references
+
+**How it works**:
+1. Reads tracker to find highest-priority pending automated task
+2. Executes the task within strict scope boundaries (HTML content only, never JS/config)
+3. Validates changes (schema, clean URLs, meta lengths)
+4. Discovers up to 5 new tasks by scanning modified files + neighbors
+5. Re-evaluates priorities and records learnings
+6. Reports structured summary
+
+**Loop mode**: Use `/loop 12m /seo` to run continuously every 12 minutes.
+
 ### Next Steps:
-1. **Publish outreach content** — Medium articles, LinkedIn article, guest post submission, directory listings
-2. **Monitor GSC** for indexing progress and calculator page pickup
-3. **Run IndexNow** after any future content updates: `powershell -ExecutionPolicy Bypass -File scripts/submit-indexnow.ps1`
-4. **Register with Bing Webmaster Tools** - submit sitemap, verify ownership
+1. **Run `/seo`** to start the autonomous loop (first run does baseline audit)
+2. **Publish outreach content** — Medium articles, LinkedIn article, guest post (manual tasks in tracker)
+3. **Check GSC** — manual tasks in tracker for indexing requests and baseline metrics
+4. **Register with Bing Webmaster Tools** - manual task in tracker
 5. Generate first leads (FREE traffic)
 6. Sell first leads (REVENUE!)
 
@@ -625,7 +651,7 @@ Requires session restart. Tested 2x - WebSearch works for in-process teammates w
 ---
 
 **Created**: 2025-12-15
-**Last Updated**: 2026-02-21
+**Last Updated**: 2026-03-10
 **Target Area**: RH1 Redhill & Reigate (20-mile radius)
 **Budget**: £0 until ROI
 **Launch Platform**: Vercel (FREE)
