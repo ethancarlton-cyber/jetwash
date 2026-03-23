@@ -3,9 +3,9 @@
     "version": 1,
     "lastUpdated": "2026-03-23",
     "lastRunDate": "2026-03-23",
-    "lastRunId": "run-022",
-    "lastRunSummary": "SEO-033 COMPLETE: Phone number removed from all 68 pages. Sticky CTA 'Call Now' → 'Get Quote' linking to /quote. Anonymous model constraint now enforced sitewide. 3 automated tasks remaining (SEO-034 trust badges, SEO-035 bridge CTAs, SEO-036 guarantee copy).",
-    "totalRuns": 22,
+    "lastRunId": "run-023",
+    "lastRunSummary": "SEO-034 COMPLETE: Trust badges added to all 22 area page heroes. 2 automated tasks remaining (SEO-035 bridge CTAs, SEO-036 guarantee copy).",
+    "totalRuns": 23,
     "nextTaskId": 37,
     "fullScanDate": "2026-03-10",
     "nextFullScanDue": "2026-06-10"
@@ -676,14 +676,14 @@
       "priority": "P2",
       "iceScore": 448,
       "ice": { "impact": 8, "confidence": 7, "ease": 8 },
-      "status": "pending",
+      "status": "completed",
       "type": "automated",
       "details": "Zero area pages have trust badges in hero section. Add trust block (Free Quotes, Same Day Response, No Obligation, Satisfaction Guaranteed) below H1, above first H2. Use trust block pattern from content-patterns.md. Batch in groups of 3.",
       "targetFiles": ["areas/*.html — 22 pages"],
       "createdDate": "2026-03-23",
       "source": "conversion-discovery-run-021",
-      "completedDate": null,
-      "completedNotes": null,
+      "completedDate": "2026-03-23",
+      "completedNotes": "Trust badges added to all 22 area page hero sections. Using existing .trust-badges and .badge CSS classes matching homepage pattern. 4 badges per page: 2-Hour Callback Guarantee (highlighted), Free Quotes, No Obligation, Satisfaction Guaranteed. Validated: 22/22 pages confirmed.",
       "attemptCount": 0,
       "maxAttempts": 3,
       "staleAfterDays": 30
@@ -1009,11 +1009,11 @@
     }
   ],
   "counters": {
-    "pending": 8,
-    "pendingAutomated": 3,
+    "pending": 7,
+    "pendingAutomated": 2,
     "pendingManual": 5,
     "blocked": 0,
-    "completed": 28,
+    "completed": 29,
     "expired": 0
   }
 }
