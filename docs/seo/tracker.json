@@ -3,9 +3,9 @@
     "version": 1,
     "lastUpdated": "2026-03-23",
     "lastRunDate": "2026-03-23",
-    "lastRunId": "run-024",
-    "lastRunSummary": "SEO-035 COMPLETE: Bridge CTAs added to all 27 guide pages. Also discovered SEO-037 (schema phone number on area pages). 2 automated tasks remaining (SEO-036 guarantee copy, SEO-037 schema phone removal).",
-    "totalRuns": 24,
+    "lastRunId": "run-025",
+    "lastRunSummary": "SEO-037 COMPLETE: Phone number removed from JSON-LD schema on all 32 pages. 1 automated task remaining (SEO-036 guarantee copy).",
+    "totalRuns": 25,
     "nextTaskId": 38,
     "fullScanDate": "2026-03-10",
     "nextFullScanDue": "2026-06-10"
@@ -728,19 +728,19 @@
     }
     ,{
       "id": "SEO-037",
-      "task": "Remove phone number from JSON-LD schema on 22 area pages",
+      "task": "Remove phone number from JSON-LD schema on all pages with structured data",
       "category": "conversion",
       "priority": "P1",
       "iceScore": 720,
       "ice": { "impact": 8, "confidence": 9, "ease": 10 },
-      "status": "pending",
+      "status": "completed",
       "type": "automated",
-      "details": "Area page schemas still have telephone: +441737652515 in HomeAndConstructionBusiness provider block. Violates anonymous model. Remove the telephone property from JSON-LD on all 22 area pages. Simple find-and-delete in batches of 3.",
-      "targetFiles": ["areas/*.html — 22 pages"],
+      "details": "All pages with JSON-LD schema had telephone: +441737652515 in provider block. Violates anonymous model. Expanded scope from 22 area pages to 32 pages (also includes 9 service pages + index).",
+      "targetFiles": ["32 pages — 22 areas + 9 service + index"],
       "createdDate": "2026-03-23",
       "source": "discovery-run-023",
-      "completedDate": null,
-      "completedNotes": null,
+      "completedDate": "2026-03-23",
+      "completedNotes": "Telephone property removed from JSON-LD schema on all 32 pages. Expanded from original 22 area pages to include 9 service pages + index.html which also had the phone in schema. Validated: zero 'telephone' matches across entire site.",
       "attemptCount": 0,
       "maxAttempts": 3,
       "staleAfterDays": 7
@@ -1028,11 +1028,11 @@
     }
   ],
   "counters": {
-    "pending": 7,
-    "pendingAutomated": 2,
+    "pending": 6,
+    "pendingAutomated": 1,
     "pendingManual": 5,
     "blocked": 0,
-    "completed": 30,
+    "completed": 31,
     "expired": 0
   }
 }
