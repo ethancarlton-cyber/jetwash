@@ -3,9 +3,9 @@
     "version": 1,
     "lastUpdated": "2026-03-23",
     "lastRunDate": "2026-03-23",
-    "lastRunId": "run-025",
-    "lastRunSummary": "SEO-037 COMPLETE: Phone number removed from JSON-LD schema on all 32 pages. 1 automated task remaining (SEO-036 guarantee copy).",
-    "totalRuns": 25,
+    "lastRunId": "run-026",
+    "lastRunSummary": "SEO-036 COMPLETE: Guarantee copy added to 9 weak area pages. ALL AUTOMATED CONVERSION TASKS COMPLETE (SEO-033 to SEO-037). Phase 1 of conversion strategy done.",
+    "totalRuns": 26,
     "nextTaskId": 38,
     "fullScanDate": "2026-03-10",
     "nextFullScanDue": "2026-06-10"
@@ -714,14 +714,14 @@
       "priority": "P3",
       "iceScore": 210,
       "ice": { "impact": 6, "confidence": 5, "ease": 7 },
-      "status": "pending",
+      "status": "completed",
       "type": "automated",
       "details": "9 area pages have only 1 mention of guarantee (likely boilerplate footer). Add prominent guarantee copy near CTA blocks. Pages: banstead, dorking, horley, reigate, rh2, rh4, rh6, rh8, sm7. Use guarantee copy pattern from content-patterns.md. Batch in groups of 3.",
       "targetFiles": ["areas/banstead.html", "areas/dorking.html", "areas/horley.html", "areas/reigate.html", "areas/rh2.html", "areas/rh4.html", "areas/rh6.html", "areas/rh8.html", "areas/sm7.html"],
       "createdDate": "2026-03-23",
       "source": "conversion-discovery-run-021",
-      "completedDate": null,
-      "completedNotes": null,
+      "completedDate": "2026-03-23",
+      "completedNotes": "Guarantee copy added to all 9 area pages after the main Get Free Quote button. '100% satisfaction guaranteed — if you're not happy, we'll re-clean for free.' Validated: 9/9 pages confirmed with guarantee-text class.",
       "attemptCount": 0,
       "maxAttempts": 3,
       "staleAfterDays": 30
@@ -1028,11 +1028,11 @@
     }
   ],
   "counters": {
-    "pending": 6,
-    "pendingAutomated": 1,
+    "pending": 5,
+    "pendingAutomated": 0,
     "pendingManual": 5,
     "blocked": 0,
-    "completed": 31,
+    "completed": 32,
     "expired": 0
   }
 }
