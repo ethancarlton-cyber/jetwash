@@ -36,8 +36,8 @@
     --spacing-md: 1.5rem;
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
-    --spacing-xxl: 5rem;
-    --spacing-3xl: 7rem;
+    --spacing-xxl: 3.5rem;
+    --spacing-3xl: 4.5rem;
 
     /* Layout */
     --max-width: 1200px;
@@ -676,6 +676,11 @@ a:hover {
 /* =============== SERVICE CONTENT PAGES =============== */
 .service-content {
     padding: var(--spacing-3xl) 0;
+}
+
+.service-content h2 {
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
 }
 
 .content-grid {
