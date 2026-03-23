@@ -1548,7 +1548,8 @@ a:hover {
 }
 
 /* =============== RESPONSIVE TABLES =============== */
-.table-wrapper {
+.table-wrapper,
+.table-responsive {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     margin: var(--spacing-md) 0;
