@@ -1122,7 +1122,7 @@ a:hover {
     }
 }
 
-.footer-col h4 {
+.footer-col h4, .footer-heading {
     color: var(--white);
     margin-bottom: var(--spacing-md);
     font-weight: 700;
@@ -1336,7 +1336,7 @@ a:hover {
     text-align: center;
 }
 
-.showcase-item-caption h4 {
+.showcase-item-caption h4, .showcase-item-caption h3 {
     color: var(--primary-color);
     margin-bottom: var(--spacing-xs);
     font-weight: 700;

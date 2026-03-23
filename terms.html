@@ -33,6 +33,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Raleway:wght@800;900&family=Raleway:wght@800&display=swap" rel="stylesheet">
     <link rel="preload" href="/css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://samedayjetwash.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Terms of Service",
+          "item": "https://samedayjetwash.com/terms"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to content</a>
@@ -134,7 +156,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Services</h4>
+                    <p class="footer-heading">Services</p>
                     <ul>
                         <li><a href="/driveway-cleaning">Driveway Cleaning</a></li>
                         <li><a href="/patio-cleaning">Patio Cleaning</a></li>
@@ -149,7 +171,7 @@
                 </div>
 
                 <div class="footer-col">
-                    <h4>Key Areas</h4>
+                    <p class="footer-heading">Key Areas</p>
                     <ul>
                         <li><a href="/areas/redhill">Redhill</a></li>
                         <li><a href="/areas/reigate">Reigate</a></li>
@@ -161,7 +183,7 @@
                 </div>
 
                 <div class="footer-col">
-                    <h4>Information</h4>
+                    <p class="footer-heading">Information</p>
                     <ul>
                         <li><a href="/guides">Guides & Tips</a></li>
                         <li><a href="/pricing">Pricing Guide</a></li>
@@ -173,7 +195,7 @@
                 </div>
 
                 <div class="footer-col">
-                    <h4>Contact</h4>
+                    <p class="footer-heading">Contact</p>
                     <p>Serving Redhill, Reigate & Surrey</p>
                     <p>Coverage: 20-mile radius from RH1</p>
                     <p><a href="/quote">Get a Free Quote</a></p>
@@ -188,7 +210,7 @@
 
     <div class="sticky-cta-bar">
         <a href="/quote" class="sticky-cta-btn">Get Free Quote</a>
-        <a href="tel:01737652515" class="sticky-cta-phone">Call Now</a>
+        <a href="/quote" class="sticky-cta-phone">Get Quote</a>
     </div>
 
     <script src="js/nav.js" defer></script>
