@@ -1,12 +1,12 @@
 {
   "meta": {
     "version": 1,
-    "lastUpdated": "2026-03-23",
-    "lastRunDate": "2026-03-23",
-    "lastRunId": "run-026",
-    "lastRunSummary": "SEO-036 COMPLETE: Guarantee copy added to 9 weak area pages. ALL AUTOMATED CONVERSION TASKS COMPLETE (SEO-033 to SEO-037). Phase 1 of conversion strategy done.",
-    "totalRuns": 26,
-    "nextTaskId": 38,
+    "lastUpdated": "2026-03-24",
+    "lastRunDate": "2026-03-24",
+    "lastRunId": "run-027",
+    "lastRunSummary": "Phase 2 execution: Fixed 10 GSC redirect errors (301s in vercel.json), added CSS for bridge-cta + guarantee-text, created new jet-washing-prices-uk transactional guide page (1,000-2,000/mo keyword). FE verified all page types.",
+    "totalRuns": 27,
+    "nextTaskId": 39,
     "fullScanDate": "2026-03-10",
     "nextFullScanDue": "2026-06-10"
   },
