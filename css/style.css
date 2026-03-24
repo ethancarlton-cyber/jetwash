@@ -1461,6 +1461,47 @@ a:hover {
     box-shadow: 0 6px 24px rgba(33, 150, 243, 0.4);
 }
 
+/* =============== BRIDGE CTA =============== */
+.bridge-cta {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-xl);
+    margin: var(--spacing-xl) 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.bridge-cta h3 {
+    color: var(--white);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
+}
+
+.bridge-cta p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--spacing-md);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bridge-cta .btn {
+    background: var(--accent-color);
+    color: var(--white);
+}
+
+/* =============== GUARANTEE TEXT =============== */
+.guarantee-text {
+    font-size: 0.9375rem;
+    color: var(--accent-color);
+    margin-top: var(--spacing-sm);
+    padding: var(--spacing-sm) 0;
+}
+
+.guarantee-text strong {
+    color: var(--primary-color);
+}
+
 /* =============== STICKY MOBILE CTA BAR =============== */
 .sticky-cta-bar {
     display: none;
