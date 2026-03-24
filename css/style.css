@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
     line-height: 1.15;
     margin-bottom: var(--spacing-sm);
-    color: var(--dark-gray);
+    color: var(--primary-color);
     letter-spacing: -0.02em;
 }
 
@@ -919,6 +919,20 @@ a:hover {
     .faq-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.faq-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.faq-content h2 {
+    margin-top: var(--spacing-xl);
+}
+
+.faq-content h2:first-child {
+    margin-top: 0;
 }
 
 .faq-item {
