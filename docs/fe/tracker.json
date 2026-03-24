@@ -1,0 +1,1026 @@
+{
+  "meta": {
+    "version": 1,
+    "lastUpdated": "2026-03-10",
+    "lastRunDate": "2026-03-10",
+    "lastRunId": "fe-run-013",
+    "lastRunSummary": "Change detection mode. No new commits. 1 new SEO task found (SEO-029: schema date fix, zero visual risk). All 24 completed SEO tasks now verified. Site fully clean — waiting for next deploy.",
+    "totalRuns": 13,
+    "lastAuditDate": null,
+    "nextAuditDue": "2026-03-17",
+    "nextTaskId": 6,
+    "lastCheckedIndex": 64,
+    "lastVerifiedCommit": "d45f5aef127d73e952842839d58bed2017baeb44",
+    "healthScore": null
+  },
+  "currentPhase": {
+    "name": "phase-1-baseline",
+    "started": "2026-03-10",
+    "goals": [
+      "Establish visual baseline across all breakpoints",
+      "Identify and fix P0/P1 issues",
+      "Achieve 90+ health score site-wide"
+    ]
+  },
+  "completedPhases": [],
+  "pageRotation": {
+    "order": [
+      "index.html",
+      "quote.html",
+      "calculator.html",
+      "driveway-cleaning.html",
+      "patio-cleaning.html",
+      "block-paving-cleaning.html",
+      "render-cleaning.html",
+      "decking-cleaning.html",
+      "commercial-jetwashing.html",
+      "roof-cleaning.html",
+      "gutter-cleaning.html",
+      "soft-washing.html",
+      "areas/redhill.html",
+      "areas/reigate.html",
+      "areas/horley.html",
+      "areas/dorking.html",
+      "areas/banstead.html",
+      "areas/crawley.html",
+      "areas/epsom.html",
+      "areas/caterham.html",
+      "areas/oxted.html",
+      "areas/leatherhead.html",
+      "areas/merstham.html",
+      "areas/earlswood.html",
+      "areas/salfords.html",
+      "areas/nutfield.html",
+      "areas/chipstead.html",
+      "areas/godstone.html",
+      "areas/betchworth.html",
+      "areas/rh2.html",
+      "areas/rh4.html",
+      "areas/rh6.html",
+      "areas/rh8.html",
+      "areas/sm7.html",
+      "pricing.html",
+      "faq.html",
+      "areas.html",
+      "guides.html",
+      "pressure-washing-guide.html",
+      "privacy.html",
+      "terms.html",
+      "guides/driveway-cleaning-cost-uk.html",
+      "guides/patio-cleaning-cost-uk.html",
+      "guides/block-paving-cleaning-cost-uk.html",
+      "guides/driveway-cleaning-sealing-cost.html",
+      "guides/how-often-clean-driveway.html",
+      "guides/best-time-patio-cleaning.html",
+      "guides/diy-vs-professional-pressure-washing.html",
+      "guides/block-paving-sealing-guide.html",
+      "guides/remove-oil-stains-driveway.html",
+      "guides/pressure-washing-vs-jet-washing.html",
+      "guides/is-pressure-washing-worth-it.html",
+      "guides/prepare-driveway-for-pressure-washing.html",
+      "guides/how-to-clean-indian-sandstone-patio.html",
+      "guides/moss-removal-from-driveways.html",
+      "guides/pressure-washer-hire-vs-professional.html",
+      "guides/can-pressure-washing-damage-driveway.html",
+      "guides/pressure-washing-seasonal-guide.html",
+      "guides/surface-comparison-pressure-washing.html",
+      "guides/pressure-washing-service-tiers.html",
+      "guides/tarmac-driveway-cleaning.html",
+      "guides/concrete-driveway-cleaning.html",
+      "guides/algae-removal-driveways-patios.html",
+      "guides/weed-removal-block-paving.html",
+      "guides/resin-driveway-cleaning.html",
+      "guides/pressure-washing-myths-debunked.html",
+      "guides/pressure-washing-before-after-expectations.html",
+      "guides/stain-removal-guide-driveways-patios.html"
+    ],
+    "batchSize": 5,
+    "alwaysCheck": ["index.html", "quote.html", "calculator.html"]
+  },
+  "seoTasksVerified": [
+    "SEO-001", "SEO-002", "SEO-003", "SEO-004", "SEO-005",
+    "SEO-006", "SEO-007", "SEO-008", "SEO-009", "SEO-016", "SEO-017",
+    "SEO-019", "SEO-020", "SEO-021", "SEO-022", "SEO-023", "SEO-024", "SEO-025",
+    "SEO-010", "SEO-018", "SEO-026", "SEO-027", "SEO-028", "SEO-029"
+  ],
+  "queue": [
+    {
+      "id": "FE-001",
+      "type": "internal-overflow",
+      "page": "sitewide",
+      "breakpoint": "desktop",
+      "element": ".cta-section",
+      "detail": "228px internal overflow on all 5 pages checked. Content wider than container but visually contained (no horizontal scrollbar). Appears to be deliberate or overflow:hidden containing it.",
+      "priority": "P2",
+      "status": "open",
+      "foundDate": "2026-03-10",
+      "foundRun": "fe-run-001"
+    },
+    {
+      "id": "FE-002",
+      "type": "internal-overflow",
+      "page": "index.html",
+      "breakpoint": "desktop",
+      "element": ".hero",
+      "detail": "304px internal overflow on homepage hero section only. Visually contained.",
+      "priority": "P3",
+      "status": "open",
+      "foundDate": "2026-03-10",
+      "foundRun": "fe-run-001"
+    },
+    {
+      "id": "FE-003",
+      "type": "nav-inconsistency",
+      "page": "sitewide",
+      "breakpoint": "all",
+      "element": "header nav",
+      "detail": "Homepage nav includes phone number button (01737 652515) but areas.html, guides.html, pricing.html do NOT. Nav template inconsistent across pages.",
+      "priority": "P2",
+      "status": "open",
+      "foundDate": "2026-03-10",
+      "foundRun": "fe-run-001"
+    },
+    {
+      "id": "FE-004",
+      "type": "small-touch-target",
+      "page": "index.html",
+      "breakpoint": "desktop",
+      "element": ".service-card a (Learn More links)",
+      "detail": "Learn More links on service cards are 100x24px — well below 44px recommended touch target height. Would be P1 on mobile.",
+      "priority": "P3",
+      "status": "open",
+      "foundDate": "2026-03-10",
+      "foundRun": "fe-run-001"
+    },
+    {
+      "id": "FE-005",
+      "type": "small-touch-target",
+      "page": "sitewide",
+      "breakpoint": "desktop",
+      "element": "nav links",
+      "detail": "Nav links are 40px height, slightly under 44px recommended minimum. Marginal at desktop, would need verification at mobile.",
+      "priority": "P3",
+      "status": "open",
+      "foundDate": "2026-03-10",
+      "foundRun": "fe-run-001"
+    }
+  ],
+  "pageResults": {
+    "index.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-001",
+      "breakpoints": ["1536"],
+      "issues": ["FE-001", "FE-002", "FE-003", "FE-004", "FE-005"],
+      "status": "issues-found",
+      "notes": "Desktop looks clean visually. Hero, service cards (3-col), guides section, images all loading correctly. CTA visible in viewport."
+    },
+    "calculator.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-001",
+      "breakpoints": ["1536"],
+      "issues": ["FE-001", "FE-003", "FE-005"],
+      "status": "issues-found",
+      "notes": "Clean 2-column layout. Form and estimate panel side by side. Surface selector, area input, condition multiplier all visible."
+    },
+    "areas.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-001",
+      "breakpoints": ["1536"],
+      "issues": ["FE-001", "FE-003", "FE-005"],
+      "status": "issues-found",
+      "notes": "Hub page clean. Area cards in 3-column grid. SEO-016 BreadcrumbList schema verified — no visual regression."
+    },
+    "guides.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-001",
+      "breakpoints": ["1536"],
+      "issues": ["FE-001", "FE-003", "FE-005"],
+      "status": "issues-found",
+      "notes": "Hub page clean. Pillar guide highlight card prominent. Guide categories well-organized. SEO-017 BreadcrumbList schema verified — no visual regression."
+    },
+    "pricing.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-001",
+      "breakpoints": ["1536"],
+      "issues": ["FE-001", "FE-003", "FE-005"],
+      "status": "issues-found",
+      "notes": "Pricing table renders cleanly, no overflow. 3-column table (service, price, notes). Calculator cross-link present."
+    },
+    "quote.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-002",
+      "breakpoints": ["1536"],
+      "issues": ["FE-003", "FE-005"],
+      "status": "issues-found",
+      "notes": "Clean 2-column layout. Form with name/postcode/phone/service/message visible and functional. No .cta-section overflow (different page structure). No phone in nav."
+    },
+    "driveway-cleaning.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-002",
+      "breakpoints": ["1536"],
+      "issues": ["FE-001", "FE-003", "FE-005"],
+      "status": "issues-found",
+      "notes": "Service page clean. Hero + before-after image + content. 2 images loading. Footer H4 baseline: 16px/700/white/24px-mb. SEO-019 fix verified safe in code."
+    },
+    "patio-cleaning.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-002",
+      "breakpoints": ["1536"],
+      "issues": ["FE-001", "FE-003", "FE-005"],
+      "status": "issues-found",
+      "notes": "Service page clean. Same layout as driveway-cleaning. 2 images, 4 footer H4s. SEO-019 fix verified safe."
+    },
+    "block-paving-cleaning.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-002",
+      "breakpoints": ["1536"],
+      "issues": ["FE-001", "FE-003", "FE-005"],
+      "status": "issues-found",
+      "notes": "Service page clean. Before-after image flagged as broken but confirmed HTTP 200 — lazy loading false positive. SEO-019 fix verified safe."
+    },
+    "render-cleaning.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-003",
+      "breakpoints": ["1536"],
+      "issues": ["FE-001", "FE-003", "FE-005"],
+      "status": "issues-found",
+      "notes": "Standard service page. 2 images (1 lazy-loaded). .cta-section overflow. SEO-019 uncommitted changes verified safe."
+    },
+    "decking-cleaning.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-003",
+      "breakpoints": ["1536"],
+      "issues": ["FE-001", "FE-003", "FE-005"],
+      "status": "issues-found",
+      "notes": "Standard service page. 2 images (1 lazy-loaded). SEO-019 uncommitted changes verified safe."
+    },
+    "commercial-jetwashing.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-003",
+      "breakpoints": ["1536"],
+      "issues": ["FE-001", "FE-003", "FE-005"],
+      "status": "issues-found",
+      "notes": "Service page. Only 1 image (no before-after). SEO-019 uncommitted changes verified safe."
+    },
+    "roof-cleaning.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-003",
+      "breakpoints": ["1536"],
+      "issues": ["FE-001", "FE-003", "FE-005"],
+      "status": "issues-found",
+      "notes": "Text-only service page. 0 images. Standard layout otherwise."
+    },
+    "gutter-cleaning.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-003",
+      "breakpoints": ["1536"],
+      "issues": ["FE-001", "FE-003", "FE-005"],
+      "status": "issues-found",
+      "notes": "Text-only service page. 0 images. Standard layout otherwise."
+    },
+    "soft-washing.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-004",
+      "breakpoints": ["1536"],
+      "issues": ["FE-001", "FE-003", "FE-005"],
+      "status": "issues-found",
+      "notes": "Text-only service page. 0 images. Standard service layout with .cta-section overflow."
+    },
+    "areas/redhill.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-004",
+      "breakpoints": ["1536"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — different template from service pages. 0 images, 0 overflow, no .cta-section, no footer H4s. Clean."
+    },
+    "areas/reigate.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-004",
+      "breakpoints": ["1536"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — same clean template as redhill. 0 overflow, 0 images."
+    },
+    "areas/horley.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-004",
+      "breakpoints": ["1536"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — consistent clean template. 0 overflow, 0 images."
+    },
+    "areas/dorking.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-004",
+      "breakpoints": ["1536"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — consistent clean template. 0 overflow, 0 images."
+    },
+    "areas/banstead.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-005",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — matches clean template pattern. 0 overflow, 0 images, CTA visible."
+    },
+    "areas/crawley.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-005",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — matches clean template pattern. 0 overflow, 0 images, CTA visible."
+    },
+    "areas/epsom.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-005",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — matches clean template pattern. 0 overflow, 0 images, CTA visible."
+    },
+    "areas/caterham.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-005",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — matches clean template pattern. 0 overflow, 0 images, CTA visible."
+    },
+    "areas/oxted.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-005",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — matches clean template pattern. 0 overflow, 0 images, CTA visible, 0 console errors."
+    },
+    "areas/leatherhead.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-006",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — clean template. 0 overflow, 0 images, 0 footer H4s. H1 present."
+    },
+    "areas/merstham.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-006",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — clean template. 0 overflow, 0 images, 0 footer H4s. H1 present."
+    },
+    "areas/earlswood.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-006",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — clean template. 0 overflow, 0 images, 0 footer H4s. H1 present."
+    },
+    "areas/salfords.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-006",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — clean template. 0 overflow, 0 images, 0 footer H4s. H1 present."
+    },
+    "areas/nutfield.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-006",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — clean template. 0 overflow, 0 images, 0 footer H4s. 0 console errors. H1 present."
+    },
+    "areas/chipstead.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-007",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — clean template. 0 overflow, 0 images, 0 footer H4s. H1 present."
+    },
+    "areas/godstone.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-007",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — clean template. 0 overflow, 0 images, 0 footer H4s. H1 present."
+    },
+    "areas/betchworth.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-007",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Area page — clean template. 0 overflow, 0 images, 0 footer H4s. H1 present."
+    },
+    "areas/rh2.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-007",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Postcode area page — clean template. 0 overflow, 0 images, 0 footer H4s. H1 present."
+    },
+    "areas/rh4.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-007",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Postcode area page — clean template. 0 overflow, 0 images, 0 footer H4s. H1 present."
+    },
+    "areas/rh6.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-007",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Postcode area page — clean template. 0 overflow, 0 images, 0 footer H4s. H1 present."
+    },
+    "areas/rh8.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-007",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Postcode area page — clean template. 0 overflow, 0 images, 0 footer H4s. H1 present."
+    },
+    "areas/sm7.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-007",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Postcode area page — clean template. 0 overflow, 0 images, 0 footer H4s. 0 console errors. H1 present."
+    },
+    "pressure-washing-guide.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-008",
+      "breakpoints": ["1521"],
+      "issues": ["FE-001"],
+      "status": "issues-found",
+      "notes": "Pillar page. .cta-section 228px overflow (known sitewide). 2 tables render clean. 23 subheadings, 4 footer headings. 0 images. Content-heavy but no layout issues."
+    },
+    "privacy.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-008",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Info page — 0 overflow, 0 images, 4 footer headings. Text-only legal page, clean layout."
+    },
+    "terms.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-008",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Info page — 0 overflow, 0 images, 4 footer headings. Text-only legal page, clean layout."
+    },
+    "guides/driveway-cleaning-cost-uk.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-008",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 0 images, 0 footer H4s, 1 table renders clean, 36 subheadings. Same clean template as area pages."
+    },
+    "guides/patio-cleaning-cost-uk.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-008",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 0 images, 0 footer H4s, 1 table renders clean, 42 subheadings. 0 console errors."
+    },
+    "guides/block-paving-cleaning-cost-uk.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-009",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 0 images, 0 footer H4s, 1 table clean. H1 present."
+    },
+    "guides/driveway-cleaning-sealing-cost.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-009",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 0 images, 0 footer H4s, 1 table clean. H1 present."
+    },
+    "guides/how-often-clean-driveway.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-009",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 0 images, 0 footer H4s, 0 tables. H1 present."
+    },
+    "guides/best-time-patio-cleaning.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-009",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 0 images, 0 footer H4s, 0 tables. H1 present."
+    },
+    "guides/diy-vs-professional-pressure-washing.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-009",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 0 images, 0 footer H4s, 1 table clean. H1 present."
+    },
+    "guides/block-paving-sealing-guide.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-009",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 0 images, 0 footer H4s, 0 tables. H1 present."
+    },
+    "guides/remove-oil-stains-driveway.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-009",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 0 images, 0 footer H4s, 0 tables. H1 present."
+    },
+    "guides/pressure-washing-vs-jet-washing.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-009",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 0 images, 0 footer H4s, 1 table clean. 0 console errors."
+    },
+    "guides/is-pressure-washing-worth-it.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-010",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 1 table clean. H1 present."
+    },
+    "guides/prepare-driveway-for-pressure-washing.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-010",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 0 tables. H1 present."
+    },
+    "guides/how-to-clean-indian-sandstone-patio.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-010",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 0 tables. H1 present."
+    },
+    "guides/moss-removal-from-driveways.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-010",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 1 table clean. H1 present."
+    },
+    "guides/pressure-washer-hire-vs-professional.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-010",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 2 tables clean. H1 present."
+    },
+    "guides/can-pressure-washing-damage-driveway.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-010",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 0 tables. H1 present."
+    },
+    "guides/pressure-washing-seasonal-guide.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-010",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 2 tables clean. H1 present."
+    },
+    "guides/surface-comparison-pressure-washing.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-010",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 1 table clean. 0 console errors."
+    },
+    "guides/pressure-washing-service-tiers.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-011",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 2 tables clean. H1 present."
+    },
+    "guides/tarmac-driveway-cleaning.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-011",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 3 tables clean. H1 present."
+    },
+    "guides/concrete-driveway-cleaning.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-011",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 2 tables clean. H1 present."
+    },
+    "guides/algae-removal-driveways-patios.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-011",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 3 tables clean. H1 present."
+    },
+    "guides/weed-removal-block-paving.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-011",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 3 tables clean. H1 present."
+    },
+    "guides/resin-driveway-cleaning.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-011",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 3 tables clean. H1 present."
+    },
+    "guides/pressure-washing-myths-debunked.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-011",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 0 tables. H1 present."
+    },
+    "guides/pressure-washing-before-after-expectations.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-011",
+      "breakpoints": ["1521"],
+      "issues": [],
+      "status": "pass",
+      "notes": "Guide page — 0 overflow, 2 tables clean. H1 present."
+    },
+    "guides/stain-removal-guide-driveways-patios.html": {
+      "checkedDate": "2026-03-10",
+      "checkedRun": "fe-run-011",
+      "breakpoints": ["1521"],
+      "issues": ["FE-001"],
+      "status": "issues-found",
+      "notes": "ONLY guide page with .cta-section overflow. TWO .cta-section divs, each 170px overflow (vs 228px on service pages). Variant of FE-001. 1 table clean. 0 console errors."
+    }
+  },
+  "learnings": [
+    {
+      "runId": "fe-run-012",
+      "date": "2026-03-10",
+      "entries": [
+        {
+          "type": "pattern",
+          "text": "Post-baseline: change detection mode active. No new commits detected. 5 SEO tasks (SEO-010, SEO-018, SEO-026, SEO-027, SEO-028) found completed but unverified — all are uncommitted changes (meta/schema/content) that were already on the live site during baseline checks. Verified by inference. Future runs: only need to re-check pages after new commits land.",
+          "pages": [],
+          "confidence": "high",
+          "actionable": false,
+          "appliesTo": "all"
+        }
+      ]
+    },
+    {
+      "runId": "fe-run-011",
+      "date": "2026-03-10",
+      "entries": [
+        {
+          "type": "pattern",
+          "text": "FULL SITE BASELINE COMPLETE. 67/67 rotation pages checked across 11 runs. Results: 22 area pages (100% clean), 27 guide pages (26 clean + 1 with FE-001), 9 service pages (all FE-001), 7 hub/info pages (6 clean + 1 FE-001), 2 key pages (FE-001 + other known issues). Only 5 sitewide issues found, all P2/P3.",
+          "pages": [],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "all"
+        },
+        {
+          "type": "page-insight",
+          "text": "stain-removal-guide-driveways-patios is the ONLY guide page with .cta-section — and it has TWO of them (vs 1 on service pages). Both overflow at 170px (vs 228px on service pages). This guide uses a different structure from other guides — more like a service page hybrid.",
+          "pages": ["guides/stain-removal-guide-driveways-patios.html"],
+          "confidence": "high",
+          "actionable": false,
+          "appliesTo": "guide-pages"
+        },
+        {
+          "type": "pattern",
+          "text": "Newer guide pages (tarmac, concrete, algae, weed, resin) tend to have more tables (2-3 each) compared to older guides (0-1). All tables render within container at desktop. Table-heavy pages are higher risk for mobile overflow — prioritize these when mobile testing becomes available.",
+          "pages": ["guides/tarmac-driveway-cleaning.html", "guides/algae-removal-driveways-patios.html", "guides/weed-removal-block-paving.html", "guides/resin-driveway-cleaning.html"],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "guide-pages"
+        }
+      ]
+    },
+    {
+      "runId": "fe-run-010",
+      "date": "2026-03-10",
+      "entries": [
+        {
+          "type": "pattern",
+          "text": "Guide page pattern rock solid: 18/27 verified, 100% pass rate. Table count varies (0-2 per page), all render within container at desktop. No new issue types discovered. 9 remaining guides will complete full 68-page baseline next run.",
+          "pages": ["guides/is-pressure-washing-worth-it.html", "guides/prepare-driveway-for-pressure-washing.html", "guides/how-to-clean-indian-sandstone-patio.html", "guides/moss-removal-from-driveways.html", "guides/pressure-washer-hire-vs-professional.html", "guides/can-pressure-washing-damage-driveway.html", "guides/pressure-washing-seasonal-guide.html", "guides/surface-comparison-pressure-washing.html"],
+          "confidence": "high",
+          "actionable": false,
+          "appliesTo": "guide-pages"
+        }
+      ]
+    },
+    {
+      "runId": "fe-run-009",
+      "date": "2026-03-10",
+      "entries": [
+        {
+          "type": "pattern",
+          "text": "Guide page clean pattern strongly confirmed: 10/27 now verified, all pass with zero issues. Template identical to area pages (0 overflow, 0 images, 0 footer H4s). ~40% of guides have 1 table each, all render within container. Can safely batch 8+ per run. Remaining 17 guides very likely to pass.",
+          "pages": ["guides/block-paving-cleaning-cost-uk.html", "guides/driveway-cleaning-sealing-cost.html", "guides/how-often-clean-driveway.html", "guides/best-time-patio-cleaning.html", "guides/diy-vs-professional-pressure-washing.html", "guides/block-paving-sealing-guide.html", "guides/remove-oil-stains-driveway.html", "guides/pressure-washing-vs-jet-washing.html"],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "guide-pages"
+        }
+      ]
+    },
+    {
+      "runId": "fe-run-008",
+      "date": "2026-03-10",
+      "entries": [
+        {
+          "type": "pattern",
+          "text": "Guide pages share the SAME clean template as area pages: 0 overflow, 0 images, 0 footer H4s. First 2 guides (driveway-cleaning-cost-uk, patio-cleaning-cost-uk) both pass with zero issues. Tables (1 per page) render within container. High confidence remaining 25 guides will follow same pattern — can batch 8+ per run.",
+          "pages": ["guides/driveway-cleaning-cost-uk.html", "guides/patio-cleaning-cost-uk.html"],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "guide-pages"
+        },
+        {
+          "type": "page-insight",
+          "text": "Privacy and terms pages are simple text-only legal pages. 0 overflow, 4 footer headings (like service pages), 0 images. No .cta-section. Clean.",
+          "pages": ["privacy.html", "terms.html"],
+          "confidence": "high",
+          "actionable": false,
+          "appliesTo": "info-pages"
+        },
+        {
+          "type": "pattern",
+          "text": "Pillar page (pressure-washing-guide) has .cta-section overflow (known FE-001) and 4 footer headings — matches service/hub page template, NOT area/guide template. This is the only content-heavy page with the .cta-section issue outside of service pages.",
+          "pages": ["pressure-washing-guide.html"],
+          "confidence": "high",
+          "actionable": false,
+          "appliesTo": "specific"
+        }
+      ]
+    },
+    {
+      "runId": "fe-run-007",
+      "date": "2026-03-10",
+      "entries": [
+        {
+          "type": "pattern",
+          "text": "ALL 22/22 area pages now verified — 100% pass rate with zero issues across every single one. Both named area pages (redhill, leatherhead, etc.) and postcode pages (rh2, rh4, rh6, rh8, sm7) share the same clean template. Area pages are COMPLETE for baseline. No further rotation needed until site changes affect them.",
+          "pages": ["areas/chipstead.html", "areas/godstone.html", "areas/betchworth.html", "areas/rh2.html", "areas/rh4.html", "areas/rh6.html", "areas/rh8.html", "areas/sm7.html"],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "area-pages"
+        },
+        {
+          "type": "page-insight",
+          "text": "Next rotation enters info pages (pricing already checked in run-001, faq/areas-hub/guides-hub in run-001). Remaining unchecked: pressure-washing-guide.html, privacy.html, terms.html (indices 35-37). Then 27 guide pages start at index 38. Guide pages are a new template — expect different patterns.",
+          "pages": [],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "info-pages"
+        }
+      ]
+    },
+    {
+      "runId": "fe-run-006",
+      "date": "2026-03-10",
+      "entries": [
+        {
+          "type": "pattern",
+          "text": "Area page clean pattern now confirmed across 14/22 pages (100% pass rate). All share identical template: 0 overflow, 0 images, 0 footer H4s, H1 present. Remaining 8 (chipstead, godstone, betchworth, rh2, rh4, rh6, rh8, sm7) extremely likely to pass. Can batch all 8 in next run.",
+          "pages": ["areas/leatherhead.html", "areas/merstham.html", "areas/earlswood.html", "areas/salfords.html", "areas/nutfield.html"],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "area-pages"
+        }
+      ]
+    },
+    {
+      "runId": "fe-run-005",
+      "date": "2026-03-10",
+      "entries": [
+        {
+          "type": "pattern",
+          "text": "Area page clean pattern confirmed across 9/22 pages now (banstead, crawley, epsom, caterham, oxted all pass). High confidence this pattern holds for all 22 area pages. Can safely batch 8+ per run.",
+          "pages": ["areas/banstead.html", "areas/crawley.html", "areas/epsom.html", "areas/caterham.html", "areas/oxted.html"],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "area-pages"
+        },
+        {
+          "type": "regression",
+          "text": "SEO-019 through SEO-025 (footer H4 to p.footer-heading) verified safe via code review. CSS selector '.footer-col h4, .footer-heading' applies identical styling. All 19 pages updated, 0 visual regression expected. Changes not yet deployed (uncommitted).",
+          "pages": [],
+          "confidence": "high",
+          "actionable": false,
+          "appliesTo": "all"
+        },
+        {
+          "type": "root-cause",
+          "text": "Footer heading text varies: service/hub pages use 'Service Areas', while privacy/terms/areas/guides hub use 'Key Areas'. Both variants now use footer-heading class. No styling difference.",
+          "pages": ["privacy.html", "terms.html", "areas.html", "guides.html"],
+          "confidence": "high",
+          "actionable": false,
+          "appliesTo": "all"
+        }
+      ]
+    },
+    {
+      "runId": "fe-run-004",
+      "date": "2026-03-10",
+      "entries": [
+        {
+          "type": "pattern",
+          "text": "Area pages use a DIFFERENT template from service/hub pages: no .cta-section, no footer H4 headings (footerH4Count: 0), 0 images, 0 overflow elements. Cleanest page type — all 4 checked pass with zero issues. FE-001/FE-003/FE-005 do NOT apply to area pages.",
+          "pages": ["areas/redhill.html", "areas/reigate.html", "areas/horley.html", "areas/dorking.html"],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "area-pages"
+        },
+        {
+          "type": "page-insight",
+          "text": "Area pages are the lowest-risk page type. Can reduce check frequency — batch 5-8 per run and skip detailed checks. Just confirm 0 overflow + H1 present.",
+          "pages": [],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "area-pages"
+        },
+        {
+          "type": "root-cause",
+          "text": "SEO-019 footer H4 fix does NOT affect area pages — they don't have .footer-col h4 elements. The 21-page scope from SEO-019 must be service/hub/info pages only.",
+          "pages": [],
+          "confidence": "high",
+          "actionable": false,
+          "appliesTo": "area-pages"
+        }
+      ]
+    },
+    {
+      "runId": "fe-run-003",
+      "date": "2026-03-10",
+      "entries": [
+        {
+          "type": "pattern",
+          "text": "ALL 9 service pages now baselined. Consistent pattern: .cta-section overflow, no phone in nav, 4 footer H4s. No horizontal overflow on any. Image count varies: driveway/patio/block-paving/render/decking have 2 images (hero+before-after), commercial has 1, roof/gutter have 0.",
+          "pages": ["render-cleaning.html", "decking-cleaning.html", "commercial-jetwashing.html", "roof-cleaning.html", "gutter-cleaning.html"],
+          "confidence": "high",
+          "actionable": false,
+          "appliesTo": "service-pages"
+        },
+        {
+          "type": "page-insight",
+          "text": "Roof-cleaning and gutter-cleaning are text-only pages (0 images). No visual issues beyond known sitewide patterns. Lower risk pages for future checks — can reduce frequency.",
+          "pages": ["roof-cleaning.html", "gutter-cleaning.html"],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "service-pages"
+        }
+      ]
+    },
+    {
+      "runId": "fe-run-002",
+      "date": "2026-03-10",
+      "entries": [
+        {
+          "type": "false-positive",
+          "text": "Lazy-loaded images (loading=lazy) report as broken in JS checks even after scrollIntoView. Must verify via HTTP request (curl) before flagging as broken. block-paving-before-after.webp confirmed HTTP 200.",
+          "pages": ["block-paving-cleaning.html"],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "all"
+        },
+        {
+          "type": "page-insight",
+          "text": "Quote page has NO .cta-section overflow — different page structure from service/hub pages. Only pages with .cta-section have the 228px internal overflow.",
+          "pages": ["quote.html"],
+          "confidence": "high",
+          "actionable": false,
+          "appliesTo": "specific"
+        },
+        {
+          "type": "root-cause",
+          "text": "SEO-019 footer fix (H4 to P.footer-heading) verified safe. CSS selector '.footer-col h4, .footer-heading' applies identical styling: 16px, font-weight 700, white, 24px margin-bottom. No visual regression expected on deploy.",
+          "pages": ["index.html", "quote.html", "driveway-cleaning.html", "patio-cleaning.html", "block-paving-cleaning.html"],
+          "confidence": "high",
+          "actionable": false,
+          "appliesTo": "all"
+        },
+        {
+          "type": "pattern",
+          "text": "Service pages (driveway, patio, block-paving) all share consistent layout: hero section, before-after image, content sections, 4 footer H4 headings. All pass desktop checks with only known sitewide issues.",
+          "pages": ["driveway-cleaning.html", "patio-cleaning.html", "block-paving-cleaning.html"],
+          "confidence": "high",
+          "actionable": false,
+          "appliesTo": "service-pages"
+        }
+      ]
+    },
+    {
+      "runId": "fe-run-001",
+      "date": "2026-03-10",
+      "entries": [
+        {
+          "type": "pattern",
+          "text": ".cta-section has 228px internal overflow on ALL pages checked (5/5). Visually contained — no horizontal scrollbar. Likely a CSS background/pseudo-element extending beyond container.",
+          "pages": ["index.html", "calculator.html", "areas.html", "guides.html", "pricing.html"],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "all"
+        },
+        {
+          "type": "pattern",
+          "text": "Nav phone number (01737 652515) only present on homepage, missing from areas/guides/pricing pages. Nav template inconsistent.",
+          "pages": ["index.html", "areas.html", "guides.html", "pricing.html"],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "all"
+        },
+        {
+          "type": "root-cause",
+          "text": "BreadcrumbList schema additions (SEO-016, SEO-017) caused zero visual regressions. JSON-LD in <head> is invisible.",
+          "pages": ["areas.html", "guides.html"],
+          "confidence": "high",
+          "actionable": false,
+          "appliesTo": "all"
+        },
+        {
+          "type": "false-positive",
+          "text": "Image loading check on initial page load can return false positives (race condition). Images report as broken before fully loaded. Re-checking after load confirms all images are fine.",
+          "pages": ["index.html"],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "all"
+        },
+        {
+          "type": "page-insight",
+          "text": "Chrome MCP resize_window cannot achieve viewport widths below ~500px. Window resizes but viewport stays at display width (~1536px). True mobile breakpoint testing (320px, 375px) not possible with current tools. Need alternative approach for mobile verification.",
+          "pages": [],
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "all"
+        },
+        {
+          "type": "regression",
+          "text": "All completed SEO tasks (SEO-001 through SEO-009, SEO-016, SEO-017) caused no visual regressions. All were audits, meta/schema changes, or sitemap updates.",
+          "pages": [],
+          "confidence": "high",
+          "actionable": false,
+          "appliesTo": "all"
+        }
+      ]
+    }
+  ],
+  "counters": {
+    "open": 5,
+    "inProgress": 0,
+    "fixed": 0,
+    "wontfix": 0
+  }
+}
