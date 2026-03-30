@@ -397,8 +397,8 @@
                 <a href="/guides" class="nav-link">Guides</a>
                 <a href="/pricing" class="nav-link">Pricing</a>
                 <a href="/faq" class="nav-link">FAQ</a>
-                <a href="/quote" class="nav-link nav-cta">Get Free Quote</a>
                 <a href="/quote" class="nav-link nav-cta">Free Quote</a>
+                <a href="tel:+441737652515" class="nav-link nav-phone">01737 652 515</a>
             </nav>
         </div>
     </header>
@@ -637,6 +637,7 @@
                     <p class="footer-heading">Contact</p>
                     <p>Serving Redhill, Reigate & Surrey</p>
                     <p>Coverage: 20-mile radius from RH1</p>
+                    <p><a href="tel:+441737652515">Call: 01737 652 515</a></p>
                     <p><a href="/quote">Get a Free Quote</a></p>
                 </div>
             </div>
@@ -768,7 +769,7 @@
             document.getElementById('result-content').style.display = 'block';
             document.getElementById('result-amount').textContent = '£' + totalLow + ' - £' + totalHigh;
             var hiddenEstimate = document.getElementById('calc-estimate-hidden');
-            if (hiddenEstimate) hiddenEstimate.value = surfaceSelect.options[surfaceSelect.selectedIndex].text + ' (' + areaSize + 'm²): £' + totalLow + '-£' + totalHigh;
+            if (hiddenEstimate) hiddenEstimate.value = document.getElementById('surface-type').options[document.getElementById('surface-type').selectedIndex].text + ' (' + area + 'm²): £' + totalLow + '-£' + totalHigh;
 
             var breakdownHtml = '';
             for (var i = 0; i < breakdownItems.length; i++) {
@@ -787,7 +788,7 @@
 
     <div class="sticky-cta-bar">
         <a href="/quote" class="sticky-cta-btn">Get Free Quote</a>
-        <a href="/quote" class="sticky-cta-phone">Get Quote</a>
+        <a href="tel:+441737652515" class="sticky-cta-call">Call Now: 01737 652 515</a>
     </div>
 </body>
 </html>

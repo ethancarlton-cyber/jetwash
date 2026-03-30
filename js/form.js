@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const postcodeError = document.getElementById('postcodeError');
     const phoneInput = document.getElementById('phone');
     const phoneError = document.getElementById('phoneError');
+    const emailInput = document.getElementById('email');
+    const emailError = document.getElementById('emailError');
 
     if (quoteForm) {
         // UK Postcode validation regex
@@ -52,7 +54,23 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!phoneRegex.test(cleaned)) {
                 return {
                     valid: false,
-                    message: 'Please enter a valid UK mobile number (e.g., 07XXX XXXXXX)'
+                    message: 'Please enter a valid UK phone number (e.g., 07XXX XXXXXX)'
+                };
+            }
+
+            return { valid: true, message: '' };
+        }
+
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        function validateEmail(email) {
+            const cleaned = email.trim();
+
+            if (!emailRegex.test(cleaned)) {
+                return {
+                    valid: false,
+                    message: 'Please enter a valid email address'
                 };
             }
 
@@ -78,11 +96,31 @@ document.addEventListener('DOMContentLoaded', function() {
         // Real-time validation for phone
         if (phoneInput && phoneError) {
             phoneInput.addEventListener('blur', function() {
-                const result = validatePhone(this.value);
-                if (!result.valid) {
-                    phoneError.textContent = result.message;
+                if (this.value.trim()) {
+                    const result = validatePhone(this.value);
+                    if (!result.valid) {
+                        phoneError.textContent = result.message;
+                    } else {
+                        phoneError.textContent = '';
+                    }
                 } else {
                     phoneError.textContent = '';
+                }
+            });
+        }
+
+        // Real-time validation for email
+        if (emailInput && emailError) {
+            emailInput.addEventListener('blur', function() {
+                if (this.value.trim()) {
+                    const result = validateEmail(this.value);
+                    if (!result.valid) {
+                        emailError.textContent = result.message;
+                    } else {
+                        emailError.textContent = '';
+                    }
+                } else {
+                    emailError.textContent = '';
                 }
             });
         }
@@ -114,12 +152,28 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
 
-            // Validate phone
-            if (phoneInput) {
-                const phoneResult = validatePhone(phoneInput.value);
-                if (!phoneResult.valid) {
-                    phoneError.textContent = phoneResult.message;
-                    isValid = false;
+            // Validate contact: require at least one of phone or email
+            const hasPhone = phoneInput && phoneInput.value.trim();
+            const hasEmail = emailInput && emailInput.value.trim();
+
+            if (!hasPhone && !hasEmail) {
+                if (phoneError) phoneError.textContent = 'Please provide a phone number or email address';
+                if (emailError) emailError.textContent = 'Please provide a phone number or email address';
+                isValid = false;
+            } else {
+                if (hasPhone) {
+                    const phoneResult = validatePhone(phoneInput.value);
+                    if (!phoneResult.valid) {
+                        phoneError.textContent = phoneResult.message;
+                        isValid = false;
+                    }
+                }
+                if (hasEmail) {
+                    const emailResult = validateEmail(emailInput.value);
+                    if (!emailResult.valid) {
+                        emailError.textContent = emailResult.message;
+                        isValid = false;
+                    }
                 }
             }
 

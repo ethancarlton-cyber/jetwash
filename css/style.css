@@ -391,6 +391,23 @@ a:hover {
     color: var(--white);
 }
 
+.hero-phone {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-phone a {
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.hero-phone a:hover {
+    color: var(--accent-color);
+}
+
 .trust-badges {
     display: flex;
     gap: 0.75rem;
@@ -799,6 +816,24 @@ a:hover {
     background-color: var(--light-gray);
 }
 
+.quote-phone-cta {
+    background: linear-gradient(135deg, var(--accent-color) 0%, #1e8e3e 100%);
+    color: var(--white);
+    padding: 0.875rem 1.25rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+}
+
+.quote-phone-cta a {
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 .quote-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -878,6 +913,14 @@ a:hover {
 .checkbox-label input[type="checkbox"] {
     width: auto;
     margin-top: 0.25rem;
+}
+
+.contact-helper {
+    font-size: 0.8125rem;
+    color: var(--medium-gray);
+    font-style: italic;
+    margin-bottom: var(--spacing-md);
+    margin-top: calc(-1 * var(--spacing-xs));
 }
 
 .form-note {
@@ -1169,6 +1212,21 @@ a:hover {
     padding-left: 4px;
 }
 
+.footer-contact {
+    text-align: center;
+    padding-bottom: var(--spacing-sm);
+}
+
+.footer-contact a {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 1.0625rem;
+}
+
+.footer-contact a:hover {
+    color: var(--white);
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: var(--spacing-lg);
@@ -1437,6 +1495,50 @@ a:hover {
 
     .header .container {
         position: relative;
+    }
+
+    /* Quote page: compact hero to push form above the fold */
+    .page-hero {
+        padding: 1rem 0;
+    }
+
+    .page-hero h1 {
+        font-size: 1.25rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .page-subtitle {
+        font-size: 0.875rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .page-hero .trust-badges {
+        display: none;
+    }
+
+    .quote-section {
+        padding: 1rem 0;
+    }
+
+    .quote-form-container h2 {
+        font-size: 1.125rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .quote-form-container > p {
+        font-size: 0.8125rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .quote-form-container .guarantee-text {
+        font-size: 0.8125rem;
+        padding: 0.25rem 0;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .quote-form {
+        padding: 1rem;
     }
 }
 

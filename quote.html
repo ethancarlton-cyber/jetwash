@@ -73,6 +73,7 @@
                 <a href="/pricing" class="nav-link">Pricing</a>
                 <a href="/faq" class="nav-link">FAQ</a>
                 <a href="/quote" class="nav-link nav-cta active">Free Quote</a>
+                <a href="tel:+441737652515" class="nav-link nav-phone">01737 652 515</a>
             </nav>
         </div>
     </header>
@@ -93,6 +94,7 @@
         <div class="container">
             <div class="quote-grid">
                 <div class="quote-form-container">
+                    <p class="quote-phone-cta">Prefer to call? Ring us on <a href="tel:+441737652515">01737 652 515</a></p>
                     <h2>Request Your Free Quote Today</h2>
                     <p><strong>Most driveways cost £120-250.</strong> Complete the form below for your exact price — we'll call within 2 hours during business hours (Mon-Sat 8am-6pm). Evening or Sunday? We'll call first thing next morning.</p>
                     <p class="guarantee-text"><strong>100% satisfaction guaranteed</strong> — if you're not happy with the results, we'll re-clean for free.</p>
@@ -117,10 +119,18 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="07XXX XXXXXX or 01XXX XXXXXX" pattern="^(\+44|0)\d[\d\s]{8,13}$">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="07XXX XXXXXX or 01XXX XXXXXX" pattern="^(\+44|0)\d[\d\s]{8,13}$">
                             <span class="error-message" id="phoneError"></span>
                         </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <p class="contact-helper">Provide phone or email — we'll use whichever you prefer</p>
 
                         <div class="form-group">
                             <label for="service">Service Required</label>
@@ -297,6 +307,7 @@
                     <p class="footer-heading">Contact</p>
                     <p>Serving Redhill, Reigate & Surrey</p>
                     <p>Coverage: 20-mile radius from RH1</p>
+                    <p><a href="tel:+441737652515">Call: 01737 652 515</a></p>
                     <p><a href="/quote">Get a Free Quote</a></p>
                 </div>
             </div>
@@ -312,7 +323,7 @@
     <script src="js/analytics.js" defer></script>
     <div class="sticky-cta-bar">
         <a href="/quote" class="sticky-cta-btn">Get Free Quote</a>
-        <a href="/quote" class="sticky-cta-phone">Get Quote</a>
+        <a href="tel:+441737652515" class="sticky-cta-call">Call Now: 01737 652 515</a>
     </div>
 
 </body>
