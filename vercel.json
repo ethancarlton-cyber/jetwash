@@ -26,7 +26,8 @@
     { "source": "/guides/best-time-patio-cleaning.html", "destination": "/guides/best-time-patio-cleaning", "permanent": true },
     { "source": "/areas/dorking.html", "destination": "/areas/dorking", "permanent": true },
     { "source": "/areas.html", "destination": "/areas", "permanent": true },
-    { "source": "/areas/merstham.html", "destination": "/areas/merstham", "permanent": true }
+    { "source": "/areas/merstham.html", "destination": "/areas/merstham", "permanent": true },
+    { "source": "/areas/bletchingley", "destination": "/areas/betchworth", "permanent": true }
   ],
   "headers": [
     {
