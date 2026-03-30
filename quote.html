@@ -319,6 +319,42 @@
     </footer>
 
     <script src="js/form.js"></script>
+    <script>
+    // Pre-fill form from calculator URL parameters
+    (function() {
+        var params = new URLSearchParams(window.location.search);
+        var surface = params.get('surface');
+        if (!surface) return;
+
+        // Map calculator surface values to quote form service values
+        var serviceMap = {
+            'driveway': 'driveway',
+            'patio': 'patio',
+            'block-paving': 'block-paving',
+            'decking': 'decking',
+            'render': 'render',
+            'commercial': 'commercial'
+        };
+
+        // Pre-select the service dropdown
+        var serviceSelect = document.getElementById('service');
+        if (serviceSelect && serviceMap[surface]) {
+            serviceSelect.value = serviceMap[surface];
+        }
+
+        // Pre-fill additional details with calculator context
+        var estimate = params.get('estimate');
+        var area = params.get('area');
+        var condition = params.get('condition');
+        if (estimate) {
+            var messageField = document.getElementById('message');
+            if (messageField) {
+                var details = 'Calculator estimate: ' + surface + ' (' + (area || '?') + 'm\u00B2, ' + (condition || 'unknown') + ') \u2014 \u00A3' + estimate;
+                messageField.value = details;
+            }
+        }
+    })();
+    </script>
     <script src="js/nav.js" defer></script>
     <script src="js/analytics.js" defer></script>
     <div class="sticky-cta-bar">
