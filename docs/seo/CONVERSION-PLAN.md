@@ -138,8 +138,8 @@ These change the business model and require deliberate decisions.
   - B) Add an "About" section with a personal story (no photo/surname needed)
   - C) Keep fully anonymous
 - **Impact**: HIGH — even a first name changes perception from "faceless lead farm" to "local person"
-- **Owner decision needed**: [ ] Yes, add identity / [ ] No, stay anonymous
-- **Status**: [ ] Awaiting decision
+- **Owner decision**: [x] Yes — "Patrick from Redhill"
+- **Status**: [x] DONE (2026-03-30) — homepage about, footer (19 pages), quote page
 
 ---
 
