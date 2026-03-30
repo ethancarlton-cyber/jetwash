@@ -80,14 +80,14 @@ Medium effort. These are the changes most likely to generate the first enquiry.
   9. `pricing.html`
   10. `calculator.html`
 - **Impact**: **HIGHEST** — all 4 reviewers agreed this is the #1 change
-- **Status**: [ ] Not started
+- **Status**: [x] DONE (2026-03-30) — 10 inline forms with Web3Forms, unique subject lines per page
 
 ### W2: Add inline CTAs + urgency blocks to ALL area pages (22) and guide pages (28)
 - **Files**: All `areas/*.html` and `guides/*.html`
 - **Problem**: Area pages have ZERO inline CTAs (single button at very bottom after 280+ lines). Guide pages have one weak bridge-cta at bottom only. Service pages already have inline CTAs — area and guide pages don't.
 - **Fix**: Copy the `inline-cta` and `urgency-block` pattern from service pages. Place mid-content (after first major section) and near bottom. Guides should have location-aware CTA: "In Surrey? Get your exact price — free quote, 2-hour response"
 - **Impact**: HIGH — these pages generate most impressions but have weakest conversion elements
-- **Status**: [ ] Not started
+- **Status**: [x] DONE (2026-03-30) — 90 CTAs across 45 pages (20 area + 25 guide, 2 per page)
 
 ### W3: Rewrite all 22 area page meta titles and descriptions
 - **Files**: All `areas/*.html`
@@ -98,21 +98,21 @@ Medium effort. These are the changes most likely to generate the first enquiry.
   - Title: "Jetwashing [Town] | Same Day Service | Free Quote"
   - Description: "Professional jet washing in [Town] from £80. Same-day slots, 2-hour callback. Driveways, patios, block paving. Free no-obligation quote."
 - **Impact**: MEDIUM-HIGH — better CTR from SERPs on transactional local queries
-- **Status**: [ ] Not started
+- **Status**: [x] DONE (2026-03-30) — all 22 pages with unique titles + descriptions with local details
 
 ### W4: Change pricing page "Learn More" to "Get Quote"
 - **File**: `pricing.html`
 - **Problem**: 6 pricing cards each have "Learn More" button linking to service pages — sends people AWAY from conversion into more content reading
 - **Fix**: Change to "Get Quote for [Service]" linking to /quote with service pre-selected (or to inline mini-form if W1 is done)
 - **Impact**: MEDIUM — turns pricing browsers into leads instead of sending them deeper into content
-- **Status**: [ ] Not started
+- **Status**: [x] DONE (2026-03-30) — all 6 cards now "Get Quote" → /quote
 
 ### W5: Pass calculator selections to quote form via URL params
 - **Files**: `calculator.html`, `quote.html`
 - **Problem**: User calculates a price then clicks "Get an Exact Quote" — lands on blank quote form with none of their selections carried over. Momentum lost.
 - **Fix**: "Get Exact Quote" link passes params (`?surface=driveway&area=40&condition=moderate`), quote form reads params and pre-fills service dropdown + adds note to details field
 - **Impact**: MEDIUM — preserves user momentum from calculator to form
-- **Status**: [ ] Not started
+- **Status**: [x] DONE (2026-03-30) — URL params built dynamically, quote form pre-fills from calculator
 
 ---
 
