@@ -3,9 +3,9 @@
     "version": 1,
     "lastUpdated": "2026-04-09",
     "lastRunDate": "2026-04-09",
-    "lastRunId": "run-035",
-    "lastRunSummary": "Research mode: AI citation tactics. Found 3 guides under 2900-word citation threshold. Tested web visibility (position 6 for core query). Created 4 new tasks.",
-    "totalRuns": 35,
+    "lastRunId": "run-036",
+    "lastRunSummary": "SEO-047: Expanded block paving guide to 2,942 words (over 2,900 citation threshold).",
+    "totalRuns": 36,
     "nextTaskId": 51,
     "fullScanDate": "2026-03-10",
     "nextFullScanDue": "2026-06-10",
@@ -1237,7 +1237,7 @@
         "confidence": 8,
         "ease": 8
       },
-      "status": "pending",
+      "status": "completed",
       "type": "automated",
       "details": "Currently 2,689 words. ChatGPT is 59% more likely to cite articles over 2,900 words. Add ~250 words of useful content (e.g. seasonal pricing variations, regional cost differences, sealing maintenance schedule).",
       "targetFiles": [
@@ -1245,9 +1245,11 @@
       ],
       "createdDate": "2026-04-09",
       "source": "research-ai-citation-tactics",
-      "attemptCount": 0,
+      "attemptCount": 1,
       "maxAttempts": 3,
-      "staleAfterDays": 30
+      "staleAfterDays": 30,
+      "completedDate": "2026-04-09",
+      "completedNotes": "Expanded from 2,689 to 2,942 words. Added seasonal pricing table and longevity section. Why: ChatGPT 59% more likely to cite 2900+ word articles."
     },
     {
       "id": "SEO-048",
