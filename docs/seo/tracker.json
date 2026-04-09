@@ -3,9 +3,9 @@
     "version": 1,
     "lastUpdated": "2026-04-09",
     "lastRunDate": "2026-04-09",
-    "lastRunId": "run-036",
-    "lastRunSummary": "SEO-047: Expanded block paving guide to 2,942 words (over 2,900 citation threshold).",
-    "totalRuns": 36,
+    "lastRunId": "run-037",
+    "lastRunSummary": "SEO-049: Pillar page expanded to 3,018 words. Added 4 tables, 7 FAQs, equipment comparison, company selection guide.",
+    "totalRuns": 37,
     "nextTaskId": 51,
     "fullScanDate": "2026-03-10",
     "nextFullScanDue": "2026-06-10",
@@ -1285,7 +1285,7 @@
         "confidence": 8,
         "ease": 6
       },
-      "status": "pending",
+      "status": "completed",
       "type": "automated",
       "details": "Pillar page only 1,818 words — should be the deepest content on the site. Expand with more comprehensive coverage, equipment overview, cost summary table, seasonal calendar, and FAQ section.",
       "targetFiles": [
@@ -1293,9 +1293,11 @@
       ],
       "createdDate": "2026-04-09",
       "source": "research-ai-citation-tactics",
-      "attemptCount": 0,
+      "attemptCount": 1,
       "maxAttempts": 3,
-      "staleAfterDays": 30
+      "staleAfterDays": 30,
+      "completedDate": "2026-04-09",
+      "completedNotes": "Expanded from 1,818 to 3,018 words (+1,200). Added equipment table, types of cleaning, choosing a company, monthly calendar, frequency table, 7 FAQ pairs. Why: 59% more likely to be cited by ChatGPT at 2900+ words. Pillar page is now the deepest content on the site."
     },
     {
       "id": "SEO-050",
