@@ -17,17 +17,11 @@
       "destination": "/areas/redhill",
       "permanent": true
     },
-    { "source": "/pricing.html", "destination": "/pricing", "permanent": true },
-    { "source": "/render-cleaning.html", "destination": "/render-cleaning", "permanent": true },
-    { "source": "/decking-cleaning.html", "destination": "/decking-cleaning", "permanent": true },
-    { "source": "/patio-cleaning.html", "destination": "/patio-cleaning", "permanent": true },
-    { "source": "/quote.html", "destination": "/quote", "permanent": true },
-    { "source": "/driveway-cleaning.html", "destination": "/driveway-cleaning", "permanent": true },
-    { "source": "/guides/best-time-patio-cleaning.html", "destination": "/guides/best-time-patio-cleaning", "permanent": true },
-    { "source": "/areas/dorking.html", "destination": "/areas/dorking", "permanent": true },
-    { "source": "/areas.html", "destination": "/areas", "permanent": true },
-    { "source": "/areas/merstham.html", "destination": "/areas/merstham", "permanent": true },
-    { "source": "/areas/bletchingley", "destination": "/areas/betchworth", "permanent": true }
+    {
+      "source": "/areas/bletchingley",
+      "destination": "/areas/betchworth",
+      "permanent": true
+    }
   ],
   "headers": [
     {
