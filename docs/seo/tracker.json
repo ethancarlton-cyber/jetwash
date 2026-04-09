@@ -3,9 +3,9 @@
     "version": 1,
     "lastUpdated": "2026-04-09",
     "lastRunDate": "2026-04-09",
-    "lastRunId": "run-040",
-    "lastRunSummary": "Research mode: competitor analysis. Top competitor (Jet Wash Surrey) has ~10 pages vs our 68, no calculator, no guides, no AI optimization. Our content moat is massive. Checkatrade has 32 listings — platform presence is a gap.",
-    "totalRuns": 40,
+    "lastRunId": "run-041",
+    "lastRunSummary": "SEO-052: Enhanced trust badges on 5 area pages. All automated tasks complete again.",
+    "totalRuns": 41,
     "nextTaskId": 53,
     "fullScanDate": "2026-03-10",
     "nextFullScanDue": "2026-06-10",
@@ -1354,7 +1354,7 @@
         "confidence": 7,
         "ease": 6
       },
-      "status": "pending",
+      "status": "completed",
       "type": "automated",
       "details": "Top competitor (Jet Wash Surrey) prominently displays 25 years experience and £10m insurance. We should add comparable trust signals (fully insured, satisfaction guaranteed, local team) to area page hero sections. Currently only in the Why Choose Us lists.",
       "targetFiles": [
@@ -1366,9 +1366,11 @@
       ],
       "createdDate": "2026-04-09",
       "source": "research-competitor-analysis",
-      "attemptCount": 0,
+      "attemptCount": 1,
       "maxAttempts": 3,
-      "staleAfterDays": 30
+      "staleAfterDays": 30,
+      "completedDate": "2026-04-09",
+      "completedNotes": "Enhanced trust badges on Redhill, Reigate, Dorking, Horley, Banstead. Added Fully Insured + Local [Town] Team. Why: competitor displays insurance/experience prominently; these are above-fold conversion signals."
     }
   ],
   "manualTasks": [
