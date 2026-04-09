@@ -3,12 +3,13 @@
     "version": 1,
     "lastUpdated": "2026-04-09",
     "lastRunDate": "2026-04-09",
-    "lastRunId": "run-034",
-    "lastRunSummary": "SEO-045 COMPLETED: How It Works on 5 area pages. ALL automated tasks from phase 9 now complete. Next run enters research mode.",
-    "totalRuns": 34,
-    "nextTaskId": 47,
+    "lastRunId": "run-035",
+    "lastRunSummary": "Research mode: AI citation tactics. Found 3 guides under 2900-word citation threshold. Tested web visibility (position 6 for core query). Created 4 new tasks.",
+    "totalRuns": 35,
+    "nextTaskId": 51,
     "fullScanDate": "2026-03-10",
-    "nextFullScanDue": "2026-06-10"
+    "nextFullScanDue": "2026-06-10",
+    "lastResearchTopic": "ai-citation-tactics"
   },
   "currentPhase": {
     "name": "phase-9-ai-transactional-pivot",
@@ -1224,6 +1225,96 @@
       "staleAfterDays": 3,
       "completedDate": "2026-04-09",
       "completedNotes": "Cancelled — user confirmed phone number is intentional and must stay on all pages."
+    },
+    {
+      "id": "SEO-047",
+      "task": "Expand block-paving-cleaning-cost-uk to 2900+ words",
+      "category": "ai-citation",
+      "priority": "P2",
+      "iceScore": 360,
+      "ice": {
+        "impact": 6,
+        "confidence": 8,
+        "ease": 8
+      },
+      "status": "pending",
+      "type": "automated",
+      "details": "Currently 2,689 words. ChatGPT is 59% more likely to cite articles over 2,900 words. Add ~250 words of useful content (e.g. seasonal pricing variations, regional cost differences, sealing maintenance schedule).",
+      "targetFiles": [
+        "guides/block-paving-cleaning-cost-uk.html"
+      ],
+      "createdDate": "2026-04-09",
+      "source": "research-ai-citation-tactics",
+      "attemptCount": 0,
+      "maxAttempts": 3,
+      "staleAfterDays": 30
+    },
+    {
+      "id": "SEO-048",
+      "task": "Expand diy-vs-professional-pressure-washing to 2900+ words",
+      "category": "ai-citation",
+      "priority": "P3",
+      "iceScore": 240,
+      "ice": {
+        "impact": 6,
+        "confidence": 8,
+        "ease": 5
+      },
+      "status": "pending",
+      "type": "automated",
+      "details": "Currently 1,838 words — needs ~1,100 more. Add equipment comparison table, safety risks section, surface-specific DIY guidance, when-to-call-a-pro decision matrix.",
+      "targetFiles": [
+        "guides/diy-vs-professional-pressure-washing.html"
+      ],
+      "createdDate": "2026-04-09",
+      "source": "research-ai-citation-tactics",
+      "attemptCount": 0,
+      "maxAttempts": 3,
+      "staleAfterDays": 30
+    },
+    {
+      "id": "SEO-049",
+      "task": "Expand pressure-washing-guide pillar page to 3000+ words",
+      "category": "ai-citation",
+      "priority": "P2",
+      "iceScore": 336,
+      "ice": {
+        "impact": 7,
+        "confidence": 8,
+        "ease": 6
+      },
+      "status": "pending",
+      "type": "automated",
+      "details": "Pillar page only 1,818 words — should be the deepest content on the site. Expand with more comprehensive coverage, equipment overview, cost summary table, seasonal calendar, and FAQ section.",
+      "targetFiles": [
+        "pressure-washing-guide.html"
+      ],
+      "createdDate": "2026-04-09",
+      "source": "research-ai-citation-tactics",
+      "attemptCount": 0,
+      "maxAttempts": 3,
+      "staleAfterDays": 30
+    },
+    {
+      "id": "SEO-050",
+      "task": "Test AI visibility baseline — query ChatGPT, Perplexity, Gemini for key terms",
+      "category": "ai-citation",
+      "priority": "P2",
+      "iceScore": 280,
+      "ice": {
+        "impact": 7,
+        "confidence": 8,
+        "ease": 5
+      },
+      "status": "pending",
+      "type": "manual",
+      "details": "Baseline test: ask each AI \"best jet washing company near Redhill Surrey\", \"how much does driveway cleaning cost in Surrey\", \"book pressure washing Reigate\". Record which cite samedayjetwash.com. Repeat monthly.",
+      "targetFiles": [],
+      "createdDate": "2026-04-09",
+      "source": "research-ai-citation-tactics",
+      "attemptCount": 0,
+      "maxAttempts": 1,
+      "staleAfterDays": 30
     }
   ],
   "manualTasks": [
@@ -1561,6 +1652,18 @@
         "Result: ALL automated tasks from phase 9 pivot are now complete. Queue has 0 automated, 7 manual tasks.",
         "Pattern: Phase 9 focused on structural changes (tables, key facts, titles, meta, crawlers). Next phase should focus on content creation (research assets) and third-party presence (Medium, directories).",
         "Next: Research mode activates — first topic: AI citation tactics. Also need to create new automated tasks from discovery."
+      ]
+    },
+    {
+      "runId": "run-035",
+      "date": "2026-04-09",
+      "entries": [
+        "What: Research mode — AI citation tactics. Tested web visibility and checked content word counts.",
+        "Why: ChatGPT is 59% more likely to cite articles over 2,900 words (source: Signal & Form, Iris Digital). Need to ensure top guides hit this threshold.",
+        "Finding: samedayjetwash.com appears at position 6 for \"best jet washing company Redhill Surrey 2026\" — good but not cited in AI summaries yet.",
+        "Finding: 3 of 5 top guides exceed 2,900 words. block-paving-cleaning-cost-uk (2,689) and pillar page (1,818) are under threshold.",
+        "Finding: Entity consistency is critical — AI models build brand understanding from dozens of cross-platform signals. Our Medium articles (unpublished) are the biggest gap.",
+        "Next research topic: competitor-analysis (rotation order). Next automated: SEO-047 (expand block paving guide)."
       ]
     }
   ],
