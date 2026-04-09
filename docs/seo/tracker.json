@@ -3,13 +3,13 @@
     "version": 1,
     "lastUpdated": "2026-04-09",
     "lastRunDate": "2026-04-09",
-    "lastRunId": "run-039",
-    "lastRunSummary": "SEO-048 COMPLETED: DIY guide at 2,813 words with 4 tables + 4 FAQs. All automated tasks complete — next run enters research mode (competitor analysis).",
-    "totalRuns": 39,
-    "nextTaskId": 51,
+    "lastRunId": "run-040",
+    "lastRunSummary": "Research mode: competitor analysis. Top competitor (Jet Wash Surrey) has ~10 pages vs our 68, no calculator, no guides, no AI optimization. Our content moat is massive. Checkatrade has 32 listings — platform presence is a gap.",
+    "totalRuns": 40,
+    "nextTaskId": 53,
     "fullScanDate": "2026-03-10",
     "nextFullScanDue": "2026-06-10",
-    "lastResearchTopic": "ai-citation-tactics"
+    "lastResearchTopic": "competitor-analysis"
   },
   "currentPhase": {
     "name": "phase-9-ai-transactional-pivot",
@@ -1321,6 +1321,54 @@
       "attemptCount": 0,
       "maxAttempts": 1,
       "staleAfterDays": 30
+    },
+    {
+      "id": "SEO-051",
+      "task": "List on Bark.com and Yell.com for Redhill pressure washing",
+      "category": "third-party",
+      "priority": "P2",
+      "iceScore": 392,
+      "ice": {
+        "impact": 7,
+        "confidence": 8,
+        "ease": 7
+      },
+      "status": "pending",
+      "type": "manual",
+      "details": "Bark has 761 reviews and 4.9 avg rating for Redhill pressure washing. Yell shows top results for local queries. Both are free to list. These aggregator platforms appear in Google results and are used by AI systems for recommendations. Checkatrade requires trade verification — skip unless possible.",
+      "targetFiles": [],
+      "createdDate": "2026-04-09",
+      "source": "research-competitor-analysis",
+      "attemptCount": 0,
+      "maxAttempts": 1,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "SEO-052",
+      "task": "Add insurance and experience trust signals to top area pages",
+      "category": "conversion",
+      "priority": "P3",
+      "iceScore": 252,
+      "ice": {
+        "impact": 6,
+        "confidence": 7,
+        "ease": 6
+      },
+      "status": "pending",
+      "type": "automated",
+      "details": "Top competitor (Jet Wash Surrey) prominently displays 25 years experience and £10m insurance. We should add comparable trust signals (fully insured, satisfaction guaranteed, local team) to area page hero sections. Currently only in the Why Choose Us lists.",
+      "targetFiles": [
+        "areas/redhill.html",
+        "areas/reigate.html",
+        "areas/dorking.html",
+        "areas/horley.html",
+        "areas/banstead.html"
+      ],
+      "createdDate": "2026-04-09",
+      "source": "research-competitor-analysis",
+      "attemptCount": 0,
+      "maxAttempts": 3,
+      "staleAfterDays": 30
     }
   ],
   "manualTasks": [
@@ -1692,6 +1740,19 @@
         "Result: 2,813 words with 4 tables and 4 FAQs. Slightly under word threshold but compensated by structured content density.",
         "Pattern: All content expansion tasks from phase 9 now complete. The site now has 4 guides and 1 pillar page above the 2,900 threshold.",
         "Next: Research mode — competitor analysis (second topic in rotation)."
+      ]
+    },
+    {
+      "runId": "run-040",
+      "date": "2026-04-09",
+      "entries": [
+        "What: Competitor analysis — examined Jet Wash Surrey (#1 competitor), Checkatrade, Bark, Yell landscape.",
+        "Why: Need to understand competitive gaps to exploit and threats to defend against.",
+        "Finding: Jet Wash Surrey has ~10 indexed pages vs our 68. No calculator, no guides, no AI optimization. Their only advantage is 25 years experience + 4.9 Google rating.",
+        "Finding: 32 pressure washing companies listed on Checkatrade for Redhill. Bark has 761 reviews. These aggregator platforms dominate local searches — we should be listed.",
+        "Finding: samedayjetwash.com now appears at position 2 and 4 in organic results for Surrey jet washing queries. Our content depth is paying off in rankings.",
+        "Finding: No competitor has an interactive calculator, comprehensive guide library, or AI-optimized content. Our moat is significant.",
+        "Next research topic: transactional-keyword-opportunities (topic #3 in rotation)."
       ]
     }
   ],
