@@ -3,13 +3,13 @@
     "version": 1,
     "lastUpdated": "2026-04-09",
     "lastRunDate": "2026-04-09",
-    "lastRunId": "run-042",
-    "lastRunSummary": "Research: transactional keywords. Already ranking position 2-6 for buying-intent queries. Issue is conversion, not visibility. No new keyword gaps found.",
-    "totalRuns": 42,
-    "nextTaskId": 53,
+    "lastRunId": "run-043",
+    "lastRunSummary": "Research: linkable content ideas. Found only 1 UK pressure washing statistics page exists online. A comprehensive stats hub would earn passive backlinks + AI citations. Proposed as manual task.",
+    "totalRuns": 43,
+    "nextTaskId": 54,
     "fullScanDate": "2026-03-10",
     "nextFullScanDue": "2026-06-10",
-    "lastResearchTopic": "transactional-keyword-opportunities"
+    "lastResearchTopic": "linkable-content-ideas"
   },
   "currentPhase": {
     "name": "phase-9-ai-transactional-pivot",
@@ -1371,6 +1371,29 @@
       "staleAfterDays": 30,
       "completedDate": "2026-04-09",
       "completedNotes": "Enhanced trust badges on Redhill, Reigate, Dorking, Horley, Banstead. Added Fully Insured + Local [Town] Team. Why: competitor displays insurance/experience prominently; these are above-fold conversion signals."
+    },
+    {
+      "id": "SEO-053",
+      "task": "Create UK Pressure Washing Statistics 2026 page — linkable research asset",
+      "category": "linkable-asset",
+      "priority": "P2",
+      "iceScore": 480,
+      "ice": {
+        "impact": 8,
+        "confidence": 8,
+        "ease": 8
+      },
+      "status": "pending",
+      "type": "manual",
+      "details": "Only ONE UK pressure washing statistics page exists online (theupsurge.co.uk). Create a comprehensive stats hub with 50+ data points: market size (£27.5B cleaning sector), residential/commercial split (65/35), seasonal demand (70% Mar-Sep), eco trends (25% green preference), cost data by region, equipment market data, employment stats. Format: answer-first, tables, key facts boxes. This type of page earns links passively — bloggers and journalists cite statistics pages when writing articles. Original research = 4.7x more backlinks + 40% more AI citations.",
+      "targetFiles": [
+        "guides/uk-pressure-washing-statistics-2026.html"
+      ],
+      "createdDate": "2026-04-09",
+      "source": "research-linkable-content",
+      "attemptCount": 0,
+      "maxAttempts": 1,
+      "staleAfterDays": 30
     }
   ],
   "manualTasks": [
@@ -1768,6 +1791,18 @@
         "Finding: New competitors spotted: Surrey Exterior Clean, JR Cleaning, Drive Genie, Driveway Clean UK — all have Redhill-specific pages but thin content.",
         "Insight: The strategic pivot today (pricing tables, transactional titles, How It Works sections, trust badges) directly addresses the conversion gap. Give it 2-4 weeks for Google to re-index and for the changes to impact user behavior.",
         "Next research topic: linkable-content-ideas (topic #4 in rotation)."
+      ]
+    },
+    {
+      "runId": "run-043",
+      "date": "2026-04-09",
+      "entries": [
+        "What: Researched linkable content opportunities — searched for existing UK pressure washing data/statistics pages.",
+        "Why: Statistics pages earn passive backlinks forever. Bloggers and journalists cite stats when writing articles.",
+        "Finding: Only 1 UK pressure washing statistics page exists (theupsurge.co.uk/uk-pressure-washing-industry-statistics). Massive gap.",
+        "Finding: Key UK stats available to compile: 65% residential/35% commercial split, 70% of jobs Mar-Sep, £27.5B cleaning market, 99% of firms <10 employees, 25% green cleaning preference.",
+        "Insight: A comprehensive \"UK Pressure Washing Statistics 2026\" page with 50+ data points would be virtually uncontested and would attract links from anyone writing about the industry.",
+        "Next research topic: seo-industry-updates (topic #5 in rotation)."
       ]
     }
   ],
