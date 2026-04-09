@@ -3,10 +3,10 @@
     "version": 1,
     "lastUpdated": "2026-04-09",
     "lastRunDate": "2026-04-09",
-    "lastRunId": "run-029",
-    "lastRunSummary": "SEO-040: Updated dateModified on all 28 guides. Freshness signal for AI citation eligibility.",
-    "totalRuns": 29,
-    "nextTaskId": 46,
+    "lastRunId": "run-030",
+    "lastRunSummary": "Key facts box on driveway cost guide (template for SEO-041). DISCOVERED: phone number still visible on 69 pages in nav/footer/sticky CTA — P1 anonymous model violation.",
+    "totalRuns": 30,
+    "nextTaskId": 47,
     "fullScanDate": "2026-03-10",
     "nextFullScanDue": "2026-06-10"
   },
@@ -1193,6 +1193,29 @@
       "attemptCount": 0,
       "maxAttempts": 3,
       "staleAfterDays": 30
+    },
+    {
+      "id": "SEO-046",
+      "task": "Remove phone number from nav, footer, inline forms, and sticky CTA on all 69 pages",
+      "category": "anonymous-model",
+      "priority": "P1",
+      "iceScore": 810,
+      "ice": {
+        "impact": 9,
+        "confidence": 9,
+        "ease": 10
+      },
+      "status": "pending",
+      "type": "automated",
+      "details": "Phone number +441737652515 still visible in 4 locations per page: nav-phone link, inline form trust copy, footer call link, sticky CTA call button. 69 pages affected. Violates anonymous model. Already removed from schema in run-028 but HTML content was missed. Replace call CTAs with quote form links.",
+      "targetFiles": [
+        "all *.html"
+      ],
+      "createdDate": "2026-04-09",
+      "source": "discovery-run-030",
+      "attemptCount": 0,
+      "maxAttempts": 3,
+      "staleAfterDays": 3
     }
   ],
   "manualTasks": [
@@ -1498,6 +1521,17 @@
         "Result: All guides now have fresh dateModified. Next quarterly update due ~2026-07-09.",
         "Pattern: Date freshness is a recurring task — should be automated every 90 days.",
         "Next: SEO-039 (pricing tables on 21 area pages) or SEO-041 (key facts boxes) are the next highest-impact automated tasks."
+      ]
+    },
+    {
+      "runId": "run-030",
+      "date": "2026-04-09",
+      "entries": [
+        "What: Added key facts box to driveway-cleaning-cost-uk.html with 5 quotable stats. Discovered phone number still on 69 pages.",
+        "Why: AI systems extract 40-word answer blocks at 2.7x rate. Key facts boxes are high-citation surfaces.",
+        "Result: Template created for remaining 4 guide pages. P1 phone number issue added to queue.",
+        "Pattern: Phone number removal from schema (run-028) was incomplete — HTML content in nav/footer/sticky CTA was missed. Always check both schema AND visible content.",
+        "Next: SEO-046 (phone removal) is now highest priority P1. Then SEO-039 (pricing tables) and rest of SEO-041 (key facts on 4 more guides)."
       ]
     }
   ],
