@@ -3,9 +3,9 @@
     "version": 1,
     "lastUpdated": "2026-04-09",
     "lastRunDate": "2026-04-09",
-    "lastRunId": "run-037",
-    "lastRunSummary": "SEO-049: Pillar page expanded to 3,018 words. Added 4 tables, 7 FAQs, equipment comparison, company selection guide.",
-    "totalRuns": 37,
+    "lastRunId": "run-038",
+    "lastRunSummary": "SEO-048 partial: DIY guide expanded from 1,838 to 2,359 words (+521). Added 2 tables + decision guide. Needs ~541 more words for 2,900 target.",
+    "totalRuns": 38,
     "nextTaskId": 51,
     "fullScanDate": "2026-03-10",
     "nextFullScanDue": "2026-06-10",
@@ -1264,13 +1264,13 @@
       },
       "status": "pending",
       "type": "automated",
-      "details": "Currently 1,838 words — needs ~1,100 more. Add equipment comparison table, safety risks section, surface-specific DIY guidance, when-to-call-a-pro decision matrix.",
+      "details": "Now at 2,359 words (was 1,838). Added equipment hire table, surface difficulty table, decision guide. Still needs ~541 more words to hit 2,900 threshold. Add: FAQ section, real-world example scenarios, or cost-over-time comparison.",
       "targetFiles": [
         "guides/diy-vs-professional-pressure-washing.html"
       ],
       "createdDate": "2026-04-09",
       "source": "research-ai-citation-tactics",
-      "attemptCount": 0,
+      "attemptCount": 1,
       "maxAttempts": 3,
       "staleAfterDays": 30
     },
@@ -1668,6 +1668,17 @@
         "Finding: 3 of 5 top guides exceed 2,900 words. block-paving-cleaning-cost-uk (2,689) and pillar page (1,818) are under threshold.",
         "Finding: Entity consistency is critical — AI models build brand understanding from dozens of cross-platform signals. Our Medium articles (unpublished) are the biggest gap.",
         "Next research topic: competitor-analysis (rotation order). Next automated: SEO-047 (expand block paving guide)."
+      ]
+    },
+    {
+      "runId": "run-038",
+      "date": "2026-04-09",
+      "entries": [
+        "What: Expanded DIY vs professional guide by 521 words. Added equipment hire cost table and surface difficulty table.",
+        "Why: 2,900+ word threshold for ChatGPT citation. Tables cited 2.5x more by AI.",
+        "Result: 2,359 words — still 541 short. Two high-value tables added though, which may compensate for word count gap.",
+        "Pattern: Content expansion tasks should estimate word count more carefully. 1,100 words is too much for a single-file single-cycle task within 100-line scope limit.",
+        "Next: Continue SEO-048 next cycle to add FAQ section and hit 2,900. Then research mode (competitor analysis)."
       ]
     }
   ],
