@@ -15,16 +15,15 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 
 ---
 
-## IMPORTANT: Anonymous Lead-Gen Model
+## Lead-Gen Model
 
-**This is NOT an actual jetwashing business.** This is an anonymous lead generation website.
+**This is a lead generation website for jetwashing services.**
 
-### Constraints:
-- ❌ **NO Google Business Profile** - Requires address verification, exposes identity
-- ❌ **NO phone number** - Only form submissions wanted
-- ❌ **NO personal information** - Remain fully anonymous
-- ❌ **NO local business citations** - These require verification
-- ✅ **Form submissions ONLY** - All leads via Web3Forms
+### Lead Channels:
+- ✅ **Google Business Profile** - Active and configured
+- ✅ **Phone number (01737 652 515)** - We WANT calls, keep phone prominent everywhere
+- ✅ **Form submissions** - Leads via Web3Forms
+- ✅ **Phone calls** - People should be encouraged to call
 
 ### SEO Strategy (Content-Focused):
 Since we can't use local business signals (GBP, NAP, citations), our strategy focuses on:
