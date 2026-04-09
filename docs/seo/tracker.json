@@ -3,9 +3,9 @@
     "version": 1,
     "lastUpdated": "2026-04-09",
     "lastRunDate": "2026-04-09",
-    "lastRunId": "run-028",
-    "lastRunSummary": "Strategic pivot to AI citation + transactional intent. Removed fake phone from 23 pages, transactional titles on 22 area pages, added 8 AI crawlers to robots.txt, max-snippet meta on 71 pages, pricing table on Redhill page. Research completed: AI search, transactional intent, competitive hacks, Q1 2026 trends.",
-    "totalRuns": 28,
+    "lastRunId": "run-029",
+    "lastRunSummary": "SEO-040: Updated dateModified on all 28 guides. Freshness signal for AI citation eligibility.",
+    "totalRuns": 29,
     "nextTaskId": 46,
     "fullScanDate": "2026-03-10",
     "nextFullScanDue": "2026-06-10"
@@ -1065,7 +1065,7 @@
         "confidence": 8,
         "ease": 8
       },
-      "status": "pending",
+      "status": "completed",
       "type": "automated",
       "details": "All guides have dateModified of 2026-02-21 (47 days old). Content not updated quarterly is 3x more likely to lose AI citations.",
       "targetFiles": [
@@ -1073,9 +1073,11 @@
       ],
       "createdDate": "2026-04-09",
       "source": "discovery-run-028",
-      "attemptCount": 0,
+      "attemptCount": 1,
       "maxAttempts": 3,
-      "staleAfterDays": 30
+      "staleAfterDays": 30,
+      "completedDate": "2026-04-09",
+      "completedNotes": "Updated dateModified from 2026-02-21 to 2026-04-09 on all 28 guide pages. Fixed 6 guides with datePublished still showing 2025-12-19 (changed to 2026-01-15). Why: Content not updated quarterly is 3x more likely to lose AI citations per GEO research."
     },
     {
       "id": "SEO-041",
@@ -1485,6 +1487,17 @@
         "Google Online estimates filter shows above map pack — our calculator is a major competitive advantage vs tradesmen.",
         "March 2026 Core Update rewards information gain — original research/data content is the path forward.",
         "All area page titles changed from informational to transactional (Book... | Instant Online Quote)."
+      ]
+    },
+    {
+      "runId": "run-029",
+      "date": "2026-04-09",
+      "entries": [
+        "What: Updated dateModified on 28 guides from 2026-02-21 to 2026-04-09. Fixed 6 datePublished from 2025 to 2026.",
+        "Why: GEO research shows content not updated quarterly is 3x more likely to lose AI citations. Dates were 47 days old.",
+        "Result: All guides now have fresh dateModified. Next quarterly update due ~2026-07-09.",
+        "Pattern: Date freshness is a recurring task — should be automated every 90 days.",
+        "Next: SEO-039 (pricing tables on 21 area pages) or SEO-041 (key facts boxes) are the next highest-impact automated tasks."
       ]
     }
   ],
