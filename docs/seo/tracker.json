@@ -3,13 +3,13 @@
     "version": 1,
     "lastUpdated": "2026-04-09",
     "lastRunDate": "2026-04-09",
-    "lastRunId": "run-043",
-    "lastRunSummary": "Research: linkable content ideas. Found only 1 UK pressure washing statistics page exists online. A comprehensive stats hub would earn passive backlinks + AI citations. Proposed as manual task.",
-    "totalRuns": 43,
+    "lastRunId": "run-044",
+    "lastRunSummary": "Research: SEO industry updates. April 2026 Core Update rolling out NOW. March update (completed Apr 8) rewards fact-driven, structured content — perfectly aligned with today's changes. FAQ/HowTo rich results reduced on non-primary pages.",
+    "totalRuns": 44,
     "nextTaskId": 54,
     "fullScanDate": "2026-03-10",
     "nextFullScanDue": "2026-06-10",
-    "lastResearchTopic": "linkable-content-ideas"
+    "lastResearchTopic": "seo-industry-updates"
   },
   "currentPhase": {
     "name": "phase-9-ai-transactional-pivot",
@@ -1803,6 +1803,21 @@
         "Finding: Key UK stats available to compile: 65% residential/35% commercial split, 70% of jobs Mar-Sep, £27.5B cleaning market, 99% of firms <10 employees, 25% green cleaning preference.",
         "Insight: A comprehensive \"UK Pressure Washing Statistics 2026\" page with 50+ data points would be virtually uncontested and would attract links from anyone writing about the industry.",
         "Next research topic: seo-industry-updates (topic #5 in rotation)."
+      ]
+    },
+    {
+      "runId": "run-044",
+      "date": "2026-04-09",
+      "entries": [
+        "What: Researched latest Google algorithm updates and schema changes.",
+        "Why: Need to ensure our changes align with current ranking signals and avoid penalties.",
+        "CRITICAL: April 2026 Core Update is rolling out RIGHT NOW. March 2026 update completed April 8 (yesterday).",
+        "Finding: March update rewards clear, topic-focused, fact-driven content. Our changes today (tables, key facts boxes, answer-first formatting) align perfectly.",
+        "Finding: FAQ/Review/HowTo rich results reduced on \"non-primary content pages\" — our FAQPage schema on area pages may see reduced rich results, but the schema still helps AI comprehension.",
+        "Finding: Google confirmed structured data is NOT diminishing — it's shifting from rich results to machine comprehension. This benefits our AI citation strategy.",
+        "Finding: AEO (Answer Engine Optimization) is now mainstream — Google explicitly rewards content structured for clear answers.",
+        "Insight: Perfect timing. 26 commits deployed today with fact-driven tables, key facts boxes, and transactional elements — exactly what the current core update rewards.",
+        "Research rotation complete. Next cycle restarts with ai-citation-tactics (topic #1)."
       ]
     }
   ],
