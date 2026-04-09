@@ -1,23 +1,24 @@
 {
   "meta": {
     "version": 1,
-    "lastUpdated": "2026-03-24",
-    "lastRunDate": "2026-03-24",
-    "lastRunId": "run-027",
-    "lastRunSummary": "Phase 2 execution: Fixed 10 GSC redirect errors (301s in vercel.json), added CSS for bridge-cta + guarantee-text, created new jet-washing-prices-uk transactional guide page (1,000-2,000/mo keyword). FE verified all page types.",
-    "totalRuns": 27,
-    "nextTaskId": 39,
+    "lastUpdated": "2026-04-09",
+    "lastRunDate": "2026-04-09",
+    "lastRunId": "run-028",
+    "lastRunSummary": "Strategic pivot to AI citation + transactional intent. Removed fake phone from 23 pages, transactional titles on 22 area pages, added 8 AI crawlers to robots.txt, max-snippet meta on 71 pages, pricing table on Redhill page. Research completed: AI search, transactional intent, competitive hacks, Q1 2026 trends.",
+    "totalRuns": 28,
+    "nextTaskId": 46,
     "fullScanDate": "2026-03-10",
     "nextFullScanDue": "2026-06-10"
   },
   "currentPhase": {
-    "name": "phase-8-autonomous-maintenance",
-    "started": "2026-03-10",
+    "name": "phase-9-ai-transactional-pivot",
+    "started": "2026-04-09",
     "goals": [
-      "Establish autonomous SEO loop",
-      "Achieve 100% Tier 1 audit compliance",
-      "Resolve all P1 tasks in queue",
-      "Build discovery baseline from first full scan"
+      "Get cited by ChatGPT/Perplexity/Gemini for Surrey pressure washing queries",
+      "Convert area pages from informational to transactional (pricing tables, booking CTAs)",
+      "Create linkable research assets that earn backlinks + AI citations",
+      "Publish third-party content (Medium, LinkedIn) for brand mention velocity",
+      "Generate first enquiry through form submission"
     ]
   },
   "siteStats": {
@@ -31,15 +32,51 @@
     "avgPosition": null
   },
   "completedPhases": [
-    { "name": "phase-1-seo-cro-overhaul", "completed": "2026-02-08", "summary": "Removed fake reviews, added guides hub, privacy page, mobile menu, sticky CTA, 12 inline CTAs" },
-    { "name": "phase-2-schema-meta-content", "completed": "2026-02-08", "summary": "BreadcrumbList on 12 pages, FAQPage on 5 areas, HowTo on 3 guides, meta optimization, 5 area pages expanded" },
-    { "name": "phase-3-content-expansion", "completed": "2026-02-08", "summary": "4 new guide articles, 10 area pages expanded to 1000+ words with FAQPage schema" },
-    { "name": "phase-4-ai-seo", "completed": "2026-02-08", "summary": "IndexNow, llms.txt, schema upgrades to HomeAndConstructionBusiness, performance hints, 200+ internal links, pillar page" },
-    { "name": "phase-5-audit-fixes", "completed": "2026-02-12", "summary": "SEO audit 78/100, deleted duplicate page, featured guides on homepage, 5 postcode links added" },
-    { "name": "phase-6-technical-content", "completed": "2026-02-21", "summary": "Canonical URLs sitewide, image compression, OG tags, postcode pages on hub, HowTo schema on 5 guides, content freshness" },
-    { "name": "phase-7-quality-cleanup", "completed": "2026-02-21", "summary": "Guide cannibalization fix, seasonal overlap fix, meta keywords removed, ToS page, CWV audit" },
-    { "name": "phase-visual-redesign", "completed": "2026-02-21", "summary": "Full CSS rewrite, midnight navy theme, Inter+Raleway fonts, glassmorphism, text logo" },
-    { "name": "phase-5b-calculator-outreach", "completed": "2026-02-22", "summary": "Interactive cost calculator, 8 outreach articles/templates, directory checklist, backlink strategy" }
+    {
+      "name": "phase-1-seo-cro-overhaul",
+      "completed": "2026-02-08",
+      "summary": "Removed fake reviews, added guides hub, privacy page, mobile menu, sticky CTA, 12 inline CTAs"
+    },
+    {
+      "name": "phase-2-schema-meta-content",
+      "completed": "2026-02-08",
+      "summary": "BreadcrumbList on 12 pages, FAQPage on 5 areas, HowTo on 3 guides, meta optimization, 5 area pages expanded"
+    },
+    {
+      "name": "phase-3-content-expansion",
+      "completed": "2026-02-08",
+      "summary": "4 new guide articles, 10 area pages expanded to 1000+ words with FAQPage schema"
+    },
+    {
+      "name": "phase-4-ai-seo",
+      "completed": "2026-02-08",
+      "summary": "IndexNow, llms.txt, schema upgrades to HomeAndConstructionBusiness, performance hints, 200+ internal links, pillar page"
+    },
+    {
+      "name": "phase-5-audit-fixes",
+      "completed": "2026-02-12",
+      "summary": "SEO audit 78/100, deleted duplicate page, featured guides on homepage, 5 postcode links added"
+    },
+    {
+      "name": "phase-6-technical-content",
+      "completed": "2026-02-21",
+      "summary": "Canonical URLs sitewide, image compression, OG tags, postcode pages on hub, HowTo schema on 5 guides, content freshness"
+    },
+    {
+      "name": "phase-7-quality-cleanup",
+      "completed": "2026-02-21",
+      "summary": "Guide cannibalization fix, seasonal overlap fix, meta keywords removed, ToS page, CWV audit"
+    },
+    {
+      "name": "phase-visual-redesign",
+      "completed": "2026-02-21",
+      "summary": "Full CSS rewrite, midnight navy theme, Inter+Raleway fonts, glassmorphism, text logo"
+    },
+    {
+      "name": "phase-5b-calculator-outreach",
+      "completed": "2026-02-22",
+      "summary": "Interactive cost calculator, 8 outreach articles/templates, directory checklist, backlink strategy"
+    }
   ],
   "queue": [
     {
@@ -48,11 +85,17 @@
       "category": "audit",
       "priority": "P1",
       "iceScore": 810,
-      "ice": { "impact": 9, "confidence": 9, "ease": 10 },
+      "ice": {
+        "impact": 9,
+        "confidence": 9,
+        "ease": 10
+      },
       "status": "completed",
       "type": "automated",
       "details": "First run of the autonomous system — scan all 68 HTML files against audit.md checklist. Establish baseline health score and populate queue with discovered issues.",
-      "targetFiles": ["all"],
+      "targetFiles": [
+        "all"
+      ],
       "createdDate": "2026-03-10",
       "source": "system-init",
       "completedDate": "2026-03-10",
@@ -67,11 +110,17 @@
       "category": "sitemap",
       "priority": "P1",
       "iceScore": 648,
-      "ice": { "impact": 8, "confidence": 9, "ease": 9 },
+      "ice": {
+        "impact": 8,
+        "confidence": 9,
+        "ease": 9
+      },
       "status": "completed",
       "type": "automated",
       "details": "Cross-reference all HTML files against sitemap.xml.",
-      "targetFiles": ["sitemap.xml"],
+      "targetFiles": [
+        "sitemap.xml"
+      ],
       "createdDate": "2026-03-10",
       "source": "system-init",
       "completedDate": "2026-03-10",
@@ -86,11 +135,17 @@
       "category": "links",
       "priority": "P1",
       "iceScore": 648,
-      "ice": { "impact": 8, "confidence": 9, "ease": 9 },
+      "ice": {
+        "impact": 8,
+        "confidence": 9,
+        "ease": 9
+      },
       "status": "completed",
       "type": "automated",
       "details": "Scan all HTML files for href attributes containing .html.",
-      "targetFiles": ["all *.html"],
+      "targetFiles": [
+        "all *.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "system-init",
       "completedDate": "2026-03-10",
@@ -105,11 +160,17 @@
       "category": "sitemap",
       "priority": "P2",
       "iceScore": 360,
-      "ice": { "impact": 5, "confidence": 8, "ease": 9 },
+      "ice": {
+        "impact": 5,
+        "confidence": 8,
+        "ease": 9
+      },
       "status": "completed",
       "type": "automated",
       "details": "Current sitemap lastmod dates are from Feb 2026. Check actual file modification dates and update sitemap accordingly.",
-      "targetFiles": ["sitemap.xml"],
+      "targetFiles": [
+        "sitemap.xml"
+      ],
       "createdDate": "2026-03-10",
       "source": "system-init",
       "completedDate": "2026-03-10",
@@ -124,11 +185,17 @@
       "category": "schema",
       "priority": "P2",
       "iceScore": 294,
-      "ice": { "impact": 7, "confidence": 6, "ease": 7 },
+      "ice": {
+        "impact": 7,
+        "confidence": 6,
+        "ease": 7
+      },
       "status": "completed",
       "type": "automated",
       "details": "Check all guide pages for Article schema with datePublished and dateModified properties.",
-      "targetFiles": ["guides/*.html"],
+      "targetFiles": [
+        "guides/*.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "system-init",
       "completedDate": "2026-03-10",
@@ -143,11 +210,17 @@
       "category": "freshness",
       "priority": "P2",
       "iceScore": 280,
-      "ice": { "impact": 5, "confidence": 7, "ease": 8 },
+      "ice": {
+        "impact": 5,
+        "confidence": 7,
+        "ease": 8
+      },
       "status": "completed",
       "type": "automated",
       "details": "Scan all pages for references to 2025 that should now say 2026.",
-      "targetFiles": ["all *.html"],
+      "targetFiles": [
+        "all *.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "system-init",
       "completedDate": "2026-03-10",
@@ -162,11 +235,17 @@
       "category": "meta",
       "priority": "P2",
       "iceScore": 288,
-      "ice": { "impact": 4, "confidence": 8, "ease": 9 },
+      "ice": {
+        "impact": 4,
+        "confidence": 8,
+        "ease": 9
+      },
       "status": "completed",
       "type": "automated",
       "details": "Verify all pages have og:title, og:description, og:url, og:image.",
-      "targetFiles": ["all *.html"],
+      "targetFiles": [
+        "all *.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "system-init",
       "completedDate": "2026-03-10",
@@ -181,11 +260,17 @@
       "category": "images",
       "priority": "P2",
       "iceScore": 360,
-      "ice": { "impact": 5, "confidence": 8, "ease": 9 },
+      "ice": {
+        "impact": 5,
+        "confidence": 8,
+        "ease": 9
+      },
       "status": "completed",
       "type": "automated",
       "details": "Verify all img tags have alt, width, height. Hero images should have fetchpriority=high, below-fold should have loading=lazy.",
-      "targetFiles": ["all *.html"],
+      "targetFiles": [
+        "all *.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "system-init",
       "completedDate": "2026-03-10",
@@ -200,11 +285,17 @@
       "category": "structure",
       "priority": "P2",
       "iceScore": 252,
-      "ice": { "impact": 7, "confidence": 6, "ease": 6 },
+      "ice": {
+        "impact": 7,
+        "confidence": 6,
+        "ease": 6
+      },
       "status": "completed",
       "type": "automated",
       "details": "Every page should have exactly one H1 containing primary keyword. No skipped heading levels (H1→H3 without H2). No duplicate H1s across site.",
-      "targetFiles": ["all *.html"],
+      "targetFiles": [
+        "all *.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "system-init",
       "completedDate": "2026-03-10",
@@ -219,11 +310,17 @@
       "category": "content",
       "priority": "P3",
       "iceScore": 168,
-      "ice": { "impact": 7, "confidence": 6, "ease": 4 },
+      "ice": {
+        "impact": 7,
+        "confidence": 6,
+        "ease": 4
+      },
       "status": "completed",
       "type": "automated",
       "details": "Check first paragraph of each guide page. Should directly answer the search query in first 60 words. Phase 4 did this for 8 guides — verify and fix remaining.",
-      "targetFiles": ["guides/*.html"],
+      "targetFiles": [
+        "guides/*.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "system-init",
       "completedDate": "2026-03-10",
@@ -238,7 +335,11 @@
       "category": "outreach",
       "priority": "P2",
       "iceScore": 210,
-      "ice": { "impact": 7, "confidence": 6, "ease": 5 },
+      "ice": {
+        "impact": 7,
+        "confidence": 6,
+        "ease": 5
+      },
       "status": "pending",
       "type": "manual",
       "details": "Content ready at seo/outreach/medium-article-1-cost-guide.md. Publish on Medium with backlink to samedayjetwash.com. DA 94 opportunity.",
@@ -257,7 +358,11 @@
       "category": "outreach",
       "priority": "P2",
       "iceScore": 180,
-      "ice": { "impact": 6, "confidence": 6, "ease": 5 },
+      "ice": {
+        "impact": 6,
+        "confidence": 6,
+        "ease": 5
+      },
       "status": "pending",
       "type": "manual",
       "details": "Checklist at seo/outreach/DIRECTORY-SUBMISSION-CHECKLIST.md. 15 directories with step-by-step instructions. Builds citation signals without GBP.",
@@ -276,7 +381,11 @@
       "category": "monitoring",
       "priority": "P1",
       "iceScore": 504,
-      "ice": { "impact": 7, "confidence": 8, "ease": 9 },
+      "ice": {
+        "impact": 7,
+        "confidence": 8,
+        "ease": 9
+      },
       "status": "pending",
       "type": "manual",
       "details": "Log into GSC. Check: Manual Actions tab, Coverage report, Core Web Vitals, Security issues. Update siteStats in tracker with current numbers.",
@@ -295,7 +404,11 @@
       "category": "indexing",
       "priority": "P1",
       "iceScore": 490,
-      "ice": { "impact": 7, "confidence": 10, "ease": 7 },
+      "ice": {
+        "impact": 7,
+        "confidence": 10,
+        "ease": 7
+      },
       "status": "pending",
       "type": "manual",
       "details": "14 pages still 'Discovered - not indexed' as of Feb 25. Use GSC URL Inspection to request indexing. Priority: service pages > pillar > guides > areas.",
@@ -314,7 +427,11 @@
       "category": "images",
       "priority": "P4",
       "iceScore": 48,
-      "ice": { "impact": 3, "confidence": 4, "ease": 4 },
+      "ice": {
+        "impact": 3,
+        "confidence": 4,
+        "ease": 4
+      },
       "status": "pending",
       "type": "manual",
       "details": "Currently all pages share one sitewide OG image. Create unique images for the 6 main service pages showing relevant service.",
@@ -333,11 +450,17 @@
       "category": "schema",
       "priority": "P2",
       "iceScore": 336,
-      "ice": { "impact": 6, "confidence": 8, "ease": 7 },
+      "ice": {
+        "impact": 6,
+        "confidence": 8,
+        "ease": 7
+      },
       "status": "completed",
       "type": "automated",
       "details": "Areas hub page is missing all JSON-LD schema. Add BreadcrumbList schema (Home > Areas). Hub page has 22 area links — important for crawling/discovery.",
-      "targetFiles": ["areas.html"],
+      "targetFiles": [
+        "areas.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "audit-run-001",
       "completedDate": "2026-03-10",
@@ -352,11 +475,17 @@
       "category": "schema",
       "priority": "P2",
       "iceScore": 336,
-      "ice": { "impact": 6, "confidence": 8, "ease": 7 },
+      "ice": {
+        "impact": 6,
+        "confidence": 8,
+        "ease": 7
+      },
       "status": "completed",
       "type": "automated",
       "details": "Guides hub page is missing all JSON-LD schema. Add BreadcrumbList schema (Home > Guides). Hub page links to all 27 guides — important for crawling.",
-      "targetFiles": ["guides.html"],
+      "targetFiles": [
+        "guides.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "audit-run-001",
       "completedDate": "2026-03-10",
@@ -371,11 +500,19 @@
       "category": "structure",
       "priority": "P3",
       "iceScore": 180,
-      "ice": { "impact": 5, "confidence": 6, "ease": 6 },
+      "ice": {
+        "impact": 5,
+        "confidence": 6,
+        "ease": 6
+      },
       "status": "completed",
       "type": "automated",
       "details": "Changed footer H4 tags to <p class='footer-heading'> on index.html and quote.html. Added .footer-heading CSS class alongside existing .footer-col h4 selector for seamless transition.",
-      "targetFiles": ["css/style.css", "index.html", "quote.html"],
+      "targetFiles": [
+        "css/style.css",
+        "index.html",
+        "quote.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "audit-run-006",
       "completedDate": "2026-03-10",
@@ -390,11 +527,19 @@
       "category": "structure",
       "priority": "P3",
       "iceScore": 168,
-      "ice": { "impact": 5, "confidence": 6, "ease": 8 },
+      "ice": {
+        "impact": 5,
+        "confidence": 6,
+        "ease": 8
+      },
       "status": "completed",
       "type": "automated",
       "details": "Replace 4 footer <h4> with <p class='footer-heading'> in each file. CSS already updated in SEO-019.",
-      "targetFiles": ["driveway-cleaning.html", "patio-cleaning.html", "block-paving-cleaning.html"],
+      "targetFiles": [
+        "driveway-cleaning.html",
+        "patio-cleaning.html",
+        "block-paving-cleaning.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "SEO-019",
       "completedDate": "2026-03-10",
@@ -409,11 +554,19 @@
       "category": "structure",
       "priority": "P3",
       "iceScore": 168,
-      "ice": { "impact": 5, "confidence": 6, "ease": 8 },
+      "ice": {
+        "impact": 5,
+        "confidence": 6,
+        "ease": 8
+      },
       "status": "completed",
       "type": "automated",
       "details": "Replace 4 footer <h4> with <p class='footer-heading'> in each file. CSS already updated.",
-      "targetFiles": ["render-cleaning.html", "decking-cleaning.html", "commercial-jetwashing.html"],
+      "targetFiles": [
+        "render-cleaning.html",
+        "decking-cleaning.html",
+        "commercial-jetwashing.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "SEO-019",
       "completedDate": "2026-03-10",
@@ -428,11 +581,19 @@
       "category": "structure",
       "priority": "P3",
       "iceScore": 168,
-      "ice": { "impact": 5, "confidence": 6, "ease": 8 },
+      "ice": {
+        "impact": 5,
+        "confidence": 6,
+        "ease": 8
+      },
       "status": "completed",
       "type": "automated",
       "details": "Replace 4 footer <h4> with <p class='footer-heading'> in each file. CSS already updated.",
-      "targetFiles": ["roof-cleaning.html", "gutter-cleaning.html", "soft-washing.html"],
+      "targetFiles": [
+        "roof-cleaning.html",
+        "gutter-cleaning.html",
+        "soft-washing.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "SEO-019",
       "completedDate": "2026-03-10",
@@ -447,11 +608,19 @@
       "category": "structure",
       "priority": "P3",
       "iceScore": 168,
-      "ice": { "impact": 5, "confidence": 6, "ease": 8 },
+      "ice": {
+        "impact": 5,
+        "confidence": 6,
+        "ease": 8
+      },
       "status": "completed",
       "type": "automated",
       "details": "Replace 4 footer <h4> with <p class='footer-heading'> in each file. CSS already updated.",
-      "targetFiles": ["calculator.html", "pricing.html", "faq.html"],
+      "targetFiles": [
+        "calculator.html",
+        "pricing.html",
+        "faq.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "SEO-019",
       "completedDate": "2026-03-10",
@@ -466,11 +635,19 @@
       "category": "structure",
       "priority": "P3",
       "iceScore": 168,
-      "ice": { "impact": 5, "confidence": 6, "ease": 8 },
+      "ice": {
+        "impact": 5,
+        "confidence": 6,
+        "ease": 8
+      },
       "status": "completed",
       "type": "automated",
       "details": "Replace 4 footer <h4> with <p class='footer-heading'> in each file. CSS already updated.",
-      "targetFiles": ["privacy.html", "terms.html", "areas.html"],
+      "targetFiles": [
+        "privacy.html",
+        "terms.html",
+        "areas.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "SEO-019",
       "completedDate": "2026-03-10",
@@ -485,11 +662,18 @@
       "category": "structure",
       "priority": "P3",
       "iceScore": 168,
-      "ice": { "impact": 5, "confidence": 6, "ease": 8 },
+      "ice": {
+        "impact": 5,
+        "confidence": 6,
+        "ease": 8
+      },
       "status": "completed",
       "type": "automated",
       "details": "Replace 4 footer <h4> with <p class='footer-heading'> in each file. CSS already updated. Final batch — completes SEO-019 footer heading fix across all 19 affected pages.",
-      "targetFiles": ["guides.html", "pressure-washing-guide.html"],
+      "targetFiles": [
+        "guides.html",
+        "pressure-washing-guide.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "SEO-019",
       "completedDate": "2026-03-10",
@@ -504,11 +688,19 @@
       "category": "schema",
       "priority": "P3",
       "iceScore": 168,
-      "ice": { "impact": 4, "confidence": 6, "ease": 7 },
+      "ice": {
+        "impact": 4,
+        "confidence": 6,
+        "ease": 7
+      },
       "status": "completed",
       "type": "automated",
       "details": "Three info pages missing JSON-LD schema. Add BreadcrumbList (Home > [Page]). Lower priority as these are non-ranking info pages, but completes sitewide schema coverage.",
-      "targetFiles": ["quote.html", "privacy.html", "terms.html"],
+      "targetFiles": [
+        "quote.html",
+        "privacy.html",
+        "terms.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "audit-run-001",
       "completedDate": "2026-03-10",
@@ -523,11 +715,25 @@
       "category": "meta",
       "priority": "P2",
       "iceScore": 432,
-      "ice": { "impact": 6, "confidence": 8, "ease": 9 },
+      "ice": {
+        "impact": 6,
+        "confidence": 8,
+        "ease": 9
+      },
       "status": "completed",
       "type": "automated",
       "details": "19 pages have meta descriptions exceeding 160 chars (Google truncation point). Affected: 9 area pages (betchworth, caterham, godstone, horley, merstham, rh2, rh4, rh8, salfords) + 10 guide pages. Trim to 155-160 chars max, keep CTA intact.",
-      "targetFiles": ["areas/betchworth.html", "areas/godstone.html", "guides/can-pressure-washing-damage-driveway.html", "guides/is-pressure-washing-worth-it.html", "guides/pressure-washing-before-after-expectations.html", "guides/pressure-washing-myths-debunked.html", "guides/pressure-washing-seasonal-guide.html", "guides/stain-removal-guide-driveways-patios.html", "guides/surface-comparison-pressure-washing.html"],
+      "targetFiles": [
+        "areas/betchworth.html",
+        "areas/godstone.html",
+        "guides/can-pressure-washing-damage-driveway.html",
+        "guides/is-pressure-washing-worth-it.html",
+        "guides/pressure-washing-before-after-expectations.html",
+        "guides/pressure-washing-myths-debunked.html",
+        "guides/pressure-washing-seasonal-guide.html",
+        "guides/stain-removal-guide-driveways-patios.html",
+        "guides/surface-comparison-pressure-washing.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "discovery-run-014",
       "completedDate": "2026-03-10",
@@ -542,11 +748,17 @@
       "category": "meta",
       "priority": "P2",
       "iceScore": 384,
-      "ice": { "impact": 6, "confidence": 8, "ease": 8 },
+      "ice": {
+        "impact": 6,
+        "confidence": 8,
+        "ease": 8
+      },
       "status": "completed",
       "type": "automated",
       "details": "32 pages have title tags exceeding 60 chars (Google truncation point). Worst offenders: rh6 (82 chars), leatherhead (73), rh4 (73), epsom (71). Trim to 55-60 chars max, prioritize keyword + location.",
-      "targetFiles": ["multiple — 32 pages across areas and guides"],
+      "targetFiles": [
+        "multiple — 32 pages across areas and guides"
+      ],
       "createdDate": "2026-03-10",
       "source": "discovery-run-014",
       "completedDate": "2026-03-10",
@@ -561,11 +773,23 @@
       "category": "links",
       "priority": "P3",
       "iceScore": 180,
-      "ice": { "impact": 6, "confidence": 6, "ease": 5 },
+      "ice": {
+        "impact": 6,
+        "confidence": 6,
+        "ease": 5
+      },
       "status": "completed",
       "type": "automated",
       "details": "8 pages have fewer than 5 inbound internal links. Pillar page (/pressure-washing-guide) only has 4 — should be heavily linked. Also: 4 guide pages (before-after, myths, surface-comparison, weed-removal) and 2 postcode pages (rh8, sm7). Add 3-5 contextual links from related pages to each.",
-      "targetFiles": ["pressure-washing-guide.html", "guides/pressure-washing-before-after-expectations.html", "guides/pressure-washing-myths-debunked.html", "guides/surface-comparison-pressure-washing.html", "guides/weed-removal-block-paving.html", "areas/rh8.html", "areas/sm7.html"],
+      "targetFiles": [
+        "pressure-washing-guide.html",
+        "guides/pressure-washing-before-after-expectations.html",
+        "guides/pressure-washing-myths-debunked.html",
+        "guides/surface-comparison-pressure-washing.html",
+        "guides/weed-removal-block-paving.html",
+        "areas/rh8.html",
+        "areas/sm7.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "discovery-run-014",
       "completedDate": "2026-03-10",
@@ -580,11 +804,17 @@
       "category": "schema",
       "priority": "P1",
       "iceScore": 800,
-      "ice": { "impact": 8, "confidence": 10, "ease": 10 },
+      "ice": {
+        "impact": 8,
+        "confidence": 10,
+        "ease": 10
+      },
       "status": "completed",
       "type": "automated",
       "details": "datePublished was '2026-12-19' (future date, December 2026). Should be '2025-12-19' (original publish date). One-line fix.",
-      "targetFiles": ["guides/block-paving-sealing-guide.html"],
+      "targetFiles": [
+        "guides/block-paving-sealing-guide.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "discovery-run-018",
       "completedDate": "2026-03-10",
@@ -599,11 +829,17 @@
       "category": "structure",
       "priority": "P3",
       "iceScore": 315,
-      "ice": { "impact": 5, "confidence": 7, "ease": 9 },
+      "ice": {
+        "impact": 5,
+        "confidence": 7,
+        "ease": 9
+      },
       "status": "completed",
       "type": "automated",
       "details": "Before & After Showcase section has H4 tags (Driveway Transformation, Patio Revival, Block Paving Restored) directly under H2 (See Our Results), skipping H3. Fix: change H4s to H3s for correct hierarchy.",
-      "targetFiles": ["index.html"],
+      "targetFiles": [
+        "index.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "discovery-run-018",
       "completedDate": "2026-03-10",
@@ -618,11 +854,17 @@
       "category": "structure",
       "priority": "P3",
       "iceScore": 315,
-      "ice": { "impact": 5, "confidence": 7, "ease": 9 },
+      "ice": {
+        "impact": 5,
+        "confidence": 7,
+        "ease": 9
+      },
       "status": "completed",
       "type": "automated",
       "details": "Page goes H1 > H3 (Enter Your Details) > H3 (Your Estimated Cost) > H2. The two H3s appear before any H2, which is a hierarchy skip. Fix: change to H2s or styled p elements.",
-      "targetFiles": ["calculator.html"],
+      "targetFiles": [
+        "calculator.html"
+      ],
       "createdDate": "2026-03-10",
       "source": "discovery-run-018",
       "completedDate": "2026-03-10",
@@ -637,11 +879,17 @@
       "category": "meta",
       "priority": "P3",
       "iceScore": 224,
-      "ice": { "impact": 4, "confidence": 7, "ease": 8 },
+      "ice": {
+        "impact": 4,
+        "confidence": 7,
+        "ease": 8
+      },
       "status": "completed",
       "type": "automated",
       "details": "29 pages have og:description longer than 155 chars and not matching the trimmed meta description. Sync og:description to match meta description for consistent social sharing previews.",
-      "targetFiles": ["multiple — 29 pages"],
+      "targetFiles": [
+        "multiple — 29 pages"
+      ],
       "createdDate": "2026-03-10",
       "source": "discovery-run-018",
       "completedDate": "2026-03-23",
@@ -656,11 +904,17 @@
       "category": "conversion",
       "priority": "P1",
       "iceScore": 900,
-      "ice": { "impact": 10, "confidence": 10, "ease": 9 },
+      "ice": {
+        "impact": 10,
+        "confidence": 10,
+        "ease": 9
+      },
       "status": "completed",
       "type": "automated",
       "details": "Phone number 01737652515 appears on ALL 68 pages in sticky CTA bar (tel: link). Violates anonymous business model. Replace sticky-cta-phone 'Call Now' with 'Get Quote' linking to /quote. Also remove nav phone link from index.html and calculator.html, and inline phone from guides/pressure-washing-seasonal-guide.html. Batch in groups of 3 files.",
-      "targetFiles": ["all 68 HTML files"],
+      "targetFiles": [
+        "all 68 HTML files"
+      ],
       "createdDate": "2026-03-23",
       "source": "conversion-discovery-run-021",
       "completedDate": "2026-03-23",
@@ -675,11 +929,17 @@
       "category": "conversion",
       "priority": "P2",
       "iceScore": 448,
-      "ice": { "impact": 8, "confidence": 7, "ease": 8 },
+      "ice": {
+        "impact": 8,
+        "confidence": 7,
+        "ease": 8
+      },
       "status": "completed",
       "type": "automated",
       "details": "Zero area pages have trust badges in hero section. Add trust block (Free Quotes, Same Day Response, No Obligation, Satisfaction Guaranteed) below H1, above first H2. Use trust block pattern from content-patterns.md. Batch in groups of 3.",
-      "targetFiles": ["areas/*.html — 22 pages"],
+      "targetFiles": [
+        "areas/*.html — 22 pages"
+      ],
       "createdDate": "2026-03-23",
       "source": "conversion-discovery-run-021",
       "completedDate": "2026-03-23",
@@ -694,11 +954,17 @@
       "category": "conversion",
       "priority": "P2",
       "iceScore": 252,
-      "ice": { "impact": 7, "confidence": 6, "ease": 6 },
+      "ice": {
+        "impact": 7,
+        "confidence": 6,
+        "ease": 6
+      },
       "status": "completed",
       "type": "automated",
       "details": "All 27 guide pages lack a bridge CTA paragraph before the final CTA. 19 have zero bridge-like content at all. Add bridge CTA pattern from content-patterns.md with page-specific copy. Prioritize 19 guides with zero bridge content. Batch in groups of 3.",
-      "targetFiles": ["guides/*.html — 27 pages"],
+      "targetFiles": [
+        "guides/*.html — 27 pages"
+      ],
       "createdDate": "2026-03-23",
       "source": "conversion-discovery-run-021",
       "completedDate": "2026-03-23",
@@ -713,11 +979,25 @@
       "category": "conversion",
       "priority": "P3",
       "iceScore": 210,
-      "ice": { "impact": 6, "confidence": 5, "ease": 7 },
+      "ice": {
+        "impact": 6,
+        "confidence": 5,
+        "ease": 7
+      },
       "status": "completed",
       "type": "automated",
       "details": "9 area pages have only 1 mention of guarantee (likely boilerplate footer). Add prominent guarantee copy near CTA blocks. Pages: banstead, dorking, horley, reigate, rh2, rh4, rh6, rh8, sm7. Use guarantee copy pattern from content-patterns.md. Batch in groups of 3.",
-      "targetFiles": ["areas/banstead.html", "areas/dorking.html", "areas/horley.html", "areas/reigate.html", "areas/rh2.html", "areas/rh4.html", "areas/rh6.html", "areas/rh8.html", "areas/sm7.html"],
+      "targetFiles": [
+        "areas/banstead.html",
+        "areas/dorking.html",
+        "areas/horley.html",
+        "areas/reigate.html",
+        "areas/rh2.html",
+        "areas/rh4.html",
+        "areas/rh6.html",
+        "areas/rh8.html",
+        "areas/sm7.html"
+      ],
       "createdDate": "2026-03-23",
       "source": "conversion-discovery-run-021",
       "completedDate": "2026-03-23",
@@ -725,18 +1005,24 @@
       "attemptCount": 0,
       "maxAttempts": 3,
       "staleAfterDays": 30
-    }
-    ,{
+    },
+    {
       "id": "SEO-037",
       "task": "Remove phone number from JSON-LD schema on all pages with structured data",
       "category": "conversion",
       "priority": "P1",
       "iceScore": 720,
-      "ice": { "impact": 8, "confidence": 9, "ease": 10 },
+      "ice": {
+        "impact": 8,
+        "confidence": 9,
+        "ease": 10
+      },
       "status": "completed",
       "type": "automated",
       "details": "All pages with JSON-LD schema had telephone: +441737652515 in provider block. Violates anonymous model. Expanded scope from 22 area pages to 32 pages (also includes 9 service pages + index).",
-      "targetFiles": ["32 pages — 22 areas + 9 service + index"],
+      "targetFiles": [
+        "32 pages — 22 areas + 9 service + index"
+      ],
       "createdDate": "2026-03-23",
       "source": "discovery-run-023",
       "completedDate": "2026-03-23",
@@ -744,6 +1030,167 @@
       "attemptCount": 0,
       "maxAttempts": 3,
       "staleAfterDays": 7
+    },
+    {
+      "id": "SEO-039",
+      "task": "Add static pricing tables to remaining 21 area pages",
+      "category": "ai-citation",
+      "priority": "P2",
+      "iceScore": 504,
+      "ice": {
+        "impact": 8,
+        "confidence": 9,
+        "ease": 7
+      },
+      "status": "pending",
+      "type": "automated",
+      "details": "Convert bullet-list pricing to HTML tables on all area pages (Redhill done as template). Tables cited 2.5x more by AI.",
+      "targetFiles": [
+        "areas/*.html"
+      ],
+      "createdDate": "2026-04-09",
+      "source": "discovery-run-028",
+      "attemptCount": 0,
+      "maxAttempts": 3,
+      "staleAfterDays": 30
+    },
+    {
+      "id": "SEO-040",
+      "task": "Update dateModified on all 28 guide pages to current date",
+      "category": "ai-citation",
+      "priority": "P2",
+      "iceScore": 480,
+      "ice": {
+        "impact": 8,
+        "confidence": 8,
+        "ease": 8
+      },
+      "status": "pending",
+      "type": "automated",
+      "details": "All guides have dateModified of 2026-02-21 (47 days old). Content not updated quarterly is 3x more likely to lose AI citations.",
+      "targetFiles": [
+        "guides/*.html"
+      ],
+      "createdDate": "2026-04-09",
+      "source": "discovery-run-028",
+      "attemptCount": 0,
+      "maxAttempts": 3,
+      "staleAfterDays": 30
+    },
+    {
+      "id": "SEO-041",
+      "task": "Add answer-first key facts box to top 5 guide pages",
+      "category": "ai-citation",
+      "priority": "P2",
+      "iceScore": 392,
+      "ice": {
+        "impact": 7,
+        "confidence": 8,
+        "ease": 7
+      },
+      "status": "pending",
+      "type": "automated",
+      "details": "Add 3-5 quotable facts with statistics in a summary box below H1. AI extracts 40-word answer blocks at 2.7x rate. Target: driveway-cleaning-cost-uk, patio-cleaning-cost-uk, block-paving-cleaning-cost-uk, pressure-washing-vs-jet-washing, diy-vs-professional.",
+      "targetFiles": [
+        "guides/*.html"
+      ],
+      "createdDate": "2026-04-09",
+      "source": "discovery-run-028",
+      "attemptCount": 0,
+      "maxAttempts": 3,
+      "staleAfterDays": 30
+    },
+    {
+      "id": "SEO-042",
+      "task": "Create UK Pressure Washing Cost Report 2026 research asset",
+      "category": "linkable-asset",
+      "priority": "P1",
+      "iceScore": 504,
+      "ice": {
+        "impact": 9,
+        "confidence": 8,
+        "ease": 7
+      },
+      "status": "pending",
+      "type": "manual",
+      "details": "Deep research piece: compile pricing data across UK regions, surfaces, seasons. Include comparison tables, original statistics, seasonal patterns. Designed to earn backlinks and AI citations. Original research = 40% more AI visibility, 4.7x more backlinks.",
+      "targetFiles": [
+        "guides/uk-pressure-washing-cost-report-2026.html"
+      ],
+      "createdDate": "2026-04-09",
+      "source": "strategy-pivot",
+      "attemptCount": 0,
+      "maxAttempts": 1,
+      "staleAfterDays": 60
+    },
+    {
+      "id": "SEO-043",
+      "task": "Publish Medium articles from seo/outreach/ folder",
+      "category": "third-party",
+      "priority": "P1",
+      "iceScore": 567,
+      "ice": {
+        "impact": 9,
+        "confidence": 9,
+        "ease": 7
+      },
+      "status": "pending",
+      "type": "manual",
+      "details": "85% of AI citations come from third-party pages. Brand mentions = 41% of ChatGPT recommendation weight. Two Medium articles already drafted. Publishing is the highest-leverage manual action available.",
+      "targetFiles": [],
+      "createdDate": "2026-04-09",
+      "source": "research-ai-search",
+      "attemptCount": 0,
+      "maxAttempts": 1,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "SEO-044",
+      "task": "Register Bing Webmaster Tools and submit sitemap",
+      "category": "technical",
+      "priority": "P1",
+      "iceScore": 648,
+      "ice": {
+        "impact": 9,
+        "confidence": 9,
+        "ease": 8
+      },
+      "status": "pending",
+      "type": "manual",
+      "details": "ChatGPT uses Bing, not Google, for live queries. Without Bing Webmaster Tools, we have no visibility into Bing rankings. Critical for AI citation strategy.",
+      "targetFiles": [],
+      "createdDate": "2026-04-09",
+      "source": "research-ai-search",
+      "attemptCount": 0,
+      "maxAttempts": 1,
+      "staleAfterDays": 7
+    },
+    {
+      "id": "SEO-045",
+      "task": "Add How It Works booking steps to top 5 area pages",
+      "category": "transactional",
+      "priority": "P2",
+      "iceScore": 336,
+      "ice": {
+        "impact": 7,
+        "confidence": 8,
+        "ease": 6
+      },
+      "status": "pending",
+      "type": "automated",
+      "details": "Add 3-step process section: 1. Get instant estimate 2. We confirm within 2 hours 3. Same-day service. Transactional pages convert 5-15% vs 0.5-2% for informational.",
+      "targetFiles": [
+        "areas/redhill.html",
+        "areas/reigate.html",
+        "areas/dorking.html",
+        "areas/horley.html",
+        "areas/banstead.html"
+      ],
+      "createdDate": "2026-04-09",
+      "source": "research-transactional",
+      "attemptCount": 0,
+      "maxAttempts": 3,
+      "staleAfterDays": 30
     }
   ],
   "manualTasks": [
@@ -1024,6 +1471,20 @@
         "Anonymous business model constraint now fully enforced sitewide. No identity-revealing phone number anywhere.",
         "3 automated conversion tasks remaining: SEO-034 (trust badges, 22 area pages), SEO-035 (bridge CTAs, 27 guides), SEO-036 (guarantee copy, 9 areas).",
         "Next priority: SEO-034 (trust badges on area page heroes, P2, ICE 448). Templatable fix, 22 pages in 8 batches of 3."
+      ]
+    },
+    {
+      "runId": "run-028",
+      "date": "2026-04-09",
+      "entries": [
+        "Strategic pivot: informational SEO alone will not generate leads without GBP. Must target AI citations + transactional intent.",
+        "ChatGPT uses Bing for live queries — Bing Webmaster Tools is critical and was missing.",
+        "Fake phone number (+44 1737 652515) was in schema on 23 pages — removed. Major penalty risk.",
+        "85% of AI citations come from third-party pages. Publishing Medium/LinkedIn articles is highest-leverage manual action.",
+        "Tables are cited 2.5x more by AI — converted Redhill pricing to HTML table as template for remaining pages.",
+        "Google Online estimates filter shows above map pack — our calculator is a major competitive advantage vs tradesmen.",
+        "March 2026 Core Update rewards information gain — original research/data content is the path forward.",
+        "All area page titles changed from informational to transactional (Book... | Instant Online Quote)."
       ]
     }
   ],
