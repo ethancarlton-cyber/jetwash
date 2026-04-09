@@ -3,9 +3,9 @@
     "version": 1,
     "lastUpdated": "2026-04-09",
     "lastRunDate": "2026-04-09",
-    "lastRunId": "run-032",
-    "lastRunSummary": "SEO-039 COMPLETED: All 22 area pages now have structured pricing tables. Major AI citation improvement.",
-    "totalRuns": 32,
+    "lastRunId": "run-033",
+    "lastRunSummary": "SEO-041 COMPLETED: Key facts boxes on all 5 target guides.",
+    "totalRuns": 33,
     "nextTaskId": 47,
     "fullScanDate": "2026-03-10",
     "nextFullScanDue": "2026-06-10"
@@ -1092,7 +1092,7 @@
         "confidence": 8,
         "ease": 7
       },
-      "status": "pending",
+      "status": "completed",
       "type": "automated",
       "details": "Add 3-5 quotable facts with statistics in a summary box below H1. AI extracts 40-word answer blocks at 2.7x rate. Target: driveway-cleaning-cost-uk, patio-cleaning-cost-uk, block-paving-cleaning-cost-uk, pressure-washing-vs-jet-washing, diy-vs-professional.",
       "targetFiles": [
@@ -1100,9 +1100,11 @@
       ],
       "createdDate": "2026-04-09",
       "source": "discovery-run-028",
-      "attemptCount": 0,
+      "attemptCount": 1,
       "maxAttempts": 3,
-      "staleAfterDays": 30
+      "staleAfterDays": 30,
+      "completedDate": "2026-04-09",
+      "completedNotes": "Key facts boxes added to all 5 target guides: driveway-cleaning-cost-uk, patio-cleaning-cost-uk, block-paving-cleaning-cost-uk, pressure-washing-vs-jet-washing, diy-vs-professional. Each has 5 quotable stats. Why: AI extracts 40-word answer blocks at 2.7x rate."
     },
     {
       "id": "SEO-042",
@@ -1536,6 +1538,16 @@
         "Result: Template created for remaining 4 guide pages. P1 phone number issue added to queue.",
         "Pattern: Phone number removal from schema (run-028) was incomplete — HTML content in nav/footer/sticky CTA was missed. Always check both schema AND visible content.",
         "Next: SEO-046 (phone removal) is now highest priority P1. Then SEO-039 (pricing tables) and rest of SEO-041 (key facts on 4 more guides)."
+      ]
+    },
+    {
+      "runId": "run-033",
+      "date": "2026-04-09",
+      "entries": [
+        "What: Added key facts boxes to 4 more guide pages (5 total). All automated tasks from phase 9 now complete.",
+        "Why: AI extracts 40-word answer blocks at 2.7x rate. Key facts boxes give AI quotable, structured data to cite.",
+        "Result: 5 top guides now have structured summary boxes. Only SEO-045 (How It Works sections) remains as automated.",
+        "Next: SEO-045 then research mode kicks in — first topic should be AI citation tactics (freshest opportunity)."
       ]
     }
   ],
