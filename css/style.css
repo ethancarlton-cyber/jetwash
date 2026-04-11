@@ -1788,13 +1788,17 @@ a:hover {
     .sticky-cta-phone,
     .sticky-cta-call {
         flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
         color: var(--white);
         text-decoration: none;
-        padding: 12px;
+        padding: 12px 8px;
         border-radius: 50px;
         font-weight: 700;
-        font-size: 0.9375rem;
+        font-size: 0.8125rem;
+        white-space: nowrap;
         transition: var(--transition);
     }
 
