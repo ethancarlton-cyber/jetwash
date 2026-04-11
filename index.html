@@ -259,12 +259,13 @@
                 <input type="hidden" name="from_name" value="SameDayJetWash Website">
                 <div class="inline-form-fields">
                     <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="text" name="postcode" placeholder="Postcode" required>
+                    <input type="text" name="postcode" placeholder="Postcode" required pattern="[A-Za-z]{1,2}[0-9]{1,2}[A-Za-z]?\s?[0-9][A-Za-z]{2}" inputmode="text">
                     <input type="email" name="email" placeholder="Email Address" required>
                 </div>
                 <button type="submit" class="btn btn-primary">Get Free Quote</button>
-                <p class="inline-form-trust">Free, no-obligation quote · Response within 2 hours · Or call <a href="tel:+441737652515">01737 652 515</a></p>
+                <p class="inline-form-trust">Free, no-obligation quote · Response within 2 hours · 100% satisfaction guaranteed · Or call <a href="tel:+441737652515">01737 652 515</a></p>
             </form>
+            <p style="font-size: 0.75rem; color: #999; margin-top: 0.5rem; text-align: center;">By submitting, you agree to our <a href="/privacy" style="color: #999;">privacy policy</a>. We'll use your details only to provide your quote.</p>
         </div>
     </div>
 
@@ -362,6 +363,12 @@
                         <p>Weeds removed, colour restored</p>
                     </div>
                 </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <p style="font-size: 1.1rem; margin-bottom: 1rem;"><strong>Want results like these for your property?</strong></p>
+                <a href="/quote" class="btn btn-primary btn-large">Get Your Free Quote</a>
+                <p style="margin-top: 0.75rem;"><a href="tel:+441737652515" style="font-weight: 600;">Or call 01737 652 515</a></p>
             </div>
         </div>
     </section>
