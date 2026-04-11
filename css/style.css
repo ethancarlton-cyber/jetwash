@@ -1513,7 +1513,15 @@ a:hover {
     }
 
     .page-hero .trust-badges {
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        justify-content: center;
+    }
+
+    .page-hero .trust-badges .badge {
+        font-size: 0.7rem;
+        padding: 4px 10px;
     }
 
     .quote-section {
@@ -1638,7 +1646,8 @@ a:hover {
     }
 
     .sticky-cta-btn,
-    .sticky-cta-phone {
+    .sticky-cta-phone,
+    .sticky-cta-call {
         flex: 1;
         text-align: center;
         color: var(--white);
@@ -1655,7 +1664,8 @@ a:hover {
         color: var(--white);
     }
 
-    .sticky-cta-phone {
+    .sticky-cta-phone,
+    .sticky-cta-call {
         background: linear-gradient(135deg, var(--accent-color) 0%, #1e8e3e 100%);
     }
 
