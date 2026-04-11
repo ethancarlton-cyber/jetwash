@@ -507,4 +507,36 @@
         <priority>0.9</priority>
     </url>
 
+    <!-- Phase 1: Content Gap Guides -->
+    <url>
+        <loc>https://samedayjetwash.com/guides/roof-cleaning-cost-uk</loc>
+        <lastmod>2026-04-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://samedayjetwash.com/guides/gutter-cleaning-guide</loc>
+        <lastmod>2026-04-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://samedayjetwash.com/guides/render-cleaning-guide</loc>
+        <lastmod>2026-04-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://samedayjetwash.com/guides/decking-cleaning-guide</loc>
+        <lastmod>2026-04-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://samedayjetwash.com/guides/commercial-pressure-washing-guide</loc>
+        <lastmod>2026-04-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
 </urlset>
