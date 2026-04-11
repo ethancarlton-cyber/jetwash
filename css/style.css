@@ -2062,6 +2062,20 @@ a:hover {
     margin: 1.5rem 0;
 }
 
+/* =============== MOBILE FORM OPTIMIZATION =============== */
+@media (max-width: 768px) {
+    .inline-quote-form input[type="text"],
+    .inline-quote-form input[type="email"],
+    .inline-quote-form input[type="tel"],
+    .quote-form input[type="text"],
+    .quote-form input[type="email"],
+    .quote-form input[type="tel"],
+    .quote-form select {
+        min-height: 48px;
+        font-size: 16px; /* Prevents iOS auto-zoom */
+    }
+}
+
 /* =============== PRINT STYLES =============== */
 @media print {
     .header,
