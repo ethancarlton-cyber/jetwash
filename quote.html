@@ -34,8 +34,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Raleway:wght@800;900&family=Raleway:wght@800&display=swap" rel="stylesheet">
-    <link rel="preload" href="/css/style.css?v=3" as="style">
-    <link rel="stylesheet" href="css/style.css?v=3">
+    <link rel="preload" href="/css/style.css?v=4" as="style">
+    <link rel="stylesheet" href="css/style.css?v=4">
 
     <!-- BreadcrumbList Schema -->
     <script type="application/ld+json">
@@ -99,74 +99,80 @@
                     <div class="satisfaction-guarantee-wrapper">
                         <span class="satisfaction-guarantee">&#9989; 100% Satisfaction Guarantee — not happy? I'll redo it free</span>
                     </div>
+                    <div class="urgency-block">Spring 2026: Slots filling fast across Surrey. Most quotes confirmed within 2 hours.</div>
                     <h2>Request Your Free Quote Today</h2>
                     <p><strong>Most driveways cost £120-250.</strong> Complete the form below for your exact price — we'll call within 2 hours during business hours (Mon-Sat 8am-6pm). Evening or Sunday? We'll call first thing next morning.</p>
                     <p class="guarantee-text"><strong>100% satisfaction guaranteed</strong> — if you're not happy with the results, we'll re-clean for free.</p>
 
                     <form id="quoteForm" class="quote-form" action="https://api.web3forms.com/submit" method="POST">
-                        <!-- Web3Forms Access Key - Configured and ready to receive leads -->
                         <input type="hidden" name="access_key" value="f044aff6-87ad-4305-8eda-d8fef4706e95">
                         <input type="hidden" name="subject" value="New Quote - Same Day JetWash Reigate">
                         <input type="hidden" name="from_name" value="Same Day JetWash Reigate - Quote Form">
 
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
-                            <span class="error-message" id="nameError"></span>
+                        <div id="formStep1" class="form-step active">
+                            <div class="form-progress">
+                                <div class="progress-step current">1</div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 50%"></div></div>
+                                <div class="progress-step">2</div>
+                            </div>
+                            <p class="progress-label">Step 1 of 2 — Tell us what you need</p>
+
+                            <div class="form-group">
+                                <label for="service">What service do you need? *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="driveway">Driveway Cleaning</option>
+                                    <option value="patio">Patio Cleaning</option>
+                                    <option value="block-paving">Block Paving</option>
+                                    <option value="render">Render Cleaning</option>
+                                    <option value="decking">Decking Cleaning</option>
+                                    <option value="roof">Roof Cleaning</option>
+                                    <option value="gutter">Gutter Cleaning</option>
+                                    <option value="commercial">Commercial</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="error-message" id="serviceError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="postcode">Your postcode *</label>
+                                <input type="text" id="postcode" name="postcode" required placeholder="e.g. RH1 2AB" pattern="[A-Za-z]{1,2}[0-9]{1,2}[A-Za-z]?\s?[0-9][A-Za-z]{2}">
+                                <span class="error-message" id="postcodeError"></span>
+                                <small>We serve areas within 20 miles of Redhill & Reigate (RH1)</small>
+                            </div>
+
+                            <button type="button" id="nextStepBtn" class="btn btn-primary btn-large btn-full" onclick="nextStep()">Next</button>
+                            <p class="form-helper-text">Takes 30 seconds. No obligation.</p>
                         </div>
 
-                        <div class="form-group">
-                            <label for="postcode">Postcode *</label>
-                            <input type="text" id="postcode" name="postcode" required placeholder="e.g. RH1 2AB" pattern="[A-Za-z]{1,2}[0-9]{1,2}[A-Za-z]?\s?[0-9][A-Za-z]{2}">
-                            <span class="error-message" id="postcodeError"></span>
-                            <small>We serve areas within 20 miles of Redhill & Reigate (RH1)</small>
+                        <div id="formStep2" class="form-step">
+                            <div class="form-progress">
+                                <div class="progress-step completed">1</div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 100%"></div></div>
+                                <div class="progress-step current">2</div>
+                            </div>
+                            <p class="progress-label">Step 2 of 2 — How should we contact you?</p>
+
+                            <div class="form-group">
+                                <label for="name">Your name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact">Email or phone number *</label>
+                                <input type="text" id="contact" name="contact" required placeholder="you@example.com or 07XXX XXXXXX">
+                                <span class="error-message" id="contactError"></span>
+                                <small>We'll use whichever you provide to send your quote</small>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large btn-full">Get Your Free Quote</button>
+                            <p class="form-note">We respect your privacy. See our <a href="/privacy">privacy policy</a>.</p>
+                            <a href="#" class="back-link" onclick="prevStep(); return false;">&larr; Back to step 1</a>
                         </div>
-
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="07XXX XXXXXX or 01XXX XXXXXX" pattern="^(\+44|0)\d[\d\s]{8,13}$">
-                            <span class="error-message" id="phoneError"></span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="you@example.com">
-                            <span class="error-message" id="emailError"></span>
-                        </div>
-
-                        <p class="contact-helper">Provide phone or email — we'll use whichever you prefer</p>
-
-                        <div class="form-group">
-                            <label for="service">Service Required</label>
-                            <select id="service" name="service">
-                                <option value="">Select a service (optional)</option>
-                                <option value="driveway">Driveway Cleaning</option>
-                                <option value="patio">Patio Cleaning</option>
-                                <option value="block-paving">Block Paving Cleaning</option>
-                                <option value="render">Render Cleaning</option>
-                                <option value="decking">Decking Cleaning</option>
-                                <option value="commercial">Commercial Jetwashing</option>
-                                <option value="multiple">Multiple Services</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Additional Details (Optional)</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tell us more about your requirements, property size, or any specific concerns..."></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="consent" required>
-                                I consent to being contacted regarding my quote request *
-                            </label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-large">Get Quote - 2hr Callback Starts Now</button>
-
-                        <p class="form-note">By submitting this form, you agree to be contacted about your quote. We respect your privacy and will never share your details with third parties.</p>
                     </form>
+
+                    <p class="social-proof-line">Trusted by homeowners across Redhill, Reigate, Dorking, Horley and Surrey</p>
 
                     <div id="formSuccess" class="success-message" style="display: none;">
                         <h3>Your 2-Hour Callback Guarantee is Active!</h3>
@@ -346,16 +352,17 @@
             serviceSelect.value = serviceMap[surface];
         }
 
-        // Pre-fill additional details with calculator context
+        // Store calculator context as hidden field if present
         var estimate = params.get('estimate');
         var area = params.get('area');
         var condition = params.get('condition');
         if (estimate) {
-            var messageField = document.getElementById('message');
-            if (messageField) {
-                var details = 'Calculator estimate: ' + surface + ' (' + (area || '?') + 'm\u00B2, ' + (condition || 'unknown') + ') \u2014 \u00A3' + estimate;
-                messageField.value = details;
-            }
+            var hiddenCalc = document.createElement('input');
+            hiddenCalc.type = 'hidden';
+            hiddenCalc.name = 'calculator_context';
+            hiddenCalc.value = 'Calculator estimate: ' + surface + ' (' + (area || '?') + 'm\u00B2, ' + (condition || 'unknown') + ') \u2014 \u00A3' + estimate;
+            var quoteForm = document.getElementById('quoteForm');
+            if (quoteForm) quoteForm.appendChild(hiddenCalc);
         }
     })();
     </script>

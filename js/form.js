@@ -1,296 +1,259 @@
-// JetWash Haywards Heath - Form Validation & Handling
-// =========================================================
+// JetWash — 2-Step Quote Form Validation & Handling
 
-document.addEventListener('DOMContentLoaded', function() {
+// Step navigation (global scope for onclick handlers)
+function nextStep() {
+    var serviceSelect = document.getElementById('service');
+    var serviceError = document.getElementById('serviceError');
+    var postcodeInput = document.getElementById('postcode');
+    var postcodeError = document.getElementById('postcodeError');
+    var valid = true;
 
-    // Form validation for quote form
-    const quoteForm = document.getElementById('quoteForm');
+    // Clear previous errors
+    if (serviceError) serviceError.textContent = '';
+    if (postcodeError) postcodeError.textContent = '';
 
-    // Get input elements (used throughout the script)
-    const postcodeInput = document.getElementById('postcode');
-    const postcodeError = document.getElementById('postcodeError');
-    const phoneInput = document.getElementById('phone');
-    const phoneError = document.getElementById('phoneError');
-    const emailInput = document.getElementById('email');
-    const emailError = document.getElementById('emailError');
+    // Validate service selected
+    if (!serviceSelect || !serviceSelect.value) {
+        if (serviceError) serviceError.textContent = 'Please select a service';
+        valid = false;
+    }
 
-    if (quoteForm) {
-        // UK Postcode validation regex
-        const postcodeRegex = /^[A-Z]{1,2}[0-9]{1,2}[A-Z]?\s?[0-9][A-Z]{2}$/i;
-
-        // UK Phone validation regex (mobile and landline)
-        const phoneRegex = /^(\+44\s?[1-37]\d{2,3}|\(?0[1-37]\d{2,3}\)?)\s?\d{3}\s?\d{3,4}$/;
-
-        // Service area postcodes (all served prefixes)
-        const validPostcodeAreas = ['RH', 'BN', 'GU', 'CR', 'SM', 'KT'];
-
-        // Postcode validation
-        function validatePostcode(postcode) {
-            const cleaned = postcode.trim().toUpperCase();
-
-            if (!postcodeRegex.test(cleaned)) {
-                return {
-                    valid: false,
-                    message: 'Please enter a valid UK postcode (e.g., RH16 1AB)'
-                };
-            }
-
-            // Check if postcode is in service area
-            const prefix = cleaned.substring(0, 2).replace(/[0-9]/g, '');
-            if (!validPostcodeAreas.includes(prefix)) {
-                return {
-                    valid: true, // Still valid format, but show warning
-                    message: 'This postcode may be outside our service area. We\'ll confirm coverage when we contact you.'
-                };
-            }
-
-            return { valid: true, message: '' };
-        }
-
-        // Phone validation
-        function validatePhone(phone) {
-            const cleaned = phone.trim();
-
-            if (!phoneRegex.test(cleaned)) {
-                return {
-                    valid: false,
-                    message: 'Please enter a valid UK phone number (e.g., 07XXX XXXXXX)'
-                };
-            }
-
-            return { valid: true, message: '' };
-        }
-
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        function validateEmail(email) {
-            const cleaned = email.trim();
-
-            if (!emailRegex.test(cleaned)) {
-                return {
-                    valid: false,
-                    message: 'Please enter a valid email address'
-                };
-            }
-
-            return { valid: true, message: '' };
-        }
-
-        // Real-time validation for postcode
-        if (postcodeInput && postcodeError) {
-            postcodeInput.addEventListener('blur', function() {
-                const result = validatePostcode(this.value);
-                if (!result.valid) {
-                    postcodeError.textContent = result.message;
-                    postcodeError.style.color = '#ef4444'; // Error color
-                } else if (result.message) {
-                    postcodeError.textContent = result.message;
-                    postcodeError.style.color = '#f59e0b'; // Warning color
-                } else {
-                    postcodeError.textContent = '';
-                }
-            });
-        }
-
-        // Real-time validation for phone
-        if (phoneInput && phoneError) {
-            phoneInput.addEventListener('blur', function() {
-                if (this.value.trim()) {
-                    const result = validatePhone(this.value);
-                    if (!result.valid) {
-                        phoneError.textContent = result.message;
-                    } else {
-                        phoneError.textContent = '';
-                    }
-                } else {
-                    phoneError.textContent = '';
-                }
-            });
-        }
-
-        // Real-time validation for email
-        if (emailInput && emailError) {
-            emailInput.addEventListener('blur', function() {
-                if (this.value.trim()) {
-                    const result = validateEmail(this.value);
-                    if (!result.valid) {
-                        emailError.textContent = result.message;
-                    } else {
-                        emailError.textContent = '';
-                    }
-                } else {
-                    emailError.textContent = '';
-                }
-            });
-        }
-
-        // Form submission
-        quoteForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Clear previous errors
-            const errorElements = document.querySelectorAll('.error-message');
-            errorElements.forEach(el => el.textContent = '');
-
-            let isValid = true;
-
-            // Validate name
-            const name = document.getElementById('name');
-            const nameError = document.getElementById('nameError');
-            if (name && name.value.trim().length < 2) {
-                nameError.textContent = 'Please enter your full name';
-                isValid = false;
-            }
-
-            // Validate postcode
-            if (postcodeInput) {
-                const postcodeResult = validatePostcode(postcodeInput.value);
-                if (!postcodeResult.valid) {
-                    postcodeError.textContent = postcodeResult.message;
-                    isValid = false;
-                }
-            }
-
-            // Validate contact: require at least one of phone or email
-            const hasPhone = phoneInput && phoneInput.value.trim();
-            const hasEmail = emailInput && emailInput.value.trim();
-
-            if (!hasPhone && !hasEmail) {
-                if (phoneError) phoneError.textContent = 'Please provide a phone number or email address';
-                if (emailError) emailError.textContent = 'Please provide a phone number or email address';
-                isValid = false;
-            } else {
-                if (hasPhone) {
-                    const phoneResult = validatePhone(phoneInput.value);
-                    if (!phoneResult.valid) {
-                        phoneError.textContent = phoneResult.message;
-                        isValid = false;
-                    }
-                }
-                if (hasEmail) {
-                    const emailResult = validateEmail(emailInput.value);
-                    if (!emailResult.valid) {
-                        emailError.textContent = emailResult.message;
-                        isValid = false;
-                    }
-                }
-            }
-
-            // If all validations pass, submit the form to Web3Forms
-            if (isValid) {
-                // Show loading state
-                const submitButton = quoteForm.querySelector('button[type="submit"]');
-                const originalButtonText = submitButton.textContent;
-                submitButton.textContent = 'Sending...';
-                submitButton.disabled = true;
-
-                const formData = new FormData(quoteForm);
-
-                console.log('Submitting form to:', quoteForm.action);
-
-                fetch(quoteForm.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                })
-                .then(response => {
-                    console.log('Response status:', response.status);
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('Response data:', data);
-                    if (data.success) {
-                        showSuccessMessage();
-                    } else {
-                        submitButton.textContent = originalButtonText;
-                        submitButton.disabled = false;
-                        alert('Error: ' + (data.message || 'Form submission failed. Please call us at 01737 652515 instead.'));
-                    }
-                })
-                .catch(error => {
-                    console.error('Form submission error:', error);
-                    submitButton.textContent = originalButtonText;
-                    submitButton.disabled = false;
-                    alert('Network error: Could not submit form. Please call us at 01737 652515 or try again later.');
-                });
-            }
-        });
-
-        function showSuccessMessage() {
-            quoteForm.style.display = 'none';
-            const successDiv = document.getElementById('formSuccess');
-            if (successDiv) {
-                successDiv.style.display = 'block';
-            }
+    // Validate postcode
+    if (postcodeInput) {
+        var postcodeResult = validatePostcode(postcodeInput.value);
+        if (!postcodeResult.valid) {
+            if (postcodeError) postcodeError.textContent = postcodeResult.message;
+            valid = false;
         }
     }
 
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            const href = this.getAttribute('href');
+    if (valid) {
+        document.getElementById('formStep1').classList.remove('active');
+        document.getElementById('formStep2').classList.add('active');
+        // Focus the first field in step 2
+        var nameInput = document.getElementById('name');
+        if (nameInput) nameInput.focus();
+    }
+}
+
+function prevStep() {
+    document.getElementById('formStep2').classList.remove('active');
+    document.getElementById('formStep1').classList.add('active');
+}
+
+// UK Postcode validation
+var postcodeRegex = /^[A-Z]{1,2}[0-9]{1,2}[A-Z]?\s?[0-9][A-Z]{2}$/i;
+var validPostcodeAreas = ['RH', 'BN', 'GU', 'CR', 'SM', 'KT'];
+
+function validatePostcode(postcode) {
+    var cleaned = postcode.trim().toUpperCase();
+    if (!cleaned) {
+        return { valid: false, message: 'Please enter your postcode' };
+    }
+    if (!postcodeRegex.test(cleaned)) {
+        return { valid: false, message: 'Please enter a valid UK postcode (e.g., RH1 2AB)' };
+    }
+    var prefix = cleaned.substring(0, 2).replace(/[0-9]/g, '');
+    if (!validPostcodeAreas.includes(prefix)) {
+        return { valid: true, message: 'This postcode may be outside our service area. We\'ll confirm coverage when we contact you.' };
+    }
+    return { valid: true, message: '' };
+}
+
+// Smart contact validation — detects email vs phone
+var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+var phoneRegex = /^(\+44\s?|0)[1-37]\d[\d\s]{7,12}$/;
+
+function validateContact(value) {
+    var cleaned = value.trim();
+    if (!cleaned) {
+        return { valid: false, message: 'Please enter your email or phone number' };
+    }
+    // Detect format
+    if (cleaned.indexOf('@') !== -1) {
+        if (!emailRegex.test(cleaned)) {
+            return { valid: false, message: 'Please enter a valid email address' };
+        }
+        return { valid: true, type: 'email', message: '' };
+    }
+    // Treat as phone if starts with 0, +, or contains mostly digits
+    var digitCount = cleaned.replace(/[^0-9]/g, '').length;
+    if (cleaned.match(/^(\+44|0)/) || digitCount >= 7) {
+        if (!phoneRegex.test(cleaned.replace(/[\s()-]/g, ''))) {
+            return { valid: false, message: 'Please enter a valid UK phone number (e.g., 07XXX XXXXXX)' };
+        }
+        return { valid: true, type: 'phone', message: '' };
+    }
+    return { valid: false, message: 'Please enter a valid email address or UK phone number' };
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var quoteForm = document.getElementById('quoteForm');
+    var postcodeInput = document.getElementById('postcode');
+    var postcodeError = document.getElementById('postcodeError');
+    var contactInput = document.getElementById('contact');
+    var contactError = document.getElementById('contactError');
+
+    if (!quoteForm) return;
+
+    // Real-time postcode validation on blur
+    if (postcodeInput && postcodeError) {
+        postcodeInput.addEventListener('blur', function() {
+            if (!this.value.trim()) return;
+            var result = validatePostcode(this.value);
+            if (!result.valid) {
+                postcodeError.textContent = result.message;
+                postcodeError.style.color = '#ef4444';
+            } else if (result.message) {
+                postcodeError.textContent = result.message;
+                postcodeError.style.color = '#f59e0b';
+            } else {
+                postcodeError.textContent = '';
+            }
+        });
+    }
+
+    // Real-time contact validation on blur
+    if (contactInput && contactError) {
+        contactInput.addEventListener('blur', function() {
+            if (!this.value.trim()) return;
+            var result = validateContact(this.value);
+            if (!result.valid) {
+                contactError.textContent = result.message;
+            } else {
+                contactError.textContent = '';
+            }
+        });
+    }
+
+    // Postcode formatting (uppercase + space)
+    if (postcodeInput) {
+        postcodeInput.addEventListener('input', function(e) {
+            var value = e.target.value.toUpperCase().replace(/\s/g, '');
+            if (value.length > 3) {
+                value = value.slice(0, -3) + ' ' + value.slice(-3);
+            }
+            e.target.value = value;
+        });
+    }
+
+    // Contact input auto-formatting for phone numbers
+    if (contactInput) {
+        contactInput.addEventListener('input', function(e) {
+            var value = e.target.value;
+            // Only format if it looks like a phone number (starts with 0 or +)
+            if (value.match(/^(\+44|0)/)) {
+                var digits = value.replace(/\s/g, '');
+                if (digits.length > 5) {
+                    digits = digits.slice(0, 5) + ' ' + digits.slice(5);
+                }
+                if (digits.length > 9) {
+                    digits = digits.slice(0, 9) + ' ' + digits.slice(9, 15);
+                }
+                e.target.value = digits;
+            }
+        });
+    }
+
+    // Allow Enter key on step 1 to advance
+    var step1 = document.getElementById('formStep1');
+    if (step1) {
+        step1.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                nextStep();
+            }
+        });
+    }
+
+    // Form submission
+    quoteForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Clear previous errors
+        var errorElements = document.querySelectorAll('.error-message');
+        errorElements.forEach(function(el) { el.textContent = ''; });
+
+        var isValid = true;
+
+        // Validate name
+        var nameInput = document.getElementById('name');
+        var nameError = document.getElementById('nameError');
+        if (nameInput && nameInput.value.trim().length < 2) {
+            if (nameError) nameError.textContent = 'Please enter your name';
+            isValid = false;
+        }
+
+        // Validate contact (email or phone)
+        if (contactInput) {
+            var contactResult = validateContact(contactInput.value);
+            if (!contactResult.valid) {
+                if (contactError) contactError.textContent = contactResult.message;
+                isValid = false;
+            }
+        }
+
+        if (!isValid) return;
+
+        // Show loading state
+        var submitButton = quoteForm.querySelector('button[type="submit"]');
+        var originalButtonText = submitButton.textContent;
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
+
+        var formData = new FormData(quoteForm);
+
+        // Parse contact field into email/phone for the submission
+        var contactValue = contactInput ? contactInput.value.trim() : '';
+        var contactResult = validateContact(contactValue);
+        if (contactResult.type === 'email') {
+            formData.append('email', contactValue);
+        } else if (contactResult.type === 'phone') {
+            formData.append('phone', contactValue);
+        }
+
+        fetch(quoteForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        })
+        .then(function(response) { return response.json(); })
+        .then(function(data) {
+            if (data.success) {
+                quoteForm.style.display = 'none';
+                var successDiv = document.getElementById('formSuccess');
+                if (successDiv) successDiv.style.display = 'block';
+            } else {
+                submitButton.textContent = originalButtonText;
+                submitButton.disabled = false;
+                alert('Error: ' + (data.message || 'Form submission failed. Please call us at 01737 652 515 instead.'));
+            }
+        })
+        .catch(function(error) {
+            submitButton.textContent = originalButtonText;
+            submitButton.disabled = false;
+            alert('Network error: Could not submit form. Please call us at 01737 652 515 or try again later.');
+        });
+    });
+
+    // Track form interactions
+    quoteForm.addEventListener('focus', function(e) {
+        // Analytics event tracking placeholder
+    }, true);
+});
+
+// Smooth scroll for anchor links
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+            var href = this.getAttribute('href');
             if (href !== '#' && href.length > 1) {
                 e.preventDefault();
-                const target = document.querySelector(href);
+                var target = document.querySelector(href);
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             }
         });
     });
-
-    // Button loading state is now handled in the form submit handler above
-    // (Removed duplicate listener that was causing conflicts)
-
-    // Phone number formatting (add spaces for readability)
-    if (phoneInput) {
-        phoneInput.addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\s/g, '');
-
-            // Format as: 07XXX XXXXXX
-            if (value.length > 5) {
-                value = value.slice(0, 5) + ' ' + value.slice(5);
-            }
-            if (value.length > 9) {
-                value = value.slice(0, 9) + ' ' + value.slice(9, 12);
-            }
-
-            e.target.value = value;
-        });
-    }
-
-    // Postcode formatting (uppercase and add space)
-    if (postcodeInput) {
-        postcodeInput.addEventListener('input', function(e) {
-            let value = e.target.value.toUpperCase().replace(/\s/g, '');
-
-            // Add space before last 3 characters
-            if (value.length > 3) {
-                value = value.slice(0, -3) + ' ' + value.slice(-3);
-            }
-
-            e.target.value = value;
-        });
-    }
-
-    // Track form interactions for analytics (when implemented)
-    quoteForm && quoteForm.addEventListener('focus', function(e) {
-        // Google Analytics event tracking can be added here
-        // gtag('event', 'form_interaction', { 'field': e.target.name });
-    }, true);
-
 });
-
-// Service worker registration for PWA (future enhancement)
-if ('serviceWorker' in navigator) {
-    // Uncomment when service worker is implemented
-    // window.addEventListener('load', function() {
-    //     navigator.serviceWorker.register('/sw.js');
-    // });
-}
