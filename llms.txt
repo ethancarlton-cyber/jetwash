@@ -40,6 +40,20 @@ Reigate, Redhill, Horley, Crawley, Epsom, Banstead, Caterham, Oxted, Leatherhead
 - Pressure washing seasonal guide
 - Surface comparison for pressure washing
 
+## Specialist Service Guides
+- Roof Cleaning Cost UK: /guides/roof-cleaning-cost-uk — Complete roof moss removal pricing, soft washing vs pressure washing, biocide treatments, and safety requirements
+- Gutter Cleaning Guide: /guides/gutter-cleaning-guide — Gutter cleaning costs by house type, warning signs of blocked gutters, and why professional cleaning prevents expensive water damage
+- Render Cleaning Guide: /guides/render-cleaning-guide — Soft washing costs for K-Rend, monocouche, and silicone render, including why pressure washing causes damage to render surfaces
+- Decking Cleaning Guide: /guides/decking-cleaning-guide — Timber and composite decking cleaning costs, safety risks, oiling costs, and seasonal maintenance schedules
+- Commercial Pressure Washing Guide: /guides/commercial-pressure-washing-guide — Costs for car parks, forecourts, hotels, and offices, including regulations and maintenance contracts
+
+## Essential Resources
+- 50 Pressure Washing Questions Answered: /guides/pressure-washing-faq-50-questions — Comprehensive FAQ covering costs, safety, surfaces, equipment, and common concerns for UK homeowners
+- Best Pressure Washers UK 2026: /guides/best-pressure-washers-uk — Expert reviews of top consumer and prosumer pressure washers with buying advice
+- Pressure Washing Surrey Comparison: /guides/pressure-washing-surrey-comparison — How prices, demand, and common surfaces vary across Surrey towns
+- UK Driveway Types Compared: /guides/driveway-types-uk-comparison — Pros, cons, costs, and cleaning requirements for block paving, tarmac, concrete, resin, and gravel driveways
+- Property Value & Kerb Appeal: /guides/property-value-kerb-appeal — How exterior cleaning and maintenance affect property value with data-backed ROI insights
+
 ## Key Pages
 - Homepage: / — Overview of services, areas, and guides
 - Cost Calculator: /calculator — Instant pressure washing cost estimator
