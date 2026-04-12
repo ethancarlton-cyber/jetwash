@@ -551,11 +551,55 @@ a:hover {
     font-weight: 700;
     font-size: 0.9375rem;
     transition: var(--transition);
+    min-height: 44px;
+    padding: 0.5rem 0;
 }
 
 .card-link:hover {
     gap: 0.5rem;
     color: #1976D2;
+}
+
+/* =============== STATS BAR =============== */
+.stats-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    margin: 2.5rem auto;
+    gap: 1rem;
+}
+.stat-item {
+    text-align: center;
+    color: #fff;
+}
+.stat-number {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: var(--accent-color);
+}
+.stat-label {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    opacity: 0.9;
+}
+@media (max-width: 600px) {
+    .stats-bar {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+    .stat-item {
+        flex: 0 0 45%;
+    }
+    .stat-number {
+        font-size: 1.5rem;
+    }
 }
 
 /* =============== AREAS SECTION =============== */
