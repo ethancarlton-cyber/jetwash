@@ -3,15 +3,15 @@
     "version": 1,
     "lastUpdated": "2026-04-12",
     "lastRunDate": "2026-04-12",
-    "lastRunId": "fe-run-031",
-    "lastRunSummary": "Competitor analysis: jetwashsurrey.co.uk has 26 Google reviews, Checkatrade/SafeContractor badges, before/after gallery, WhatsApp. We beat on content (80 vs ~40 pages) but lag on trust signals. Fixed P2: added bridge CTAs to redhill + reigate (primary area pages, only 2 missing). Checked 2025 year refs — all factual citations, no fixes needed. Bridge CTA coverage now 100% across all page types.",
-    "totalRuns": 31,
+    "lastRunId": "fe-run-032",
+    "lastRunSummary": "Research: social proof without reviews — authority indicators (stats, metrics, coverage) work as alternative. Added homepage stats bar (15+ Towns | 7 Days | 2-Hour Callback | 100% Satisfaction) between quote form and services section. Navy bg, green accent numbers, responsive 2x2 grid on mobile. Fixed FE-004: card-link touch targets increased to min 44px. CSS cache bust v3→v4.",
+    "totalRuns": 32,
     "lastAuditDate": null,
     "nextAuditDue": "2026-04-17",
-    "nextTaskId": 6,
+    "nextTaskId": 7,
     "lastCheckedIndex": 79,
-    "lastVerifiedCommit": "a78c6a7",
-    "lastResearchTopic": "competitor analysis pressure washing Surrey UK",
+    "lastVerifiedCommit": "7f02bee",
+    "lastResearchTopic": "social proof techniques no reviews alternatives",
     "healthScore": null,
     "totalPages": 80
   },
@@ -193,9 +193,12 @@
       "element": ".service-card a (Learn More links)",
       "detail": "Learn More links on service cards are 100x24px — well below 44px recommended touch target height. Would be P1 on mobile.",
       "priority": "P3",
-      "status": "open",
+      "status": "fixed",
       "foundDate": "2026-03-10",
-      "foundRun": "fe-run-001"
+      "foundRun": "fe-run-001",
+      "fixedDate": "2026-04-12",
+      "fixedRun": "fe-run-032",
+      "fixNote": "Added min-height:44px and padding:0.5rem 0 to .card-link in css/style.css. All card links now meet WCAG touch target guidelines."
     },
     {
       "id": "FE-005",
@@ -948,6 +951,36 @@
     }
   },
   "learnings": [
+    {
+      "runId": "fe-run-032",
+      "date": "2026-04-12",
+      "entries": [
+        {
+          "type": "research-finding",
+          "text": "For businesses without reviews, authority indicators work as social proof: show metrics (towns served, availability, guarantees), display process transparency, use real team photos. Stats like 'Trusted by X+ businesses' increase conversion up to 15%. Video testimonials generate 2.9x higher engagement than text.",
+          "source": "shapo.io, wisernotify.com, kacerr.com",
+          "applicability": "high — we have no reviews, stats bar addresses this gap",
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "homepage"
+        },
+        {
+          "type": "hypothesis",
+          "text": "Adding a stats bar (15+ Towns | 7 Days | 2 Hours | 100% Satisfaction) to the homepage should increase trust for first-time visitors. Positioned between the quote form and services section — visitors see authority indicators right after submitting or before browsing services.",
+          "confidence": "medium",
+          "actionable": true,
+          "appliesTo": "homepage",
+          "status": "deployed-awaiting-verification"
+        },
+        {
+          "type": "fix-template",
+          "text": "Touch target fix: min-height:44px + padding:0.5rem 0 on inline-flex links brings them to WCAG compliant size. Applied to .card-link, consider applying to any small inline links found in future audits.",
+          "confidence": "high",
+          "actionable": true,
+          "appliesTo": "all"
+        }
+      ]
+    },
     {
       "runId": "fe-run-031",
       "date": "2026-04-12",
