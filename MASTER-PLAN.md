@@ -942,7 +942,7 @@ document.querySelector('.hamburger').addEventListener('click', function() {
 ```html
 <div class="inline-cta">
   <strong>Ready to get your [surface type] looking like new?</strong>
-  <a href="/contact.html" class="btn-inline">Get Your Free Quote Today</a>
+  <a href="/contact.html" class="btn-inline">Get My Free Quote Today</a>
 </div>
 ```
 
