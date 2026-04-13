@@ -419,6 +419,9 @@ a:hover {
     flex-wrap: wrap;
     margin-top: var(--spacing-lg);
 }
+.page-hero .trust-badges {
+    margin-top: 1rem;
+}
 
 .badge {
     background-color: rgba(255, 255, 255, 0.1);
