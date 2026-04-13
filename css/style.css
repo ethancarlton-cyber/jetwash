@@ -1086,6 +1086,18 @@ a:hover {
     color: #856404;
 }
 
+/* Bridge CTA phone link styling (was inline) */
+.inline-cta p + p,
+.bridge-cta p + p {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+.inline-cta a[href^="tel:"],
+.bridge-cta a[href^="tel:"] {
+    font-weight: 600;
+}
+
 .social-proof-line {
     text-align: center;
     font-size: 0.8125rem;
