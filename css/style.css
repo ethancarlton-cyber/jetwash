@@ -219,6 +219,9 @@ a:hover {
     border-radius: 50px;
     font-size: 0.9375rem;
     transition: var(--transition);
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
 }
 
 .nav-link:hover,
