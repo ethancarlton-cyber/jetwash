@@ -38,6 +38,10 @@
         {
           "key": "X-XSS-Protection",
           "value": "1; mode=block"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; connect-src 'self' https://eu.i.posthog.com https://eu-assets.i.posthog.com https://api.web3forms.com; script-src 'self' 'unsafe-inline' https://eu-assets.i.posthog.com; img-src 'self' data: https://eu-assets.i.posthog.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com"
         }
       ]
     },
