@@ -886,7 +886,7 @@ git -C Projects/jetwash commit -m "docs(privacy): add PostHog analytics disclosu
 cd Projects/jetwash && git grep "analytics.js" || echo "no references"
 ```
 
-Expected: `no references`
+Expected: no references in any *.html, *.js, vercel.json, or package.json file (historical mentions in *.md docs and the spec/plan itself are expected)
 
 - [ ] **Step 7.2: Delete the file**
 
