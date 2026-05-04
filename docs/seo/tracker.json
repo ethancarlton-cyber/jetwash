@@ -3,9 +3,9 @@
     "version": 1,
     "lastUpdated": "2026-05-04",
     "lastRunDate": "2026-05-04",
-    "lastRunId": "run-048",
-    "lastRunSummary": "Batch 2 + sitemap + IndexNow. 8 guide pages got topic-appropriate semantic tables (myths, prep checklists, sealer comparison, frequency-by-surface, etc) \u2014 AI citation 2.5x. Sitemap lastmod bumped on 19 modified pages. IndexNow ping to Bing/DuckDuckGo. All deployed live to samedayjetwash.com.",
-    "totalRuns": 48,
+    "lastRunId": "run-049",
+    "lastRunSummary": "Batch 3: Key Facts boxes added to 6 high-intent guides (jet-washing-prices, is-pressure-washing-worth-it, driveway-cleaning-sealing-cost, pressure-washer-hire-vs-pro, how-often-clean-driveway, seasonal-guide). 6 bullets per box, all numerically anchored, grounded in existing guide content. Reused .key-facts-box class from existing CSS. dateModified bumped on all 6. Sitemap lastmod refreshed. IndexNow pinged Bing+DDG. All deployed.",
+    "totalRuns": 49,
     "nextTaskId": 55,
     "fullScanDate": "2026-05-04",
     "nextFullScanDue": "2026-08-04",
@@ -1886,6 +1886,15 @@
       "patterns": "Tables as a structural primitive are the single highest-ROI AI citation move \u2014 they convert prose-only content into machine-quotable assertions. Two-batch approach (services first, then guides) was efficient: services share one canonical pricing source; guides each need topic-specific data so harder to batch automatically.",
       "next": "P2 manual queue still has 12 pending items (mostly outreach: Medium Article 2 ready to publish, LinkedIn ROI piece ready, Drummond guest post ready, 15-directory checklist, HARO templates, GSC monitoring tasks). These are user-action, not agent-action. Programmatic next runs could: (1) add key-facts boxes to guides without them, (2) add Service offerings to area page schemas, (3) llms.txt content refresh, (4) image compression for the 13 oversized images flagged in Phase 4. Re-run audit script after any major content batch.",
       "researchFindings": "Programmatic 'weak answer-first opening' check flagged 23/39 guides but is unreliable without an <article> wrapper to anchor the body \u2014 many were false positives. To use that check meaningfully, either tighten the regex to find the first <p> AFTER <h1>, or have an editor manually review each flagged page. Did NOT execute on this signal in run-048."
+    },
+    {
+      "runId": "run-049",
+      "date": "2026-05-04",
+      "what": "Added <div class=\"key-facts-box\"> with 6 numerically-anchored bullets to 6 commercially-relevant guides. Existing CSS class reused (no new CSS). Each fact pulled from the guide's own body/FAQ/pricing data \u2014 no fabrication. Validator approved with all 10 checks PASS. Sitemap+IndexNow follow-through.",
+      "why": "AI citation research: pages with key-facts boxes earn 40% more AI citations. Skill: \"Missing key facts box \u2014 guide page without a summary box of 3-5 quotable facts at the top.\" Editor wisely used existing .key-facts-box class instead of my spec's .key-facts \u2014 kept site CSS DRY.",
+      "result": "Commit 485105a, 1 file class reuse (.key-facts-box already existed on best-pressure-washers-uk + decking-cleaning-guide), 6 files modified, all live on production.",
+      "patterns": "When a spec calls for a CSS class, agents should ALWAYS check existing styles first \u2014 site already had patterns for callouts, key-facts, info-boxes etc. Reusing existing classes > introducing new ones (consistency, no CSS bloat). Add this rule to skill if not already there.",
+      "next": "Continue: 14 more guides without key-facts boxes still pending (lower commercial priority). Could batch the remaining 14 in 2-3 more passes. Or pivot to internal-link audit / orphan-page detection / OG-image audit / image compression."
     }
   ],
   "counters": {
