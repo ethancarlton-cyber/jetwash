@@ -16,6 +16,7 @@ function nextStep() {
     if (!serviceSelect || !serviceSelect.value) {
         if (serviceError) serviceError.textContent = 'Please select a service';
         valid = false;
+        if (window.JWAnalytics) JWAnalytics.trackQuoteValidationError('service', 'required');
     }
 
     // Validate postcode
@@ -24,6 +25,7 @@ function nextStep() {
         if (!postcodeResult.valid) {
             if (postcodeError) postcodeError.textContent = postcodeResult.message;
             valid = false;
+            if (window.JWAnalytics) JWAnalytics.trackQuoteValidationError('postcode', 'invalid_format');
         }
     }
 
@@ -104,11 +106,14 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!result.valid) {
                 postcodeError.textContent = result.message;
                 postcodeError.style.color = '#ef4444';
+                if (window.JWAnalytics) JWAnalytics.trackQuoteValidationError('postcode', 'invalid_format');
             } else if (result.message) {
                 postcodeError.textContent = result.message;
                 postcodeError.style.color = '#f59e0b';
+                if (window.JWAnalytics) JWAnalytics.trackQuoteFieldComplete('postcode');
             } else {
                 postcodeError.textContent = '';
+                if (window.JWAnalytics) JWAnalytics.trackQuoteFieldComplete('postcode');
             }
         });
     }
@@ -120,8 +125,10 @@ document.addEventListener('DOMContentLoaded', function() {
             var result = validateContact(this.value);
             if (!result.valid) {
                 contactError.textContent = result.message;
+                if (window.JWAnalytics) JWAnalytics.trackQuoteValidationError('contact', 'invalid_format');
             } else {
                 contactError.textContent = '';
+                if (window.JWAnalytics) JWAnalytics.trackQuoteFieldComplete('contact');
             }
         });
     }
@@ -212,6 +219,17 @@ document.addEventListener('DOMContentLoaded', function() {
             formData.append('phone', contactValue);
         }
 
+        // Pre-submit: derive analytics-safe properties
+        var serviceVal = (formData.get && formData.get('service')) || (document.getElementById('service') || {}).value || '';
+        var postcodeVal = (formData.get && formData.get('postcode')) || (postcodeInput ? postcodeInput.value : '');
+        var postcodeArea = (postcodeVal || '').toString().trim().toUpperCase().replace(/\s*[0-9][A-Z]{2}$/, '');
+        var nameVal = ((formData.get && formData.get('name')) || (nameInput ? nameInput.value : '') || '').toString().trim();
+        var leadEmail = contactResult.type === 'email' ? contactValue : null;
+        var leadDial = null;
+        if (contactResult.type === 'phone') {
+            leadDial = /^\+44/.test(contactValue) ? '+44' : (/^0/.test(contactValue) ? '+44' : null);
+        }
+
         fetch(quoteForm.action, {
             method: 'POST',
             body: formData,
@@ -220,25 +238,53 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(function(response) { return response.json(); })
         .then(function(data) {
             if (data.success) {
+                if (window.JWAnalytics) {
+                    JWAnalytics.trackQuoteSubmit({
+                        service: serviceVal,
+                        postcode_area: postcodeArea || null,
+                        contact_type: contactResult.type || null
+                    });
+                    if (leadEmail) {
+                        JWAnalytics.identifyLead(leadEmail, {
+                            name: nameVal || null,
+                            postcode_area: postcodeArea || null,
+                            service: serviceVal || null,
+                            phone_dial_code: leadDial
+                        });
+                    }
+                }
                 quoteForm.style.display = 'none';
                 var successDiv = document.getElementById('formSuccess');
                 if (successDiv) successDiv.style.display = 'block';
             } else {
+                if (window.JWAnalytics) JWAnalytics.trackQuoteSubmitError(data.message || 'unknown');
                 submitButton.textContent = originalButtonText;
                 submitButton.disabled = false;
                 alert('Error: ' + (data.message || 'Form submission failed. Please call us at 01737 652 515 instead.'));
             }
         })
         .catch(function(error) {
+            if (window.JWAnalytics) JWAnalytics.trackQuoteSubmitError(error && error.message ? error.message : 'network_error');
             submitButton.textContent = originalButtonText;
             submitButton.disabled = false;
             alert('Network error: Could not submit form. Please call us at 01737 652 515 or try again later.');
         });
     });
 
-    // Track form interactions
+    // Track first interaction with the form (fires once per page load)
+    var quoteStarted = false;
+    function markStarted(field) {
+        if (quoteStarted) return;
+        quoteStarted = true;
+        if (window.JWAnalytics) JWAnalytics.trackQuoteStart(field);
+    }
     quoteForm.addEventListener('focus', function(e) {
-        // Analytics event tracking placeholder
+        var field = e.target && e.target.name ? e.target.name : (e.target && e.target.id ? e.target.id : 'unknown');
+        markStarted(field);
+    }, true);
+    quoteForm.addEventListener('input', function(e) {
+        var field = e.target && e.target.name ? e.target.name : (e.target && e.target.id ? e.target.id : 'unknown');
+        markStarted(field);
     }, true);
 });
 
