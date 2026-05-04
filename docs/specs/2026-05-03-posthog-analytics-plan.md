@@ -727,20 +727,29 @@ The current `<script>` reference is **`<script src="js/analytics.js" defer></scr
 
 - [ ] **Step 5.1: Write a one-shot sweep script**
 
+> Note: `scripts/` is gitignored by project convention. The sweep script lives there as a local dev utility; it is NOT committed. The HTML edits it produces ARE committed.
+
 Create `Projects/jetwash/scripts/swap-analytics-scripts.mjs` with:
 
 ```js
 // One-shot sweep: replace the legacy analytics.js include with consent.js + posthog.js
 // Run from Projects/jetwash/: node scripts/swap-analytics-scripts.mjs
+// Handles both top-level (js/...) and subfolder (../js/...) relative path forms.
 import { readFileSync, writeFileSync } from 'node:fs';
-import { globSync } from 'node:fs';
 import { execSync } from 'node:child_process';
 
 const ROOT = process.cwd();
-const OLD = '<script src="js/analytics.js" defer></script>';
-const NEW = '<script src="js/consent.js" defer></script>\n    <script src="js/posthog.js" defer></script>';
+const REPLACEMENTS = [
+  {
+    old: '<script src="js/analytics.js" defer></script>',
+    new: '<script src="js/consent.js" defer></script>\n    <script src="js/posthog.js" defer></script>',
+  },
+  {
+    old: '<script src="../js/analytics.js" defer></script>',
+    new: '<script src="../js/consent.js" defer></script>\n    <script src="../js/posthog.js" defer></script>',
+  },
+];
 
-// Collect HTML files via git ls-files to avoid node_modules + ignored dirs
 const files = execSync('git ls-files "*.html"', { cwd: ROOT, encoding: 'utf8' })
   .split('\n')
   .filter(Boolean);
@@ -749,12 +758,21 @@ let changed = 0;
 let skipped = 0;
 for (const rel of files) {
   const path = `${ROOT}/${rel}`;
-  const src = readFileSync(path, 'utf8');
-  if (!src.includes(OLD)) { skipped++; continue; }
-  const out = src.replaceAll(OLD, NEW);
-  writeFileSync(path, out);
-  changed++;
-  console.log(`updated: ${rel}`);
+  let src = readFileSync(path, 'utf8');
+  let touched = false;
+  for (const r of REPLACEMENTS) {
+    if (src.includes(r.old)) {
+      src = src.replaceAll(r.old, r.new);
+      touched = true;
+    }
+  }
+  if (touched) {
+    writeFileSync(path, src);
+    changed++;
+    console.log(`updated: ${rel}`);
+  } else {
+    skipped++;
+  }
 }
 console.log(`\nchanged=${changed}  skipped=${skipped}  total=${files.length}`);
 ```
@@ -765,7 +783,7 @@ console.log(`\nchanged=${changed}  skipped=${skipped}  total=${files.length}`);
 cd Projects/jetwash && node scripts/swap-analytics-scripts.mjs
 ```
 
-Expected output: `changed=80  skipped=...  total=...` (give or take — should be ~80 changed).
+Expected output: ~65 changed, ~19 skipped (already updated in earlier partial run) — total ~84.
 
 - [ ] **Step 5.3: Verify no `analytics.js` references remain**
 
@@ -773,7 +791,7 @@ Expected output: `changed=80  skipped=...  total=...` (give or take — should b
 cd Projects/jetwash && git grep "analytics.js" -- "*.html"
 ```
 
-Expected: empty output (no matches).
+Expected: empty output (no matches). Both `js/analytics.js` and `../js/analytics.js` references must be gone.
 
 - [ ] **Step 5.4: Verify both new scripts present in a sample of pages**
 
@@ -798,7 +816,7 @@ Expected:
 - [ ] **Step 5.6: Commit**
 
 ```bash
-git -C Projects/jetwash add -A "*.html" scripts/swap-analytics-scripts.mjs
+git -C Projects/jetwash add -A "*.html"
 git -C Projects/jetwash commit -m "feat(analytics): swap GA4 analytics.js for PostHog consent+posthog scripts across all pages"
 ```
 
