@@ -87,7 +87,7 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 **DO NOT use paid form services. Do NOT use paid email services. Stick to free tiers above.**
 
 ### Analytics & Monitoring (FREE)
-- **Google Analytics**: FREE forever, unlimited pageviews
+- **PostHog (EU Cloud)**: FREE 1M events/mo + 5K session replays/mo. Project ID 171650. Cookie banner gates all tracking. Spec: docs/specs/2026-05-03-posthog-analytics-design.md
 - **Google Search Console**: FREE, essential for SEO (CONFIGURED)
 - **Bing Webmaster Tools**: FREE
 
@@ -245,7 +245,7 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 - ✅ Vercel hosting (FREE unlimited bandwidth)
 - ✅ Web3Forms (FREE 250 submissions/month)
 - ✅ GitHub repo hosting (FREE unlimited)
-- ✅ Google Analytics (FREE unlimited)
+- ✅ PostHog EU Cloud (FREE 1M events/mo + 5K replays/mo)
 - ✅ Google Search Console (FREE) - CONFIGURED
 - ✅ SSL/HTTPS certificate (FREE automatic)
 
@@ -260,7 +260,7 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 - ❌ Domain (use free subdomain until ROI)
 - ❌ Form backend (use Web3Forms FREE)
 - ❌ SSL certificate (automatic FREE)
-- ❌ Analytics (use Google Analytics FREE)
+- ❌ Analytics (use PostHog FREE)
 - ❌ SEO tools (use Search Console FREE)
 - ❌ Ads (organic traffic FREE until proven)
 
@@ -276,7 +276,7 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 5. **Word of mouth** - FREE referrals
 
 ### Metrics to Track (All FREE tools)
-- Google Analytics: Page views, bounce rate (FREE)
+- PostHog: Page views, autocapture clicks, session replays, named events (FREE)
 - Search Console: Keyword rankings, clicks (FREE)
 - Web3Forms: Form submissions (FREE)
 - Spreadsheet: Lead value, conversion (FREE - Google Sheets)

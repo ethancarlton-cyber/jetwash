@@ -12,7 +12,7 @@ This project has a strict zero-cost requirement until ROI is proven.
 
 - Hosting: Vercel (FREE unlimited)
 - Forms: Web3Forms (FREE 250/month)
-- Analytics: Google Analytics (FREE)
+- Analytics: PostHog EU Cloud (FREE 1M events/mo + 5K replays/mo)
 - SEO: Google Search Console (FREE)
 - Repo: GitHub (FREE)
 
