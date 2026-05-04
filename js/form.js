@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Pre-submit: derive analytics-safe properties
         var serviceVal = (formData.get && formData.get('service')) || (document.getElementById('service') || {}).value || '';
         var postcodeVal = (formData.get && formData.get('postcode')) || (postcodeInput ? postcodeInput.value : '');
-        var postcodeArea = (postcodeVal || '').toString().trim().toUpperCase().replace(/\s.*$/, '').replace(/[0-9]+$/, '');
+        var postcodeArea = (postcodeVal || '').toString().trim().toUpperCase().replace(/\s*[0-9][A-Z]{2}$/, '');
         var nameVal = ((formData.get && formData.get('name')) || (nameInput ? nameInput.value : '') || '').toString().trim();
         var leadEmail = contactResult.type === 'email' ? contactValue : null;
         var leadDial = null;
