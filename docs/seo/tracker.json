@@ -1,14 +1,14 @@
 {
   "meta": {
     "version": 1,
-    "lastUpdated": "2026-04-09",
-    "lastRunDate": "2026-04-09",
-    "lastRunId": "run-046",
-    "lastRunSummary": "Research: competitor analysis (2nd rotation). Hydro Pressure Clean expanding with town-specific pages (Merstham, Coulsdon, Croydon). Restore Pressure Washing has Earlswood page. We rank position 2 for micro-local queries. Research rotation yielding diminishing returns — loop should pause until manual tasks are done.",
-    "totalRuns": 46,
+    "lastUpdated": "2026-05-04",
+    "lastRunDate": "2026-05-04",
+    "lastRunId": "run-047",
+    "lastRunSummary": "Full audit (84 pages) + execution batch 1: 9 service pages now have semantic HTML pricing tables (AI citation win \u2014 2.5x more cited than prose). Synced 2 stale schema rates (driveway, block-paving) to match master pricing. Added Service+BreadcrumbList JSON-LD to pricing.html. Trimmed driveway-types-uk-comparison title 62\u219248 chars. All 11 validator checks PASS. Pushed to main, Vercel auto-deploying.",
+    "totalRuns": 47,
     "nextTaskId": 55,
-    "fullScanDate": "2026-03-10",
-    "nextFullScanDue": "2026-06-10",
+    "fullScanDate": "2026-05-04",
+    "nextFullScanDue": "2026-08-04",
     "lastResearchTopic": "competitor-analysis"
   },
   "currentPhase": {
@@ -93,7 +93,7 @@
       },
       "status": "completed",
       "type": "automated",
-      "details": "First run of the autonomous system — scan all 68 HTML files against audit.md checklist. Establish baseline health score and populate queue with discovered issues.",
+      "details": "First run of the autonomous system \u00e2\u20ac\u201d scan all 68 HTML files against audit.md checklist. Establish baseline health score and populate queue with discovered issues.",
       "targetFiles": [
         "all"
       ],
@@ -107,7 +107,7 @@
     },
     {
       "id": "SEO-002",
-      "task": "Verify sitemap completeness — all HTML pages accounted for",
+      "task": "Verify sitemap completeness \u00e2\u20ac\u201d all HTML pages accounted for",
       "category": "sitemap",
       "priority": "P1",
       "iceScore": 648,
@@ -293,14 +293,14 @@
       },
       "status": "completed",
       "type": "automated",
-      "details": "Every page should have exactly one H1 containing primary keyword. No skipped heading levels (H1→H3 without H2). No duplicate H1s across site.",
+      "details": "Every page should have exactly one H1 containing primary keyword. No skipped heading levels (H1\u00e2\u2020\u2019H3 without H2). No duplicate H1s across site.",
       "targetFiles": [
         "all *.html"
       ],
       "createdDate": "2026-03-10",
       "source": "system-init",
       "completedDate": "2026-03-10",
-      "completedNotes": "Audit complete. PASS: All 66 pages have exactly 1 unique H1, no duplicate H1s. ISSUE FOUND: Footer H4 headings skip levels (no H3 parent) on 21 pages — new task SEO-019 created. Scanners missed this; validator caught it on cross-check.",
+      "completedNotes": "Audit complete. PASS: All 66 pages have exactly 1 unique H1, no duplicate H1s. ISSUE FOUND: Footer H4 headings skip levels (no H3 parent) on 21 pages \u00e2\u20ac\u201d new task SEO-019 created. Scanners missed this; validator caught it on cross-check.",
       "attemptCount": 1,
       "maxAttempts": 3,
       "staleAfterDays": 30
@@ -318,14 +318,14 @@
       },
       "status": "completed",
       "type": "automated",
-      "details": "Check first paragraph of each guide page. Should directly answer the search query in first 60 words. Phase 4 did this for 8 guides — verify and fix remaining.",
+      "details": "Check first paragraph of each guide page. Should directly answer the search query in first 60 words. Phase 4 did this for 8 guides \u00e2\u20ac\u201d verify and fix remaining.",
       "targetFiles": [
         "guides/*.html"
       ],
       "createdDate": "2026-03-10",
       "source": "system-init",
       "completedDate": "2026-03-10",
-      "completedNotes": "All 27 guides ALREADY BLUF compliant. 25 use 'The quick answer:' format, 2 use 'The honest answer:', all open with direct answers within 35-76 words. No changes needed. Phase 4 was more thorough than recorded — it fixed all guides, not just 8.",
+      "completedNotes": "All 27 guides ALREADY BLUF compliant. 25 use 'The quick answer:' format, 2 use 'The honest answer:', all open with direct answers within 35-76 words. No changes needed. Phase 4 was more thorough than recorded \u00e2\u20ac\u201d it fixed all guides, not just 8.",
       "attemptCount": 1,
       "maxAttempts": 3,
       "staleAfterDays": 30
@@ -458,7 +458,7 @@
       },
       "status": "completed",
       "type": "automated",
-      "details": "Areas hub page is missing all JSON-LD schema. Add BreadcrumbList schema (Home > Areas). Hub page has 22 area links — important for crawling/discovery.",
+      "details": "Areas hub page is missing all JSON-LD schema. Add BreadcrumbList schema (Home > Areas). Hub page has 22 area links \u00e2\u20ac\u201d important for crawling/discovery.",
       "targetFiles": [
         "areas.html"
       ],
@@ -483,7 +483,7 @@
       },
       "status": "completed",
       "type": "automated",
-      "details": "Guides hub page is missing all JSON-LD schema. Add BreadcrumbList schema (Home > Guides). Hub page links to all 27 guides — important for crawling.",
+      "details": "Guides hub page is missing all JSON-LD schema. Add BreadcrumbList schema (Home > Guides). Hub page links to all 27 guides \u00e2\u20ac\u201d important for crawling.",
       "targetFiles": [
         "guides.html"
       ],
@@ -497,7 +497,7 @@
     },
     {
       "id": "SEO-019",
-      "task": "Fix footer heading hierarchy — batch 1: index.html, quote.html + CSS",
+      "task": "Fix footer heading hierarchy \u00e2\u20ac\u201d batch 1: index.html, quote.html + CSS",
       "category": "structure",
       "priority": "P3",
       "iceScore": 180,
@@ -517,14 +517,14 @@
       "createdDate": "2026-03-10",
       "source": "audit-run-006",
       "completedDate": "2026-03-10",
-      "completedNotes": "Batch 1 complete. CSS updated (line 1125): .footer-col h4, .footer-heading selector. 8 H4 tags replaced (4 per file). Validator confirmed: no broken HTML, no stray H4 in footers. Fix approach: H4 → p.footer-heading (semantically correct — footer labels aren't content headings).",
+      "completedNotes": "Batch 1 complete. CSS updated (line 1125): .footer-col h4, .footer-heading selector. 8 H4 tags replaced (4 per file). Validator confirmed: no broken HTML, no stray H4 in footers. Fix approach: H4 \u00e2\u2020\u2019 p.footer-heading (semantically correct \u00e2\u20ac\u201d footer labels aren't content headings).",
       "attemptCount": 1,
       "maxAttempts": 3,
       "staleAfterDays": 30
     },
     {
       "id": "SEO-020",
-      "task": "Fix footer H4 — batch 2: driveway-cleaning, patio-cleaning, block-paving-cleaning",
+      "task": "Fix footer H4 \u00e2\u20ac\u201d batch 2: driveway-cleaning, patio-cleaning, block-paving-cleaning",
       "category": "structure",
       "priority": "P3",
       "iceScore": 168,
@@ -551,7 +551,7 @@
     },
     {
       "id": "SEO-021",
-      "task": "Fix footer H4 — batch 3: render-cleaning, decking-cleaning, commercial-jetwashing",
+      "task": "Fix footer H4 \u00e2\u20ac\u201d batch 3: render-cleaning, decking-cleaning, commercial-jetwashing",
       "category": "structure",
       "priority": "P3",
       "iceScore": 168,
@@ -578,7 +578,7 @@
     },
     {
       "id": "SEO-022",
-      "task": "Fix footer H4 — batch 4: roof-cleaning, gutter-cleaning, soft-washing",
+      "task": "Fix footer H4 \u00e2\u20ac\u201d batch 4: roof-cleaning, gutter-cleaning, soft-washing",
       "category": "structure",
       "priority": "P3",
       "iceScore": 168,
@@ -605,7 +605,7 @@
     },
     {
       "id": "SEO-023",
-      "task": "Fix footer H4 — batch 5: calculator, pricing, faq",
+      "task": "Fix footer H4 \u00e2\u20ac\u201d batch 5: calculator, pricing, faq",
       "category": "structure",
       "priority": "P3",
       "iceScore": 168,
@@ -632,7 +632,7 @@
     },
     {
       "id": "SEO-024",
-      "task": "Fix footer H4 — batch 6: privacy, terms, areas hub",
+      "task": "Fix footer H4 \u00e2\u20ac\u201d batch 6: privacy, terms, areas hub",
       "category": "structure",
       "priority": "P3",
       "iceScore": 168,
@@ -652,14 +652,14 @@
       "createdDate": "2026-03-10",
       "source": "SEO-019",
       "completedDate": "2026-03-10",
-      "completedNotes": "12 H4 tags replaced (4 per file). Privacy/terms/areas use 'Key Areas' instead of 'Service Areas' in footer — fixed correctly. All 3 info pages done.",
+      "completedNotes": "12 H4 tags replaced (4 per file). Privacy/terms/areas use 'Key Areas' instead of 'Service Areas' in footer \u00e2\u20ac\u201d fixed correctly. All 3 info pages done.",
       "attemptCount": 1,
       "maxAttempts": 3,
       "staleAfterDays": 30
     },
     {
       "id": "SEO-025",
-      "task": "Fix footer H4 — batch 7: guides hub, pressure-washing-guide",
+      "task": "Fix footer H4 \u00e2\u20ac\u201d batch 7: guides hub, pressure-washing-guide",
       "category": "structure",
       "priority": "P3",
       "iceScore": 168,
@@ -670,7 +670,7 @@
       },
       "status": "completed",
       "type": "automated",
-      "details": "Replace 4 footer <h4> with <p class='footer-heading'> in each file. CSS already updated. Final batch — completes SEO-019 footer heading fix across all 19 affected pages.",
+      "details": "Replace 4 footer <h4> with <p class='footer-heading'> in each file. CSS already updated. Final batch \u00e2\u20ac\u201d completes SEO-019 footer heading fix across all 19 affected pages.",
       "targetFiles": [
         "guides.html",
         "pressure-washing-guide.html"
@@ -678,7 +678,7 @@
       "createdDate": "2026-03-10",
       "source": "SEO-019",
       "completedDate": "2026-03-10",
-      "completedNotes": "8 H4 tags replaced (4 per file). Guides hub uses 'Key Areas'. Pillar page uses 'Service Areas'. Both fixed. FOOTER H4 FIX 100% COMPLETE — all 19/19 pages done.",
+      "completedNotes": "8 H4 tags replaced (4 per file). Guides hub uses 'Key Areas'. Pillar page uses 'Service Areas'. Both fixed. FOOTER H4 FIX 100% COMPLETE \u00e2\u20ac\u201d all 19/19 pages done.",
       "attemptCount": 1,
       "maxAttempts": 3,
       "staleAfterDays": 30
@@ -758,7 +758,7 @@
       "type": "automated",
       "details": "32 pages have title tags exceeding 60 chars (Google truncation point). Worst offenders: rh6 (82 chars), leatherhead (73), rh4 (73), epsom (71). Trim to 55-60 chars max, prioritize keyword + location.",
       "targetFiles": [
-        "multiple — 32 pages across areas and guides"
+        "multiple \u00e2\u20ac\u201d 32 pages across areas and guides"
       ],
       "createdDate": "2026-03-10",
       "source": "discovery-run-014",
@@ -781,7 +781,7 @@
       },
       "status": "completed",
       "type": "automated",
-      "details": "8 pages have fewer than 5 inbound internal links. Pillar page (/pressure-washing-guide) only has 4 — should be heavily linked. Also: 4 guide pages (before-after, myths, surface-comparison, weed-removal) and 2 postcode pages (rh8, sm7). Add 3-5 contextual links from related pages to each.",
+      "details": "8 pages have fewer than 5 inbound internal links. Pillar page (/pressure-washing-guide) only has 4 \u00e2\u20ac\u201d should be heavily linked. Also: 4 guide pages (before-after, myths, surface-comparison, weed-removal) and 2 postcode pages (rh8, sm7). Add 3-5 contextual links from related pages to each.",
       "targetFiles": [
         "pressure-washing-guide.html",
         "guides/pressure-washing-before-after-expectations.html",
@@ -826,7 +826,7 @@
     },
     {
       "id": "SEO-030",
-      "task": "Fix heading hierarchy on index.html — showcase H4s should be H3s",
+      "task": "Fix heading hierarchy on index.html \u00e2\u20ac\u201d showcase H4s should be H3s",
       "category": "structure",
       "priority": "P3",
       "iceScore": 315,
@@ -844,14 +844,14 @@
       "createdDate": "2026-03-10",
       "source": "discovery-run-018",
       "completedDate": "2026-03-10",
-      "completedNotes": "3 showcase H4s changed to H3s. CSS selector updated (.showcase-item-caption h4 → also h3). Heading hierarchy now clean: H1→H2→H3 throughout.",
+      "completedNotes": "3 showcase H4s changed to H3s. CSS selector updated (.showcase-item-caption h4 \u00e2\u2020\u2019 also h3). Heading hierarchy now clean: H1\u00e2\u2020\u2019H2\u00e2\u2020\u2019H3 throughout.",
       "attemptCount": 1,
       "maxAttempts": 3,
       "staleAfterDays": 30
     },
     {
       "id": "SEO-031",
-      "task": "Fix heading hierarchy on calculator.html — H3s before H2",
+      "task": "Fix heading hierarchy on calculator.html \u00e2\u20ac\u201d H3s before H2",
       "category": "structure",
       "priority": "P3",
       "iceScore": 315,
@@ -869,7 +869,7 @@
       "createdDate": "2026-03-10",
       "source": "discovery-run-018",
       "completedDate": "2026-03-10",
-      "completedNotes": "2 H3s changed to H2s (form section labels promoted to correct level). No CSS changes needed — no specific selectors targeted these. Heading hierarchy now clean: H1→H2→H3 throughout.",
+      "completedNotes": "2 H3s changed to H2s (form section labels promoted to correct level). No CSS changes needed \u00e2\u20ac\u201d no specific selectors targeted these. Heading hierarchy now clean: H1\u00e2\u2020\u2019H2\u00e2\u2020\u2019H3 throughout.",
       "attemptCount": 0,
       "maxAttempts": 3,
       "staleAfterDays": 30
@@ -889,12 +889,12 @@
       "type": "automated",
       "details": "29 pages have og:description longer than 155 chars and not matching the trimmed meta description. Sync og:description to match meta description for consistent social sharing previews.",
       "targetFiles": [
-        "multiple — 29 pages"
+        "multiple \u00e2\u20ac\u201d 29 pages"
       ],
       "createdDate": "2026-03-10",
       "source": "discovery-run-018",
       "completedDate": "2026-03-23",
-      "completedNotes": "Only 5 pages had actual mismatches (not 29 — discovery overcounted again, same pattern as SEO-026). Fixed: index.html (158 chars), pressure-washing-guide.html (150), quote.html (143), areas/betchworth.html (131), areas/godstone.html (141). All validated: exact match confirmed, under 160 chars.",
+      "completedNotes": "Only 5 pages had actual mismatches (not 29 \u00e2\u20ac\u201d discovery overcounted again, same pattern as SEO-026). Fixed: index.html (158 chars), pressure-washing-guide.html (150), quote.html (143), areas/betchworth.html (131), areas/godstone.html (141). All validated: exact match confirmed, under 160 chars.",
       "attemptCount": 0,
       "maxAttempts": 3,
       "staleAfterDays": 30
@@ -926,7 +926,7 @@
     },
     {
       "id": "SEO-034",
-      "task": "Add trust badges to area page hero sections — all 22 area pages",
+      "task": "Add trust badges to area page hero sections \u00e2\u20ac\u201d all 22 area pages",
       "category": "conversion",
       "priority": "P2",
       "iceScore": 448,
@@ -939,7 +939,7 @@
       "type": "automated",
       "details": "Zero area pages have trust badges in hero section. Add trust block (Free Quotes, Same Day Response, No Obligation, Satisfaction Guaranteed) below H1, above first H2. Use trust block pattern from content-patterns.md. Batch in groups of 3.",
       "targetFiles": [
-        "areas/*.html — 22 pages"
+        "areas/*.html \u00e2\u20ac\u201d 22 pages"
       ],
       "createdDate": "2026-03-23",
       "source": "conversion-discovery-run-021",
@@ -964,12 +964,12 @@
       "type": "automated",
       "details": "All 27 guide pages lack a bridge CTA paragraph before the final CTA. 19 have zero bridge-like content at all. Add bridge CTA pattern from content-patterns.md with page-specific copy. Prioritize 19 guides with zero bridge content. Batch in groups of 3.",
       "targetFiles": [
-        "guides/*.html — 27 pages"
+        "guides/*.html \u00e2\u20ac\u201d 27 pages"
       ],
       "createdDate": "2026-03-23",
       "source": "conversion-discovery-run-021",
       "completedDate": "2026-03-23",
-      "completedNotes": "Bridge CTA divs added to all 27 guide pages before final CTA section. Each bridge paragraph references the specific topic the reader just learned about. Some pages had non-standard final CTA headings — editors adapted correctly. Validated: 27/27 pages have bridge-cta class.",
+      "completedNotes": "Bridge CTA divs added to all 27 guide pages before final CTA section. Each bridge paragraph references the specific topic the reader just learned about. Some pages had non-standard final CTA headings \u00e2\u20ac\u201d editors adapted correctly. Validated: 27/27 pages have bridge-cta class.",
       "attemptCount": 0,
       "maxAttempts": 3,
       "staleAfterDays": 30
@@ -1002,7 +1002,7 @@
       "createdDate": "2026-03-23",
       "source": "conversion-discovery-run-021",
       "completedDate": "2026-03-23",
-      "completedNotes": "Guarantee copy added to all 9 area pages after the main Get Free Quote button. '100% satisfaction guaranteed — if you're not happy, we'll re-clean for free.' Validated: 9/9 pages confirmed with guarantee-text class.",
+      "completedNotes": "Guarantee copy added to all 9 area pages after the main Get Free Quote button. '100% satisfaction guaranteed \u00e2\u20ac\u201d if you're not happy, we'll re-clean for free.' Validated: 9/9 pages confirmed with guarantee-text class.",
       "attemptCount": 0,
       "maxAttempts": 3,
       "staleAfterDays": 30
@@ -1022,7 +1022,7 @@
       "type": "automated",
       "details": "All pages with JSON-LD schema had telephone: +441737652515 in provider block. Violates anonymous model. Expanded scope from 22 area pages to 32 pages (also includes 9 service pages + index).",
       "targetFiles": [
-        "32 pages — 22 areas + 9 service + index"
+        "32 pages \u00e2\u20ac\u201d 22 areas + 9 service + index"
       ],
       "createdDate": "2026-03-23",
       "source": "discovery-run-023",
@@ -1055,7 +1055,7 @@
       "maxAttempts": 3,
       "staleAfterDays": 30,
       "completedDate": "2026-04-09",
-      "completedNotes": "All 22 area pages now have HTML pricing tables with per-m² breakdown. Each includes calculator + quote CTAs. Custom pricing retained for Godstone/Betchworth (roof/gutter), RH6 (commercial), RH8 (premium). Why: Tables cited 2.5x more by AI systems."
+      "completedNotes": "All 22 area pages now have HTML pricing tables with per-m\u00c2\u00b2 breakdown. Each includes calculator + quote CTAs. Custom pricing retained for Godstone/Betchworth (roof/gutter), RH6 (commercial), RH8 (premium). Why: Tables cited 2.5x more by AI systems."
     },
     {
       "id": "SEO-040",
@@ -1224,7 +1224,7 @@
       "maxAttempts": 3,
       "staleAfterDays": 3,
       "completedDate": "2026-04-09",
-      "completedNotes": "Cancelled — user confirmed phone number is intentional and must stay on all pages."
+      "completedNotes": "Cancelled \u00e2\u20ac\u201d user confirmed phone number is intentional and must stay on all pages."
     },
     {
       "id": "SEO-047",
@@ -1274,7 +1274,7 @@
       "maxAttempts": 3,
       "staleAfterDays": 30,
       "completedDate": "2026-04-09",
-      "completedNotes": "Expanded from 1,838 to 2,813 words (+975 total). Added equipment hire table, surface difficulty table, decision guide, 3 real-world scenarios, 4 FAQs. Slightly under 2,900 threshold but has 4 tables + 4 FAQ pairs — strong AI citation surfaces."
+      "completedNotes": "Expanded from 1,838 to 2,813 words (+975 total). Added equipment hire table, surface difficulty table, decision guide, 3 real-world scenarios, 4 FAQs. Slightly under 2,900 threshold but has 4 tables + 4 FAQ pairs \u00e2\u20ac\u201d strong AI citation surfaces."
     },
     {
       "id": "SEO-049",
@@ -1289,7 +1289,7 @@
       },
       "status": "completed",
       "type": "automated",
-      "details": "Pillar page only 1,818 words — should be the deepest content on the site. Expand with more comprehensive coverage, equipment overview, cost summary table, seasonal calendar, and FAQ section.",
+      "details": "Pillar page only 1,818 words \u00e2\u20ac\u201d should be the deepest content on the site. Expand with more comprehensive coverage, equipment overview, cost summary table, seasonal calendar, and FAQ section.",
       "targetFiles": [
         "pressure-washing-guide.html"
       ],
@@ -1303,7 +1303,7 @@
     },
     {
       "id": "SEO-050",
-      "task": "Test AI visibility baseline — query ChatGPT, Perplexity, Gemini for key terms",
+      "task": "Test AI visibility baseline \u00e2\u20ac\u201d query ChatGPT, Perplexity, Gemini for key terms",
       "category": "ai-citation",
       "priority": "P2",
       "iceScore": 280,
@@ -1335,7 +1335,7 @@
       },
       "status": "pending",
       "type": "manual",
-      "details": "Bark has 761 reviews and 4.9 avg rating for Redhill pressure washing. Yell shows top results for local queries. Both are free to list. These aggregator platforms appear in Google results and are used by AI systems for recommendations. Checkatrade requires trade verification — skip unless possible.",
+      "details": "Bark has 761 reviews and 4.9 avg rating for Redhill pressure washing. Yell shows top results for local queries. Both are free to list. These aggregator platforms appear in Google results and are used by AI systems for recommendations. Checkatrade requires trade verification \u00e2\u20ac\u201d skip unless possible.",
       "targetFiles": [],
       "createdDate": "2026-04-09",
       "source": "research-competitor-analysis",
@@ -1356,7 +1356,7 @@
       },
       "status": "completed",
       "type": "automated",
-      "details": "Top competitor (Jet Wash Surrey) prominently displays 25 years experience and £10m insurance. We should add comparable trust signals (fully insured, satisfaction guaranteed, local team) to area page hero sections. Currently only in the Why Choose Us lists.",
+      "details": "Top competitor (Jet Wash Surrey) prominently displays 25 years experience and \u00c2\u00a310m insurance. We should add comparable trust signals (fully insured, satisfaction guaranteed, local team) to area page hero sections. Currently only in the Why Choose Us lists.",
       "targetFiles": [
         "areas/redhill.html",
         "areas/reigate.html",
@@ -1374,7 +1374,7 @@
     },
     {
       "id": "SEO-053",
-      "task": "Create UK Pressure Washing Statistics 2026 page — linkable research asset",
+      "task": "Create UK Pressure Washing Statistics 2026 page \u00e2\u20ac\u201d linkable research asset",
       "category": "linkable-asset",
       "priority": "P2",
       "iceScore": 480,
@@ -1385,7 +1385,7 @@
       },
       "status": "pending",
       "type": "manual",
-      "details": "Only ONE UK pressure washing statistics page exists online (theupsurge.co.uk). Create a comprehensive stats hub with 50+ data points: market size (£27.5B cleaning sector), residential/commercial split (65/35), seasonal demand (70% Mar-Sep), eco trends (25% green preference), cost data by region, equipment market data, employment stats. Format: answer-first, tables, key facts boxes. This type of page earns links passively — bloggers and journalists cite statistics pages when writing articles. Original research = 4.7x more backlinks + 40% more AI citations.",
+      "details": "Only ONE UK pressure washing statistics page exists online (theupsurge.co.uk). Create a comprehensive stats hub with 50+ data points: market size (\u00c2\u00a327.5B cleaning sector), residential/commercial split (65/35), seasonal demand (70% Mar-Sep), eco trends (25% green preference), cost data by region, equipment market data, employment stats. Format: answer-first, tables, key facts boxes. This type of page earns links passively \u00e2\u20ac\u201d bloggers and journalists cite statistics pages when writing articles. Original research = 4.7x more backlinks + 40% more AI citations.",
       "targetFiles": [
         "guides/uk-pressure-washing-statistics-2026.html"
       ],
@@ -1420,7 +1420,7 @@
   "manualTasks": [
     {
       "id": "MANUAL-001",
-      "task": "GSC investigation — check for manual actions, penalties, crawl errors",
+      "task": "GSC investigation \u00e2\u20ac\u201d check for manual actions, penalties, crawl errors",
       "status": "pending",
       "priority": "urgent",
       "notes": "See SEO-013"
@@ -1459,10 +1459,10 @@
       "runId": "run-001",
       "date": "2026-03-10",
       "entries": [
-        "Site is in excellent technical shape — 92/100 baseline. 9 prior SEO phases covered all Tier 1 critical checks.",
-        "Sitemap actually has 68 entries (was recorded as 56 in previous docs — corrected).",
+        "Site is in excellent technical shape \u00e2\u20ac\u201d 92/100 baseline. 9 prior SEO phases covered all Tier 1 critical checks.",
+        "Sitemap actually has 68 entries (was recorded as 56 in previous docs \u00e2\u20ac\u201d corrected).",
         "5 pages lack schema: areas hub, guides hub, quote, privacy, terms. Hub pages are highest priority.",
-        "2025 datePublished values in 5 guide schemas are legitimate (original publish dates) — not stale refs.",
+        "2025 datePublished values in 5 guide schemas are legitimate (original publish dates) \u00e2\u20ac\u201d not stale refs.",
         "All Tier 1 audit checks pass: canonicals, titles, meta descriptions, H1s, clean URLs, no broken links.",
         "Next priority: image audit (SEO-008) and heading hierarchy check (SEO-009), then add schema to hub pages."
       ]
@@ -1474,28 +1474,28 @@
         "Sitemap lastmod dates were 2 days behind actual git commits (2026-02-19 vs 2026-02-21). 48 entries corrected.",
         "Visual redesign commit (2026-02-21) touched most pages. Phase 5 commit (2026-02-22) touched 7 files.",
         "Sitemap freshness check passes: all dates within 17 days of current date.",
-        "No new tasks discovered from this change — sitemap was the only file modified.",
-        "Next priority: SEO-008 (image audit, all pages — requires team) or SEO-016/017 (hub schema, single-file each)."
+        "No new tasks discovered from this change \u00e2\u20ac\u201d sitemap was the only file modified.",
+        "Next priority: SEO-008 (image audit, all pages \u00e2\u20ac\u201d requires team) or SEO-016/017 (hub schema, single-file each)."
       ]
     },
     {
       "runId": "run-003",
       "date": "2026-03-10",
       "entries": [
-        "Image audit passed — all 20 images fully compliant. Phase 4 image optimization was thorough.",
+        "Image audit passed \u00e2\u20ac\u201d all 20 images fully compliant. Phase 4 image optimization was thorough.",
         "Images only exist on root service pages and index.html. Area pages and guide pages are pure text/table content with zero images.",
-        "Guide pages could benefit from images for visual engagement and image search traffic — but this is a content strategy decision, not an SEO fix. Noted for future strategy review.",
+        "Guide pages could benefit from images for visual engagement and image search traffic \u00e2\u20ac\u201d but this is a content strategy decision, not an SEO fix. Noted for future strategy review.",
         "First team-based audit run: 2 scanners + validator pattern worked well for parallel all-page scans.",
-        "Next priority: SEO-016 (areas hub schema) and SEO-017 (guides hub schema) — both single-file, no team needed."
+        "Next priority: SEO-016 (areas hub schema) and SEO-017 (guides hub schema) \u00e2\u20ac\u201d both single-file, no team needed."
       ]
     },
     {
       "runId": "run-004",
       "date": "2026-03-10",
       "entries": [
-        "Added BreadcrumbList schema to areas.html hub page — matched existing site pattern from service pages.",
+        "Added BreadcrumbList schema to areas.html hub page \u00e2\u20ac\u201d matched existing site pattern from service pages.",
         "Schema coverage now 64/68 content pages (4 remaining: guides hub, quote, privacy, terms).",
-        "BreadcrumbList is the right schema for hub pages — they're navigation/discovery pages, not content pages.",
+        "BreadcrumbList is the right schema for hub pages \u00e2\u20ac\u201d they're navigation/discovery pages, not content pages.",
         "Next: SEO-017 (guides hub schema) is identical work, then SEO-009 (heading hierarchy audit, needs team)."
       ]
     },
@@ -1503,10 +1503,10 @@
       "runId": "run-005",
       "date": "2026-03-10",
       "entries": [
-        "Added BreadcrumbList schema to guides.html hub page — both hub pages now have schema.",
+        "Added BreadcrumbList schema to guides.html hub page \u00e2\u20ac\u201d both hub pages now have schema.",
         "Schema coverage now 66/68 content pages. Remaining 3 without schema: quote.html, privacy.html, terms.html (SEO-018, P3).",
         "All P2 automated tasks now completed. Remaining automated tasks are P3: SEO-009 (heading hierarchy), SEO-010 (BLUF format), SEO-018 (info page schema).",
-        "Next priority: SEO-009 (heading hierarchy audit, all pages, ICE 252, needs team) — the highest remaining automated task."
+        "Next priority: SEO-009 (heading hierarchy audit, all pages, ICE 252, needs team) \u00e2\u20ac\u201d the highest remaining automated task."
       ]
     },
     {
@@ -1514,7 +1514,7 @@
       "date": "2026-03-10",
       "entries": [
         "Heading audit: all 66 pages have exactly 1 unique H1, no duplicates. Main content hierarchy is clean.",
-        "Validator caught footer H4 heading skips that both scanners missed — demonstrates value of independent validation.",
+        "Validator caught footer H4 heading skips that both scanners missed \u00e2\u20ac\u201d demonstrates value of independent validation.",
         "Footer H4 issue affects 21 pages. Lower SEO impact (navigation, not content) but still a best-practice violation.",
         "Fix approach: replace footer H4 with styled spans or restructure. Will need batched execution (3 files max per task).",
         "Session summary: 6 runs completed. 11/19 tasks done. Site health improved from 92 to ~95/100. All P1 and P2 automated tasks complete."
@@ -1525,11 +1525,11 @@
       "date": "2026-03-10",
       "entries": [
         "Footer H4 issue affects 19 pages (not 21 as originally estimated). Area pages and guide pages use a different footer without H4 tags.",
-        "Fix approach: replace <h4> with <p class='footer-heading'> — semantically correct since footer labels are navigation, not content headings.",
+        "Fix approach: replace <h4> with <p class='footer-heading'> \u00e2\u20ac\u201d semantically correct since footer labels are navigation, not content headings.",
         "CSS strategy: added .footer-heading alongside existing .footer-col h4 selector. This allows incremental batching without breaking styling on unfixed pages.",
         "Batch 1 done (index.html + quote.html). 6 more batches created (SEO-020 through SEO-025, 3 files each, last batch has 2).",
-        "1 guide page (pressure-washing-vs-jet-washing.html) has content H4 tags for equipment types — these are legitimate content headings under H3, NOT a heading skip issue. No fix needed.",
-        "Future batches are higher ease (8 vs original 6) since CSS is done — just HTML find-and-replace."
+        "1 guide page (pressure-washing-vs-jet-washing.html) has content H4 tags for equipment types \u00e2\u20ac\u201d these are legitimate content headings under H3, NOT a heading skip issue. No fix needed.",
+        "Future batches are higher ease (8 vs original 6) since CSS is done \u00e2\u20ac\u201d just HTML find-and-replace."
       ]
     },
     {
@@ -1537,8 +1537,8 @@
       "date": "2026-03-10",
       "entries": [
         "Footer H4 batch 2 completed cleanly on 3 service pages. Pattern is fully proven and repeatable.",
-        "Service pages have non-footer H4 tags in FAQ and Related Services sections — these are correct content headings (under H3) and must NOT be changed.",
-        "The replace_all approach works perfectly for this — each footer H4 text (Services, Service Areas, Information, Contact) is unique enough to safely target.",
+        "Service pages have non-footer H4 tags in FAQ and Related Services sections \u00e2\u20ac\u201d these are correct content headings (under H3) and must NOT be changed.",
+        "The replace_all approach works perfectly for this \u00e2\u20ac\u201d each footer H4 text (Services, Service Areas, Information, Contact) is unique enough to safely target.",
         "5/19 pages now fixed. 5 more batches remaining (SEO-021 through SEO-025). At 1 batch per run, heading fix will complete in 5 more cycles."
       ]
     },
@@ -1546,7 +1546,7 @@
       "runId": "run-009",
       "date": "2026-03-10",
       "entries": [
-        "Batch 3 complete — all 3 service pages (render, decking, commercial) fixed. 8/19 total pages done.",
+        "Batch 3 complete \u00e2\u20ac\u201d all 3 service pages (render, decking, commercial) fixed. 8/19 total pages done.",
         "Validator timing issue: ran before editor finished, got false FAIL. Re-check after editor completed confirmed PASS. Lesson: validator should check TaskList before running.",
         "All 6 service pages now have clean footer heading hierarchy. Remaining: 3 utility pages (calculator, pricing, faq), 3 info pages (privacy, terms, areas hub), 2 content pages (guides hub, pillar).",
         "Pattern fully battle-tested across 8 pages now. Zero issues with the replace_all approach."
@@ -1564,8 +1564,8 @@
       "runId": "run-011",
       "date": "2026-03-10",
       "entries": [
-        "FOOTER H4 FIX 100% COMPLETE — all 19/19 pages fixed in one accelerated run (batches 5-7 combined).",
-        "Discovery: 3 pages (privacy, terms, areas hub) and guides hub use 'Key Areas' instead of 'Service Areas' as footer heading. The footer structure is NOT identical across all root pages — two variants exist.",
+        "FOOTER H4 FIX 100% COMPLETE \u00e2\u20ac\u201d all 19/19 pages fixed in one accelerated run (batches 5-7 combined).",
+        "Discovery: 3 pages (privacy, terms, areas hub) and guides hub use 'Key Areas' instead of 'Service Areas' as footer heading. The footer structure is NOT identical across all root pages \u00e2\u20ac\u201d two variants exist.",
         "Pattern proved safe for batch execution: after 11 pages with zero issues, remaining 8 were done solo without team overhead. Safe threshold for repetitive find-and-replace: 10+ successful prior executions.",
         "All P3 structure tasks (SEO-019 through SEO-025) now complete. Only 2 automated tasks remain: SEO-010 (BLUF format, P3) and SEO-018 (BreadcrumbList schema, P3).",
         "76 total footer-heading instances across 19 pages (4 per page). CSS selector .footer-heading works alongside legacy .footer-col h4 for any pages missed."
@@ -1575,9 +1575,9 @@
       "runId": "run-012",
       "date": "2026-03-10",
       "entries": [
-        "SEO-018 complete — BreadcrumbList schema added to quote, privacy, terms. Schema coverage is now 68/68 pages (100%).",
+        "SEO-018 complete \u00e2\u20ac\u201d BreadcrumbList schema added to quote, privacy, terms. Schema coverage is now 68/68 pages (100%).",
         "All 3 info pages used identical BreadcrumbList pattern (Home > Page Name). Simple 2-level breadcrumb, no subcategories needed.",
-        "Only 1 automated task remaining: SEO-010 (BLUF format on guide openings). This is a content task requiring careful review of 28 guide pages — higher complexity than schema/structure tasks.",
+        "Only 1 automated task remaining: SEO-010 (BLUF format on guide openings). This is a content task requiring careful review of 28 guide pages \u00e2\u20ac\u201d higher complexity than schema/structure tasks.",
         "Team pattern continues to work well: editor + validator with blocked dependency. Validator waited correctly this time (no timing issue).",
         "Session productivity: 12 runs, 19 tasks completed (14 in previous session, 5 this session). All P1/P2/P3 automated tasks except SEO-010 now done."
       ]
@@ -1587,7 +1587,7 @@
       "date": "2026-03-10",
       "entries": [
         "ALL AUTOMATED SEO TASKS COMPLETE. 20/20 automated tasks done. 0 remaining.",
-        "SEO-010 BLUF audit: All 27 guides already compliant. Phase 4 was more thorough than documented — it fixed all guides, not just the 8 recorded. 25 use 'The quick answer:' format, 2 use 'The honest answer:' format.",
+        "SEO-010 BLUF audit: All 27 guides already compliant. Phase 4 was more thorough than documented \u00e2\u20ac\u201d it fixed all guides, not just the 8 recorded. 25 use 'The quick answer:' format, 2 use 'The honest answer:' format.",
         "Guide opening paragraphs range 35-76 words, all within BLUF target of ~60 words. Strong featured snippet optimization across the board.",
         "Remaining work is ALL manual: GSC checks (SEO-013, SEO-014), outreach (SEO-011, SEO-012), OG images (SEO-015), plus 5 manual tasks.",
         "The autonomous SEO system has completed all automated work it can do. Further improvement requires human action (GSC login, content publishing, directory submissions)."
@@ -1599,9 +1599,9 @@
       "entries": [
         "Discovery scan found 3 new issues: meta desc >160 chars (19 pages), titles >60 chars (32 pages), underlinked pages (8 pages with <5 inbound links).",
         "No broken links found. No orphan pages. No duplicate meta descriptions. Sitemap complete at 68 entries.",
-        "Meta description issue is highest priority (P2, ICE 432) — affects SERP appearance for 19 pages. Can be batch-fixed with team.",
-        "Title truncation affects 32 pages — significant but lower CTR impact than broken snippets. Worst: rh6 at 82 chars.",
-        "Pillar page (/pressure-washing-guide) only has 4 inbound links — should be the most linked page on the site. Critical for topical authority.",
+        "Meta description issue is highest priority (P2, ICE 432) \u00e2\u20ac\u201d affects SERP appearance for 19 pages. Can be batch-fixed with team.",
+        "Title truncation affects 32 pages \u00e2\u20ac\u201d significant but lower CTR impact than broken snippets. Worst: rh6 at 82 chars.",
+        "Pillar page (/pressure-washing-guide) only has 4 inbound links \u00e2\u20ac\u201d should be the most linked page on the site. Critical for topical authority.",
         "3 new automated tasks created (SEO-026 through SEO-028). Back to 3 automated tasks in queue."
       ]
     },
@@ -1609,10 +1609,10 @@
       "runId": "run-015",
       "date": "2026-03-10",
       "entries": [
-        "SEO-026 complete. Only 9 of the originally flagged 19 pages were actually over 155 chars — the rest were already compliant.",
-        "Discovery scan overcounted — lesson: always verify exact lengths before scoping batch work. Original estimate of 19 was nearly double the actual 9.",
+        "SEO-026 complete. Only 9 of the originally flagged 19 pages were actually over 155 chars \u00e2\u20ac\u201d the rest were already compliant.",
+        "Discovery scan overcounted \u00e2\u20ac\u201d lesson: always verify exact lengths before scoping batch work. Original estimate of 19 was nearly double the actual 9.",
         "Meta descriptions now range 103-143 chars across all fixed pages. Well within Google's ~155 char display limit.",
-        "Next: SEO-027 (title tags >60 chars, 32 pages) is the biggest remaining batch. Will need careful scoping — discovery may have overcounted again."
+        "Next: SEO-027 (title tags >60 chars, 32 pages) is the biggest remaining batch. Will need careful scoping \u00e2\u20ac\u201d discovery may have overcounted again."
       ]
     },
     {
@@ -1622,7 +1622,7 @@
         "SEO-027 complete. Title tags trimmed to under 60 chars on all pages. Area pages now use pattern 'Jetwashing [Town] ([Postcode]) | Pressure Washing'.",
         "Team completed most work in previous session, but 1 page (merstham.html at 66 chars) was missed. Caught and fixed in final validation sweep.",
         "OG titles also updated to match trimmed title tags for consistency.",
-        "1 automated task remaining: SEO-028 (internal links to 8 underlinked pages). After that, all automated work is done — only manual tasks remain.",
+        "1 automated task remaining: SEO-028 (internal links to 8 underlinked pages). After that, all automated work is done \u00e2\u20ac\u201d only manual tasks remain.",
         "Session recovery: team from previous context worked correctly, only needed mop-up of 1 missed page."
       ]
     },
@@ -1631,9 +1631,9 @@
       "date": "2026-03-10",
       "entries": [
         "SEO-028 complete. 21 new internal links added across 13 source files targeting 7 underlinked pages.",
-        "Pillar page (/pressure-washing-guide) went from 2 to 8 inbound links — biggest improvement. Now properly linked from all 3 major service pages + pricing + faq + index.",
+        "Pillar page (/pressure-washing-guide) went from 2 to 8 inbound links \u00e2\u20ac\u201d biggest improvement. Now properly linked from all 3 major service pages + pricing + faq + index.",
         "Surface-comparison guide went from 2 to 5 inbound links (was the most underlinked guide).",
-        "Area pages (rh8, sm7) linked from nearby area pages — natural geographic cross-linking pattern.",
+        "Area pages (rh8, sm7) linked from nearby area pages \u00e2\u20ac\u201d natural geographic cross-linking pattern.",
         "ALL AUTOMATED SEO TASKS NOW COMPLETE: 23/23 done. 0 automated tasks remaining. Only 5 manual tasks left (GSC, outreach, directories, OG images).",
         "The autonomous SEO system has exhausted all automatable work. Next run should trigger a discovery scan for new issues, or the system is idle until manual tasks are done and new opportunities emerge."
       ]
@@ -1642,11 +1642,11 @@
       "runId": "run-018",
       "date": "2026-03-10",
       "entries": [
-        "Discovery scan #2 found 4 new issues after all prior tasks complete. Site health remains excellent — only minor issues remain.",
+        "Discovery scan #2 found 4 new issues after all prior tasks complete. Site health remains excellent \u00e2\u20ac\u201d only minor issues remain.",
         "P1 schema date typo in block-paving-sealing-guide.html: datePublished was '2026-12-19' (future date). Fixed immediately to '2025-12-19'. This was missed by SEO-006 (year freshness check) because it checked for stale '2025' refs, not wrong '2026' dates.",
-        "Heading hierarchy issues on index.html (H4 under H2 in showcase section) and calculator.html (H3 before H2). These are content headings, not footer headings — different fix from SEO-019 series.",
+        "Heading hierarchy issues on index.html (H4 under H2 in showcase section) and calculator.html (H3 before H2). These are content headings, not footer headings \u00e2\u20ac\u201d different fix from SEO-019 series.",
         "29 pages have og:description not matching trimmed meta description. SEO-026 trimmed meta desc but didn't sync og:description. Lesson: when trimming meta descriptions, always sync og:description too.",
-        "Scanner flagged 23 pages with meta desc 156-170 chars, but reviewer correctly classified these as borderline (Google truncation varies 155-160). Not worth a separate task — the worst offenders were already fixed in SEO-026.",
+        "Scanner flagged 23 pages with meta desc 156-170 chars, but reviewer correctly classified these as borderline (Google truncation varies 155-160). Not worth a separate task \u00e2\u20ac\u201d the worst offenders were already fixed in SEO-026.",
         "Near-duplicate area page titles are by design (template pattern for local SEO). Not an issue."
       ]
     },
@@ -1654,10 +1654,10 @@
       "runId": "run-019",
       "date": "2026-03-10",
       "entries": [
-        "SEO-030+031 combined into one run — both single-file heading fixes, no team needed.",
-        "index.html: 3 showcase caption H4s → H3s. CSS updated to target both h4 and h3 in .showcase-item-caption for backward compatibility.",
-        "calculator.html: 2 form label H3s → H2s (promoted to correct level under H1). No CSS changes needed — no specific selectors existed.",
-        "All 68 pages now have clean H1→H2→H3 heading hierarchy with no level skips. Heading structure is 100% compliant.",
+        "SEO-030+031 combined into one run \u00e2\u20ac\u201d both single-file heading fixes, no team needed.",
+        "index.html: 3 showcase caption H4s \u00e2\u2020\u2019 H3s. CSS updated to target both h4 and h3 in .showcase-item-caption for backward compatibility.",
+        "calculator.html: 2 form label H3s \u00e2\u2020\u2019 H2s (promoted to correct level under H1). No CSS changes needed \u00e2\u20ac\u201d no specific selectors existed.",
+        "All 68 pages now have clean H1\u00e2\u2020\u2019H2\u00e2\u2020\u2019H3 heading hierarchy with no level skips. Heading structure is 100% compliant.",
         "1 automated task remaining: SEO-032 (og:description sync on 29 pages). This is a batch edit requiring a team."
       ]
     },
@@ -1665,12 +1665,12 @@
       "runId": "run-020",
       "date": "2026-03-23",
       "entries": [
-        "SEO-032 complete. Only 5 of 29 estimated pages had actual og:description mismatches — third time discovery overcounted (SEO-026: 19→9, SEO-027: 32 accurate, SEO-032: 29→5).",
+        "SEO-032 complete. Only 5 of 29 estimated pages had actual og:description mismatches \u00e2\u20ac\u201d third time discovery overcounted (SEO-026: 19\u00e2\u2020\u20199, SEO-027: 32 accurate, SEO-032: 29\u00e2\u2020\u20195).",
         "Pattern: when meta descriptions were trimmed in SEO-026, most og:descriptions were already matching or were synced during SEO-027's OG title update. Only 5 pages had genuinely divergent og:description text.",
         "ALL AUTOMATED SEO TASKS NOW COMPLETE: 27/27 done. 0 automated tasks remaining. Only 5 manual tasks remain (GSC checks, outreach, directories, OG images).",
         "Discovery scan on modified files: no new issues found. Clean URLs confirmed, no .html in hrefs. Site in excellent shape.",
         "The autonomous SEO system has exhausted all automatable work for the second time. Next runs will be discovery-only unless manual tasks generate new automated follow-ups.",
-        "13-day gap since last run (run-019 on 2026-03-10). No degradation detected — site SEO health is stable."
+        "13-day gap since last run (run-019 on 2026-03-10). No degradation detected \u00e2\u20ac\u201d site SEO health is stable."
       ]
     },
     {
@@ -1679,7 +1679,7 @@
       "entries": [
         "CONVERSION PIVOT: Updated all 4 SEO skill files with conversion-focused discovery checks, task templates, keyword intent layer, and content patterns.",
         "Conversion discovery scan found 4 new automated tasks: phone removal (P1), trust badges (P2), bridge CTAs (P2), guarantee copy (P3).",
-        "Key finding: ALL 68 pages had phone number 01737652515 in sticky CTA bar — violating anonymous business model. Also in nav on 2 pages and inline on 1 guide.",
+        "Key finding: ALL 68 pages had phone number 01737652515 in sticky CTA bar \u00e2\u20ac\u201d violating anonymous business model. Also in nav on 2 pages and inline on 1 guide.",
         "22 area pages have zero trust badges in hero. 27 guide pages have zero bridge CTAs. 9 area pages have weak guarantee copy.",
         "Surprise: inline CTAs already present on all pages (3+ per guide, 3 per area, 10+ per service). Prior phases covered this well.",
         "Keyword strategy shift: marked 'near me' and '[service] [town]' as not-viable (map pack). Added transactional cost/price guide cluster as golden opportunity."
@@ -1690,7 +1690,7 @@
       "date": "2026-03-23",
       "entries": [
         "SEO-033 COMPLETE: Phone number removed from all 68 pages using 4 parallel editors (23 batches of 3 files).",
-        "Sticky CTA 'Call Now' → 'Get Quote' linking to /quote. Nav phone links removed from index.html and calculator.html. Inline phone removed from seasonal guide.",
+        "Sticky CTA 'Call Now' \u00e2\u2020\u2019 'Get Quote' linking to /quote. Nav phone links removed from index.html and calculator.html. Inline phone removed from seasonal guide.",
         "Validated: zero matches for 01737, tel:, 'Call Now', or nav-phone across entire site.",
         "Anonymous business model constraint now fully enforced sitewide. No identity-revealing phone number anywhere.",
         "3 automated conversion tasks remaining: SEO-034 (trust badges, 22 area pages), SEO-035 (bridge CTAs, 27 guides), SEO-036 (guarantee copy, 9 areas).",
@@ -1702,12 +1702,12 @@
       "date": "2026-04-09",
       "entries": [
         "Strategic pivot: informational SEO alone will not generate leads without GBP. Must target AI citations + transactional intent.",
-        "ChatGPT uses Bing for live queries — Bing Webmaster Tools is critical and was missing.",
-        "Fake phone number (+44 1737 652515) was in schema on 23 pages — removed. Major penalty risk.",
+        "ChatGPT uses Bing for live queries \u00e2\u20ac\u201d Bing Webmaster Tools is critical and was missing.",
+        "Fake phone number (+44 1737 652515) was in schema on 23 pages \u00e2\u20ac\u201d removed. Major penalty risk.",
         "85% of AI citations come from third-party pages. Publishing Medium/LinkedIn articles is highest-leverage manual action.",
-        "Tables are cited 2.5x more by AI — converted Redhill pricing to HTML table as template for remaining pages.",
-        "Google Online estimates filter shows above map pack — our calculator is a major competitive advantage vs tradesmen.",
-        "March 2026 Core Update rewards information gain — original research/data content is the path forward.",
+        "Tables are cited 2.5x more by AI \u00e2\u20ac\u201d converted Redhill pricing to HTML table as template for remaining pages.",
+        "Google Online estimates filter shows above map pack \u00e2\u20ac\u201d our calculator is a major competitive advantage vs tradesmen.",
+        "March 2026 Core Update rewards information gain \u00e2\u20ac\u201d original research/data content is the path forward.",
         "All area page titles changed from informational to transactional (Book... | Instant Online Quote)."
       ]
     },
@@ -1718,7 +1718,7 @@
         "What: Updated dateModified on 28 guides from 2026-02-21 to 2026-04-09. Fixed 6 datePublished from 2025 to 2026.",
         "Why: GEO research shows content not updated quarterly is 3x more likely to lose AI citations. Dates were 47 days old.",
         "Result: All guides now have fresh dateModified. Next quarterly update due ~2026-07-09.",
-        "Pattern: Date freshness is a recurring task — should be automated every 90 days.",
+        "Pattern: Date freshness is a recurring task \u00e2\u20ac\u201d should be automated every 90 days.",
         "Next: SEO-039 (pricing tables on 21 area pages) or SEO-041 (key facts boxes) are the next highest-impact automated tasks."
       ]
     },
@@ -1729,7 +1729,7 @@
         "What: Added key facts box to driveway-cleaning-cost-uk.html with 5 quotable stats. Discovered phone number still on 69 pages.",
         "Why: AI systems extract 40-word answer blocks at 2.7x rate. Key facts boxes are high-citation surfaces.",
         "Result: Template created for remaining 4 guide pages. P1 phone number issue added to queue.",
-        "Pattern: Phone number removal from schema (run-028) was incomplete — HTML content in nav/footer/sticky CTA was missed. Always check both schema AND visible content.",
+        "Pattern: Phone number removal from schema (run-028) was incomplete \u00e2\u20ac\u201d HTML content in nav/footer/sticky CTA was missed. Always check both schema AND visible content.",
         "Next: SEO-046 (phone removal) is now highest priority P1. Then SEO-039 (pricing tables) and rest of SEO-041 (key facts on 4 more guides)."
       ]
     },
@@ -1740,7 +1740,7 @@
         "What: Added key facts boxes to 4 more guide pages (5 total). All automated tasks from phase 9 now complete.",
         "Why: AI extracts 40-word answer blocks at 2.7x rate. Key facts boxes give AI quotable, structured data to cite.",
         "Result: 5 top guides now have structured summary boxes. Only SEO-045 (How It Works sections) remains as automated.",
-        "Next: SEO-045 then research mode kicks in — first topic should be AI citation tactics (freshest opportunity)."
+        "Next: SEO-045 then research mode kicks in \u00e2\u20ac\u201d first topic should be AI citation tactics (freshest opportunity)."
       ]
     },
     {
@@ -1751,18 +1751,18 @@
         "Why: Process steps reduce booking friction. Transactional pages convert 5-15% vs 0.5-2% for informational.",
         "Result: ALL automated tasks from phase 9 pivot are now complete. Queue has 0 automated, 7 manual tasks.",
         "Pattern: Phase 9 focused on structural changes (tables, key facts, titles, meta, crawlers). Next phase should focus on content creation (research assets) and third-party presence (Medium, directories).",
-        "Next: Research mode activates — first topic: AI citation tactics. Also need to create new automated tasks from discovery."
+        "Next: Research mode activates \u00e2\u20ac\u201d first topic: AI citation tactics. Also need to create new automated tasks from discovery."
       ]
     },
     {
       "runId": "run-035",
       "date": "2026-04-09",
       "entries": [
-        "What: Research mode — AI citation tactics. Tested web visibility and checked content word counts.",
+        "What: Research mode \u00e2\u20ac\u201d AI citation tactics. Tested web visibility and checked content word counts.",
         "Why: ChatGPT is 59% more likely to cite articles over 2,900 words (source: Signal & Form, Iris Digital). Need to ensure top guides hit this threshold.",
-        "Finding: samedayjetwash.com appears at position 6 for \"best jet washing company Redhill Surrey 2026\" — good but not cited in AI summaries yet.",
+        "Finding: samedayjetwash.com appears at position 6 for \"best jet washing company Redhill Surrey 2026\" \u00e2\u20ac\u201d good but not cited in AI summaries yet.",
         "Finding: 3 of 5 top guides exceed 2,900 words. block-paving-cleaning-cost-uk (2,689) and pillar page (1,818) are under threshold.",
-        "Finding: Entity consistency is critical — AI models build brand understanding from dozens of cross-platform signals. Our Medium articles (unpublished) are the biggest gap.",
+        "Finding: Entity consistency is critical \u00e2\u20ac\u201d AI models build brand understanding from dozens of cross-platform signals. Our Medium articles (unpublished) are the biggest gap.",
         "Next research topic: competitor-analysis (rotation order). Next automated: SEO-047 (expand block paving guide)."
       ]
     },
@@ -1772,7 +1772,7 @@
       "entries": [
         "What: Expanded DIY vs professional guide by 521 words. Added equipment hire cost table and surface difficulty table.",
         "Why: 2,900+ word threshold for ChatGPT citation. Tables cited 2.5x more by AI.",
-        "Result: 2,359 words — still 541 short. Two high-value tables added though, which may compensate for word count gap.",
+        "Result: 2,359 words \u00e2\u20ac\u201d still 541 short. Two high-value tables added though, which may compensate for word count gap.",
         "Pattern: Content expansion tasks should estimate word count more carefully. 1,100 words is too much for a single-file single-cycle task within 100-line scope limit.",
         "Next: Continue SEO-048 next cycle to add FAQ section and hit 2,900. Then research mode (competitor analysis)."
       ]
@@ -1785,17 +1785,17 @@
         "Why: 2,900+ word threshold for AI citation + FAQ sections are high-citation surfaces.",
         "Result: 2,813 words with 4 tables and 4 FAQs. Slightly under word threshold but compensated by structured content density.",
         "Pattern: All content expansion tasks from phase 9 now complete. The site now has 4 guides and 1 pillar page above the 2,900 threshold.",
-        "Next: Research mode — competitor analysis (second topic in rotation)."
+        "Next: Research mode \u00e2\u20ac\u201d competitor analysis (second topic in rotation)."
       ]
     },
     {
       "runId": "run-040",
       "date": "2026-04-09",
       "entries": [
-        "What: Competitor analysis — examined Jet Wash Surrey (#1 competitor), Checkatrade, Bark, Yell landscape.",
+        "What: Competitor analysis \u00e2\u20ac\u201d examined Jet Wash Surrey (#1 competitor), Checkatrade, Bark, Yell landscape.",
         "Why: Need to understand competitive gaps to exploit and threats to defend against.",
         "Finding: Jet Wash Surrey has ~10 indexed pages vs our 68. No calculator, no guides, no AI optimization. Their only advantage is 25 years experience + 4.9 Google rating.",
-        "Finding: 32 pressure washing companies listed on Checkatrade for Redhill. Bark has 761 reviews. These aggregator platforms dominate local searches — we should be listed.",
+        "Finding: 32 pressure washing companies listed on Checkatrade for Redhill. Bark has 761 reviews. These aggregator platforms dominate local searches \u00e2\u20ac\u201d we should be listed.",
         "Finding: samedayjetwash.com now appears at position 2 and 4 in organic results for Surrey jet washing queries. Our content depth is paying off in rankings.",
         "Finding: No competitor has an interactive calculator, comprehensive guide library, or AI-optimized content. Our moat is significant.",
         "Next research topic: transactional-keyword-opportunities (topic #3 in rotation)."
@@ -1805,11 +1805,11 @@
       "runId": "run-042",
       "date": "2026-04-09",
       "entries": [
-        "What: Tested transactional keyword rankings — searched driveway cleaning quote + book pressure washing for Surrey/RH1.",
+        "What: Tested transactional keyword rankings \u00e2\u20ac\u201d searched driveway cleaning quote + book pressure washing for Surrey/RH1.",
         "Why: Need to understand if we rank for buying-intent searches or only informational ones.",
         "Finding: We rank positions 2-6 for transactional queries. This is STRONG. The problem is NOT keyword visibility.",
         "Finding: If people are finding us for \"quote\" and \"book\" keywords but we have zero enquiries, the issue is either: (a) they call the phone number (check call logs!), (b) the quote form has too much friction, or (c) trust/social proof is insufficient.",
-        "Finding: New competitors spotted: Surrey Exterior Clean, JR Cleaning, Drive Genie, Driveway Clean UK — all have Redhill-specific pages but thin content.",
+        "Finding: New competitors spotted: Surrey Exterior Clean, JR Cleaning, Drive Genie, Driveway Clean UK \u00e2\u20ac\u201d all have Redhill-specific pages but thin content.",
         "Insight: The strategic pivot today (pricing tables, transactional titles, How It Works sections, trust badges) directly addresses the conversion gap. Give it 2-4 weeks for Google to re-index and for the changes to impact user behavior.",
         "Next research topic: linkable-content-ideas (topic #4 in rotation)."
       ]
@@ -1818,10 +1818,10 @@
       "runId": "run-043",
       "date": "2026-04-09",
       "entries": [
-        "What: Researched linkable content opportunities — searched for existing UK pressure washing data/statistics pages.",
+        "What: Researched linkable content opportunities \u00e2\u20ac\u201d searched for existing UK pressure washing data/statistics pages.",
         "Why: Statistics pages earn passive backlinks forever. Bloggers and journalists cite stats when writing articles.",
         "Finding: Only 1 UK pressure washing statistics page exists (theupsurge.co.uk/uk-pressure-washing-industry-statistics). Massive gap.",
-        "Finding: Key UK stats available to compile: 65% residential/35% commercial split, 70% of jobs Mar-Sep, £27.5B cleaning market, 99% of firms <10 employees, 25% green cleaning preference.",
+        "Finding: Key UK stats available to compile: 65% residential/35% commercial split, 70% of jobs Mar-Sep, \u00c2\u00a327.5B cleaning market, 99% of firms <10 employees, 25% green cleaning preference.",
         "Insight: A comprehensive \"UK Pressure Washing Statistics 2026\" page with 50+ data points would be virtually uncontested and would attract links from anyone writing about the industry.",
         "Next research topic: seo-industry-updates (topic #5 in rotation)."
       ]
@@ -1834,10 +1834,10 @@
         "Why: Need to ensure our changes align with current ranking signals and avoid penalties.",
         "CRITICAL: April 2026 Core Update is rolling out RIGHT NOW. March 2026 update completed April 8 (yesterday).",
         "Finding: March update rewards clear, topic-focused, fact-driven content. Our changes today (tables, key facts boxes, answer-first formatting) align perfectly.",
-        "Finding: FAQ/Review/HowTo rich results reduced on \"non-primary content pages\" — our FAQPage schema on area pages may see reduced rich results, but the schema still helps AI comprehension.",
-        "Finding: Google confirmed structured data is NOT diminishing — it's shifting from rich results to machine comprehension. This benefits our AI citation strategy.",
-        "Finding: AEO (Answer Engine Optimization) is now mainstream — Google explicitly rewards content structured for clear answers.",
-        "Insight: Perfect timing. 26 commits deployed today with fact-driven tables, key facts boxes, and transactional elements — exactly what the current core update rewards.",
+        "Finding: FAQ/Review/HowTo rich results reduced on \"non-primary content pages\" \u00e2\u20ac\u201d our FAQPage schema on area pages may see reduced rich results, but the schema still helps AI comprehension.",
+        "Finding: Google confirmed structured data is NOT diminishing \u00e2\u20ac\u201d it's shifting from rich results to machine comprehension. This benefits our AI citation strategy.",
+        "Finding: AEO (Answer Engine Optimization) is now mainstream \u00e2\u20ac\u201d Google explicitly rewards content structured for clear answers.",
+        "Insight: Perfect timing. 26 commits deployed today with fact-driven tables, key facts boxes, and transactional elements \u00e2\u20ac\u201d exactly what the current core update rewards.",
         "Research rotation complete. Next cycle restarts with ai-citation-tactics (topic #1)."
       ]
     },
@@ -1846,10 +1846,10 @@
       "date": "2026-04-09",
       "entries": [
         "What: Researched Perplexity-specific optimization tactics (2nd rotation of AI citation topic).",
-        "Why: Perplexity referral traffic converts at 10.5% — 6x Google organic (1.76%). High-value channel.",
+        "Why: Perplexity referral traffic converts at 10.5% \u00e2\u20ac\u201d 6x Google organic (1.76%). High-value channel.",
         "Finding: Perplexity prefers 1,200-2,000 word pages (shorter than ChatGPT's 2,900+ preference). Our area pages likely hit this sweet spot already.",
-        "Finding: Content freshness is strongest Perplexity lever — it searches live web. We updated all dateModified today, which directly helps.",
-        "Finding: Entity consistency is critical — Perplexity cross-references brand info across website, LinkedIn, GBP, Crunchbase, directories. Our biggest gap is LinkedIn (no company page).",
+        "Finding: Content freshness is strongest Perplexity lever \u00e2\u20ac\u201d it searches live web. We updated all dateModified today, which directly helps.",
+        "Finding: Entity consistency is critical \u00e2\u20ac\u201d Perplexity cross-references brand info across website, LinkedIn, GBP, Crunchbase, directories. Our biggest gap is LinkedIn (no company page).",
         "Action: Created SEO-054 to set up LinkedIn company page with consistent brand description.",
         "Insight: Different AI platforms prefer different content lengths. ChatGPT: 2,900+. Perplexity: 1,200-2,000. Optimize different page types for different AI engines."
       ]
@@ -1858,14 +1858,24 @@
       "runId": "run-046",
       "date": "2026-04-09",
       "entries": [
-        "What: Competitor analysis 2nd rotation — checked micro-local queries for smaller RH1 towns.",
+        "What: Competitor analysis 2nd rotation \u00e2\u20ac\u201d checked micro-local queries for smaller RH1 towns.",
         "Why: Testing if competitors are targeting our sub-areas.",
         "Finding: Hydro Pressure Clean is expanding with town-specific pages (Merstham, Coulsdon, Croydon, Thames Ditton). Active competitor expanding coverage.",
-        "Finding: Restore Pressure Washing (restore-pressure-washing.co.uk) is new — has Earlswood-specific page. Not seen in earlier research.",
+        "Finding: Restore Pressure Washing (restore-pressure-washing.co.uk) is new \u00e2\u20ac\u201d has Earlswood-specific page. Not seen in earlier research.",
         "Finding: We rank position 2 for micro-local queries (Merstham/Salfords/Earlswood). Our area pages + postcode pages are working.",
         "Pattern: Research rotation yielding diminishing returns on 2nd pass. All major insights captured in first rotation. Further value comes from EXECUTING manual tasks, not more research.",
         "Recommendation: Pause loop until user completes top manual tasks (Bing WMT, Medium articles, Bark/Yell). Then resume for ongoing monitoring."
       ]
+    },
+    {
+      "runId": "run-047",
+      "date": "2026-05-04",
+      "what": "Audited 84 HTML pages programmatically (24 SEO discovery checks). Filtered out 4 non-public files (GSC verification, internal docs, mockups). Found 15 public pages with real issues (45 raw, ~30 false positives from regex apostrophe-bug + legitimate historical year citations). Executed top P2 batch: added static <table> pricing to 9 service pages, fixed 2 stale schema rates, added schema to pricing.html, trimmed 1 over-length title.",
+      "why": "AI citation research shows static HTML tables get cited 2.5x more than prose, and the 9 service pages had ZERO tables (only the JS calculator, which AI scrapers can't interact with). Per the skill: 'no_static_pricing_table \u2014 AI cant interact with JS calc.'",
+      "result": "11 modified files, 2 commits, all 11 validator checks PASS. driveway-cleaning + block-paving-cleaning now have internally-consistent rate data (table matches schema matches calculator). pricing.html now indexable as a Service entity with telephone + service area + 9 sub-services AggregateOffer.",
+      "patterns": "Programmatic audits surface a lot of false positives (apostrophes break naive content-attr regex; year refs in historical citations look stale; internal docs/mockups look like missing-meta pages). Always cross-check against sitemap.xml before treating audit findings as canonical. Manual queue had 12 pending tasks (all type=manual, mostly outreach + GSC) \u2014 no automated tasks remained, full scan was 55 days overdue.",
+      "next": "Continue execution loop on remaining audit findings if any (none P1 currently). Next priority is the 12 manual tasks \u2014 outreach materials in seo/outreach/ are READY to publish (Medium article 2, LinkedIn ROI piece, Drummond guest post, 15 directory checklist, 3 HARO templates). User-driven, not agent-driven. Programmatic audit can be re-run any time; recommend re-audit after any content/schema work to catch regressions.",
+      "researchFindings": "Confirmed via PostHog API that all 12 named events are firing in production (run-047 happened the same day PostHog went live). Funnel chart will populate as real visitors accrue."
     }
   ],
   "counters": {
@@ -1873,7 +1883,11 @@
     "pendingAutomated": 0,
     "pendingManual": 5,
     "blocked": 0,
-    "completed": 32,
-    "expired": 0
+    "completed": 34,
+    "expired": 0,
+    "lastBatchCommits": [
+      "d228235",
+      "68692b3"
+    ]
   }
 }
