@@ -3,9 +3,9 @@
     "version": 1,
     "lastUpdated": "2026-05-04",
     "lastRunDate": "2026-05-04",
-    "lastRunId": "run-047",
-    "lastRunSummary": "Full audit (84 pages) + execution batch 1: 9 service pages now have semantic HTML pricing tables (AI citation win \u2014 2.5x more cited than prose). Synced 2 stale schema rates (driveway, block-paving) to match master pricing. Added Service+BreadcrumbList JSON-LD to pricing.html. Trimmed driveway-types-uk-comparison title 62\u219248 chars. All 11 validator checks PASS. Pushed to main, Vercel auto-deploying.",
-    "totalRuns": 47,
+    "lastRunId": "run-048",
+    "lastRunSummary": "Batch 2 + sitemap + IndexNow. 8 guide pages got topic-appropriate semantic tables (myths, prep checklists, sealer comparison, frequency-by-surface, etc) \u2014 AI citation 2.5x. Sitemap lastmod bumped on 19 modified pages. IndexNow ping to Bing/DuckDuckGo. All deployed live to samedayjetwash.com.",
+    "totalRuns": 48,
     "nextTaskId": 55,
     "fullScanDate": "2026-05-04",
     "nextFullScanDue": "2026-08-04",
@@ -1876,6 +1876,16 @@
       "patterns": "Programmatic audits surface a lot of false positives (apostrophes break naive content-attr regex; year refs in historical citations look stale; internal docs/mockups look like missing-meta pages). Always cross-check against sitemap.xml before treating audit findings as canonical. Manual queue had 12 pending tasks (all type=manual, mostly outreach + GSC) \u2014 no automated tasks remained, full scan was 55 days overdue.",
       "next": "Continue execution loop on remaining audit findings if any (none P1 currently). Next priority is the 12 manual tasks \u2014 outreach materials in seo/outreach/ are READY to publish (Medium article 2, LinkedIn ROI piece, Drummond guest post, 15 directory checklist, 3 HARO templates). User-driven, not agent-driven. Programmatic audit can be re-run any time; recommend re-audit after any content/schema work to catch regressions.",
       "researchFindings": "Confirmed via PostHog API that all 12 named events are firing in production (run-047 happened the same day PostHog went live). Funnel chart will populate as real visitors accrue."
+    },
+    {
+      "runId": "run-048",
+      "date": "2026-05-04",
+      "what": "Added static <table> elements to 8 guide pages (best-time-patio-cleaning, block-paving-sealing-guide, can-pressure-washing-damage-driveway, how-often-clean-driveway, how-to-clean-indian-sandstone-patio, prepare-driveway-for-pressure-washing, pressure-washing-myths-debunked, remove-oil-stains-driveway). Each table topic-appropriate to the guide. All 8 dateModified bumped to 2026-05-04 in Article schema. Sitemap lastmod bumped on the 19 pages modified across batches 1+2. IndexNow ping submitted to Bing + api.indexnow.org for those 19 URLs.",
+      "why": "AI citation tactic \u2014 tables are cited 2.5x more than prose. dateModified bump signals quarterly freshness (skill: 'Content not updated quarterly is 3x more likely to lose AI citations'). Sitemap lastmod is a Google-standard freshness signal that prompts recrawl. IndexNow pushes to Bing immediately rather than waiting for natural crawl.",
+      "result": "4 commits pushed, all deployed via Vercel. Production verified: driveway-cleaning page has 1 <table>; pricing.html has 2 JSON-LD blocks. IndexNow returned HTTP 200 from both api.indexnow.org and bing.com endpoints. Validator approved both batches with no failures.",
+      "patterns": "Tables as a structural primitive are the single highest-ROI AI citation move \u2014 they convert prose-only content into machine-quotable assertions. Two-batch approach (services first, then guides) was efficient: services share one canonical pricing source; guides each need topic-specific data so harder to batch automatically.",
+      "next": "P2 manual queue still has 12 pending items (mostly outreach: Medium Article 2 ready to publish, LinkedIn ROI piece ready, Drummond guest post ready, 15-directory checklist, HARO templates, GSC monitoring tasks). These are user-action, not agent-action. Programmatic next runs could: (1) add key-facts boxes to guides without them, (2) add Service offerings to area page schemas, (3) llms.txt content refresh, (4) image compression for the 13 oversized images flagged in Phase 4. Re-run audit script after any major content batch.",
+      "researchFindings": "Programmatic 'weak answer-first opening' check flagged 23/39 guides but is unreliable without an <article> wrapper to anchor the body \u2014 many were false positives. To use that check meaningfully, either tighten the regex to find the first <p> AFTER <h1>, or have an editor manually review each flagged page. Did NOT execute on this signal in run-048."
     }
   ],
   "counters": {
