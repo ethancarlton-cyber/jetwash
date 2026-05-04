@@ -33,9 +33,21 @@
     });
     return out;
   }
+  // Identity events legitimately carry the lead's chosen identifier (email).
+  // Regular events have PostHog identity fields (distinct_id etc) we must NOT scrub —
+  // otherwise every identified lead collapses into a single "[EMAIL]" person.
+  var IDENTITY_EVENTS = { '$identify': 1, '$set': 1, '$create_alias': 1, '$groupidentify': 1 };
+  var PRESERVE_KEYS = ['distinct_id', '$user_id', '$anon_distinct_id', '$device_id', '$session_id'];
   function beforeSend(event) {
     if (!event || !event.properties) return event;
+    if (IDENTITY_EVENTS[event.event]) return event;
+    var preserved = {};
+    for (var i = 0; i < PRESERVE_KEYS.length; i++) {
+      var k = PRESERVE_KEYS[i];
+      if (k in event.properties) preserved[k] = event.properties[k];
+    }
     event.properties = scrubObject(event.properties);
+    for (var pk in preserved) event.properties[pk] = preserved[pk];
     return event;
   }
 
