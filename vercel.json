@@ -2,25 +2,27 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
+    { "source": "/tips",                       "destination": "/guides",            "statusCode": 301 },
+    { "source": "/tips.html",                  "destination": "/guides",            "statusCode": 301 },
+    { "source": "/driveway-cleaning-redhill",  "destination": "/areas/redhill",     "statusCode": 301 },
+    { "source": "/areas/bletchingley",         "destination": "/areas/betchworth",  "statusCode": 301 },
+
     {
-      "source": "/tips",
-      "destination": "/guides",
-      "permanent": true
+      "source": "/:path*.html",
+      "has": [{ "type": "host", "value": "www.samedayjetwash.com" }],
+      "destination": "https://samedayjetwash.com/:path*",
+      "statusCode": 301
     },
     {
-      "source": "/tips.html",
-      "destination": "/guides",
-      "permanent": true
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.samedayjetwash.com" }],
+      "destination": "https://samedayjetwash.com/:path*",
+      "statusCode": 301
     },
     {
-      "source": "/driveway-cleaning-redhill",
-      "destination": "/areas/redhill",
-      "permanent": true
-    },
-    {
-      "source": "/areas/bletchingley",
-      "destination": "/areas/betchworth",
-      "permanent": true
+      "source": "/:path*.html",
+      "destination": "/:path*",
+      "statusCode": 301
     }
   ],
   "headers": [
