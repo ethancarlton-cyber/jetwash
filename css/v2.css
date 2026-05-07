@@ -293,6 +293,14 @@ p { margin: 0 0 var(--space-3); }
     gap: var(--space-2);
     margin-bottom: var(--space-4);
 }
+.hero__footnote {
+    margin: 0;
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.65);
+    font-weight: 400;
+    max-width: 50ch;
+    line-height: 1.5;
+}
 .hero__trust {
     display: flex;
     flex-wrap: wrap;
@@ -694,6 +702,66 @@ p { margin: 0 0 var(--space-3); }
 @media (min-width: 640px) {
     .included-list { grid-template-columns: 1fr 1fr; }
 }
+
+/* ============================================================
+   Before / after pair component
+   ============================================================ */
+.ba-section { padding: var(--space-6) 0; background: var(--mist); }
+.ba-section .section__head { margin-bottom: var(--space-4); }
+
+.ba-grid {
+    display: grid;
+    gap: var(--space-3);
+    grid-template-columns: 1fr;
+}
+@media (min-width: 768px) { .ba-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1100px) { .ba-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.ba-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+.ba-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    background: var(--ink);
+}
+.ba-pair__half {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+.ba-pair__half img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ba-pair__label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    padding: 4px 10px;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--surface);
+    background: rgba(11, 27, 43, 0.75);
+    backdrop-filter: blur(6px);
+    border-radius: 999px;
+}
+.ba-pair__label--after { background: var(--accent); }
+.ba-card__caption {
+    padding: var(--space-2) var(--space-3);
+    font-size: 0.9375rem;
+    color: var(--ink);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ba-card__caption span { color: var(--muted); font-weight: 500; font-size: 0.875rem; }
 
 /* ============================================================
    FAQ list (no accordion)

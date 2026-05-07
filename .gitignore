@@ -34,9 +34,16 @@ scripts/
 
 # Backup files
 images-backup/
+
+# AI-generated source PNGs (we commit only the compressed webp versions)
+images/bank/*.png
+images/generated/*.png
+images/style-test/*.png
 .vercel
 .env*.local
 
 # Test artifacts
 playwright-report/
 test-results/
+
+.vercel
