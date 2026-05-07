@@ -6,6 +6,7 @@
     { "source": "/tips.html",                  "destination": "/guides",            "statusCode": 301 },
     { "source": "/driveway-cleaning-redhill",  "destination": "/areas/redhill",     "statusCode": 301 },
     { "source": "/areas/bletchingley",         "destination": "/areas/betchworth",  "statusCode": 301 },
+    { "source": "/guides/is-pressure-washing-worth-it", "destination": "/guides/property-value-kerb-appeal", "statusCode": 301 },
 
     {
       "source": "/:path*.html",

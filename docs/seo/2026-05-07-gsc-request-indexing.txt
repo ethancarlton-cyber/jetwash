@@ -1,0 +1,18 @@
+GSC URL Inspection — paste these 10 URLs one at a time, hit "Request Indexing" on each.
+Order is priority: areas just got the +15 inbound footer boost (do those first), then guides, then the 3 LOOKS_FINE pages that just need re-request.
+
+# Priority 1 — orphan areas (just received +15 inbound links from footer expansion)
+https://samedayjetwash.com/areas/godstone
+https://samedayjetwash.com/areas/chipstead
+https://samedayjetwash.com/areas/caterham
+
+# Priority 2 — orphan guides (will receive cross-link boost in Phase 2B, currently shipping)
+https://samedayjetwash.com/guides/tarmac-driveway-cleaning
+https://samedayjetwash.com/guides/weed-removal-block-paving
+https://samedayjetwash.com/guides/pressure-washing-before-after-expectations
+https://samedayjetwash.com/guides/pressure-washing-service-tiers
+
+# Priority 3 — pages with no defect (audit verdict LOOKS_FINE), just need re-request
+https://samedayjetwash.com/guides/block-paving-cleaning-cost-uk
+https://samedayjetwash.com/guides/patio-cleaning-cost-uk
+https://samedayjetwash.com/guides/moss-removal-from-driveways
