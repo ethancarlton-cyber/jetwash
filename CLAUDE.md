@@ -25,14 +25,20 @@ Local jetwashing/pressure washing lead generation website targeting the RH1 (Red
 - ✅ **Form submissions** - Leads via Web3Forms
 - ✅ **Phone calls** - People should be encouraged to call
 
-### SEO Strategy (Content-Focused):
-Since we can't use local business signals (GBP, NAP, citations), our strategy focuses on:
+### SEO Strategy (Content + Local Signals)
+Hybrid strategy combining content depth with active GBP + phone-call lead capture:
 1. **Content marketing** - Blog articles targeting informational/commercial keywords
 2. **On-page SEO** - Title tags, meta descriptions, internal linking
-3. **Backlinks** - HARO, guest posts, Reddit/Quora (no personal info needed)
-4. **Long-tail keywords** - "how much does X cost", "how often should I X"
+3. **Local business signals** - GBP active (photos, reviews, posts, Q&A), NAP consistent across all listings, phone CTAs prominent every page, schema includes LocalBusiness/HomeAndConstructionBusiness
+4. **Backlinks** - HARO, guest posts (Drummond), Medium articles, directory listings (Yell, Bark, FreeIndex, etc)
+5. **Long-tail keywords** - "how much does X cost", "how often should I X"
+6. **Map pack visibility** - GBP optimization captures map-pack clicks for "[service] near me" + city-named queries
 
-### Keywords to Target (No Map Pack Trigger):
+**Strategy pivot note (2026-04)**: Earlier phases assumed an anonymous-no-GBP-no-phone model. That was reversed when GBP + phone went live. Any older guidance referencing "no local business signals" is superseded.
+
+### Keywords to Target (Mixed — Informational + Local)
+
+**Informational (no map pack — content-quality competition):**
 - "driveway cleaning cost UK"
 - "patio cleaning prices"
 - "how often clean driveway"
@@ -40,6 +46,13 @@ Since we can't use local business signals (GBP, NAP, citations), our strategy fo
 - "is pressure washing worth it"
 - "block paving cleaning cost"
 - "best time to clean patio UK"
+
+**Local + Map Pack (GBP + phone + content competition):**
+- "jet wash redhill"
+- "pressure washing reigate"
+- "driveway cleaning surrey"
+- "[service] near me" variants
+- "[service] [town]" combinations for every service × area pair
 
 ---
 

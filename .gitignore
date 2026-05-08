@@ -47,3 +47,17 @@ playwright-report/
 test-results/
 
 .vercel
+
+# Local review artifacts (huge PNGs, regenerated on-demand)
+screens/
+review.html
+review-all.html
+.playwright-mcp/
+fix-mobile-header.png
+mobile-header-check.png
+gsc-reports/
+
+# Untracked dev scratch
+TODO.md
+voice/
+.build/
