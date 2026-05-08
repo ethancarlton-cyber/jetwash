@@ -454,8 +454,8 @@ p { margin: 0 0 var(--space-3); }
 }
 @media (min-width: 768px) {
     .quote-card { padding: var(--space-5); }
-    .quote-form { grid-template-columns: 1fr 1fr 1fr; }
-    .quote-form button { grid-column: span 3; width: auto; justify-self: start; padding: 16px 32px; }
+    .quote-form--hero { grid-template-columns: 1fr 1fr 1fr; }
+    .quote-form--hero button { grid-column: span 3; width: auto; justify-self: start; padding: 16px 32px; }
 }
 
 /* ============================================================
