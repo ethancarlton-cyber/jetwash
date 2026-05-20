@@ -54,6 +54,67 @@
         "required": true,
         "format": "A `## Sources` section near the end of the article listing each source as a numbered link with publication name, document title, and accessed date.",
         "minimumEntries": 5
+      },
+      "researchDepth": {
+        "_intent": "Citations are a fraction of research. Loop must consult breadth before citing depth.",
+        "minimumSourcesConsulted": 20,
+        "minimumSourcesCited": 5,
+        "mustSpanSourceClasses": 3,
+        "mustIncludeAtLeastOnePrimaryDataSource": true,
+        "primaryDataSourceExamples": [
+          "Met Office historical climate data for Surrey / RH postcode",
+          "Environment Agency permit register or pollution incident data",
+          "Manufacturer datasheet with PSI/GPM/temperature ratings",
+          "BS / EN standard PDF with named clause",
+          "Council planning portal data on driveway permitting",
+          "Marshalls / Brett / Tobermore technical bulletin with named warranty terms"
+        ]
+      },
+      "usefulnessCriteria": {
+        "_intent": "Genuinely useful content changes what the reader does. The article MUST satisfy at least 3 of these 6 — a researched-but-bland article fails this gate even if it meets the citation count.",
+        "minimumSatisfied": 3,
+        "criteria": [
+          {
+            "id": "counterintuitive-insight",
+            "test": "Contains at least one finding that corrects a common misconception, or that contradicts the dominant advice in the first page of Google results for the query.",
+            "exampleCorrection": "Most homeowners assume sealing always extends paving life — for Indian sandstone in damp conditions it can accelerate spalling by trapping moisture under the polymer film."
+          },
+          {
+            "id": "local-temporal-specificity",
+            "test": "Includes UK-specific or RH1/Surrey-specific data: Met Office figures, council policy, regional pricing, named local materials suppliers — NOT generic global content.",
+            "exampleData": "Surrey received 760mm rainfall in 2025 (Met Office), 18% above the 30-year average — driveways in RH1–RH6 will moss-regrow 3–5 weeks earlier than the typical UK guide implies."
+          },
+          {
+            "id": "actionable-recommendation",
+            "test": "Ends with at least one concrete action the reader can take this week, with named products/tools/steps — not 'consider hiring a professional'.",
+            "exampleAction": "Spray Lithofin Algex (£14.99, 1L, available at Tile Mountain) at 1:5 dilution on a dry day in the next 7 days; leave 48 hrs before pressure washing at ≤1,500 PSI to avoid scouring the jointing sand."
+          },
+          {
+            "id": "mistakes-to-avoid",
+            "test": "Names at least 2 specific mistakes with named consequences — warranty voided, surface damage, cost overrun, legal issue.",
+            "exampleMistake": "Using a turbo / dirt-blaster nozzle on Marshalls Drivesett Argent voids the 10-year Marshalls Register warranty (Marshalls T&Cs §4.3) because the rotating jet exceeds the 1,500 PSI surface tolerance."
+          },
+          {
+            "id": "numeric-specificity",
+            "test": "Contains at least 5 specific numbers (£, %, m², PSI, GPM, mm, °C, days, years) each tied to a cited source — never 'many', 'often', 'most professionals'.",
+            "exampleNumbers": "£3.20/m² (Drummond 2026 trade rate) · 1,800 PSI (Karcher K7 max) · 760mm rainfall (Met Office 2025) · 14 days re-soiling delay post-seal (Resiblock technical bulletin) · 18% Surrey rainfall premium vs UK avg"
+          },
+          {
+            "id": "decision-framework",
+            "test": "Helps the reader make a specific choice — when, what, who, how much — with branching criteria, not just informing them of options.",
+            "exampleFramework": "Choose DIY hire if: (a) area <40m², (b) you can dedicate a Saturday, (c) you already own jointing sand. Choose pro if: (d) area >40m², (e) surface includes sandstone or limestone, (f) paving is under any active warranty."
+          }
+        ]
+      },
+      "researchProcess": {
+        "_intent": "Before writing a single word, the loop must do the research. Writing-first produces filler; research-first produces insight.",
+        "stepsRequiredPerArticle": [
+          "Step 1 — Survey: open 20+ sources from acceptedSourceClasses (manufacturer datasheets, BS standards, gov data, trade body docs). Note contradictions, gaps, and common misconceptions in the first-page Google results.",
+          "Step 2 — Synthesise: identify a SPECIFIC ANGLE/STANCE that the data supports — not a neutral overview. E.g., 'sealing isn't universally good; here's when it's wrong for Surrey conditions'.",
+          "Step 3 — Original contribution: build the table/calculation/matrix that proves the stance using the surveyed data.",
+          "Step 4 — Write: answer-first opening states the stance, the body proves it with cited data, the closing tells the reader what to do this week.",
+          "Step 5 — Sources section: list every cited source with publication, title, URL, accessed date. Note in a comment which sources were consulted but not cited."
+        ]
       }
     },
     "priorityQueries": [
