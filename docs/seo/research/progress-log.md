@@ -4,6 +4,23 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 48 (COMPLETE) — Inline-citation audit + fix on worst-offender guides
+
+**Track**: Quality audit + remediation. Audited all 70 pillared pages for inline `<sup>` citation count. Found 27 pages with fewer than 5 inline citations despite having Sources H2 sections with 5+ entries each. The researchPillarStandard minimumAuthoritativeCitations=5 refers to inline citations, so these pages didn't fully meet the standard.
+
+**Worst offenders fixed this cycle**:
+- `guides/block-paving-cleaning-cost-uk.html`: 1 → 7 inline citations (added Marshalls technique, BS 7533-101 jointing-sand, Karcher K7 spec, Lithofin Algex biocide, HSE/UKSRG PTV, Met Office Wisley)
+- `guides/patio-cleaning-cost-uk.html`: 1 → 6 inline citations (Lithofin Algex, Karcher K7, BS 7533-101, HSE/UKSRG, Met Office Wisley)
+- `guides/best-time-patio-cleaning.html`: 2 → 6 inline citations (Karcher K7, Met Office Wisley, HSE/UKSRG, BS 7533-101)
+
+**Pages remaining at <5 inline `<sup>` citations**: 24 (mostly the Cycle 16 batch-upgrade guides). These all have Sources H2 with 5+ entries but the inline citation linking is below the standard.
+
+**Sources newly added**: 0. Library remains at 24 entries.
+
+**Next cycle pick**: Continue the audit-remediation sweep through the remaining 24 low-citation guides. Same pattern as this cycle — add 3-5 inline `<sup>` citations to each, attaching to existing claims about PSI / biocide cadence / pressure technique / substrate.
+
+---
+
 ## 2026-05-21 — Cycle 47 (COMPLETE) — Tracker priorityQueries Q-21 to Q-100 backfill — STOP CONDITION (a) MET
 
 **Track**: (2f) DISCOVER GAP + backfill. Added Q-21 through Q-100 (80 new entries) to `priorityQueries`, all linking to existing pillared guides, areas and services. Bulk-add in one atomic tracker edit.
