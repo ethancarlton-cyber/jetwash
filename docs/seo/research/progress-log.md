@@ -4,6 +4,44 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 20 (COMPLETE) — Area pillar #3: Reigate (RH2) — REWRITE SHIPPED
+
+**Track**: (2c) areas/*.html. Completes the core RH1/RH2/SM7 Surrey trio. RH2 is the natural #3 because it straddles both substrates (chalk to the north, Lower Greensand to the south) and therefore tests the OAC framework built in Cycles 18-19.
+
+**Page**: `areas/reigate.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`.
+
+**What shipped this cycle**:
+- New answer-first H2 ("Why two Reigate drives 800m apart need different cleaning") with the two-substrate stance in the first 60 words.
+- Labelled OAC: "The two-substrate RH2 matrix" — 6-row table comparing North RH2 (chalk-scarp foot, Wray Lane, Reigate Hill) vs South RH2 (Old Town, Woodhatch, South Park) on the same six surfaces with separate price band and re-clean interval columns. This is the only within-postcode substrate-split comparison published for UK pressure washing.
+- 5 new analytical H2s: substrate (BGS chalk + BGS Lower Greensand cross-cited), Reigate Hill north-facing slip-risk angle, RH2 SUDS gate, warranty-voiding mistakes, 5-step Reigate workflow.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD — citation array (7), datePublished 2026-02-08, dateModified 2026-05-21, inLanguage en-GB.
+- Sitemap lastmod for /areas/reigate bumped to 2026-05-21.
+
+**Validation against researchPillarStandard**:
+- ✅ minimumWordCount 1,989 (≥1,500)
+- ✅ openingFormat answer-first (two-substrate stance in first 60 words)
+- ✅ minimumAuthoritativeCitations ≥ 5 (7 inline `<sup>`)
+- ✅ originalAnalyticalContribution labelled in-page
+- ✅ sourcesSectionRequired (`## Sources` H2 with 7 entries)
+- ✅ mustSpanSourceClasses ≥ 3 (Met Office + 2x BGS + Marshalls + Lithofin + UKSRG/HSE + RBBC = 7 distinct sources spanning .gov.uk + BGS + manufacturer + trade body + council)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office Wisley + BGS chalk + BGS Lower Greensand = three primary)
+- ✅ usefulnessCriteria 6 of 6 (counterintuitive: same RH2 postcode, two substrates; local: Reigate Hill/Wray Lane/Woodhatch/South Park named; actionable: 5-step Reigate workflow + matrix rows; mistakes: 3 warranty-voiders; numeric: every £ and interval sourced; framework: decision-by-substrate)
+
+**Pre-flight checks**:
+- ✅ 0 `.html"` in href
+- ✅ 17 phone CTA instances
+- ✅ 4 JSON-LD blocks all parse
+
+**Sources newly added to sources-library.md this cycle**: 0 — re-used the BGS chalk + BGS Lower Greensand + Met Office + Marshalls + Lithofin + UKSRG + RBBC stack built in Cycles 18-19. Library remains at 18 entries. This is the compounding pay-off Cycle 13 predicted: cycles after a substrate has been established consume zero new sources.
+
+**Findings status**: F-007 (chalk vertical drainage) extended again — the RH2 two-substrate matrix is now the canonical example of the same network using both halves of the finding inside a single postcode. No new finding this cycle.
+
+**Next cycle pick**: **areas/dorking.html** (RH4) — Mole Valley AONB sits on a different geology again (chalk dip-slope + Greensand outcrops + Mole flood plain). Continuing the systematic substrate coverage. Cycles 21+ will likely consume the existing 7-source stack with at most one new finding per cycle on a unique local angle (Dorking = damp microclimate / Box Hill aspect).
+
+---
+
 ## 2026-05-21 — Cycle 19 (COMPLETE) — Area pillar #2: Redhill (RH1) — REWRITE SHIPPED
 
 **Track**: (2c) areas/*.html. The Redhill RH1 home-base page is the natural baseline anchor for future area-comparison work, taken ahead of alphabetical Betchworth because of SEO traffic priority.
