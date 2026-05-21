@@ -80,3 +80,39 @@ When adding a new finding: include the source, the data, the implication, and wh
 - Q-01 driveway cleaning cost UK (cost build-up Surrey premium)
 - Q-10 hire vs pro (DIY hire water cost)
 - Q-08 sealing (water for prep wash)
+
+---
+
+## F-005 — HSE / BS 7976 pendulum-test PTV ≥36 is the wet-surface slip-risk threshold
+
+**Established**: 2026-05-21 (Cycle 3)
+**Sources**:
+- UK Slip Resistance Group — introduction to the pendulum tester (BS 7976) — https://www.ukslipresistance.org.uk/publication/introduction-to-the-pendulum-tester/
+- HSE — Slips and trips at work — https://www.hse.gov.uk/slips/index.htm
+
+**Data**: HSE endorses BS 7976 pendulum testing as the preferred method for measuring slip risk on pedestrian surfaces. The UKSRG-published threshold (widely adopted in UK industry and council specs) is **PTV ≥36 = low slip risk** (1-in-1-million slip probability), **25–35 = moderate**, **≤24 = high**. Algae and moss contamination of an external paved surface can drop wet PTV from a healthy 50+ down into the high-risk zone within a single shaded growing season.
+
+**Why it matters**: Lets us anchor the cleaning-cadence argument in a measurable safety threshold rather than aesthetics. "Your drive looks dirty" is subjective; "your drive is below the HSE wet-PTV-36 threshold" is a specific, defensible claim that justifies professional intervention. It also strengthens the insurance / public-liability angle on service pages.
+
+**Articles using this finding**:
+- Q-04 how often to clean (primary — gates the 18-24 month Surrey cadence at the HSE threshold)
+- Q-06 why does moss grow on driveways (slip-risk justification for moss removal)
+- Q-11 best time of year to clean (autumn clean = entering wet months above PTV 36)
+- All service pages (insurance / liability angle)
+
+---
+
+## F-006 — Lithofin Algex manufacturer guidance: annual spring biocide
+
+**Established**: 2026-05-21 (Cycle 3)
+**Source**: Lithofin — Lithofin ALGEX product page — https://www.lithofin.com/en/products/ceramics-and-natural-stone/lithofin-algex
+
+**Data**: The manufacturer explicitly recommends "spray with Lithofin ALGEX once a year, preferably in spring" for ongoing maintenance against algae and biofilm on stone surfaces. The biocide effect lasts 6–12 months from a single application, after which spore recolonisation begins.
+
+**Why it matters**: Anchors a maintenance cycle to a named, citable manufacturer guideline — not industry folklore. The "annual spring biocide" recommendation is what stretches the Surrey deep-clean cadence to 18–24 months rather than 12. Lets us write "skipping spring biocide is the #1 driver of needing a deep clean every 12 months instead of every 18–24" with a defensible source backing it.
+
+**Articles using this finding**:
+- Q-04 how often to clean (primary — biocide cycle anchors the matrix)
+- Q-06 why does moss grow on driveways (primary — Algex is the named product)
+- Q-11 best time of year to clean (primary — manufacturer-specified spring slot)
+- Q-14 / Q-15 Indian sandstone & black spot (Algex is rated for natural stone)

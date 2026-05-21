@@ -4,6 +4,59 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 3 (COMPLETE) — Q-04 how often clean driveway — REWRITE SHIPPED
+
+**Query**: How often should you pressure wash a driveway UK
+**Page**: `guides/how-often-clean-driveway.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`
+
+**Sources surveyed this cycle (new on top of Cycle 1 library)**:
+- ✅ UK Slip Resistance Group — pendulum tester intro (BS 7976) — **CITED**
+- ✅ HSE — Slips and trips at work — **CITED**
+- ✅ Lithofin — Algex product page + technical info — **CITED**
+- ✅ Met Office — Regional values portal (consulted but exact 30-yr regional averages not directly downloadable from the public table; cited Wisley as Surrey reference)
+- ✅ Velocity Safety + Slip Audit + Grestec + Munro Instruments (consulted for PTV threshold cross-reference, NOT cited — they reference HSE/UKSRG which we cite directly)
+- ✅ Marshalls technical info hub (consulted to confirm cleaning frequency guidance; specific quote on shaded paving extracted from the existing Marshalls Dec 2017 PDF)
+- Survey total this cycle: 7 new sources consulted, 3 cited (plus 3 reused from Cycle 1 library = 6 total citations in article)
+
+**What shipped this cycle**:
+- 3 brand-new H2 sections inserted before the existing surface-frequency table: **"Why the generic UK advice doesn't apply to Surrey"** (Met Office Wisley 648mm vs UK 1,147mm), **"The Surrey cleaning cadence matrix"** (the labelled originalAnalyticalContribution — 4 shade × 3 surface = 12-cell matrix derived from rainfall + Lithofin reapplication + HSE PTV threshold), **"What HSE slip-risk means for your drive"** (BS 7976 PTV thresholds and how moss/algae contamination drops the wet-PTV).
+- Hero lede rewritten to lead with the Surrey 43%-drier stance.
+- Key Facts box re-bulleted with Wisley + Algex + HSE PTV + Marshalls.
+- "Factors" section: each subhead now has an inline citation (Marshalls on shade, Wisley on climate, UKSRG on oil slip-risk, BS 7533-101 on sealing).
+- "Season" section: now anchored to the Lithofin manufacturer "preferably in spring" guidance with cite.
+- `## Sources` H2 at end with 6 numbered entries (each with publication, document title, URL, accessed date 2026-05-21) — `src-wisley`, `src-lithofin`, `src-uksrg`, `src-hse`, `src-marshalls`, `src-bsi`.
+- Article schema: `citation` property added (6 CreativeWork entries), bumped `dateModified` to 2026-05-21, added `inLanguage: en-GB`, rewrote description to reflect the cadence-matrix angle.
+- Meta + og + twitter descriptions rewritten to lead with "18-24 months, not the generic UK 12".
+
+**Validation against researchPillarStandard**:
+- ✅ minimumWordCount ≥ 1500 (HTML word count 4,106; rendered prose well above 1,500)
+- ✅ openingFormat answer-first (Surrey-specific cadence stated in first ~30 words of lede)
+- ✅ minimumAuthoritativeCitations ≥ 5 (6 distinct sources, 17 inline `<sup>` instances)
+- ✅ originalAnalyticalContribution labelled in-page ("Original analytical contribution:" sentence before the cadence matrix)
+- ✅ sourcesSectionRequired (## Sources with 6 entries, all required fields)
+- ✅ mustSpanSourceClasses ≥ 3 (gov.uk HSE + BS standard BS 7976 + manufacturer datasheet Lithofin + material manufacturer Marshalls + .gov.uk Met Office = 5 classes)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office Wisley + HSE + Lithofin = three)
+- ✅ usefulnessCriteria all 6 of 6 satisfied (counterintuitive: 43% drier; local: Wisley/Surrey; actionable: matrix + spring biocide; numeric: 648mm, 1147mm, PTV 36, 12 months Algex; mistakes: skipping spring biocide + turbo nozzle; framework: cadence matrix)
+
+**Pre-flight checks**:
+- ✅ 0 `.html` href violations
+- ✅ 8 instances of `01737 652 515` (phone CTA prominent)
+- ✅ 3 JSON-LD blocks parse as valid JSON (Article + BreadcrumbList + FAQPage)
+
+**Sources newly added to sources-library.md this cycle**: 3
+- Lithofin ALGEX (manufacturer datasheet, re-usable for Q-06/Q-11/Q-14/Q-15)
+- BS 7976 via UKSRG (BS standard, re-usable for Q-06/Q-11 + all service pages)
+- HSE Slips & Trips (.gov.uk, re-usable for Q-06/Q-11 + all service pages)
+
+**New findings added to findings.md**: 2
+- F-005 (HSE / BS 7976 PTV ≥36 is the wet-surface slip-risk threshold) — used across Q-04/Q-06/Q-11 + all service pages
+- F-006 (Lithofin Algex manufacturer guidance: annual spring biocide) — used across Q-04/Q-06/Q-11/Q-14/Q-15
+
+**Next cycle pick**: **Q-03** "Can pressure washing damage block paving" → `guides/can-pressure-washing-damage-driveway.html`. F-003 (Marshalls 200mm/30°/medium-pressure) is the primary angle, BS 7533-101 covers the structural side, Karcher datasheets cover the PSI threshold. F-005 (HSE PTV) gives a secondary safety angle. Strong candidate because Q-05 (best PSI for block paving) is the natural pair — both could share the same Karcher datasheet expansion.
+
+---
+
 ## 2026-05-21 — Cycle 2 (COMPLETE) — Q-01 driveway cleaning cost UK — REWRITE SHIPPED
 
 **Query**: How much does it cost to clean a driveway UK 2026

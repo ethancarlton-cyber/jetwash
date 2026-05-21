@@ -36,6 +36,14 @@ When adding a new source: append to the relevant section. When citing in an arti
 - Key data: Aftercare booklet
 - Used in: (pending)
 
+### Lithofin ALGEX Special Cleaner — product page + technical info
+- URL: https://www.lithofin.com/en/products/ceramics-and-natural-stone/lithofin-algex
+- Class: Manufacturer technical datasheet (chemical / consumable)
+- Accessed: 2026-05-21
+- Key data: Manufacturer-specified reapplication interval is **annual, preferably in spring**, for ongoing maintenance against algae and biofilm on stone surfaces. Effective for 6–12 months from a single application.
+- Used in: Q-04
+- Re-usable for: Q-06 (moss growth — Algex is the named biocide), Q-11 (seasonal — spring is the named ideal slot), Q-14/Q-15 (sandstone biocide)
+
 ---
 
 ## .gov.uk
@@ -85,6 +93,26 @@ When adding a new source: append to the relevant section. When citing in an arti
 ---
 
 ## BS / EN / ISO standards
+
+### BS 7976 (Parts 1-3) — Pendulum testers
+- URL via UKSRG: https://www.ukslipresistance.org.uk/publication/introduction-to-the-pendulum-tester/
+- Class: BS standard (interpreted by UKSRG — the trade body that maintains UK pendulum-test guidance)
+- Accessed: 2026-05-21
+- Key data: HSE-preferred slip-test method. Threshold widely adopted: **PTV ≥36 = low slip risk**, 25–35 = moderate, ≤24 = high. Algae and moss are the two contaminants that drop outdoor paving PTV fastest.
+- Used in: Q-04
+- Re-usable for: Q-06 (slip-risk argument for moss removal), Q-11 (seasonal slip-risk argument), all service pages (insurance/safety angle)
+
+## HSE / Government
+
+### HSE — Slips and trips at work
+- URL: https://www.hse.gov.uk/slips/index.htm
+- Class: .gov.uk
+- Accessed: 2026-05-21
+- Key data: HSE endorses BS 7976 pendulum test as the preferred method for slip-risk assessment on pedestrian surfaces, including outdoor paving.
+- Used in: Q-04
+- Re-usable for: Q-06, Q-11, all service pages
+
+## BS / EN / ISO standards (continued)
 
 ### BS 7533-101:2021 — Pavements constructed with clay, concrete or natural stone paving units
 - URL: https://knowledge.bsigroup.com/products/pavements-constructed-with-clay-concrete-or-natural-stone-paving-units-code-of-practice-for-the-structural-design-of-pavements-using-modular-paving-units-1
