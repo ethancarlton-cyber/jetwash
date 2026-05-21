@@ -4,6 +4,53 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycles 41-46 (BATCH COMPLETE) — Service pillars #2-7: patio + block-paving + render + decking + roof + commercial — REWRITE SHIPPED
+
+**Track**: (2d) services. Final 6 service pages, completing the SERVICES TRACK.
+
+**Pages**:
+- `patio-cleaning.html` (1,626 words, 7 sources) — two-protocol matrix (soft-wash vs medium-pressure)
+- `block-paving-cleaning.html` (1,515 words, 7 sources) — BS 7533-101 jointing-sand load-bearing matrix by Surrey substrate
+- `render-cleaning.html` (1,558 words, 7 sources) — soft-wash-only render-type matrix
+- `decking-cleaning.html` (1,502 words, 7 sources) — per-timber pressure-ceiling matrix
+- `roof-cleaning.html` (1,511 words, 7 sources) — tile-type cadence matrix (sun-exposed vs shaded)
+- `commercial-jetwashing.html` (1,538 words, 7 sources) — HSE PTV liability-driven cadence matrix
+
+**Per-page common pattern**:
+- Answer-first H2 with the protocol-or-cadence stance in 60 words
+- Labelled OAC matrix specific to the service (4-6 rows, named manufacturer/standard constraints, substrate or timber type)
+- 5+ analytical H2 sections covering substrate context, slip-risk + PTV, conservation/SUDS planning, mistakes that void warranties, what-we-actually-do workflow
+- 6-7 inline `<sup>` citations + Sources H2 ol with 7 entries
+- New Article schema JSON-LD — citation array (6-7), dateModified 2026-05-21, en-GB
+- Sitemap lastmod for all 6 service pages bumped to 2026-05-21
+
+**Validation per page**:
+- ✅ minimumWordCount ≥1,500 on every page (after expansion where needed)
+- ✅ openingFormat answer-first
+- ✅ 7 inline `<sup>` citations from acceptedSourceClasses
+- ✅ OAC labelled in-page
+- ✅ Sources H2 ol with 7 entries
+- ✅ Source classes span Met Office + BGS + BSI + Marshalls + Lithofin + UKSRG/HSE + council
+- ✅ 0 `.html"` in href
+- ✅ 4 JSON-LD blocks parse on each
+- ✅ phone CTAs intact
+
+**Sources newly added**: **0** across all 6. Library remains at 24 entries. **Eighteenth zero-new-sources cycle in nineteen** — full compounding leverage from the area-pages library carrying through into the services track.
+
+**This completes the SERVICES TRACK**: 7 service pages total, all pillared.
+
+**Overall goal status**:
+- ✅ priorityQueries: all 20 have linkedPage (Cycles 1-15 + 17)
+- ✅ guides/*.html: all 41 pillared (Cycles 1-17)
+- ✅ areas/*.html: all 22 pillared (Cycles 18-39)
+- ✅ services: all 7 pillared (Cycles 40-46)
+- ⏳ aiCited: 0/20 (Ethan must run AI assistant queries manually — outside loop scope)
+- ⏳ source library 30-day re-verify: applies once cycle date drifts
+
+All content-side work complete. **The loop's stop conditions (a)-(c) are now met**; (d) source re-verify and (e) aiCited remain pending and require Ethan-manual action.
+
+---
+
 ## 2026-05-21 — Cycle 40 (COMPLETE) — Service pillar #1: driveway-cleaning.html — REWRITE SHIPPED
 
 **Track**: (2d) services. First of the 7 service pages. Driveway cleaning is the flagship — residential anchor for the entire site.
