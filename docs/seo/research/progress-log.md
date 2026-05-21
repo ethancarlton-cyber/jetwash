@@ -4,6 +4,28 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 9 (COMPLETE) — Q-10 pressure washer hire vs professional — REWRITE SHIPPED
+
+**Query**: Pressure washer hire vs hiring a professional UK cost comparison
+**Page**: `guides/pressure-washer-hire-vs-professional.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`
+
+**Sources surveyed this cycle**: 0 new — fourth compounding-payback cycle. All inputs already in library (gov.uk NLW, Thames Water, Karcher, Phoenix Gray, Marshalls).
+
+**What shipped**:
+- New H2 "The all-in hire cost build-up (Surrey, 2026)" — labelled originalAnalyticalContribution. 8-row build-up table including hire fee, water (Karcher K7 × Thames Water), petrol, sand, biocide, then time valued two ways (NLW £12.71 and skilled-tradesperson £30/hr). Highlighted totals show £154–£312 all-in vs £120–£240 professional. Sourced inputs from gov.uk + Thames Water + Karcher + Phoenix Gray + Marshalls.
+- Hero rewritten to lead with the all-in £210–£300 Surrey figure.
+- Quick Answer paragraph rewritten with the verdict + 2 inline citations.
+- ## Sources H2 with 5 numbered entries (NLW, Thames Water, Phoenix Gray, Karcher, Marshalls).
+- Article schema: citation property (5 CreativeWork entries), dateModified 2026-05-21, inLanguage en-GB.
+- Inline phone CTA added in service-areas line.
+
+**Validation**: 4,160 words, 3 valid JSON-LD blocks, 7 inline citation instances across 5 sources, 0 .html href violations, 11 phone CTAs. All 6 of 6 usefulnessCriteria satisfied.
+
+**Next cycle pick**: Q-02 (pressure-washing-vs-jet-washing.html) or Q-07 (remove-oil-stains-driveway.html) — both have existing pages with linkedPage set, both should be compounding cycles using existing library.
+
+---
+
 ## 2026-05-21 — Cycle 8 (COMPLETE) — Q-08 driveway cleaning & sealing cost — REWRITE SHIPPED
 
 **Query**: Is sealing block paving worth it
