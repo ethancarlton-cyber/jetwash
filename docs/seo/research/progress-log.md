@@ -4,6 +4,48 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 6 (COMPLETE) — Q-11 seasonal guide / best time to clean a patio UK — REWRITE SHIPPED
+
+**Query**: Best time of year to clean a patio UK
+**Page**: `guides/pressure-washing-seasonal-guide.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`
+
+**Tracker fix this cycle**: Q-11 `linkedPage` was set to `guides/seasonal-guide.html` (which doesn't exist). Corrected to `guides/pressure-washing-seasonal-guide.html` which is the actual file.
+
+**Sources surveyed this cycle**: 0 new — third consecutive compounding-payback cycle. Every source needed was already in the library (Met Office Wisley, Lithofin Algex, UKSRG BS 7976, HSE, Marshalls).
+
+**What shipped this cycle**:
+- H1 changed from "Render, Decking & Roof Cleaning: Seasonal Timing UK Guide" to "Best Time of Year to Clean a Patio, Render, Decking & Roof — UK Seasonal Guide" to align with Q-11 query intent.
+- Hero rewritten to lead with the Surrey patio cadence (April biocide + September deep clean, anchored to Wisley + Lithofin + HSE PTV).
+- Quick Answer paragraph rewritten patio-first with 3 inline citations.
+- **NEW H2 "The Surrey patio cleaning calendar"** (the labelled originalAnalyticalContribution — month-by-month table for the full year, with a Surrey patio action + cited Why-column for every entry. Highlighted cells for the April biocide window, May deep-clean-if-needed, and September deep-clean-before-wet-months. Footer note explains the two Surrey-specific adjustments vs generic UK advice).
+- `## Sources` H2 at end with 5 numbered entries — Met Office, Lithofin, UKSRG, HSE, Marshalls — each with publication, document title, URL, accessed date 2026-05-21, id anchor.
+- Article schema: `citation` property added (5 CreativeWork entries), bumped `dateModified` to 2026-05-21, added `inLanguage: en-GB`, rewrote description to reflect the patio calendar angle.
+- Inline phone CTA added in service-areas line.
+- Existing render/decking/roof seasonal content kept intact below the new patio calendar.
+
+**Validation against researchPillarStandard**:
+- ✅ minimumWordCount ≥ 1500 (HTML word count 5,237)
+- ✅ openingFormat answer-first (Surrey patio cadence stated in first ~30 words of hero)
+- ✅ minimumAuthoritativeCitations ≥ 5 (5 distinct sources, 10 inline `<sup>` instances)
+- ✅ originalAnalyticalContribution labelled in-page
+- ✅ sourcesSectionRequired (## Sources with 5 entries, all required fields)
+- ✅ mustSpanSourceClasses ≥ 3 (.gov.uk Met Office + .gov.uk HSE + BS standard via UKSRG + manufacturer Lithofin + material manufacturer Marshalls = 4-5 classes)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office + HSE + Lithofin datasheet)
+- ✅ usefulnessCriteria all 6 of 6 satisfied (counterintuitive: Surrey window opens earlier and stays open later than UK average; local: Wisley, RH1; actionable: month-by-month calendar; numeric: 648mm, 1147mm, 8°C, 25°C, PTV 36; mistakes: spring biocide skipped, deep clean too late after October; framework: month-by-month decision calendar)
+
+**Pre-flight checks**:
+- ✅ 0 `.html` href violations
+- ✅ 11 instances of `01737 652 515`
+- ✅ 3 JSON-LD blocks parse as valid JSON
+
+**Sources newly added to sources-library.md this cycle**: 0
+**New findings added to findings.md**: 0 (existing F-001 + F-005 + F-006 + F-003 cover Q-11 fully)
+
+**Next cycle pick**: **Q-05** "What PSI is best for cleaning block paving" → linkedPage is null in tracker. Either link to an existing page (the new Q-03 page now covers PSI extensively, so consider pointing Q-05 there) or create a dedicated page. Likely pointing Q-05's linkedPage to `guides/can-pressure-washing-damage-driveway.html` will satisfy the requirement since that page now contains the labelled PSI-vs-nozzle analytical contribution.
+
+---
+
 ## 2026-05-21 — Cycle 5 (COMPLETE) — Q-06 moss removal from driveways — REWRITE SHIPPED
 
 **Query**: Why does moss grow on driveways in the UK
