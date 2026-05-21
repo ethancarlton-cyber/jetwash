@@ -4,6 +4,19 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 13 (COMPLETE) — Q-12 how long does a jet washed driveway stay clean — TRACKER REPOINT
+
+**Query**: Q-12 "How long does a jet washed driveway stay clean"
+**Status**: ✅ linkedPage repointed in tracker from null to `guides/how-often-clean-driveway.html` (the Q-04 page).
+
+**Rationale**: the Cycle 3 rewrite of how-often-clean-driveway.html already contains the cited Surrey cadence matrix (18–24 month deep-clean cadence for most surfaces), the Lithofin Algex annual biocide guidance, and the HSE PTV slip-risk threshold that gates when "clean" becomes "no longer clean enough". A homeowner asking "how long does my jet-washed drive stay clean?" is asking the same question the Q-04 page already answers from the manufacturer + Met Office data. Creating a separate page would duplicate content and dilute the citation signal.
+
+**No HTML changes** — pure tracker repoint.
+
+**Remaining priorityQueries with null linkedPage**: Q-09 efflorescence + Q-13 best detergent (2 of 15).
+
+---
+
 ## 2026-05-21 — Cycle 12 (COMPLETE) — Q-14 + Q-15 Indian sandstone (pressure wash safely, remove black spots) — REWRITE SHIPPED
 
 **Queries**: Q-14 "Can you pressure wash Indian sandstone safely" + Q-15 "How to remove black spots from sandstone patio" — both pointed at the same page.
