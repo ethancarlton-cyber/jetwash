@@ -112,6 +112,14 @@ When adding a new source: append to the relevant section. When citing in an arti
 - Used in: Cycle 22 areas/horley.html
 - Re-usable for: areas/crawley.html (RH10/11 Weald Clay), areas/godstone.html (eastern Weald edges), any RH6/RH10/RH11/RH12/RH19 page
 
+### Tandridge District Council — Local Plan
+- URL: https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan
+- Class: Council planning portal (local authority primary data)
+- Accessed: 2026-05-21
+- Key data: Drainage / SUDS policies for replacement front-garden paving >5m². Relevant council for CR3 Caterham, RH8 Oxted, RH9 Godstone — the eastern Tandridge corridor across our service radius.
+- Used in: Cycle 24 areas/caterham.html
+- Re-usable for: areas/oxted.html (RH8), areas/godstone.html (RH9), any future Tandridge corridor coverage
+
 ### Crawley Borough Council — Local Plan
 - URL: https://crawley.gov.uk/planning/planning-policy/local-plan
 - Class: Council planning portal (local authority primary data)

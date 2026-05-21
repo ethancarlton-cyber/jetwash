@@ -4,6 +4,42 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 24 (COMPLETE) — Area pillar #7: Caterham (CR3) — REWRITE SHIPPED
+
+**Track**: (2c) areas/*.html. CR3 brings in the eastern Tandridge corridor (new council source) and the Valley-vs-Hill geomorphological split on a single chalk substrate.
+
+**Page**: `areas/caterham.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`.
+
+**What shipped this cycle**:
+- New answer-first H2 ("Why Caterham splits into two cleaning markets along the chalk scarp") with the Valley-vs-Hill stance in the first 60 words.
+- Labelled OAC: "The Caterham Valley-vs-Hill cadence matrix" — 5-row table comparing Valley vs Hill on same chalk substrate, with separate price band + cadence + reason columns; includes a 10-20% gradient surcharge for Hill drives steeper than 1-in-8.
+- 5 new analytical H2s: chalk dip-slope geomorphology, beech/oak tannin staining + oxalic-acid pre-treat, steep-drive runoff + slip-risk on Hill, Tandridge District Council planning gate (NEW council source), warranty-voiding mistakes, 6-step Caterham workflow.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD — citation (7), datePublished 2026-02-08, dateModified 2026-05-21, inLanguage en-GB.
+- Sitemap lastmod for /areas/caterham bumped to 2026-05-21.
+
+**Validation against researchPillarStandard**:
+- ✅ minimumWordCount 1,869 (≥1,500)
+- ✅ openingFormat answer-first
+- ✅ minimumAuthoritativeCitations ≥ 5 (7 inline `<sup>`)
+- ✅ originalAnalyticalContribution labelled in-page
+- ✅ sourcesSectionRequired (Sources H2 with 7 entries)
+- ✅ mustSpanSourceClasses ≥ 3 (Met Office + BGS + Marshalls + Lithofin + UKSRG/HSE + TDC + EA)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office + BGS + EA + TDC = four primary)
+- ✅ usefulnessCriteria 6 of 6 (counterintuitive: same chalk, different cadence depending on Valley/Hill; local: 8 named locations + woodland names; actionable: 6-step CR3 workflow + gradient surcharge formula; mistakes: 3 CR3-specific; numeric: every £/cadence/PTV sourced; framework: Valley vs Hill decision matrix)
+
+**Pre-flight checks**:
+- ✅ 0 `.html"` in href · 17 phone CTA instances · 4 JSON-LD blocks all parse
+
+**Sources newly added to sources-library.md this cycle**: 1 (Tandridge District Council Local Plan — re-usable for RH8 Oxted and RH9 Godstone, the next 2 cycles likely). Library now at 22 entries.
+
+**Findings status**: No new finding promoted. F-007 (substrate-economics framework) continues to anchor every cycle.
+
+**Next cycle pick**: **areas/oxted.html** (RH8) — Tandridge District Council source already in library from this cycle. RH8 sits on the chalk dip-slope and the Greensand ridge corridor; the angle will likely be commuter-belt premium properties + woodland.
+
+---
+
 ## 2026-05-21 — Cycle 23 (COMPLETE) — Area pillar #6: Crawley (RH10/RH11) — REWRITE SHIPPED
 
 **Track**: (2c) areas/*.html. Crawley is the natural #6 because the New Town chronology gives a unique era-based OAC framework absent from every other area page in the network. Also: largest commercial-paving opportunity in the 20-mile radius (Manor Royal, County Oak, A2011).
