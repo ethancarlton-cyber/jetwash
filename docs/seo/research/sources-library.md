@@ -112,6 +112,22 @@ When adding a new source: append to the relevant section. When citing in an arti
 - Used in: Cycle 22 areas/horley.html
 - Re-usable for: areas/crawley.html (RH10/11 Weald Clay), areas/godstone.html (eastern Weald edges), any RH6/RH10/RH11/RH12/RH19 page
 
+### British Geological Survey — Lambeth Group (Palaeogene)
+- URL: https://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=LMBE
+- Class: .ac.uk-eligible primary research body (Natural Environment Research Council)
+- Accessed: 2026-05-21
+- Key data: Lambeth Group, Palaeogene — Reading and Woolwich Formations. Variable sand and clay layers; underlies the north of Epsom (Ewell, Stoneleigh, West Ewell), most of the Sutton/Cheam corridor outside our radius, parts of Croydon. Slower drainage than the chalk to the south; surface-pooling possible on poorly-detailed sub-bases. Substrate boundary with the North Downs chalk runs roughly through Epsom town centre.
+- Used in: Cycle 27 areas/epsom.html
+- Re-usable for: areas/sm7.html (Sutton/Banstead boundary, Lambeth Group fringe), any future Sutton/Cheam coverage if added
+
+### Epsom & Ewell Borough Council — Local Plan
+- URL: https://www.epsom-ewell.gov.uk/residents/planning/planning-policy/local-plan
+- Class: Council planning portal (local authority primary data)
+- Accessed: 2026-05-21
+- Key data: Drainage / SUDS policies for new and replacement front-garden paving >5m² draining to highway, plus conservation-area consent requirements around Epsom town centre / Church Street. The only council for KT17, KT18, KT19 in our radius.
+- Used in: Cycle 27 areas/epsom.html
+- Re-usable for: any future KT17/KT18/KT19 specific page
+
 ### Tandridge District Council — Local Plan
 - URL: https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan
 - Class: Council planning portal (local authority primary data)

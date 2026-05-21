@@ -4,6 +4,42 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 27 (COMPLETE) — Area pillar #10: Epsom (KT17/KT18/KT19) — REWRITE SHIPPED
+
+**Track**: (2c) areas/*.html. KT-postcode entry. Adds BGS Lambeth Group + Epsom & Ewell Borough Council to the library — 2 new sources.
+
+**Page**: `areas/epsom.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`.
+
+**What shipped this cycle**:
+- New answer-first H2 ("Why Epsom is the racecourse-premium-vs-inter-war-estate split") with the chalk-vs-Lambeth-Group + premium-vs-estate stance in the first 60 words.
+- Labelled OAC: "The Epsom racecourse-premium-vs-estate matrix" — 5-row table mapping property type x location x substrate x price band x cadence. Surfaces the chalk-to-Lambeth-Group boundary running through Epsom town centre.
+- 5 new analytical H2s: chalk + Lambeth Group substrate split, racecourse premium-properties natural-stone default, Ewell/Stoneleigh block-paving estate default, Epsom & Ewell Borough Council planning gate (NEW council), warranty-voiding mistakes, 5-step Epsom workflow.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD — citation (7), datePublished 2026-02-08, dateModified 2026-05-21, inLanguage en-GB.
+- Sitemap lastmod for /areas/epsom bumped to 2026-05-21.
+
+**Validation against researchPillarStandard**:
+- ✅ minimumWordCount 1,793 (≥1,500)
+- ✅ openingFormat answer-first
+- ✅ minimumAuthoritativeCitations ≥ 5 (7 inline `<sup>`)
+- ✅ originalAnalyticalContribution labelled in-page
+- ✅ sourcesSectionRequired (Sources H2 with 7 entries)
+- ✅ mustSpanSourceClasses ≥ 3 (Met Office + 2x BGS + Marshalls + Lithofin + UKSRG/HSE + EEBC)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office + 2x BGS + EEBC = four primary)
+- ✅ usefulnessCriteria 6 of 6 (counterintuitive: same KT postcode, sharp substrate boundary; local: 9 named locations + racecourse / Ewell village / Stoneleigh; actionable: 5-step Epsom workflow; mistakes: 3 KT-specific; numeric: every £ / cadence sourced; framework: substrate × property-type decision)
+
+**Pre-flight checks**:
+- ✅ 0 `.html"` in href · 17 phone CTA instances · 4 JSON-LD blocks all parse
+
+**Sources newly added to sources-library.md this cycle**: 2 (BGS Lambeth Group lexicon; Epsom & Ewell Borough Council Local Plan). Library now at 24 entries.
+
+**Findings status**: F-007 substrate-economics framework extended again. The Lambeth Group as a fourth distinct substrate alongside chalk / Lower Greensand / Weald Clay completes the cross-radius coverage for our 20-mile zone.
+
+**Next cycle pick**: **areas/leatherhead.html** (KT22) — Mole Valley District Council (already in library); sits on Lambeth Group + chalk dip-slope. Zero new sources predicted.
+
+---
+
 ## 2026-05-21 — Cycle 26 (COMPLETE) — Area pillar #9: Godstone (RH9) — REWRITE SHIPPED
 
 **Track**: (2c) areas/*.html. Second consecutive **zero-new-sources** cycle — RH9 fully sustained by the 22-entry library, demonstrating the compounding-research model is working as designed.
