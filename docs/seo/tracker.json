@@ -3,10 +3,10 @@
     "version": 1,
     "lastUpdated": "2026-05-21",
     "lastRunDate": "2026-05-21",
-    "lastResearchTopic": "Q-07-remove-oil-stains-driveway",
-    "lastRunId": "research-cycle-011",
+    "lastResearchTopic": "Q-14-Q-15-how-to-clean-indian-sandstone-patio",
+    "lastRunId": "research-cycle-012",
     "lastRunSummary": "Research-pillar loop Cycle 7+8 — Cycle 7 (1-line tracker fix): Q-05 linkedPage repointed from null to guides/can-pressure-washing-damage-driveway.html (the Q-03 rewrite already contains the labelled PSI×nozzle×standoff originalAnalyticalContribution that answers Q-05 directly). Cycle 8 (Q-08 sealing): added 1 new accepted source (Resiblock manufacturer datasheet — 5-year lifespan). Rewrote driveway-cleaning-sealing-cost.html with new originalAnalyticalContribution H2 'The Surrey sealing payback matrix' — 5-row £/m²/yr matrix derived from Resiblock manufacturer lifespan + Met Office Wisley + Thames Water tariff + Marshalls technique + BS 7533-101. Counterintuitive finding documented: Indian sandstone sealing has worst Surrey payback (sealant can trap moisture and accelerate spalling). Sources section with 5 numbered entries. 9 inline citation instances across 5 sources. Article schema citation property + dateModified 2026-05-21 + inLanguage en-GB. All 6 of 6 usefulnessCriteria satisfied. Committed locally on claude/research-pillar-loop only.",
-    "totalRuns": 58,
+    "totalRuns": 59,
     "nextTaskId": 55,
     "fullScanDate": "2026-05-04",
     "nextFullScanDue": "2026-08-04"
@@ -131,8 +131,8 @@
       { "id": "Q-11", "query": "Best time of year to clean a patio UK", "aiCited": null, "linkedPage": "guides/pressure-washing-seasonal-guide.html" },
       { "id": "Q-12", "query": "How long does a jet washed driveway stay clean", "aiCited": null, "linkedPage": null },
       { "id": "Q-13", "query": "Best detergent for pressure washing block paving UK", "aiCited": null, "linkedPage": null },
-      { "id": "Q-14", "query": "Can you pressure wash Indian sandstone safely", "aiCited": null, "linkedPage": null },
-      { "id": "Q-15", "query": "How to remove black spots from sandstone patio", "aiCited": null, "linkedPage": null }
+      { "id": "Q-14", "query": "Can you pressure wash Indian sandstone safely", "aiCited": null, "linkedPage": "guides/how-to-clean-indian-sandstone-patio.html" },
+      { "id": "Q-15", "query": "How to remove black spots from sandstone patio", "aiCited": null, "linkedPage": "guides/how-to-clean-indian-sandstone-patio.html" }
     ],
     "deployDiscipline": {
       "mode": "build-only",

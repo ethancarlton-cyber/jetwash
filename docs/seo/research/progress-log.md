@@ -4,6 +4,32 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 12 (COMPLETE) — Q-14 + Q-15 Indian sandstone (pressure wash safely, remove black spots) — REWRITE SHIPPED
+
+**Queries**: Q-14 "Can you pressure wash Indian sandstone safely" + Q-15 "How to remove black spots from sandstone patio" — both pointed at the same page.
+**Page**: `guides/how-to-clean-indian-sandstone-patio.html`
+**Status**: ✅ Rewritten and committed; both Q-14 and Q-15 linkedPage repointed in tracker from null to this page.
+
+**Tracker fix**: Q-14 and Q-15 linkedPage repointed from null to `guides/how-to-clean-indian-sandstone-patio.html`. The rewritten page now answers both queries directly with separate H2 sections.
+
+**Sources surveyed**: 0 new — sixth consecutive compounding cycle.
+
+**What shipped**:
+- New H2 "Can you pressure wash Indian sandstone safely? The cited protocol" — labelled originalAnalyticalContribution. 5-step protocol table with cited threshold + reason for each: pre-treatment (Lithofin Algex spring), dwell (2-7 days), rinse (Marshalls technique), acceptance (HSE PTV ≥36), conditional sealing (breathable Resiblock only).
+- New H2 "How to remove black spot from sandstone patio" — 5-step sequence with named lichen species (Verrucaria nigrescens), Lithofin manufacturer guidance, shade-as-real-lever cross-link to moss-removal guide.
+- New H2 "The counterintuitive sealing warning" — surfaces the F-008 Indian sandstone spalling finding (6-9% porous substrate + 30-40 frost days/yr + non-breathable sealant = delamination). Resiblock breathable formulation is the named manufacturer alternative.
+- Quick Answer paragraph rewritten with the verdict ("yes you can, but narrow envelope") + 4 inline citations.
+- H1 updated to "How to Clean Indian Sandstone Patio Safely (UK 2026)" to align with both Q-14 and Q-15 intent.
+- ## Sources H2 with 6 numbered entries (Marshalls, Lithofin, Resiblock, Kärcher, UKSRG, HSE).
+- Article schema: citation property (6 CreativeWork entries), dateModified 2026-05-21, inLanguage en-GB.
+- 13 inline citation instances across 6 distinct sources.
+
+**Validation**: 4,803 words, 4 valid JSON-LD blocks, 13 inline citation instances, 0 .html href violations, 11 phone CTAs.
+
+**Next remaining priorityQueries**: Q-09 (efflorescence), Q-12 (how long stays clean), Q-13 (detergent). All currently linkedPage=null and need either new pages or repoint.
+
+---
+
 ## 2026-05-21 — Cycle 11 (COMPLETE) — Q-07 remove oil stains from block paving — REWRITE SHIPPED
 
 **Query**: How to remove oil stains from block paving permanently
