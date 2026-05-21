@@ -4,6 +4,49 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 50 (COMPLETE) — Task (2f): NEW guide + Q-101 — rust-stain removal pillar
+
+**Track**: (2f) DISCOVER GAP. After Cycle 49 took every existing page over the line, this cycle adds a brand-new guide filling a real content gap: rust-stain chemistry is materially different from oil-stain chemistry (Q-07, Q-80) and from biocide treatment (Q-04, Q-06, etc.). No existing guide on the site covered the iron-oxide / oxalic-acid protocol.
+
+**New page**: `guides/rust-stain-removal-block-paving.html` &mdash; 1,556 words, 7 sources, 16 inline `<sup>` citations.
+
+**Q-101 added**: "How to remove rust stains from block paving and concrete UK" → `guides/rust-stain-removal-block-paving.html`.
+
+**OAC**: "The two-acid rust-removal protocol matrix" — 5-row table mapping rust-stain type / age against named acid chemistry (Lithofin Rust-EX / oxalic / citric finishing), concentration (3-10%), dwell time (10-30 min) and post-treat re-sand requirement per BS 7533-101. The matrix uniquely flags the **DO NOT USE ACID** row for limestone / marble — calcium-carbonate reaction etches permanently.
+
+**5 analytical H2s** beyond the OAC: substrate-compatibility ruleset, sources of rust staining (5 named), oxalic vs citric acid mechanism, HSE COSHH safety, spent-acid disposal + watercourse compliance (links to EA flood-pocket framework), slip-risk PTV implications during dwell, Surrey context cadence.
+
+**Sources newly added to sources-library.md**: 2 — Lithofin Rust-EX product datasheet (manufacturer chemical / consumable) and HSE COSHH framework (.gov.uk statutory). Library now at 26 entries.
+
+**Validation**:
+- ✅ minimumWordCount 1,556 (≥1,500)
+- ✅ openingFormat answer-first (named oxalic-acid chemistry in first 60 words)
+- ✅ minimumAuthoritativeCitations 16 inline `<sup>` (vs 5 required)
+- ✅ originalAnalyticalContribution labelled in-page
+- ✅ sourcesSectionRequired (Sources H2 with 7 entries)
+- ✅ mustSpanSourceClasses ≥ 3 (Lithofin manufacturer + Marshalls manufacturer + BSI standard + HSE .gov.uk + UKSRG/HSE slip + Met Office .gov.uk)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office Wisley + HSE COSHH = two primary)
+- ✅ usefulnessCriteria 6 of 6 (counterintuitive: pressure alone doesn't shift rust; local: EA flood-pocket disposal rules; actionable: 9-step workflow with manufacturer dilution; mistakes: 3 substrate-incompatibility warnings including the limestone-etch one; numeric: every % / min / £ sourced; framework: stain-age × substrate decision matrix)
+
+**Pre-flight checks**:
+- ✅ 0 `.html"` in href
+- ✅ 13 phone CTA instances
+- ✅ 3 JSON-LD blocks parse (Article + BreadcrumbList + FAQPage — Service schema not applicable to a guide)
+- ✅ Article schema has citation array (7), inLanguage en-GB, dateModified 2026-05-21
+
+**Findings status**: One implicit new pattern — F-012-candidate: substrate-compatibility ruleset for acid chemistry on UK paving (concrete OK, sandstone reduced concentration, limestone / marble NEVER). Holds as Cycle 50-only observation until applied elsewhere; could anchor a future site-wide chemistry-compatibility cheatsheet.
+
+**Stop condition status update**:
+- ✅ (a) priorityQueries.length now 101 (up from 100, well above ≥100 minimum)
+- ✅ (c) all 71 pillared pages have Sources H2 (5+) AND OAC AND ≥5 inline citations
+- ⏳ (b) aiCited: still 0/101 (Ethan-manual)
+- ✅ (d) sources verified within 30 days (holds until 2026-06-20; new Lithofin Rust-EX + HSE COSHH sources fresh as of today)
+- ⏳ (e) ≥70/101 AI-cited (requires b)
+
+**Next cycle pick**: Continue task (2f) — next gap candidates: (i) winter / frost-day pressure-washing rules (Karcher / Nilfisk operating-temperature ratings + Marshalls frost-affected jointing sand), (ii) pressure-washing water consumption per clean (Thames Water + Karcher GPM economics), or (iii) repair-after-DIY-damage guide (BS 7533-101 sub-base repair + Marshalls Register warranty paths).
+
+---
+
 ## 2026-05-21 — Cycle 49 (BATCH COMPLETE) — Bulk inline-citation remediation across 22 guides — STANDARD FULLY MET
 
 **Track**: Quality remediation continuation from Cycle 48. After fixing the 3 worst offenders manually (Cycle 48), bulk-patched the remaining 22 guides + 2 final outliers with a standardised "Key sourced claims in this guide" paragraph inserted before the Sources H2.

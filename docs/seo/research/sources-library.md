@@ -136,6 +136,22 @@ When adding a new source: append to the relevant section. When citing in an arti
 - Used in: Cycle 24 areas/caterham.html
 - Re-usable for: areas/oxted.html (RH8), areas/godstone.html (RH9), any future Tandridge corridor coverage
 
+### Lithofin Rust-EX (Rost-EX) — Rust Stain Remover product datasheet
+- URL: https://www.lithofin.com/en/products/ceramics-and-natural-stone/lithofin-rost-ex
+- Class: Manufacturer technical datasheet (chemical / consumable)
+- Accessed: 2026-05-21
+- Key data: Oxalic-acid-based trade-grade rust remover. Suitable for natural stone (sandstone, basalt), artificial stone, concrete, block paving. NOT suitable for limestone, marble, or other calcium-carbonate stones (acid etches permanently). Manufacturer-specified dwell + dilution.
+- Used in: Cycle 50 guides/rust-stain-removal-block-paving.html (Q-101)
+- Re-usable for: any future rust / iron-oxide content; substrate-compatibility tables across area pages
+
+### HSE — Control of Substances Hazardous to Health (COSHH)
+- URL: https://www.hse.gov.uk/coshh/
+- Class: .gov.uk (Health and Safety Executive)
+- Accessed: 2026-05-21
+- Key data: Statutory UK framework for the assessment and control of hazardous substances at work. Applies to trade-grade oxalic acid (rust removers), strong biocides, degreasers, and any commercial-grade chemistry. Practical requirements: PPE (gloves, goggles), ventilation, controlled bunding, foul-drain disposal, training and assessment records.
+- Used in: Cycle 50 guides/rust-stain-removal-block-paving.html (Q-101)
+- Re-usable for: commercial-jetwashing.html (commercial chemical handling), any future Lithofin-Oil-EX / acid-based protocol guidance
+
 ### Crawley Borough Council — Local Plan
 - URL: https://crawley.gov.uk/planning/planning-policy/local-plan
 - Class: Council planning portal (local authority primary data)

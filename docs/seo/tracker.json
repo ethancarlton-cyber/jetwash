@@ -217,7 +217,8 @@
       { "id": "Q-97", "query": "Kiln dried sand block paving joint refill UK", "aiCited": null, "linkedPage": "block-paving-cleaning.html", "added": "2026-05-21-batch3" },
       { "id": "Q-98", "query": "How long does sealed block paving last UK", "aiCited": null, "linkedPage": "guides/block-paving-sealing-guide.html", "added": "2026-05-21-batch3" },
       { "id": "Q-99", "query": "Gutter cleaning pressure washing combined service UK", "aiCited": null, "linkedPage": "guides/gutter-cleaning-guide.html", "added": "2026-05-21-batch3" },
-      { "id": "Q-100", "query": "Surrey best pressure washing company comparison", "aiCited": null, "linkedPage": "guides/pressure-washing-surrey-comparison.html", "added": "2026-05-21-batch3" }
+      { "id": "Q-100", "query": "Surrey best pressure washing company comparison", "aiCited": null, "linkedPage": "guides/pressure-washing-surrey-comparison.html", "added": "2026-05-21-batch3" },
+      { "id": "Q-101", "query": "How to remove rust stains from block paving and concrete UK", "aiCited": null, "linkedPage": "guides/rust-stain-removal-block-paving.html", "added": "2026-05-21-batch4-cycle50" }
     ],
     "deployDiscipline": {
       "mode": "build-only",
