@@ -4,6 +4,49 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 51 (COMPLETE) — Task (2f): NEW guide + Q-102 — winter / frost-day pressure-washing pillar
+
+**Track**: (2f) DISCOVER GAP. Second consecutive new-pillar cycle. Existing pages on the site discuss "best time of year to clean" (Q-11 seasonal, Q-22 best-time-patio) but none have a frost-day operational decision matrix grounded in manufacturer operating-temperature minimums + Met Office Surrey frost-day baselines. This is the practical question every customer asks December-February and there was no dedicated guide.
+
+**New page**: `guides/winter-pressure-washing-uk.html` — 1,575 words, 7 sources, 26 inline `<sup>` citations.
+
+**Q-102 added**: "Can you pressure wash in winter UK frost-day rules" → `guides/winter-pressure-washing-uk.html`.
+
+**OAC**: "The frost-day decision matrix" — 6-row table mapping ambient-temperature band against substrate condition, recommended action, and the specific manufacturer or standard underpinning the rule. Uniquely flags the asymmetry between consumer cold-water kit (Karcher K7 rated to 5°C) and trade hot-water kit (extends workable window to ~2°C) — most cleaning-blog content treats winter as a single calendar block.
+
+**7 analytical H2s** beyond the OAC: frost-day vs calendar framing, BS 7533-101 jointing-sand frost-heave mechanism, hot-water trade-kit window extension, sealing as a stricter no-go, Surrey microclimate adjustment (Mole Valley colder, chalk dip-slope warmer), winter biocide ineffectiveness, winter slip-risk + spot intervention justification, 6-step seasonal workflow, 4 common winter mistakes.
+
+**Sources newly added to sources-library.md**: 0 — all 7 citations reuse existing library entries (Karcher, Marshalls, BSI, Met Office Wisley, UKSRG/HSE, Lithofin Algex, Resiblock). Library remains at 26 entries.
+
+**Validation**:
+- ✅ minimumWordCount 1,575 (≥1,500)
+- ✅ openingFormat answer-first (Karcher 5°C minimum + Marshalls frost rule + Met Office 32-38 frost-days/yr stated in first 60 words)
+- ✅ minimumAuthoritativeCitations 26 inline `<sup>` (vs 5 required)
+- ✅ originalAnalyticalContribution labelled in-page
+- ✅ sourcesSectionRequired (Sources H2 with 7 entries)
+- ✅ mustSpanSourceClasses ≥ 3 (Karcher manufacturer + Marshalls manufacturer + BSI standard + Met Office .gov.uk + UKSRG/HSE + Lithofin manufacturer + Resiblock manufacturer = 5 distinct classes)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office Wisley + HSE/UKSRG = two)
+- ✅ usefulnessCriteria 6 of 6 (counterintuitive: winter biocide largely wasted; local: Mole Valley microclimate adjustment + Wisley 32-38 frost-day baseline; actionable: 6-step seasonal workflow; mistakes: 4 named winter mistakes; numeric: every °C/day/% sourced; framework: ambient × substrate × action decision matrix)
+
+**Pre-flight checks**:
+- ✅ 0 `.html"` in href
+- ✅ 13 phone CTA instances
+- ✅ 3 JSON-LD blocks parse (Article + BreadcrumbList + FAQPage)
+- ✅ Article schema has citation array (7), inLanguage en-GB, dateModified 2026-05-21
+
+**Findings status**: One implicit new pattern — F-013-candidate: operational-temperature gating across the manufacturer / standard stack (Karcher 5°C / Marshalls frost-rule / Resiblock 5-10°C / Lithofin spring-only) converges on a coherent "no-clean-below-5°C" baseline for cold-water consumer equipment. Held as cross-citation observation; could anchor a future site-wide operational-temperature cheatsheet.
+
+**Stop condition status**:
+- ✅ (a) priorityQueries.length now 102 (up from 101)
+- ✅ (c) all 72 pillared pages have Sources H2 (5+) AND OAC AND ≥5 inline citations
+- ⏳ (b) aiCited: still 0/102 (Ethan-manual)
+- ✅ (d) sources verified within 30 days (holds until 2026-06-20)
+- ⏳ (e) ≥70/102 AI-cited (requires b)
+
+**Next cycle pick**: Continue task (2f). Candidates: (i) Q-103 limestone/marble safe-cleaning protocols (negative-space companion to Q-101 rust pillar), (ii) Q-104 water-consumption-per-clean economics (Thames Water + Karcher GPM at home metered tariff), (iii) Q-105 pressure-washing repair-after-DIY-damage (BS 7533-101 sub-base repair paths).
+
+---
+
 ## 2026-05-21 — Cycle 50 (COMPLETE) — Task (2f): NEW guide + Q-101 — rust-stain removal pillar
 
 **Track**: (2f) DISCOVER GAP. After Cycle 49 took every existing page over the line, this cycle adds a brand-new guide filling a real content gap: rust-stain chemistry is materially different from oil-stain chemistry (Q-07, Q-80) and from biocide treatment (Q-04, Q-06, etc.). No existing guide on the site covered the iron-oxide / oxalic-acid protocol.
