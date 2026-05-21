@@ -104,6 +104,14 @@ When adding a new source: append to the relevant section. When citing in an arti
 - Used in: Cycle 18 areas/banstead.html
 - Re-usable for: areas/reigate.html (Reigate Hill chalk scarp), areas/dorking.html (chalk + Greensand), areas/caterham.html (chalk dip-slope), areas/epsom.html (chalk + Lambeth Group), all SM7/KT20 area pages
 
+### Mole Valley District Council — Local Plan
+- URL: https://www.molevalley.gov.uk/home/planning/planning-policy-and-strategic-sites/our-local-plan/
+- Class: Council planning portal (local authority primary data)
+- Accessed: 2026-05-21
+- Key data: Drainage and SUDS policies applied to new and replacement front-garden paving >5m² draining to highway. Conservation-area consent requirements for Dorking town-centre material changes. Distinct council from Reigate & Banstead — important for any RH4/RH5/KT22 page making a planning claim.
+- Used in: Cycle 21 areas/dorking.html
+- Re-usable for: areas/leatherhead.html (KT22 within MVDC), any future Mickleham/Brockham/Holmwoods coverage
+
 ### Reigate & Banstead Borough Council — Local Plan and Development Management Plan
 - URL: https://www.reigate-banstead.gov.uk/info/20144/planning_policy/261/local_plan
 - Class: Council planning portal (.gov.uk-equivalent local authority primary data)

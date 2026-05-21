@@ -4,6 +4,44 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 21 (COMPLETE) — Area pillar #4: Dorking (RH4/RH5) — REWRITE SHIPPED
+
+**Track**: (2c) areas/*.html. After completing the RH1/RH2/SM7 trio in Cycles 18-20, Dorking is the natural fourth pillar because it introduces a wholly new analytical axis — the Mole Valley microclimate — and a new council (Mole Valley District Council, not RBBC).
+
+**Page**: `areas/dorking.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`.
+
+**What shipped this cycle**:
+- New answer-first H2 ("Why Dorking surfaces stay damp 3-5 weeks longer than the rainfall suggests") with the microclimate-vs-headline-rainfall stance in the first 60 words.
+- Labelled OAC: "The Mole Valley microclimate multiplier" — 6-row table with Dorking price band, re-clean cadence (months), vs-RH1-baseline cadence (~25-30% tighter) and microclimate driver column.
+- 5 new analytical H2s: substrate (BGS chalk dip-slope + Greensand ridge + Mole flood plain alluvium), AONB tree-canopy slip-risk multiplier, MVDC planning gate, warranty-voiding mistakes, 5-step workflow.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD — citation (7), datePublished 2026-02-08, dateModified 2026-05-21, inLanguage en-GB.
+- Sitemap lastmod for /areas/dorking bumped to 2026-05-21.
+
+**Validation against researchPillarStandard**:
+- ✅ minimumWordCount 1,917 (≥1,500)
+- ✅ openingFormat answer-first (microclimate stance in first 60 words)
+- ✅ minimumAuthoritativeCitations ≥ 5 (7 inline `<sup>`)
+- ✅ originalAnalyticalContribution labelled in-page
+- ✅ sourcesSectionRequired (`## Sources` H2 with 7 entries)
+- ✅ mustSpanSourceClasses ≥ 3 (Met Office + 2x BGS + Marshalls + Lithofin + UKSRG/HSE + MVDC)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office + 2x BGS + MVDC = four primary)
+- ✅ usefulnessCriteria 6 of 6 (counterintuitive: same rainfall, different cadence due to topography; local: Mole Gap / Box Hill / Westcott / Brockham named; actionable: 5-step workflow + matrix; mistakes: 3 RH4/RH5 warranty-voiders; numeric: every £/cadence sourced; framework: substrate × microclimate decision)
+
+**Pre-flight checks**:
+- ✅ 0 `.html"` in href
+- ✅ 17 phone CTA instances
+- ✅ 4 JSON-LD blocks all parse
+
+**Sources newly added to sources-library.md this cycle**: 1 (Mole Valley District Council Local Plan — distinct council from RBBC; matters for any RH4/RH5/KT22 area page). Library now at 19 entries.
+
+**Findings status**: One implicit new analytical pattern emerges — F-008-equivalent: **the Mole Valley microclimate (topographic sheltering of the Mole Gap between chalk scarp and Greensand ridge) extends surface-drying times 3-5 weeks/year beyond what Wisley headline rainfall predicts**. Not yet formalised as F-008 because it needs a second supporting source (Met Office synoptic data or AONB humidity studies) before promoting from an observational claim to a citable finding. Held as a candidate for a later cycle.
+
+**Next cycle pick**: **areas/horley.html** (RH6) — Gatwick proximity + Weald Clay alluvium + commercial forecourts. New angle: the only RH-coded area in our network where commercial paving (Gatwick airport hotels, forecourts, car parks) materially shifts the page's primary audience.
+
+---
+
 ## 2026-05-21 — Cycle 20 (COMPLETE) — Area pillar #3: Reigate (RH2) — REWRITE SHIPPED
 
 **Track**: (2c) areas/*.html. Completes the core RH1/RH2/SM7 Surrey trio. RH2 is the natural #3 because it straddles both substrates (chalk to the north, Lower Greensand to the south) and therefore tests the OAC framework built in Cycles 18-19.
