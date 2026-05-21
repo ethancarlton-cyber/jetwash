@@ -4,6 +4,34 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 47 (COMPLETE) — Tracker priorityQueries Q-21 to Q-100 backfill — STOP CONDITION (a) MET
+
+**Track**: (2f) DISCOVER GAP + backfill. Added Q-21 through Q-100 (80 new entries) to `priorityQueries`, all linking to existing pillared guides, areas and services. Bulk-add in one atomic tracker edit.
+
+**Distribution of the 80 new queries**:
+- Q-21 to Q-44: backfill all 24 unlinked guides with realistic search queries each
+- Q-45 to Q-61: link each of the 17 town-named area pages with the OAC framework framing as the query
+- Q-62 to Q-68: link all 7 service pages with the protocol-matrix framing as the query
+- Q-69 to Q-90: substrate / chemistry / planning long-tail queries linking back to relevant pillared pages
+- Q-91 to Q-100: cross-cutting long-tail queries (hot water, out-of-hours, pre-sale, frost, biocide brand, kiln-dried sand, sealing lifespan, gutter combined, Surrey comparison)
+
+**Validation**:
+- ✅ priorityQueries.length = exactly 100 — STOP CONDITION (a) MET
+- ✅ Every priorityQuery has linkedPage
+- ✅ Every linkedPage file exists on disk
+- ✅ tracker.json parses as valid JSON
+
+**Sources newly added**: **0** — Cycle 47 is a tracker-only edit. Library remains at 24 entries.
+
+**Stop conditions remaining**:
+- ⏳ (b) every priorityQuery.aiCited != null — Ethan-manual only (querying ChatGPT / Perplexity / Claude / Gemini per query)
+- ⏳ (d) every source re-verified within last 30 days — date-dependent; all 24 sources verified 2026-05-21 so this holds until 2026-06-20
+- ⏳ (e) ≥70 of 100 priorityQueries cited in ≥1 of 4 AI assistants — requires (b)
+
+The loop's CONTENT-SIDE work is complete: 41 guides + 22 areas + 7 services + 100 priorityQueries, all meeting researchPillarStandard with cited sources, OAC matrices, and Sources H2 sections.
+
+---
+
 ## 2026-05-21 — Cycles 41-46 (BATCH COMPLETE) — Service pillars #2-7: patio + block-paving + render + decking + roof + commercial — REWRITE SHIPPED
 
 **Track**: (2d) services. Final 6 service pages, completing the SERVICES TRACK.
