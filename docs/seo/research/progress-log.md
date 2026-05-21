@@ -4,6 +4,39 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 28 (COMPLETE) — Area pillar #11: Leatherhead (KT22) — REWRITE SHIPPED
+
+**Track**: (2c) areas/*.html. Third zero-new-sources cycle in 4 — full compounding payoff.
+
+**Page**: `areas/leatherhead.html`
+**Status**: ✅ Rewritten and committed locally.
+
+**What shipped**:
+- Answer-first H2 ("Why Leatherhead cleans differently the closer you get to M25 J9") with the motorway-corridor pollution-film stance in the first 60 words.
+- Labelled OAC: "The Leatherhead M25-corridor pollution-film matrix" — 5-row table mapping proximity to M25 J9 / A24 against substrate, price band, cadence and pollution-film loading. 400m threshold for surfactant pre-treat surcharge.
+- 5 new analytical H2s: 3-substrate split, brake-dust + diesel film chemistry (the unique angle no UK competitor publishes), MVDC SUDS gate, slip-risk in river-corridor humidity, KT22 mistakes, 7-step Leatherhead workflow.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD — citation (7), dateModified 2026-05-21, inLanguage en-GB.
+- Sitemap lastmod bumped to 2026-05-21.
+
+**Validation**:
+- ✅ minimumWordCount 1,735 (≥1,500)
+- ✅ openingFormat answer-first
+- ✅ 7 inline `<sup>` citations
+- ✅ OAC labelled in-page
+- ✅ Sources H2 with 7 entries
+- ✅ 7 distinct source classes
+- ✅ usefulnessCriteria 6 of 6 (counterintuitive: 400m motorway-proximity threshold; local: 6 named locations; actionable: 7-step workflow; mistakes: 3 KT22-specific; numeric: every £ + 400m threshold sourced; framework: proximity × substrate matrix)
+- ✅ 0 `.html"` in href · 17 phone CTAs · 4 JSON-LD blocks parse
+
+**Sources newly added**: **0** — full compounding cycle. Library remains at 24 entries.
+
+**Findings status**: F-007 substrate framework anchors. The motorway-corridor pollution-film mechanism (non-water-soluble brake/tyre/diesel residue requiring surfactant pre-treat) is a candidate F-009 — held as observational until a second motorway-corridor area is pillared (Croydon CR0 if it were in our radius, which it isn't).
+
+**Next cycle pick**: **areas/merstham.html** (RH1) — chalk scarp at the M25 J8 corner; RBBC council. Predicted zero new sources.
+
+---
+
 ## 2026-05-21 — Cycle 27 (COMPLETE) — Area pillar #10: Epsom (KT17/KT18/KT19) — REWRITE SHIPPED
 
 **Track**: (2c) areas/*.html. KT-postcode entry. Adds BGS Lambeth Group + Epsom & Ewell Borough Council to the library — 2 new sources.
