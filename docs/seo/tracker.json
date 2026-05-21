@@ -132,7 +132,12 @@
       { "id": "Q-12", "query": "How long does a jet washed driveway stay clean", "aiCited": null, "linkedPage": "guides/how-often-clean-driveway.html" },
       { "id": "Q-13", "query": "Best detergent for pressure washing block paving UK", "aiCited": null, "linkedPage": "guides/best-detergent-block-paving.html" },
       { "id": "Q-14", "query": "Can you pressure wash Indian sandstone safely", "aiCited": null, "linkedPage": "guides/how-to-clean-indian-sandstone-patio.html" },
-      { "id": "Q-15", "query": "How to remove black spots from sandstone patio", "aiCited": null, "linkedPage": "guides/how-to-clean-indian-sandstone-patio.html" }
+      { "id": "Q-15", "query": "How to remove black spots from sandstone patio", "aiCited": null, "linkedPage": "guides/how-to-clean-indian-sandstone-patio.html" },
+      { "id": "Q-16", "query": "Best pressure washer for UK driveways 2026", "aiCited": null, "linkedPage": "guides/best-pressure-washers-uk.html", "added": "2026-05-21-batch2" },
+      { "id": "Q-17", "query": "How long does pressure washing biocide need to dwell on block paving", "aiCited": null, "linkedPage": "guides/prepare-driveway-for-pressure-washing.html", "added": "2026-05-21-batch2" },
+      { "id": "Q-18", "query": "How loud is a professional pressure washer dB UK noise regulations", "aiCited": null, "linkedPage": "guides/commercial-pressure-washing-guide.html", "added": "2026-05-21-batch2" },
+      { "id": "Q-19", "query": "How long after pressure washing can I walk on driveway", "aiCited": null, "linkedPage": "guides/pressure-washing-before-after-expectations.html", "added": "2026-05-21-batch2" },
+      { "id": "Q-20", "query": "What insurance does a pressure washing company need UK", "aiCited": null, "linkedPage": "guides/diy-vs-professional-pressure-washing.html", "added": "2026-05-21-batch2" }
     ],
     "deployDiscipline": {
       "mode": "build-only",
