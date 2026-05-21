@@ -4,6 +4,31 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 35 (COMPLETE) — Area pillar #18: RH2 postcode — REWRITE SHIPPED
+
+**Track**: (2c). Postcode-level page; applies Cycle 20 Reigate two-substrate framework at the postcode level with cross-link to the analytical write-up. Tenth zero-new-sources cycle in eleven.
+
+**Page**: `areas/rh2.html`
+**Status**: ✅ Rewritten and committed locally.
+
+**What shipped**:
+- Answer-first H2 ("Why RH2 cleans on two different substrates within a postcode") in 60 words.
+- Labelled OAC: "The RH2 postcode two-substrate matrix" — 5-row table with North RH2 chalk vs South RH2 Greensand/Weald columns.
+- 4 new analytical H2s: substrate boundary, standard RH2 protocol, slip-risk on Reigate Hill north-facing drives, 6-step workflow.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD — citation (7), dateModified 2026-05-21, en-GB.
+- Sitemap lastmod bumped to 2026-05-21.
+
+**Validation**: word 1,545 (≥1500, after expansion) · 7 citations · OAC labelled · 7 source classes · 0 .html in href · 17 phone CTAs · 4 JSON-LD parse.
+
+**Sources newly added**: **0** — tenth compounding cycle in eleven. Library at 24.
+
+**Note**: Cycle 35 confirms the postcode-pages pattern — they layer onto the cycle 20 town pages with cross-link, postcode-level matrix, and the same source stack. Cycles 36-39 (rh4, rh6, rh8, sm7) will follow the same pattern.
+
+**Next cycle pick**: **areas/rh4.html** — Dorking postcode page; layers onto Cycle 21 microclimate framework.
+
+---
+
 ## 2026-05-21 — Cycle 34 (COMPLETE) — Area pillar #17: Nutfield (RH1) — REWRITE SHIPPED
 
 **Track**: (2c). Ninth zero-new-sources cycle in ten. Nutfield rural-fringe matrix uses the Oxted Limpsfield Chart clay-tracking pattern (Cycle 25) on a smaller scale.
