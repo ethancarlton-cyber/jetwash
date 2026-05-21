@@ -4,6 +4,44 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 23 (COMPLETE) — Area pillar #6: Crawley (RH10/RH11) — REWRITE SHIPPED
+
+**Track**: (2c) areas/*.html. Crawley is the natural #6 because the New Town chronology gives a unique era-based OAC framework absent from every other area page in the network. Also: largest commercial-paving opportunity in the 20-mile radius (Manor Royal, County Oak, A2011).
+
+**Page**: `areas/crawley.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`.
+
+**What shipped this cycle**:
+- New answer-first H2 ("Why Crawley is the only postcode where era-of-build predicts the clean") with the New Town chronology stance in the first 60 words.
+- Labelled OAC: "The Crawley New Town era-by-era cleaning matrix" — 6-row table (1950s-60s, 1970s, 1980s-90s, 1990s+, 2000s+, Commercial) mapping era × neighbourhood × surface × price band × cadence × era-specific risk. Unique to this page — no other postcode has the chronological coherence to support an era-based OAC.
+- 5 new analytical H2s: Weald Clay substrate + EA flood-pocket detail, Manor Royal/County Oak commercial scale + PTV liability, Crawley Borough Council planning (NEW council source), warranty-voiding mistakes, 7-step Crawley workflow.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD — citation (7), datePublished 2026-02-08, dateModified 2026-05-21, inLanguage en-GB.
+- Sitemap lastmod for /areas/crawley bumped to 2026-05-21.
+
+**Validation against researchPillarStandard**:
+- ✅ minimumWordCount 1,821 (≥1,500)
+- ✅ openingFormat answer-first (era-of-build framing in first 60 words)
+- ✅ minimumAuthoritativeCitations ≥ 5 (7 inline `<sup>`)
+- ✅ originalAnalyticalContribution labelled in-page
+- ✅ sourcesSectionRequired (`## Sources` H2 with 7 entries)
+- ✅ mustSpanSourceClasses ≥ 3 (Met Office + BGS + EA + Marshalls + Lithofin + UKSRG/HSE + CBC = 7 classes)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office + BGS + EA flood map + CBC Local Plan = four primary)
+- ✅ usefulnessCriteria 6 of 6 (counterintuitive: era predicts cleaning better than postcode; local: 14 named neighbourhoods + Manor Royal + County Oak; actionable: 7-step Crawley workflow; mistakes: 3 RH10/RH11 warranty-voiders; numeric: every £/cadence sourced; framework: era × surface decision matrix)
+
+**Pre-flight checks**:
+- ✅ 0 `.html"` in href
+- ✅ 17 phone CTA instances
+- ✅ 4 JSON-LD blocks all parse
+
+**Sources newly added to sources-library.md this cycle**: 1 (Crawley Borough Council Local Plan — only re-usable for any future RH10/RH11 specific page). Library now at 21 entries.
+
+**Findings status**: One implicit new analytical pattern — **F-008-candidate**: Crawley's New Town chronology lets cleaning recommendations be calibrated by era-of-build (a level of precision impossible in organic-growth towns). Held as observational rather than promoted because it's Crawley-unique rather than cross-cutting.
+
+**Next cycle pick**: **areas/caterham.html** (CR3) — chalk dip-slope at the eastern North Downs edge, woodland-shaded north aspect, Tandridge District Council. Will share the chalk substrate framework with Banstead/Reigate Hill but add the eastern North Downs angle.
+
+---
+
 ## 2026-05-21 — Cycle 22 (COMPLETE) — Area pillar #5: Horley (RH6) — REWRITE SHIPPED
 
 **Track**: (2c) areas/*.html. RH6 is the natural #5 because it introduces the Weald Clay substrate (south of the Lower Greensand ridge) AND the residential-vs-commercial market split (Gatwick proximity).

@@ -112,6 +112,14 @@ When adding a new source: append to the relevant section. When citing in an arti
 - Used in: Cycle 22 areas/horley.html
 - Re-usable for: areas/crawley.html (RH10/11 Weald Clay), areas/godstone.html (eastern Weald edges), any RH6/RH10/RH11/RH12/RH19 page
 
+### Crawley Borough Council — Local Plan
+- URL: https://crawley.gov.uk/planning/planning-policy/local-plan
+- Class: Council planning portal (local authority primary data)
+- Accessed: 2026-05-21
+- Key data: Drainage / SUDS policies for replacement front-garden paving >5m² draining to highway, plus commercial-forecourt design policies affecting Manor Royal and County Oak. Distinct council from RBBC and MVDC — RH10/RH11 specific.
+- Used in: Cycle 23 areas/crawley.html
+- Re-usable for: any RH10/RH11 future page (only Crawley borough is RH10/RH11 in our radius)
+
 ### Mole Valley District Council — Local Plan
 - URL: https://www.molevalley.gov.uk/home/planning/planning-policy-and-strategic-sites/our-local-plan/
 - Class: Council planning portal (local authority primary data)
