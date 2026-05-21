@@ -4,6 +4,46 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 4 (COMPLETE) — Q-03 can pressure washing damage block paving — REWRITE SHIPPED
+
+**Query**: Can pressure washing damage block paving
+**Page**: `guides/can-pressure-washing-damage-driveway.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`
+
+**Sources surveyed this cycle**: 0 new — every source needed was already in the Cycle 1/2/3 library (Marshalls, BS 7533-101, Tobermore, Karcher, UKSRG/BS 7976, HSE). This is the first cycle that pays back the upfront research investment.
+
+**What shipped this cycle**:
+- 2 brand-new H2 sections inserted near the top: **"Why 'what PSI?' is the wrong question"** (the labelled originalAnalyticalContribution — a 3-row Setup × PSI × Nozzle × Standoff matrix showing why a 3,000 PSI rotary at 200mm is safer than a 1,500 PSI turbo at 50mm) and **"Manufacturer warranty implications"** (Marshalls disclaimer + BS 7533-101 structural framing + HSE PTV liability framing).
+- Hero rewritten to lead with the Marshalls technique guidance (medium pressure, 30°, 200mm) rather than the misleading "what PSI" framing every competitor uses.
+- Key Facts box re-bulleted to put manufacturer technique + Karcher K7 PSI + BS 7533-101 + HSE PTV up front.
+- Block-paving subsection in Safe-PSI table gained inline Marshalls + BS 7533-101 citations.
+- `## Sources` H2 at end with 6 numbered entries — Marshalls, BSI BS 7533-101, Tobermore, Kärcher K7, UKSRG BS 7976, HSE slips — each with publication, document title, URL, accessed date 2026-05-21. Each has an id anchor.
+- Article schema: `citation` property added (6 CreativeWork entries), bumped `dateModified` to 2026-05-21, added `inLanguage: en-GB`.
+- Meta + og + twitter descriptions rewritten (147 chars).
+
+**Validation against researchPillarStandard**:
+- ✅ minimumWordCount ≥ 1500 (HTML word count 4,962)
+- ✅ openingFormat answer-first (Marshalls technique stated in hero sub within ~30 words)
+- ✅ minimumAuthoritativeCitations ≥ 5 (6 distinct sources, 13 inline `<sup>` instances)
+- ✅ originalAnalyticalContribution labelled in-page ("Original analytical contribution:" sentence before the PSI×nozzle×standoff matrix)
+- ✅ sourcesSectionRequired (## Sources with 6 entries, all required fields)
+- ✅ mustSpanSourceClasses ≥ 3 (material manufacturer Marshalls + material manufacturer Tobermore + manufacturer datasheet Kärcher + BS standard BS 7533-101 + trade body UKSRG + .gov.uk HSE = 5 classes)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (BS 7533-101 + Kärcher datasheet + HSE = three)
+- ✅ usefulnessCriteria all 6 of 6 satisfied (counterintuitive: PSI is wrong question; local: cites UK manufacturers Marshalls/Tobermore/Brett/Bradstone by name; actionable: ask cleaner for documented technique compliance; numeric: 180 bar, 200mm, 30°, PTV 36; mistakes: turbo nozzle voids warranty; framework: warranty-risk decision criteria)
+
+**Pre-flight checks**:
+- ✅ 0 `.html` href violations
+- ✅ 8 instances of `01737 652 515` (phone CTA prominent)
+- ✅ 3 JSON-LD blocks parse as valid JSON
+
+**Sources newly added to sources-library.md this cycle**: 0 (library reused — first compounding-payback cycle)
+
+**New findings added to findings.md**: 0 (existing F-003 + F-005 + F-006 already cover Q-03)
+
+**Next cycle pick**: **Q-06** "Why does moss grow on driveways in the UK" → `guides/moss-removal-from-driveways.html`. F-001 (Surrey 43% drier) gives the regional angle, F-005 (HSE PTV) gives the safety angle, F-006 (Lithofin Algex annual spring) gives the prevention angle, Marshalls covers the technique side. All sources ready — should be another compounding-payback cycle.
+
+---
+
 ## 2026-05-21 — Cycle 3 (COMPLETE) — Q-04 how often clean driveway — REWRITE SHIPPED
 
 **Query**: How often should you pressure wash a driveway UK
