@@ -4,6 +4,34 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 31 (COMPLETE) — Area pillar #14: Betchworth (RH3) — REWRITE SHIPPED
+
+**Track**: (2c). Sixth zero-new-sources cycle in seven. First page where two finding-axes apply simultaneously: Mole Valley microclimate (Cycle 21 Dorking) + heritage-property soft-wash (Cycle 26 Godstone) — produces the tightest pure-residential cadence in our radius.
+
+**Page**: `areas/betchworth.html`
+**Status**: ✅ Rewritten and committed locally.
+
+**What shipped**:
+- Answer-first H2 ("Why Betchworth is the tightest pure-residential cadence in our radius") combining microclimate + heritage in 60 words.
+- Labelled OAC: "The Betchworth Mole-Valley-meets-heritage matrix" — 5-row table mapping property type × substrate × price band × cadence × microclimate-and-heritage notes.
+- 5 new analytical H2s: substrate split, lime mortar + listed-building protocols (cross-references Godstone Cycle 26), Mole Valley biocide cadence (cross-references Dorking Cycle 21 with twice-annual recommendation), slip-risk on shaded conservation-area paving, RH3 mistakes that void warranties / breach consent, 6-step Betchworth workflow.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD — citation (7), dateModified 2026-05-21, inLanguage en-GB.
+- Sitemap lastmod bumped to 2026-05-21.
+
+**Validation**: word 1,692 (≥1500) · 7 citations · OAC labelled · 7 source classes · 6/6 usefulness criteria · 0 .html in href · 17 phone CTAs · 4 JSON-LD parse.
+
+**Sources newly added**: **0** — sixth compounding cycle in seven. Library at 24 entries.
+
+**Findings status**: This is the first cycle where **two F-008 candidates compound**:
+- Mole Valley microclimate (originated Cycle 21 Dorking, now applied to Cycle 31 Betchworth)
+- Heritage-property soft-wash (originated Cycle 26 Godstone, now applied to Cycle 31 Betchworth)
+Both reach the "appears on 2+ areas" threshold. Will formally promote both to F-008 (microclimate) and F-009 (heritage; renumbering the earlier F-009 motorway-corridor candidate to F-010) at the end of the area-pages track.
+
+**Next cycle pick**: **areas/chipstead.html** (CR5) — Tandridge district boundary, chalk dip-slope, woodland. Predicted zero new sources.
+
+---
+
 ## 2026-05-21 — Cycle 30 (COMPLETE) — Area pillar #13: Salfords (RH1) — REWRITE SHIPPED
 
 **Track**: (2c) areas/*.html. Fifth zero-new-sources cycle in six. Salfords gets the A23-corridor + industrial-estate dual matrix.
