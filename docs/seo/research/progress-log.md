@@ -4,6 +4,44 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 22 (COMPLETE) — Area pillar #5: Horley (RH6) — REWRITE SHIPPED
+
+**Track**: (2c) areas/*.html. RH6 is the natural #5 because it introduces the Weald Clay substrate (south of the Lower Greensand ridge) AND the residential-vs-commercial market split (Gatwick proximity).
+
+**Page**: `areas/horley.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`.
+
+**What shipped this cycle**:
+- New answer-first H2 ("Why Horley is two cleaning markets in one postcode") with the residential-vs-commercial split + Weald Clay substrate stance.
+- Labelled OAC: "The Horley residential-vs-commercial cost matrix" — 6-row table with separate Residential and Commercial price bands and cadence-split column (residential 12-18 months vs commercial quarterly).
+- 5 new analytical H2s: Weald Clay substrate (BGS NEW source), commuter oil staining with Lithofin Oil-EX dilution + 12hr dwell from library, commercial Gatwick-fringe quarterly cadence + PTV liability, RBBC RH6 SUDS gate, 7-step Horley workflow.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD — citation (7), datePublished 2026-02-08, dateModified 2026-05-21, inLanguage en-GB.
+- Sitemap lastmod for /areas/horley bumped to 2026-05-21.
+
+**Validation against researchPillarStandard**:
+- ✅ minimumWordCount 1,829 (≥1,500)
+- ✅ openingFormat answer-first (residential-vs-commercial split in first 60 words)
+- ✅ minimumAuthoritativeCitations ≥ 5 (7 inline `<sup>`)
+- ✅ originalAnalyticalContribution labelled in-page
+- ✅ sourcesSectionRequired (`## Sources` H2 with 7 entries)
+- ✅ mustSpanSourceClasses ≥ 3 (Met Office + BGS + EA + Marshalls + Lithofin Oil-EX + UKSRG/HSE + RBBC)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office + BGS + EA flood map + RBBC = four primary)
+- ✅ usefulnessCriteria 6 of 6 (counterintuitive: same postcode, two cadences; local: Langshott/Weatherhill/Smallfield + Gatwick named; actionable: 7-step Horley workflow with Lithofin Oil-EX dilution; mistakes: 3 RH6 warranty-voiders; numeric: every £/coating/dwell sourced; framework: residential vs commercial)
+
+**Pre-flight checks**:
+- ✅ 0 `.html"` in href
+- ✅ 17 phone CTA instances
+- ✅ 4 JSON-LD blocks all parse
+
+**Sources newly added to sources-library.md this cycle**: 1 (BGS Weald Clay Formation lexicon — re-usable for areas/crawley.html, areas/godstone.html, any RH10/RH11/RH12/RH19 page). Library now at 20 entries.
+
+**Findings status**: No new finding promoted to F-008. The substrate axis is now well-developed: chalk (Banstead, north-Reigate, parts of Caterham, Box Hill side of Dorking) vs Lower Greensand (RH1, south-Reigate, west Dorking) vs Weald Clay (Horley, Crawley) vs Mole flood plain alluvium. F-007 covers all three through the comparative paving-economics lens.
+
+**Next cycle pick**: **areas/crawley.html** (RH10/RH11) — large town, commercial opportunities (industrial estates / forecourts), Weald Clay substrate (already in library — zero new sources expected). Will be the commercial counterweight to Horley's airport-fringe model.
+
+---
+
 ## 2026-05-21 — Cycle 21 (COMPLETE) — Area pillar #4: Dorking (RH4/RH5) — REWRITE SHIPPED
 
 **Track**: (2c) areas/*.html. After completing the RH1/RH2/SM7 trio in Cycles 18-20, Dorking is the natural fourth pillar because it introduces a wholly new analytical axis — the Mole Valley microclimate — and a new council (Mole Valley District Council, not RBBC).

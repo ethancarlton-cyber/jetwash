@@ -104,6 +104,14 @@ When adding a new source: append to the relevant section. When citing in an arti
 - Used in: Cycle 18 areas/banstead.html
 - Re-usable for: areas/reigate.html (Reigate Hill chalk scarp), areas/dorking.html (chalk + Greensand), areas/caterham.html (chalk dip-slope), areas/epsom.html (chalk + Lambeth Group), all SM7/KT20 area pages
 
+### British Geological Survey — Weald Clay Formation (Lower Cretaceous Wealden Group)
+- URL: https://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=WC
+- Class: .ac.uk-eligible primary research body (Natural Environment Research Council)
+- Accessed: 2026-05-21
+- Key data: Weald Clay Formation, Lower Cretaceous Wealden Group — slow-draining, heavy clay substrate underlying the Surrey Weald south and east of the Lower Greensand ridge. Underlies Horley (RH6), Crawley (RH10/11), parts of southern Reigate (RH2) and the Smallfield/Charlwood/Hookwood corridor. Practical paving implication: rainwater does not move vertically as through chalk; standing water under sub-bases and hydrostatic-lift problems are realistic risks on poorly-detailed drives. Surface-water flood risk pockets common.
+- Used in: Cycle 22 areas/horley.html
+- Re-usable for: areas/crawley.html (RH10/11 Weald Clay), areas/godstone.html (eastern Weald edges), any RH6/RH10/RH11/RH12/RH19 page
+
 ### Mole Valley District Council — Local Plan
 - URL: https://www.molevalley.gov.uk/home/planning/planning-policy-and-strategic-sites/our-local-plan/
 - Class: Council planning portal (local authority primary data)
