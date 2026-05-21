@@ -4,6 +4,29 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 40 (COMPLETE) — Service pillar #1: driveway-cleaning.html — REWRITE SHIPPED
+
+**Track**: (2d) services. First of the 7 service pages. Driveway cleaning is the flagship — residential anchor for the entire site.
+
+**Page**: `driveway-cleaning.html`
+**Status**: ✅ Rewritten and committed locally.
+
+**What shipped**:
+- Answer-first H2 ("Why the same 'driveway clean' means four different protocols") with the per-surface protocol stance in 60 words.
+- Labelled OAC: "The four-surface driveway-cleaning protocol matrix" — 5-row table mapping surface × Marshalls/Karcher constraint × re-sand requirement × cadence.
+- 4 new analytical sections: surfaces-we-clean expanded with cited per-surface protocols, slip-risk + PTV thresholds, Surrey substrate context with cadence-by-postcode framework, sources H2.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries (Marshalls, BSI, Karcher, Lithofin Algex, Lithofin Oil-EX, UKSRG/HSE, Met Office Wisley).
+- New Article schema JSON-LD alongside existing Service + BreadcrumbList + FAQPage — citation (7), dateModified 2026-05-21, en-GB.
+- Sitemap lastmod for /driveway-cleaning bumped to 2026-05-21.
+
+**Validation**: word 1,626 (≥1500) · 7 citations · OAC labelled · 7 source classes · 0 .html in href · 8 phone CTAs · 4 JSON-LD blocks parse.
+
+**Sources newly added**: **0** — twelfth compounding cycle in thirteen. Library at 24 entries. (Services track now using the same source stack as the area pages — F-007 substrate framework + Marshalls/Lithofin/BSI/Karcher manufacturer/standard set.)
+
+**Next cycle pick**: **patio-cleaning.html** — second service, soft-wash chemistry focus on Indian sandstone / York stone / porcelain.
+
+---
+
 ## 2026-05-21 — Cycles 36-39 (BATCH COMPLETE) — Area pillars #19-22: RH4 + RH6 + RH8 + SM7 postcode pages — REWRITE SHIPPED
 
 **Track**: (2c). Final 4 area-page postcode-level pages, shipped as a batch under the same framework as Cycle 35 RH2. All four cross-link to the equivalent town pages (RH4→Dorking, RH6→Horley, RH8→Oxted, SM7→Banstead) and apply the analytical framework at the postcode level.
