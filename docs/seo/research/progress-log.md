@@ -4,6 +4,49 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 5 (COMPLETE) — Q-06 moss removal from driveways — REWRITE SHIPPED
+
+**Query**: Why does moss grow on driveways in the UK
+**Page**: `guides/moss-removal-from-driveways.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`
+
+**Critical fix this cycle**: the existing page contained the claim "Surrey gets 700-800mm annually" which directly contradicts our cited Met Office Wisley data (648mm). That false claim is the kind of detail an AI assistant will refuse to cite and a competitor will flag. Replaced with the correct figure + the broader counterintuitive reframing: Surrey is 43% drier than UK average, so the "wet UK" framing every competitor uses is wrong for RH1.
+
+**Sources surveyed this cycle**: 0 new — second consecutive compounding-payback cycle. Every source needed was already in the library (Met Office Wisley, Lithofin Algex, UKSRG BS 7976, HSE, Marshalls, BSI BS 7533-101).
+
+**What shipped this cycle**:
+- 2 brand-new H2 sections inserted high on the page: **"The moss control-lever matrix — what to actually do"** (the labelled originalAnalyticalContribution — 5-row table ranking the 4 conditions for moss growth by Surrey-specific ROI, with cost and suppression-duration columns; the takeaway is counterintuitive — shade reduction + Lithofin spring biocide beat drainage works because Surrey rainfall is already low) + **"What HSE slip-risk says about mossy drives"** (UKSRG / BS 7976 PTV ≥36 threshold, framing moss as a foreseeable-hazard issue not just aesthetic).
+- Hero rewritten to lead with the corrected Surrey rainfall data + reframe (shade and biofilm load are the real Surrey moss drivers).
+- The "Quick Answer" paragraph rewritten to lead with the 4 conditions + named the highest-ROI lever (shade) + cited Wisley/Lithofin/Marshalls.
+- "Why Surrey Driveways Suffer" subhead replaced with "Why Surrey Driveways Get Moss (Despite the Drier Climate)" — corrected the 700-800mm error, re-anchored explanation in shade/tree-canopy/clay-substrate rather than rainfall.
+- `## Sources` H2 at end with 6 numbered entries — Met Office, Lithofin, UKSRG, HSE, Marshalls, BSI — each with publication, document title, URL, accessed date 2026-05-21, each with id anchor.
+- Article schema: `citation` property added (6 CreativeWork entries), bumped `dateModified` to 2026-05-21, added `inLanguage: en-GB`, rewrote description to reflect the corrective-reframing angle.
+- Inline phone CTA added in the "Service areas" closing line.
+- Meta + og + twitter descriptions rewritten (146 chars).
+
+**Validation against researchPillarStandard**:
+- ✅ minimumWordCount ≥ 1500 (HTML word count 4,750)
+- ✅ openingFormat answer-first (4 conditions + highest-ROI lever stated in first ~40 words)
+- ✅ minimumAuthoritativeCitations ≥ 5 (6 distinct sources, 8 inline `<sup>` instances)
+- ✅ originalAnalyticalContribution labelled in-page ("Original analytical contribution:" before control-lever matrix)
+- ✅ sourcesSectionRequired (## Sources with 6 entries, all required fields)
+- ✅ mustSpanSourceClasses ≥ 3 (.gov.uk Met Office + .gov.uk HSE + BS standard BS 7976 + BS standard BS 7533-101 + manufacturer Lithofin + material manufacturer Marshalls = 5 classes; .gov.uk counted once for spanning)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office Wisley + HSE + Lithofin datasheet = three)
+- ✅ usefulnessCriteria all 6 of 6 satisfied (counterintuitive: drainage works are LOWEST ROI in Surrey; local: Wisley/Reigate Hill/clay Weald; actionable: ranked control-lever matrix with named action per lever; numeric: 648mm vs 1,147mm, 12-month Lithofin, PTV thresholds; mistakes: spending on drainage when shade is the real lever; framework: ROI-ranked decision matrix)
+
+**Pre-flight checks**:
+- ✅ 0 `.html` href violations
+- ✅ 11 instances of `01737 652 515`
+- ✅ 4 JSON-LD blocks parse as valid JSON (Article + BreadcrumbList + FAQPage + HowTo)
+- ✅ Incorrect "700-800mm" claim removed
+
+**Sources newly added to sources-library.md this cycle**: 0
+**New findings added to findings.md**: 0 (existing F-001 + F-005 + F-006 + F-003 cover Q-06 fully)
+
+**Next cycle pick**: **Q-11** "Best time of year to clean a patio UK" → `guides/pressure-washing-seasonal-guide.html` or `guides/seasonal-guide.html`. F-001 (Surrey rainfall) + F-006 (Lithofin spring application) + F-005 (HSE PTV during wet months) all apply directly. Should be another compounding cycle.
+
+---
+
 ## 2026-05-21 — Cycle 4 (COMPLETE) — Q-03 can pressure washing damage block paving — REWRITE SHIPPED
 
 **Query**: Can pressure washing damage block paving
