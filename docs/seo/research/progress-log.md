@@ -4,6 +4,42 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 25 (COMPLETE) — Area pillar #8: Oxted (RH8) — REWRITE SHIPPED
+
+**Track**: (2c) areas/*.html. RH8 is the first cycle in this session with **zero new sources** added — full compounding payoff from the 22-entry library built across Cycles 18-24.
+
+**Page**: `areas/oxted.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`.
+
+**What shipped this cycle**:
+- New answer-first H2 ("Why Oxted is the AONB chalk-and-Weald cleaning split") with the two-substrate + AONB-tannin stance in the first 60 words.
+- Labelled OAC: "The Oxted AONB chalk-and-Weald matrix" — 5-row table covering old town, Limpsfield, Barrow Green Road, Limpsfield Chart, render — with substrate, price band, cadence and AONB-specific issue columns. Includes a £40-120 Limpsfield Chart pre-treat surcharge for tracked-in Wealden clay.
+- 5 new analytical H2s: substrate split (chalk + Weald), AONB ancient-woodland tannin loading, rural-lane Wealden clay tracking (Limpsfield Chart specialty), slip-risk in conservation-area shaded paving, TDC SUDS gate, warranty-voiding mistakes, 7-step Oxted workflow.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD — citation (7), datePublished 2026-02-08, dateModified 2026-05-21, inLanguage en-GB.
+- Sitemap lastmod for /areas/oxted bumped to 2026-05-21.
+
+**Validation against researchPillarStandard**:
+- ✅ minimumWordCount 1,835 (≥1,500)
+- ✅ openingFormat answer-first
+- ✅ minimumAuthoritativeCitations ≥ 5 (7 inline `<sup>`)
+- ✅ originalAnalyticalContribution labelled in-page
+- ✅ sourcesSectionRequired (Sources H2 with 7 entries)
+- ✅ mustSpanSourceClasses ≥ 3 (Met Office + 2x BGS + Marshalls + Lithofin + UKSRG/HSE + TDC = 7 distinct sources)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office + 2x BGS + TDC = four primary)
+- ✅ usefulnessCriteria 6 of 6 (counterintuitive: same RH8, two playbooks; local: 8 named neighbourhoods + Limpsfield Chart specialty; actionable: 7-step workflow + Limpsfield Chart pre-treat surcharge; mistakes: 3 RH8-specific; numeric: every £/cadence sourced; framework: chalk-vs-Weald decision)
+
+**Pre-flight checks**:
+- ✅ 0 `.html"` in href · 17 phone CTA instances · 4 JSON-LD blocks all parse
+
+**Sources newly added to sources-library.md this cycle**: **0** — full compounding payoff. The 22-entry library built across Cycles 18-24 now sustains follow-on area pages without adding new sources. Library stays at 22 entries.
+
+**Findings status**: F-007 (substrate-economics framework) anchors another cycle.
+
+**Next cycle pick**: **areas/godstone.html** (RH9) — same TDC council, chalk + Weald boundary, North Downs scarp foot. Predicted zero new sources, another compounding cycle.
+
+---
+
 ## 2026-05-21 — Cycle 24 (COMPLETE) — Area pillar #7: Caterham (CR3) — REWRITE SHIPPED
 
 **Track**: (2c) areas/*.html. CR3 brings in the eastern Tandridge corridor (new council source) and the Valley-vs-Hill geomorphological split on a single chalk substrate.
