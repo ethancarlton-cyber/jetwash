@@ -4,6 +4,41 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 29 (COMPLETE) — Area pillar #12: Merstham (RH1) — REWRITE SHIPPED
+
+**Track**: (2c) areas/*.html. Fourth zero-new-sources cycle in five. Merstham is the most contamination-heavy postcode on the patch — chalk-pit chemistry + M25/M23 interchange film + tree-shade biofilm.
+
+**Page**: `areas/merstham.html`
+**Status**: ✅ Rewritten and committed locally.
+
+**What shipped**:
+- Answer-first H2 ("Why Merstham is the chalk-pit-village + motorway double-contamination problem") with the chalk-dust-meets-rain + motorway-film stance in the first 60 words.
+- Labelled OAC: "The Merstham double-contamination matrix" — 5-row table mapping location × dominant contamination × price band × cadence × pre-treat chemistry. Tightest cadence on the patch (10-14 months) sourced to contamination loading, not climate.
+- 5 new analytical H2s: the chalk-dust-meets-rain chemistry (mild acid descaler protocol), M25/M23 interchange pollution layered on top, slip-risk on Quality Street period stonework + Dean Lane tree-shaded streets, RBBC SUDS gate + South Merstham EA flood pockets, mistakes-that-fail, 8-step Merstham workflow.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD — citation (7), dateModified 2026-05-21, inLanguage en-GB.
+- Sitemap lastmod for /areas/merstham bumped to 2026-05-21.
+
+**Validation**:
+- ✅ minimumWordCount 1,877 (≥1,500)
+- ✅ openingFormat answer-first
+- ✅ 7 inline `<sup>` citations from acceptedSourceClasses
+- ✅ OAC labelled in-page
+- ✅ Sources H2 with 7 entries
+- ✅ 7 distinct source classes (.gov.uk Met Office + BGS + EA + Marshalls + Lithofin + UKSRG/HSE + RBBC)
+- ✅ usefulnessCriteria 6 of 6 (counterintuitive: chalk dust forms cement with rain; local: 7 named locations + Quality Street + chalk pits; actionable: 8-step Merstham workflow with 3 sequential pre-treats; mistakes: 3 RH1 Merstham-specific; numeric: every £/cadence sourced; framework: contamination × location decision matrix)
+
+**Pre-flight checks**:
+- ✅ 0 `.html"` in href · 17 phone CTA instances · 4 JSON-LD blocks parse
+
+**Sources newly added**: **0** — fourth compounding cycle in five. Library remains at 24 entries.
+
+**Findings status**: F-009 candidate (motorway-corridor pollution-film) reinforced by Merstham — now appears on Leatherhead AND Merstham. Worth promoting to formal F-009. Plus a new F-010 candidate emerges: the chalk-pit-village mild-acid-descaler protocol (calcium-carbonate redeposit chemistry). Will write both up in findings.md next cycle.
+
+**Next cycle pick**: **areas/salfords.html** (RH1) — south of Redhill, Mole tributary alluvium, RBBC. Predicted zero new sources.
+
+---
+
 ## 2026-05-21 — Cycle 28 (COMPLETE) — Area pillar #11: Leatherhead (KT22) — REWRITE SHIPPED
 
 **Track**: (2c) areas/*.html. Third zero-new-sources cycle in 4 — full compounding payoff.
