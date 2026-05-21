@@ -36,6 +36,14 @@ When adding a new source: append to the relevant section. When citing in an arti
 - Key data: Aftercare booklet
 - Used in: (pending)
 
+### Lithofin OIL-EX Oil Stain Remover — Product Datasheet
+- URL: https://www.lithofin.com/en/products/ceramics-and-natural-stone/lithofin-oil-ex
+- Class: Manufacturer technical datasheet (chemical / consumable)
+- Accessed: 2026-05-21
+- Key data: Solvent-and-absorbent paste. Apply at **2mm coating thickness**; allow to dry **~12 hours**; coverage **~0.5 m²/kg**. Suitable for marble, natural stone, artificial stone, concrete. NOT for sealed/lacquered/coated/synthetic surfaces.
+- Used in: Q-07
+- Re-usable for: Q-13 (best detergent — Oil-EX is the named UK degreaser), Q-15 (sandstone black-spot adjuncts)
+
 ### Resiblock Block Paving Sealer — Product Data Sheets
 - URL: https://www.resiblock.com/documents/technical-data-sheets/
 - Class: Manufacturer technical datasheet (chemical / consumable, UK-headquartered, supplied since 1993)

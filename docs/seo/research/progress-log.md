@@ -4,6 +4,29 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 11 (COMPLETE) — Q-07 remove oil stains from block paving — REWRITE SHIPPED
+
+**Query**: How to remove oil stains from block paving permanently
+**Page**: `guides/remove-oil-stains-driveway.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`
+
+**Sources surveyed this cycle**: 1 new — Lithofin OIL-EX manufacturer datasheet (2mm coating thickness, 12hr dwell, 0.5m²/kg coverage). Strong fit for acceptedSourceClasses (manufacturer technical datasheet) and re-usable for Q-13/Q-15.
+
+**What shipped**:
+- New H2 "The sequenced oil-removal protocol" — labelled originalAnalyticalContribution. 4-step manufacturer-cited sequence (absorb at 2mm × 12hr dwell → mechanical removal at Marshalls technique → Karcher rinse at 600 L/hr → HSE PTV ≥36 acceptance test). Each step has a measurable threshold with citation. Competitor blogs treat oil-stain removal as a product-choice problem; this article reframes it as a sequenced protocol with gates.
+- Quick Answer paragraph rewritten with the 4-step protocol + 4 inline citations.
+- ## Sources H2 with 6 numbered entries (Lithofin OIL-EX, Marshalls, Kärcher K7, UKSRG BS 7976, HSE, BSI BS 7533-101).
+- Article schema: citation property (6 CreativeWork entries), dateModified 2026-05-21, inLanguage en-GB.
+- Inline phone CTA added.
+
+**Validation**: 4,151 words, 4 valid JSON-LD blocks (Article + BreadcrumbList + FAQPage + HowTo pre-existing), 9 inline citation instances across 6 distinct sources, 0 .html href violations, 11 phone CTAs.
+
+**Sources-library**: 1 new (Lithofin OIL-EX), now 12 total accepted sources curated.
+
+**Next**: Q-09 efflorescence, Q-12 how-long-stays-clean, Q-13 detergent, Q-14 Indian sandstone, Q-15 sandstone black spots. All currently linkedPage=null and will need new research.
+
+---
+
 ## 2026-05-21 — Cycle 10 (COMPLETE) — Q-02 pressure washing vs jet washing — REWRITE SHIPPED
 
 **Query**: Pressure washing vs jet washing difference
