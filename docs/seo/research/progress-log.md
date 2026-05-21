@@ -4,6 +4,28 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 10 (COMPLETE) — Q-02 pressure washing vs jet washing — REWRITE SHIPPED
+
+**Query**: Pressure washing vs jet washing difference
+**Page**: `guides/pressure-washing-vs-jet-washing.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`
+
+**Sources surveyed this cycle**: 0 new — fifth consecutive compounding cycle.
+
+**What shipped**:
+- New H2 "Why the terminology debate misses the point" — labelled originalAnalyticalContribution. 4-row standards reconciliation matrix showing that Marshalls, BS 7533-101, Kärcher datasheets, and HSE/UKSRG PTV all apply identically regardless of which terminology (pressure vs jet) is used. Reframes the article to put the meaningful technical distinction (high-pressure vs soft-washing <500 PSI) in front.
+- Hero rewritten to lead with the "same activity, identical standards" framing.
+- ## Sources H2 with 5 numbered entries — Marshalls, BSI, Kärcher, UKSRG, HSE — each with all required fields.
+- Article schema: citation property (5 CreativeWork entries), dateModified 2026-05-21, inLanguage en-GB.
+- 5 distinct sources cited inline.
+- Inline phone CTA added.
+
+**Validation**: 5,323 words, 3 valid JSON-LD blocks, 5 inline citation instances across 5 distinct sources, 0 .html href violations, 11 phone CTAs.
+
+**Next**: Q-07 oil stains, Q-09 efflorescence, Q-12, Q-13, Q-14, Q-15 remain.
+
+---
+
 ## 2026-05-21 — Cycle 9 (COMPLETE) — Q-10 pressure washer hire vs professional — REWRITE SHIPPED
 
 **Query**: Pressure washer hire vs hiring a professional UK cost comparison
