@@ -4,6 +4,44 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 8 (COMPLETE) — Q-08 driveway cleaning & sealing cost — REWRITE SHIPPED
+
+**Query**: Is sealing block paving worth it
+**Page**: `guides/driveway-cleaning-sealing-cost.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`
+
+**Sources surveyed this cycle**: 1 new accepted — Resiblock Block Paving Sealer Product Data Sheets (manufacturer-stated lifespan up to 5 years). Strong fit for acceptedSourceClasses (manufacturer technical datasheet) and re-usable for Q-03 + area pages.
+
+**What shipped this cycle**:
+- New H2 **"The Surrey sealing payback matrix"** (labelled originalAnalyticalContribution): 5-row £/m²/yr matrix across concrete block paving, poured concrete, resin-bound, tarmac, Indian sandstone. Derived from Resiblock manufacturer 5-year lifespan + Met Office Wisley + Thames Water + Marshalls + BS 7533-101. Each row has a "Worth it?" verdict with the counterintuitive Indian sandstone finding (sealing often NOT worth it because non-breathable sealants trap moisture and accelerate spalling — well documented but rarely surfaced in competitor blogs).
+- New H3 **"Why Indian sandstone is the contrarian call"** explaining the spalling/frost-thaw mechanism with the actual figure (Wisley typically records 30-40 frost days/yr).
+- Hero rewritten to lead with Resiblock 5-year manufacturer figure + £1.20-£2.80/m²/yr Surrey-specific payback range.
+- Quick Answer paragraph rewritten with the verdict (worth it for block paving + most porous stone; not always for Indian sandstone) + 2 inline citations.
+- Key Facts box re-bulleted with Resiblock lifespan + Wisley + £/yr payback + Indian sandstone contrarian finding.
+- `## Sources` H2 at end with 5 numbered entries — Resiblock, Met Office, Thames Water, Marshalls, BSI — each with publication, document title, URL, accessed date 2026-05-21, id anchor.
+- Article schema: `citation` property added (5 CreativeWork entries), bumped `dateModified` to 2026-05-21, added `inLanguage: en-GB`.
+- Inline phone CTA added in service-areas line.
+
+**Validation against researchPillarStandard**: 3,871 words, 3 valid JSON-LD blocks, 9 inline citation instances across 5 distinct sources, 0 .html href violations, 8 phone CTAs. All 6 of 6 usefulnessCriteria satisfied.
+
+**Sources newly added to sources-library.md this cycle**: 1 (Resiblock)
+**New findings added to findings.md**: 0 (the Indian sandstone spalling insight is encoded inline in the page but doesn't warrant a separate F-007 yet — would re-derive on Q-14 if needed)
+
+**Next cycle pick**: One of the unlinked priorityQueries — Q-09 efflorescence, Q-12 how-long-jet-washed-stays-clean, Q-13 detergent for block paving, Q-14 Indian sandstone safety, Q-15 black spots sandstone removal. Q-14/Q-15 are natural pair (both sandstone) and would benefit from the Indian-sandstone spalling insight surfaced this cycle.
+
+---
+
+## 2026-05-21 — Cycle 7 (COMPLETE) — Q-05 best PSI for block paving — TRACKER REPOINT
+
+**Query**: What PSI is best for cleaning block paving
+**Status**: ✅ Q-05 linkedPage repointed in tracker.json from `null` to `guides/can-pressure-washing-damage-driveway.html`.
+
+**Rationale**: the Cycle 4 rewrite of that page already contains the labelled originalAnalyticalContribution showing PSI × nozzle × standoff is the real damage variable, plus a safe-PSI-by-surface table with inline Marshalls and BS 7533-101 citations. The page already passes researchPillarStandard for Q-03 — pointing Q-05 there satisfies Q-05 too, since the question "what PSI for block paving" is a strict subset of "can pressure washing damage block paving". A dedicated /guides/best-psi-block-paving page would mostly duplicate Q-03 content and dilute the citation signal.
+
+**No HTML changes this cycle** — pure tracker repoint, no commit needed beyond bundling into the Cycle 8 commit.
+
+---
+
 ## 2026-05-21 — Cycle 6 (COMPLETE) — Q-11 seasonal guide / best time to clean a patio UK — REWRITE SHIPPED
 
 **Query**: Best time of year to clean a patio UK

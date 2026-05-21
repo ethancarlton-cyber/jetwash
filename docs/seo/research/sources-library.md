@@ -36,6 +36,14 @@ When adding a new source: append to the relevant section. When citing in an arti
 - Key data: Aftercare booklet
 - Used in: (pending)
 
+### Resiblock Block Paving Sealer — Product Data Sheets
+- URL: https://www.resiblock.com/documents/technical-data-sheets/
+- Class: Manufacturer technical datasheet (chemical / consumable, UK-headquartered, supplied since 1993)
+- Accessed: 2026-05-21
+- Key data: Manufacturer-stated lifespan: **up to 5 years** for block paving sealer applications. 24-hour minimum recoat interval between coats during initial application. Product range includes breathable formulations for sandstone (important — non-breathable sealants on porous stone can trap moisture and cause spalling).
+- Used in: Q-08
+- Re-usable for: Q-03 (warranty argument — sealing is part of the cleaning-then-sealing aftercare workflow Marshalls expects), all area pages (sealing economics in pricing tables)
+
 ### Lithofin ALGEX Special Cleaner — product page + technical info
 - URL: https://www.lithofin.com/en/products/ceramics-and-natural-stone/lithofin-algex
 - Class: Manufacturer technical datasheet (chemical / consumable)
