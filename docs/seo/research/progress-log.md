@@ -4,6 +4,42 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 26 (COMPLETE) — Area pillar #9: Godstone (RH9) — REWRITE SHIPPED
+
+**Track**: (2c) areas/*.html. Second consecutive **zero-new-sources** cycle — RH9 fully sustained by the 22-entry library, demonstrating the compounding-research model is working as designed.
+
+**Page**: `areas/godstone.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`.
+
+**What shipped this cycle**:
+- New answer-first H2 ("Why Godstone is the soft-wash heritage-property default") with the listed-cottages + Green Belt stance in the first 60 words.
+- Labelled OAC: "The Godstone Green Belt heritage matrix" — 5-row table covering listed cottages, period cottages, South Godstone post-war, Blindley Heath rural, render — with substrate, price band, cadence and heritage-issue columns.
+- 5 new analytical H2s: substrate split, listed-building protocols + lime mortar, Green Belt tannin + tree-canopy moisture retention, slip-risk in conservation area, RH9 mistakes that void warranties / breach consent, 7-step Godstone workflow.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD — citation (7), datePublished 2026-02-08, dateModified 2026-05-21, inLanguage en-GB.
+- Sitemap lastmod for /areas/godstone bumped to 2026-05-21.
+
+**Validation against researchPillarStandard**:
+- ✅ minimumWordCount 1,802 (≥1,500)
+- ✅ openingFormat answer-first
+- ✅ minimumAuthoritativeCitations ≥ 5 (7 inline `<sup>`)
+- ✅ originalAnalyticalContribution labelled in-page
+- ✅ sourcesSectionRequired (Sources H2 with 7 entries)
+- ✅ mustSpanSourceClasses ≥ 3 (Met Office + 2x BGS + Marshalls + Lithofin + UKSRG/HSE + TDC)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office + 2x BGS + TDC = four primary)
+- ✅ usefulnessCriteria 6 of 6 (counterintuitive: heritage status overrides substrate framework; local: 6 named locations + lime-mortar emphasis; actionable: 7-step Godstone workflow; mistakes: 3 RH9-specific including listed-building consent risk; numeric: every £ / cadence sourced; framework: heritage × substrate decision)
+
+**Pre-flight checks**:
+- ✅ 0 `.html"` in href · 17 phone CTA instances · 4 JSON-LD blocks all parse
+
+**Sources newly added to sources-library.md this cycle**: **0** — second compounding cycle. Library stays at 22 entries.
+
+**Findings status**: F-007 substrate-economics framework anchors another cycle. The heritage-property layer (lime mortar soft-wash only) is a candidate new finding (F-008) — held as Godstone-specific until a second heritage-weighted area is pillared.
+
+**Next cycle pick**: **areas/epsom.html** (KT17/18/19) — Epsom & Ewell Borough Council (new council source). Sits on chalk + Lambeth Group (Eocene). Epsom Downs racecourse + commuter belt market.
+
+---
+
 ## 2026-05-21 — Cycle 25 (COMPLETE) — Area pillar #8: Oxted (RH8) — REWRITE SHIPPED
 
 **Track**: (2c) areas/*.html. RH8 is the first cycle in this session with **zero new sources** added — full compounding payoff from the 22-entry library built across Cycles 18-24.
