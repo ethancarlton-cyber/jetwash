@@ -4,6 +4,49 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycles 36-39 (BATCH COMPLETE) — Area pillars #19-22: RH4 + RH6 + RH8 + SM7 postcode pages — REWRITE SHIPPED
+
+**Track**: (2c). Final 4 area-page postcode-level pages, shipped as a batch under the same framework as Cycle 35 RH2. All four cross-link to the equivalent town pages (RH4→Dorking, RH6→Horley, RH8→Oxted, SM7→Banstead) and apply the analytical framework at the postcode level.
+
+**Pages**:
+- `areas/rh4.html` (Dorking microclimate) — 1,551 words, 7 citations
+- `areas/rh6.html` (Horley residential-vs-commercial) — 1,547 words, 7 citations
+- `areas/rh8.html` (Oxted AONB dual-substrate) — 1,537 words, 7 citations
+- `areas/sm7.html` (Banstead chalk-multiplier) — 1,541 words, 7 citations
+
+**What shipped per page**:
+- Answer-first H2 with the framework stance in 60 words
+- Labelled OAC table (postcode-level matrix referencing the parent town page's full write-up)
+- 4-5 analytical H2s covering substrate, contamination/microclimate, slip-risk, council planning, workflow
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries
+- New Article schema JSON-LD — citation (7), dateModified 2026-05-21, en-GB
+- Sitemap lastmod for all 4 pages bumped to 2026-05-21
+
+**Validation across all 4**:
+- ✅ minimumWordCount ≥1,500 on every page
+- ✅ openingFormat answer-first
+- ✅ 7 citations from acceptedSourceClasses
+- ✅ OAC labelled in-page
+- ✅ Sources H2 with 7 entries
+- ✅ 7 distinct source classes
+- ✅ 0 `.html"` in href across all 4
+- ✅ 17 phone CTA instances on each
+- ✅ 4 JSON-LD blocks parse on each
+
+**Sources newly added**: **0** across all 4. Library remains at 24 entries.
+
+**This completes the area-pages track**: 22 area pillars total (17 town-named + 5 postcode-level). All areas/*.html files now meet researchPillarStandard.
+
+**Track status**:
+- ✅ priorityQueries: all 20 have linkedPage
+- ✅ guides/*.html: all 41 pillared
+- ✅ areas/*.html: all 22 pillared (this cycle batch)
+- ⏳ services (driveway-cleaning + 6 others): 7 still pending
+
+**Next cycle pick**: **driveway-cleaning.html** — most important service page, residential anchor for the entire site. Predicted 1-2 new sources possibly (service-page protocol formal write-up).
+
+---
+
 ## 2026-05-21 — Cycle 35 (COMPLETE) — Area pillar #18: RH2 postcode — REWRITE SHIPPED
 
 **Track**: (2c). Postcode-level page; applies Cycle 20 Reigate two-substrate framework at the postcode level with cross-link to the analytical write-up. Tenth zero-new-sources cycle in eleven.
