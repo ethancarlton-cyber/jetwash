@@ -4,6 +4,31 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 33 (COMPLETE) — Area pillar #16: Earlswood (RH1) — REWRITE SHIPPED
+
+**Track**: (2c). Eighth zero-new-sources cycle in nine. Earlswood is the third microclimate-driven area (after Dorking + Betchworth), confirming F-008 microclimate as a cross-cutting finding.
+
+**Page**: `areas/earlswood.html`
+**Status**: ✅ Rewritten and committed locally.
+
+**What shipped**:
+- Answer-first H2 ("Why Earlswood is the documented microclimate within RH1") with Lakes + Common canopy + EA flood-pocket compounding stance.
+- Labelled OAC: "The Earlswood Lakes microclimate matrix" — 5-row table mapping location × moisture driver × price band × cadence × recommended protocol.
+- 5 new analytical H2s: substrate + flood-risk, Lakes humidity + canopy chemistry, RBBC SUDS gate, RH1 Earlswood mistakes, 8-step workflow with twice-annual biocide recommendation.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD — citation (7), dateModified 2026-05-21, en-GB.
+- Sitemap lastmod bumped to 2026-05-21.
+
+**Validation**: word 1,632 (≥1500) · 7 citations · OAC labelled · 7 source classes · 6/6 usefulness · 0 .html in href · 17 phone CTAs · 4 JSON-LD parse.
+
+**Sources newly added**: **0** — eighth compounding cycle in nine. Library at 24.
+
+**Findings status**: F-008 Mole Valley microclimate now confirmed on three areas (Dorking, Betchworth, Earlswood) — ready for formal promotion in findings.md.
+
+**Next cycle pick**: **areas/nutfield.html** (RH1) — east Redhill, chalk + Greensand boundary, RBBC. Predicted zero new sources.
+
+---
+
 ## 2026-05-21 — Cycle 32 (COMPLETE) — Area pillar #15: Chipstead (CR5) — REWRITE SHIPPED
 
 **Track**: (2c). Seventh zero-new-sources cycle in eight. Unique angle: long-drive economics-of-scale matrix — How Lane / Chipstead Valley front drives at 100-300m² are 3-6× the typical RH1 drive.
