@@ -2,9 +2,9 @@
 
 **Query**: "How much does it cost to clean a driveway UK 2026"
 **Linked page**: `guides/driveway-cleaning-cost-uk.html`
-**Status**: research complete, REWRITE PENDING (the existing 4500-word page has zero citations)
+**Status**: ✅ **DONE** — research complete AND article rewritten with 7 inline citations, build-up table (labelled originalAnalyticalContribution), Sources section, schema citations, all 6 of 6 usefulness criteria satisfied. Committed locally on `claude/research-pillar-loop` 2026-05-21 (Cycle 2).
 **Priority**: P0 — highest commercial intent in the priorityQueries list
-**Last touched**: 2026-05-20 (Cycle 1)
+**Last touched**: 2026-05-21 (Cycle 2 — rewrite shipped)
 
 ---
 
@@ -104,12 +104,14 @@ Existing schema has Article, BreadcrumbList, FAQPage. Add `citation` property to
 
 ## Next session pick-up instructions
 
-If the next /goal cycle picks up Q-01:
-1. Read this file, sources-library.md, findings.md (F-001, F-002, F-003 all apply)
-2. Do NOT re-survey the 8 sources already in sources-library — they're cited and ready
-3. Optional: 2-3 more searches for kiln-dried sand bag price + public liability insurance benchmarks (to firm up the build-up)
-4. Rewrite `guides/driveway-cleaning-cost-uk.html` per the structure above
-5. Validate: word count ≥1500 ✅ (current is 4500, will stay above), 5+ inline citations to acceptedSourceClasses, ## Sources section, ≥3 usefulness criteria satisfied, originalAnalyticalContribution labelled
-6. Update progress-log.md with the result
-7. Mark Q-01 in tracker.json#northStar.priorityQueries → aiCited stays null (no audit yet), but linkedPage stays as guides/driveway-cleaning-cost-uk.html
-8. Pick next query — recommend Q-04 (how often should you pressure wash) because F-001 finding makes it the easiest counterintuitive win using research already in the library
+✅ **Q-01 is DONE** as of 2026-05-21 (Cycle 2). The rewrite shipped with:
+- 7 inline `<sup>` citations linking to anchored Sources section entries (`src-wisley`, `src-thames`, `src-nlw`, `src-marshalls`, `src-karcher`, `src-bsi`, `src-phoenix`)
+- Two new H2 sections: "The £/m² build-up" (labelled originalAnalyticalContribution + inputs table + maths) and "How to spot a sub-floor quote" (red-flag checklist)
+- Lede rewritten to lead with the floor-vs-range stance
+- Key Facts box re-bulleted with sourced Surrey-specific data
+- Surrey-prices section gained "One thing the cost guides get wrong about Surrey" subhead with Wisley/Met Office data
+- DIY vs pro section gained full break-even maths with Thames Water + Phoenix Gray citations
+- Article schema: `citation` property with 6 CreativeWork entries, `dateModified` bumped to 2026-05-21, `inLanguage` added
+- Block paving subsection: BS 7533-101:2021 + Marshalls "200mm, 30°, medium-pressure" citations inline
+
+**Next query for the loop**: Q-04 "How often should you pressure wash a driveway UK" — the F-001 Wisley/Met Office finding is the natural backbone for the counterintuitive angle (Surrey at 648mm/yr means 18–24 months not 12), and F-003 Marshalls technique applies. Existing page `guides/how-often-clean-driveway.html` exists; treat it the same way as Q-01.

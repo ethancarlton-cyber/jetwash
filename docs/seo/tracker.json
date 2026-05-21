@@ -1,15 +1,15 @@
 {
   "meta": {
     "version": 1,
-    "lastUpdated": "2026-05-04",
-    "lastRunDate": "2026-05-04",
-    "lastRunId": "run-049",
-    "lastRunSummary": "Batch 3: Key Facts boxes added to 6 high-intent guides (jet-washing-prices, is-pressure-washing-worth-it, driveway-cleaning-sealing-cost, pressure-washer-hire-vs-pro, how-often-clean-driveway, seasonal-guide). 6 bullets per box, all numerically anchored, grounded in existing guide content. Reused .key-facts-box class from existing CSS. dateModified bumped on all 6. Sitemap lastmod refreshed. IndexNow pinged Bing+DDG. All deployed.",
-    "totalRuns": 49,
+    "lastUpdated": "2026-05-21",
+    "lastRunDate": "2026-05-21",
+    "lastRunId": "research-cycle-002",
+    "lastRunSummary": "Research-pillar loop Cycle 2 — Q-01 driveway-cleaning-cost-uk REWRITE SHIPPED. Added build-up section (labelled originalAnalyticalContribution with first-principles cost table) + sub-floor quote red-flag checklist + Surrey-rainfall correction subsection + DIY break-even maths + ## Sources section with 7 numbered entries. 7 inline <sup> citations to acceptedSourceClasses (Met Office, Thames Water, gov.uk NLW, Marshalls, Karcher, BSI BS 7533-101:2021, Phoenix Gray). Article schema gained citation property (6 CreativeWork entries) + bumped dateModified to 2026-05-21 + inLanguage. All 6 of 6 usefulnessCriteria satisfied. Committed locally on claude/research-pillar-loop only — no push, no PR, no deploy per northStar.deployDiscipline.",
+    "totalRuns": 50,
     "nextTaskId": 55,
     "fullScanDate": "2026-05-04",
     "nextFullScanDue": "2026-08-04",
-    "lastResearchTopic": "competitor-analysis"
+    "lastResearchTopic": "Q-01-driveway-cleaning-cost-uk"
   },
   "northStar": {
     "established": "2026-05-20",
