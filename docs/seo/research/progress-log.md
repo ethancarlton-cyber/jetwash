@@ -4,6 +4,44 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 19 (COMPLETE) — Area pillar #2: Redhill (RH1) — REWRITE SHIPPED
+
+**Track**: (2c) areas/*.html. The Redhill RH1 home-base page is the natural baseline anchor for future area-comparison work, taken ahead of alphabetical Betchworth because of SEO traffic priority.
+
+**Page**: `areas/redhill.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`.
+
+**What shipped this cycle**:
+- New answer-first H2 ("Why Redhill (RH1) is the Surrey valley-floor baseline") with the £120-£180 baseline + 12-18 month cadence stance stated in the first 60 words.
+- Labelled OAC: "The RH1 valley-floor cost & cadence baseline" — 6-row table covering block paving, concrete, tarmac, sandstone, render, roof, with RH1 baseline price + cadence + SM7 chalk-premium comparison + substrate driver column. This is the home-base anchor against which every subsequent area page will compare.
+- 6 new analytical H2s: substrate (Folkestone/Weald Clay/alluvium), Earlswood-Salfords surface-water risk, slip-risk safety, mistakes that void warranties, what-we-actually-do (6-step process), helpful guides.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD block — citation array (7 entries), datePublished 2026-02-08, dateModified 2026-05-21, inLanguage en-GB.
+- Sitemap lastmod for /areas/redhill bumped to 2026-05-21.
+
+**Validation against researchPillarStandard**:
+- ✅ minimumWordCount 1,895 (≥1,500)
+- ✅ openingFormat answer-first (£120-180 baseline + 12-18 month cadence stated within first 60 words)
+- ✅ minimumAuthoritativeCitations ≥ 5 (7 inline `<sup>` citations)
+- ✅ originalAnalyticalContribution labelled in-page
+- ✅ sourcesSectionRequired (`## Sources` H2 with 7 entries)
+- ✅ mustSpanSourceClasses ≥ 3 (.gov.uk Met Office + .gov.uk EA + BGS Lower Greensand + Marshalls + Lithofin + UKSRG/HSE + RBBC = 7 classes)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office Wisley + BGS lithostratigraphy + Environment Agency surface-water flood map = three)
+- ✅ usefulnessCriteria 6 of 6 satisfied (counterintuitive: valley-floor humidity beats UK averaging; local: Earlswood/Salfords flood pockets named; actionable: 6-step Redhill workflow; mistakes: 3 warranty-voiding mistakes; numeric: every £/PTV figure sourced; framework: cadence-by-surface decision matrix)
+
+**Pre-flight checks**:
+- ✅ 0 `.html"` in href
+- ✅ 17 phone CTA instances
+- ✅ 4 JSON-LD blocks all parse
+
+**Sources newly added to sources-library.md this cycle**: 2 (BGS Lower Greensand Group lexicon; Environment Agency long-term flood risk map). Library now at 18 entries.
+
+**Findings status**: F-007 (chalk vertical drainage) extended via the BGS Lower Greensand reference — RH1 is now the documented "off-chalk baseline" against which the SM7 chalk premium is measured. No new finding added this cycle; the comparative substrate matrix lives across the Banstead + Redhill pages.
+
+**Next cycle pick**: **areas/reigate.html** — premium properties on the Lower Greensand + North Downs scarp, RH2 cadence sits between RH1 baseline and SM7 chalk; this completes the RH1/RH2/SM7 core-Surrey trio. Cycle 20 will use the BGS + Met Office + Marshalls + Lithofin + UKSRG sources already in the library — predicted zero new sources, fast cycle.
+
+---
+
 ## 2026-05-21 — Cycle 18 (COMPLETE) — Area pillar #1: Banstead (SM7) — REWRITE SHIPPED
 
 **Track**: (2c) areas/*.html pillaring. Guides track is complete (Cycles 1-17 pillared all 41 guide pages); now moving into area pages alphabetically.

@@ -80,6 +80,22 @@ When adding a new source: append to the relevant section. When citing in an arti
 - Key data: UK national 30-year (1991-2020) averages — useful as comparison baseline
 - Used in: Q-01 (national average reference)
 
+### British Geological Survey — Lower Greensand Group (Folkestone & Hythe Formations)
+- URL: https://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=LGS
+- Class: .ac.uk-eligible primary research body (Natural Environment Research Council)
+- Accessed: 2026-05-21
+- Key data: Lower Greensand Group underlies central RH1 (Redhill, Earlswood, Salfords) in the Vale of Holmesdale. Folkestone Formation: medium-grained, weakly cemented sandstone — moderate drainage. Hythe Formation: harder, occasionally cemented "ragstone". Weald Clay edges appear south and east of Salfords. Practical paving implication: RH1 substrate drains slower than the Banstead chalk to the north; jointing sand washes out faster; hydrostatic-lift problems possible on the Weald-clay edges.
+- Used in: Cycle 19 areas/redhill.html
+- Re-usable for: areas/reigate.html (Lower Greensand under RH2), areas/horley.html (Weald Clay alluvium), areas/merstham.html (chalk dip into Lower Greensand boundary), areas/salfords.html (alluvium over Weald Clay), areas/earlswood.html, areas/nutfield.html
+
+### Environment Agency — Long-term flood risk for an area (surface water flood map)
+- URL: https://check-long-term-flood-risk.service.gov.uk/map
+- Class: .gov.uk primary data
+- Accessed: 2026-05-21
+- Key data: Documents surface-water flood-risk pockets across RH1 — notably Earlswood Common, Salfords corridor, Petridge Wood. Relevant to driveway-cleaning runoff disposal and SUDS compliance for any front-garden paving change.
+- Used in: Cycle 19 areas/redhill.html
+- Re-usable for: areas/salfords.html, areas/earlswood.html, areas/horley.html, areas/crawley.html, areas/dorking.html (River Mole), areas/godstone.html (Eden tributaries) — any RH1/RH6/RH4/RH9 page making a runoff/biocide-disposal claim
+
 ### British Geological Survey — Chalk Group lithostratigraphy (Upper Cretaceous)
 - URL: https://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=CK
 - Class: .ac.uk-eligible primary research body (Natural Environment Research Council)
