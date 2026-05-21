@@ -116,3 +116,21 @@ When adding a new finding: include the source, the data, the implication, and wh
 - Q-06 why does moss grow on driveways (primary — Algex is the named product)
 - Q-11 best time of year to clean (primary — manufacturer-specified spring slot)
 - Q-14 / Q-15 Indian sandstone & black spot (Algex is rated for natural stone)
+
+---
+
+## F-007 — North Downs chalk substrate: vertical drainage shifts paving economics
+
+**Established**: 2026-05-21 (Cycle 18 — area pillar #1, Banstead)
+**Source 1**: British Geological Survey — Chalk Group lithostratigraphy — https://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=CK
+**Source 2**: BSI — BS 7533-101:2021 — https://knowledge.bsigroup.com/products/pavements-constructed-with-clay-concrete-or-natural-stone-paving-units-code-of-practice-for-the-structural-design-of-pavements-using-modular-paving-units-1
+
+**Data**: The North Downs between Banstead and Reigate Hill sits on the White Chalk Subgroup (Lewes Nodular Chalk, Seaford Chalk formations), Upper Cretaceous. Chalk is highly permeable and fissured — rainwater moves vertically. Karst solution features are possible at depth, occasionally appearing as localised settlement under old terraces. BS 7533-101 treats the jointing sand in modular paving as load-bearing; rapid drainage preserves jointing sand longer on chalk substrates than on clay-bound substrates further north.
+
+**Why it matters**: This is the single biggest substrate distinction across our Surrey 20-mile radius and it shifts both pricing and recommended cadence. On chalk (SM7, KT20, parts of RH2, RH4, CR3), block paving holds its jointing sand longer, hydrostatic-lift problems under sub-bases are rare, and the re-clean economics tilt toward longer intervals (18–24 months on block paving) provided the annual Lithofin biocide is kept up. Off the chalk (RH1/RH6 alluvium, RH10/RH11 Weald clay), the cadence tightens and the sealing case strengthens. This is a defensible local-data angle no UK competitor publishes.
+
+**Articles using this finding**:
+- Cycle 18 areas/banstead.html (primary — chalk-multiplier matrix)
+- Reusable: areas/reigate.html, areas/dorking.html, areas/caterham.html, areas/epsom.html (any North Downs chalk area)
+- Reusable: areas/redhill.html, areas/horley.html, areas/crawley.html (the "off-chalk" comparison anchor)
+- Reusable: guides/can-pressure-washing-damage-driveway.html (sub-base context), guides/driveway-cleaning-sealing-cost.html (sealing economics by substrate)

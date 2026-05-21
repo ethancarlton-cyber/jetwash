@@ -80,6 +80,102 @@ When adding a new source: append to the relevant section. When citing in an arti
 - Key data: UK national 30-year (1991-2020) averages — useful as comparison baseline
 - Used in: Q-01 (national average reference)
 
+### British Geological Survey — Lower Greensand Group (Folkestone & Hythe Formations)
+- URL: https://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=LGS
+- Class: .ac.uk-eligible primary research body (Natural Environment Research Council)
+- Accessed: 2026-05-21
+- Key data: Lower Greensand Group underlies central RH1 (Redhill, Earlswood, Salfords) in the Vale of Holmesdale. Folkestone Formation: medium-grained, weakly cemented sandstone — moderate drainage. Hythe Formation: harder, occasionally cemented "ragstone". Weald Clay edges appear south and east of Salfords. Practical paving implication: RH1 substrate drains slower than the Banstead chalk to the north; jointing sand washes out faster; hydrostatic-lift problems possible on the Weald-clay edges.
+- Used in: Cycle 19 areas/redhill.html
+- Re-usable for: areas/reigate.html (Lower Greensand under RH2), areas/horley.html (Weald Clay alluvium), areas/merstham.html (chalk dip into Lower Greensand boundary), areas/salfords.html (alluvium over Weald Clay), areas/earlswood.html, areas/nutfield.html
+
+### Environment Agency — Long-term flood risk for an area (surface water flood map)
+- URL: https://check-long-term-flood-risk.service.gov.uk/map
+- Class: .gov.uk primary data
+- Accessed: 2026-05-21
+- Key data: Documents surface-water flood-risk pockets across RH1 — notably Earlswood Common, Salfords corridor, Petridge Wood. Relevant to driveway-cleaning runoff disposal and SUDS compliance for any front-garden paving change.
+- Used in: Cycle 19 areas/redhill.html
+- Re-usable for: areas/salfords.html, areas/earlswood.html, areas/horley.html, areas/crawley.html, areas/dorking.html (River Mole), areas/godstone.html (Eden tributaries) — any RH1/RH6/RH4/RH9 page making a runoff/biocide-disposal claim
+
+### British Geological Survey — Chalk Group lithostratigraphy (Upper Cretaceous)
+- URL: https://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=CK
+- Class: .ac.uk-eligible primary research body (Natural Environment Research Council)
+- Accessed: 2026-05-21
+- Key data: White Chalk Subgroup including Lewes Nodular Chalk and Seaford Chalk formations underlies the North Downs ridge (Banstead–Tadworth–Reigate Hill). Highly permeable, fissured; karst solution features possible at depth. Practical paving implication: chalk substrate drains vertically rather than holding standing water under a sub-base, which materially changes both jointing-sand persistence and moss-regrowth dynamics versus London-clay substrates further north.
+- Used in: Cycle 18 areas/banstead.html
+- Re-usable for: areas/reigate.html (Reigate Hill chalk scarp), areas/dorking.html (chalk + Greensand), areas/caterham.html (chalk dip-slope), areas/epsom.html (chalk + Lambeth Group), all SM7/KT20 area pages
+
+### British Geological Survey — Weald Clay Formation (Lower Cretaceous Wealden Group)
+- URL: https://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=WC
+- Class: .ac.uk-eligible primary research body (Natural Environment Research Council)
+- Accessed: 2026-05-21
+- Key data: Weald Clay Formation, Lower Cretaceous Wealden Group — slow-draining, heavy clay substrate underlying the Surrey Weald south and east of the Lower Greensand ridge. Underlies Horley (RH6), Crawley (RH10/11), parts of southern Reigate (RH2) and the Smallfield/Charlwood/Hookwood corridor. Practical paving implication: rainwater does not move vertically as through chalk; standing water under sub-bases and hydrostatic-lift problems are realistic risks on poorly-detailed drives. Surface-water flood risk pockets common.
+- Used in: Cycle 22 areas/horley.html
+- Re-usable for: areas/crawley.html (RH10/11 Weald Clay), areas/godstone.html (eastern Weald edges), any RH6/RH10/RH11/RH12/RH19 page
+
+### British Geological Survey — Lambeth Group (Palaeogene)
+- URL: https://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=LMBE
+- Class: .ac.uk-eligible primary research body (Natural Environment Research Council)
+- Accessed: 2026-05-21
+- Key data: Lambeth Group, Palaeogene — Reading and Woolwich Formations. Variable sand and clay layers; underlies the north of Epsom (Ewell, Stoneleigh, West Ewell), most of the Sutton/Cheam corridor outside our radius, parts of Croydon. Slower drainage than the chalk to the south; surface-pooling possible on poorly-detailed sub-bases. Substrate boundary with the North Downs chalk runs roughly through Epsom town centre.
+- Used in: Cycle 27 areas/epsom.html
+- Re-usable for: areas/sm7.html (Sutton/Banstead boundary, Lambeth Group fringe), any future Sutton/Cheam coverage if added
+
+### Epsom & Ewell Borough Council — Local Plan
+- URL: https://www.epsom-ewell.gov.uk/residents/planning/planning-policy/local-plan
+- Class: Council planning portal (local authority primary data)
+- Accessed: 2026-05-21
+- Key data: Drainage / SUDS policies for new and replacement front-garden paving >5m² draining to highway, plus conservation-area consent requirements around Epsom town centre / Church Street. The only council for KT17, KT18, KT19 in our radius.
+- Used in: Cycle 27 areas/epsom.html
+- Re-usable for: any future KT17/KT18/KT19 specific page
+
+### Tandridge District Council — Local Plan
+- URL: https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan
+- Class: Council planning portal (local authority primary data)
+- Accessed: 2026-05-21
+- Key data: Drainage / SUDS policies for replacement front-garden paving >5m². Relevant council for CR3 Caterham, RH8 Oxted, RH9 Godstone — the eastern Tandridge corridor across our service radius.
+- Used in: Cycle 24 areas/caterham.html
+- Re-usable for: areas/oxted.html (RH8), areas/godstone.html (RH9), any future Tandridge corridor coverage
+
+### Lithofin Rust-EX (Rost-EX) — Rust Stain Remover product datasheet
+- URL: https://www.lithofin.com/en/products/ceramics-and-natural-stone/lithofin-rost-ex
+- Class: Manufacturer technical datasheet (chemical / consumable)
+- Accessed: 2026-05-21
+- Key data: Oxalic-acid-based trade-grade rust remover. Suitable for natural stone (sandstone, basalt), artificial stone, concrete, block paving. NOT suitable for limestone, marble, or other calcium-carbonate stones (acid etches permanently). Manufacturer-specified dwell + dilution.
+- Used in: Cycle 50 guides/rust-stain-removal-block-paving.html (Q-101)
+- Re-usable for: any future rust / iron-oxide content; substrate-compatibility tables across area pages
+
+### HSE — Control of Substances Hazardous to Health (COSHH)
+- URL: https://www.hse.gov.uk/coshh/
+- Class: .gov.uk (Health and Safety Executive)
+- Accessed: 2026-05-21
+- Key data: Statutory UK framework for the assessment and control of hazardous substances at work. Applies to trade-grade oxalic acid (rust removers), strong biocides, degreasers, and any commercial-grade chemistry. Practical requirements: PPE (gloves, goggles), ventilation, controlled bunding, foul-drain disposal, training and assessment records.
+- Used in: Cycle 50 guides/rust-stain-removal-block-paving.html (Q-101)
+- Re-usable for: commercial-jetwashing.html (commercial chemical handling), any future Lithofin-Oil-EX / acid-based protocol guidance
+
+### Crawley Borough Council — Local Plan
+- URL: https://crawley.gov.uk/planning/planning-policy/local-plan
+- Class: Council planning portal (local authority primary data)
+- Accessed: 2026-05-21
+- Key data: Drainage / SUDS policies for replacement front-garden paving >5m² draining to highway, plus commercial-forecourt design policies affecting Manor Royal and County Oak. Distinct council from RBBC and MVDC — RH10/RH11 specific.
+- Used in: Cycle 23 areas/crawley.html
+- Re-usable for: any RH10/RH11 future page (only Crawley borough is RH10/RH11 in our radius)
+
+### Mole Valley District Council — Local Plan
+- URL: https://www.molevalley.gov.uk/home/planning/planning-policy-and-strategic-sites/our-local-plan/
+- Class: Council planning portal (local authority primary data)
+- Accessed: 2026-05-21
+- Key data: Drainage and SUDS policies applied to new and replacement front-garden paving >5m² draining to highway. Conservation-area consent requirements for Dorking town-centre material changes. Distinct council from Reigate & Banstead — important for any RH4/RH5/KT22 page making a planning claim.
+- Used in: Cycle 21 areas/dorking.html
+- Re-usable for: areas/leatherhead.html (KT22 within MVDC), any future Mickleham/Brockham/Holmwoods coverage
+
+### Reigate & Banstead Borough Council — Local Plan and Development Management Plan
+- URL: https://www.reigate-banstead.gov.uk/info/20144/planning_policy/261/local_plan
+- Class: Council planning portal (.gov.uk-equivalent local authority primary data)
+- Accessed: 2026-05-21
+- Key data: Local Plan and DMP carry drainage and SUDS policies applied to new and replacement front-garden paving. National policy: paving >5m² draining to highway needs planning permission unless permeable or drained to soakaway. Existing paved drives that simply need cleaning are unaffected.
+- Used in: Cycle 18 areas/banstead.html
+- Re-usable for: areas/redhill.html, areas/reigate.html, areas/horley.html (all RBBC area), areas/merstham.html, areas/salfords.html, areas/nutfield.html, areas/earlswood.html — any RH1/RH2/RH6/SM7 page making a sealing/permeability claim
+
 ### ONS / DBT National Living Wage Rates from April 2026
 - URL: https://www.gov.uk/national-minimum-wage-rates
 - Class: .gov.uk
