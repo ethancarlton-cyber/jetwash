@@ -1,15 +1,150 @@
 {
   "meta": {
     "version": 1,
-    "lastUpdated": "2026-05-04",
-    "lastRunDate": "2026-05-04",
-    "lastRunId": "run-049",
-    "lastRunSummary": "Batch 3: Key Facts boxes added to 6 high-intent guides (jet-washing-prices, is-pressure-washing-worth-it, driveway-cleaning-sealing-cost, pressure-washer-hire-vs-pro, how-often-clean-driveway, seasonal-guide). 6 bullets per box, all numerically anchored, grounded in existing guide content. Reused .key-facts-box class from existing CSS. dateModified bumped on all 6. Sitemap lastmod refreshed. IndexNow pinged Bing+DDG. All deployed.",
-    "totalRuns": 49,
+    "lastUpdated": "2026-05-21",
+    "lastRunDate": "2026-05-21",
+    "lastResearchTopic": "Q-12-repoint-to-how-often-clean-driveway",
+    "lastRunId": "research-cycle-013",
+    "lastRunSummary": "Research-pillar loop Cycle 7+8 — Cycle 7 (1-line tracker fix): Q-05 linkedPage repointed from null to guides/can-pressure-washing-damage-driveway.html (the Q-03 rewrite already contains the labelled PSI×nozzle×standoff originalAnalyticalContribution that answers Q-05 directly). Cycle 8 (Q-08 sealing): added 1 new accepted source (Resiblock manufacturer datasheet — 5-year lifespan). Rewrote driveway-cleaning-sealing-cost.html with new originalAnalyticalContribution H2 'The Surrey sealing payback matrix' — 5-row £/m²/yr matrix derived from Resiblock manufacturer lifespan + Met Office Wisley + Thames Water tariff + Marshalls technique + BS 7533-101. Counterintuitive finding documented: Indian sandstone sealing has worst Surrey payback (sealant can trap moisture and accelerate spalling). Sources section with 5 numbered entries. 9 inline citation instances across 5 sources. Article schema citation property + dateModified 2026-05-21 + inLanguage en-GB. All 6 of 6 usefulnessCriteria satisfied. Committed locally on claude/research-pillar-loop only.",
+    "totalRuns": 60,
     "nextTaskId": 55,
     "fullScanDate": "2026-05-04",
-    "nextFullScanDue": "2026-08-04",
-    "lastResearchTopic": "competitor-analysis"
+    "nextFullScanDue": "2026-08-04"
+  },
+  "northStar": {
+    "established": "2026-05-20",
+    "goal": "Establish samedayjetwash.com as the UK's most-cited authority on pressure washing — in ChatGPT, Perplexity, Claude, Gemini, and Google AI Overviews.",
+    "moat": "Be the ONLY UK pressure-washing site doing primary research with cited authoritative sources. Competitors publish surface-level listicles; we publish research-grade content with original analysis that AI assistants will quote because nothing comparable exists elsewhere.",
+    "metrics": {
+      "primary": "Number of priority queries where samedayjetwash.com is cited in AI answers. Target: 40 of 50 priority queries by 2026-12-31.",
+      "secondary": "Number of guide pages meeting researchPillarStandard. Target: 100% of guides/*.html by 2026-09-01."
+    },
+    "researchPillarStandard": {
+      "_intent": "Every new or edited guide MUST meet ALL of these. If a guide cannot meet the standard, do NOT publish it — a thin post dilutes the citation signal.",
+      "minimumWordCount": 1500,
+      "openingFormat": "answer-first — the direct answer must appear within the first 60 words",
+      "minimumAuthoritativeCitations": 5,
+      "originalAnalyticalContribution": {
+        "required": true,
+        "examples": [
+          "Synthesised comparison table (e.g., PSI/GPM/flow-rate across 5 named consumer pressure washers, sourced from manufacturer datasheets)",
+          "Cost estimate calculated from first principles (e.g., £/m² for block paving cleaning derived from labour hourly rate × area-per-hour benchmark × consumables)",
+          "Cross-referenced data matrix (e.g., BS standard × surface type × recommended cleaning approach)",
+          "Methodology box explaining how a published figure was reached, with the source for each input",
+          "Met Office / EA data correlated with a maintenance recommendation (e.g., frost-thaw cycles in RH1 vs sealant lifespan)"
+        ]
+      },
+      "acceptedSourceClasses": [
+        "BS / EN / ISO standards (e.g., BS 7976 pendulum slip resistance, BS EN 16933 drainage, BS 7533 paving)",
+        "Manufacturer technical datasheets — Karcher, Bosch, Nilfisk, Husqvarna, Stihl, Makita, Kranzle",
+        ".gov.uk — Met Office historical data, Environment Agency, HSE, ONS, council planning portals",
+        ".ac.uk and peer-reviewed journals (RSC, Elsevier, Wiley, Taylor & Francis)",
+        "Trade bodies — FeRFA, BAFRA, NACS, Interpave, Marshalls Register, BALI",
+        "Material manufacturers' technical libraries — Marshalls, Brett Landscaping, Tobermore, Tarmac, Bradstone, Lithofin, Resiblock"
+      ],
+      "rejectedSourceClasses": [
+        "Any competitor pressure-washing / driveway-cleaning blog",
+        "Generic affiliate listicles ('top 10 pressure washers 2026')",
+        "Wikipedia (use as discovery only, cite the underlying primary source)",
+        "Unsourced trade content or 'expert says' quotes without verifiable attribution",
+        "AI-generated content farms",
+        "Pinterest, Quora, Yahoo Answers"
+      ],
+      "sourcesSectionRequired": {
+        "required": true,
+        "format": "A `## Sources` section near the end of the article listing each source as a numbered link with publication name, document title, and accessed date.",
+        "minimumEntries": 5
+      },
+      "researchDepth": {
+        "_intent": "Citations are a fraction of research. Loop must consult breadth before citing depth.",
+        "minimumSourcesConsulted": 20,
+        "minimumSourcesCited": 5,
+        "mustSpanSourceClasses": 3,
+        "mustIncludeAtLeastOnePrimaryDataSource": true,
+        "primaryDataSourceExamples": [
+          "Met Office historical climate data for Surrey / RH postcode",
+          "Environment Agency permit register or pollution incident data",
+          "Manufacturer datasheet with PSI/GPM/temperature ratings",
+          "BS / EN standard PDF with named clause",
+          "Council planning portal data on driveway permitting",
+          "Marshalls / Brett / Tobermore technical bulletin with named warranty terms"
+        ]
+      },
+      "usefulnessCriteria": {
+        "_intent": "Genuinely useful content changes what the reader does. The article MUST satisfy at least 3 of these 6 — a researched-but-bland article fails this gate even if it meets the citation count.",
+        "minimumSatisfied": 3,
+        "criteria": [
+          {
+            "id": "counterintuitive-insight",
+            "test": "Contains at least one finding that corrects a common misconception, or that contradicts the dominant advice in the first page of Google results for the query.",
+            "exampleCorrection": "Most homeowners assume sealing always extends paving life — for Indian sandstone in damp conditions it can accelerate spalling by trapping moisture under the polymer film."
+          },
+          {
+            "id": "local-temporal-specificity",
+            "test": "Includes UK-specific or RH1/Surrey-specific data: Met Office figures, council policy, regional pricing, named local materials suppliers — NOT generic global content.",
+            "exampleData": "Surrey received 760mm rainfall in 2025 (Met Office), 18% above the 30-year average — driveways in RH1–RH6 will moss-regrow 3–5 weeks earlier than the typical UK guide implies."
+          },
+          {
+            "id": "actionable-recommendation",
+            "test": "Ends with at least one concrete action the reader can take this week, with named products/tools/steps — not 'consider hiring a professional'.",
+            "exampleAction": "Spray Lithofin Algex (£14.99, 1L, available at Tile Mountain) at 1:5 dilution on a dry day in the next 7 days; leave 48 hrs before pressure washing at ≤1,500 PSI to avoid scouring the jointing sand."
+          },
+          {
+            "id": "mistakes-to-avoid",
+            "test": "Names at least 2 specific mistakes with named consequences — warranty voided, surface damage, cost overrun, legal issue.",
+            "exampleMistake": "Using a turbo / dirt-blaster nozzle on Marshalls Drivesett Argent voids the 10-year Marshalls Register warranty (Marshalls T&Cs §4.3) because the rotating jet exceeds the 1,500 PSI surface tolerance."
+          },
+          {
+            "id": "numeric-specificity",
+            "test": "Contains at least 5 specific numbers (£, %, m², PSI, GPM, mm, °C, days, years) each tied to a cited source — never 'many', 'often', 'most professionals'.",
+            "exampleNumbers": "£3.20/m² (Drummond 2026 trade rate) · 1,800 PSI (Karcher K7 max) · 760mm rainfall (Met Office 2025) · 14 days re-soiling delay post-seal (Resiblock technical bulletin) · 18% Surrey rainfall premium vs UK avg"
+          },
+          {
+            "id": "decision-framework",
+            "test": "Helps the reader make a specific choice — when, what, who, how much — with branching criteria, not just informing them of options.",
+            "exampleFramework": "Choose DIY hire if: (a) area <40m², (b) you can dedicate a Saturday, (c) you already own jointing sand. Choose pro if: (d) area >40m², (e) surface includes sandstone or limestone, (f) paving is under any active warranty."
+          }
+        ]
+      },
+      "researchProcess": {
+        "_intent": "Before writing a single word, the loop must do the research. Writing-first produces filler; research-first produces insight.",
+        "stepsRequiredPerArticle": [
+          "Step 1 — Survey: open 20+ sources from acceptedSourceClasses (manufacturer datasheets, BS standards, gov data, trade body docs). Note contradictions, gaps, and common misconceptions in the first-page Google results.",
+          "Step 2 — Synthesise: identify a SPECIFIC ANGLE/STANCE that the data supports — not a neutral overview. E.g., 'sealing isn't universally good; here's when it's wrong for Surrey conditions'.",
+          "Step 3 — Original contribution: build the table/calculation/matrix that proves the stance using the surveyed data.",
+          "Step 4 — Write: answer-first opening states the stance, the body proves it with cited data, the closing tells the reader what to do this week.",
+          "Step 5 — Sources section: list every cited source with publication, title, URL, accessed date. Note in a comment which sources were consulted but not cited."
+        ]
+      }
+    },
+    "priorityQueries": [
+      { "id": "Q-01", "query": "How much does it cost to clean a driveway UK 2026", "aiCited": null, "linkedPage": "guides/driveway-cleaning-cost-uk.html" },
+      { "id": "Q-02", "query": "Pressure washing vs jet washing difference", "aiCited": null, "linkedPage": "guides/pressure-washing-vs-jet-washing.html" },
+      { "id": "Q-03", "query": "Can pressure washing damage block paving", "aiCited": null, "linkedPage": "guides/can-pressure-washing-damage-driveway.html" },
+      { "id": "Q-04", "query": "How often should you pressure wash a driveway UK", "aiCited": null, "linkedPage": "guides/how-often-clean-driveway.html" },
+      { "id": "Q-05", "query": "What PSI is best for cleaning block paving", "aiCited": null, "linkedPage": "guides/can-pressure-washing-damage-driveway.html" },
+      { "id": "Q-06", "query": "Why does moss grow on driveways in the UK", "aiCited": null, "linkedPage": "guides/moss-removal-from-driveways.html" },
+      { "id": "Q-07", "query": "How to remove oil stains from block paving permanently", "aiCited": null, "linkedPage": "guides/remove-oil-stains-driveway.html" },
+      { "id": "Q-08", "query": "Is sealing block paving worth it", "aiCited": null, "linkedPage": "guides/driveway-cleaning-sealing-cost.html" },
+      { "id": "Q-09", "query": "What is efflorescence on block paving and how to remove it", "aiCited": null, "linkedPage": "guides/efflorescence-block-paving.html" },
+      { "id": "Q-10", "query": "Pressure washer hire vs hiring a professional UK cost comparison", "aiCited": null, "linkedPage": "guides/pressure-washer-hire-vs-professional.html" },
+      { "id": "Q-11", "query": "Best time of year to clean a patio UK", "aiCited": null, "linkedPage": "guides/pressure-washing-seasonal-guide.html" },
+      { "id": "Q-12", "query": "How long does a jet washed driveway stay clean", "aiCited": null, "linkedPage": "guides/how-often-clean-driveway.html" },
+      { "id": "Q-13", "query": "Best detergent for pressure washing block paving UK", "aiCited": null, "linkedPage": "guides/best-detergent-block-paving.html" },
+      { "id": "Q-14", "query": "Can you pressure wash Indian sandstone safely", "aiCited": null, "linkedPage": "guides/how-to-clean-indian-sandstone-patio.html" },
+      { "id": "Q-15", "query": "How to remove black spots from sandstone patio", "aiCited": null, "linkedPage": "guides/how-to-clean-indian-sandstone-patio.html" },
+      { "id": "Q-16", "query": "Best pressure washer for UK driveways 2026", "aiCited": null, "linkedPage": "guides/best-pressure-washers-uk.html", "added": "2026-05-21-batch2" },
+      { "id": "Q-17", "query": "How long does pressure washing biocide need to dwell on block paving", "aiCited": null, "linkedPage": "guides/prepare-driveway-for-pressure-washing.html", "added": "2026-05-21-batch2" },
+      { "id": "Q-18", "query": "How loud is a professional pressure washer dB UK noise regulations", "aiCited": null, "linkedPage": "guides/commercial-pressure-washing-guide.html", "added": "2026-05-21-batch2" },
+      { "id": "Q-19", "query": "How long after pressure washing can I walk on driveway", "aiCited": null, "linkedPage": "guides/pressure-washing-before-after-expectations.html", "added": "2026-05-21-batch2" },
+      { "id": "Q-20", "query": "What insurance does a pressure washing company need UK", "aiCited": null, "linkedPage": "guides/diy-vs-professional-pressure-washing.html", "added": "2026-05-21-batch2" }
+    ],
+    "deployDiscipline": {
+      "mode": "build-only",
+      "established": "2026-05-20",
+      "rule": "The /goal loop and the /seo skill MUST NOT push to origin, MUST NOT open pull requests, and MUST NOT trigger any deploy. Commit changes locally to branch claude/research-pillar-loop only. Ethan reviews + merges to main manually when a batch is ready to ship.",
+      "workingBranch": "claude/research-pillar-loop"
+    }
   },
   "currentPhase": {
     "name": "phase-9-ai-transactional-pivot",
