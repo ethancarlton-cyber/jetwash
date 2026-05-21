@@ -4,6 +4,46 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 18 (COMPLETE) — Area pillar #1: Banstead (SM7) — REWRITE SHIPPED
+
+**Track**: (2c) areas/*.html pillaring. Guides track is complete (Cycles 1-17 pillared all 41 guide pages); now moving into area pages alphabetically.
+
+**Page**: `areas/banstead.html`
+**Status**: ✅ Rewritten and committed locally on `claude/research-pillar-loop`.
+
+**What shipped this cycle**:
+- New top-of-article answer-first H2 ("Why Banstead drives cost 1.3–1.7× what a Redhill drive costs") with the price-floor stance stated in the first 22 words.
+- Labelled OAC: "The Banstead chalk-multiplier matrix" — 6-row table covering block paving, resin-bound, Indian sandstone, porcelain, render and roof on SM7 plot sizes, with Banstead price band + RH1 comparison + re-clean interval + why-it-shifts column. Inputs are BGS chalk-geology, Met Office Wisley rainfall, Lithofin biocide cadence.
+- 5 new analytical H2s: chalk geology section ("What's actually under your Banstead drive"), moss-regrowth cadence section, slip-risk safety case, SUDS / Reigate & Banstead Borough Council planning section, SM7 mistakes that void warranties.
+- "What we actually do on a Banstead job" ordered list — 5 steps tied to Marshalls + Lithofin compliance.
+- 7 inline `<sup>` citations linking to the Sources `<ol>` at the bottom.
+- `<h2 id="sources">Sources</h2>` with 7 numbered entries: Met Office Wisley, BGS Chalk Group lexicon (NEW source), Marshalls, Lithofin Algex, UKSRG/HSE PTV, Reigate & Banstead Borough Council Local Plan (NEW source), BS 7533-101.
+- New Article schema JSON-LD block added alongside the existing Service + BreadcrumbList + FAQPage blocks — citation array (7 entries), datePublished 2026-02-08, dateModified 2026-05-21, inLanguage en-GB.
+- Sitemap lastmod for `/areas/banstead` bumped to 2026-05-21.
+
+**Validation against researchPillarStandard**:
+- ✅ minimumWordCount ≥ 1500 (body word count 2,061 after stripping tags)
+- ✅ openingFormat answer-first (1.3–1.7× cost premium stated in first 22 words)
+- ✅ minimumAuthoritativeCitations ≥ 5 (7 inline `<sup>` citations from acceptedSourceClasses only)
+- ✅ originalAnalyticalContribution labelled in-page ("Original analytical contribution:" sentence before the chalk-multiplier matrix)
+- ✅ sourcesSectionRequired (`## Sources` H2 with 7 entries — publication + title + URL + accessed date)
+- ✅ mustSpanSourceClasses ≥ 3 (.gov.uk Met Office + BS standard + manufacturer Marshalls + manufacturer Lithofin + trade body UKSRG + council Reigate & Banstead + .ac.uk-eligible BGS = 7 classes)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office Wisley climate averages + BGS lithostratigraphy + RBBC planning policy = three)
+- ✅ usefulnessCriteria 5 of 6 satisfied (counterintuitive: chalk drains well so why isn't moss less common; local: SM7/KT20-specific; actionable: 5-step Banstead workflow + clean cadence per surface; mistakes: 3 warranty-voiding mistakes named; numeric: every £ and PTV figure sourced; framework partial)
+
+**Pre-flight checks**:
+- ✅ 0 `.html"` occurrences in href attributes (clean URLs maintained)
+- ✅ 17 instances of phone CTA (header, hero, sticky bar, sources tag, "or call" inline)
+- ✅ 4 JSON-LD blocks all parse as valid JSON (Service + Article + BreadcrumbList + FAQPage)
+
+**Sources newly added to sources-library.md this cycle**: 2 (British Geological Survey Chalk Group lexicon; Reigate & Banstead Borough Council Local Plan / DMP).
+
+**Findings status**: Existing F-001 (Wisley 648mm), F-005 (HSE PTV ≥36), F-006 (Lithofin Algex annual spring biocide), F-002 (£/m² floor) all cited. One new finding added: F-007 (North Downs chalk = excellent vertical drainage + karst risk at depth + jointing sand load-bearing per BS 7533-101 = re-sand every clean is non-optional on SM7).
+
+**Next cycle pick**: **areas/redhill.html** — the home-base RH1 page is the natural next pillar; the Banstead matrix can be re-used with the RH1 baseline + Mercia Mudstone Group geology + Greensand outcrop. Cycle 19 also has the option to pick **areas/reigate.html** as a strong second candidate (premium properties, North Downs scarp). Alphabetical order suggests Betchworth next but the highest-traffic SEO win is Redhill/Reigate.
+
+---
+
 ## 2026-05-21 — Cycle 13 (COMPLETE) — Q-12 how long does a jet washed driveway stay clean — TRACKER REPOINT
 
 **Query**: Q-12 "How long does a jet washed driveway stay clean"

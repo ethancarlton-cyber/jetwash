@@ -80,6 +80,22 @@ When adding a new source: append to the relevant section. When citing in an arti
 - Key data: UK national 30-year (1991-2020) averages — useful as comparison baseline
 - Used in: Q-01 (national average reference)
 
+### British Geological Survey — Chalk Group lithostratigraphy (Upper Cretaceous)
+- URL: https://www.bgs.ac.uk/lexicon/lexicon.cfm?pub=CK
+- Class: .ac.uk-eligible primary research body (Natural Environment Research Council)
+- Accessed: 2026-05-21
+- Key data: White Chalk Subgroup including Lewes Nodular Chalk and Seaford Chalk formations underlies the North Downs ridge (Banstead–Tadworth–Reigate Hill). Highly permeable, fissured; karst solution features possible at depth. Practical paving implication: chalk substrate drains vertically rather than holding standing water under a sub-base, which materially changes both jointing-sand persistence and moss-regrowth dynamics versus London-clay substrates further north.
+- Used in: Cycle 18 areas/banstead.html
+- Re-usable for: areas/reigate.html (Reigate Hill chalk scarp), areas/dorking.html (chalk + Greensand), areas/caterham.html (chalk dip-slope), areas/epsom.html (chalk + Lambeth Group), all SM7/KT20 area pages
+
+### Reigate & Banstead Borough Council — Local Plan and Development Management Plan
+- URL: https://www.reigate-banstead.gov.uk/info/20144/planning_policy/261/local_plan
+- Class: Council planning portal (.gov.uk-equivalent local authority primary data)
+- Accessed: 2026-05-21
+- Key data: Local Plan and DMP carry drainage and SUDS policies applied to new and replacement front-garden paving. National policy: paving >5m² draining to highway needs planning permission unless permeable or drained to soakaway. Existing paved drives that simply need cleaning are unaffected.
+- Used in: Cycle 18 areas/banstead.html
+- Re-usable for: areas/redhill.html, areas/reigate.html, areas/horley.html (all RBBC area), areas/merstham.html, areas/salfords.html, areas/nutfield.html, areas/earlswood.html — any RH1/RH2/RH6/SM7 page making a sealing/permeability claim
+
 ### ONS / DBT National Living Wage Rates from April 2026
 - URL: https://www.gov.uk/national-minimum-wage-rates
 - Class: .gov.uk
