@@ -4,6 +4,31 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 32 (COMPLETE) — Area pillar #15: Chipstead (CR5) — REWRITE SHIPPED
+
+**Track**: (2c). Seventh zero-new-sources cycle in eight. Unique angle: long-drive economics-of-scale matrix — How Lane / Chipstead Valley front drives at 100-300m² are 3-6× the typical RH1 drive.
+
+**Page**: `areas/chipstead.html`
+**Status**: ✅ Rewritten and committed locally.
+
+**What shipped**:
+- Answer-first H2 ("Why Chipstead drives cost more per job but less per m²") with the long-drive economics stance in 60 words.
+- Labelled OAC: "The Chipstead long-drive economics matrix" — 5-row table mapping drive size band against absolute job price band, effective £/m², cadence and notes. Shows £/m² drops from £4.50 at 50m² to £2.50 at 300m² because fixed setup doesn't scale.
+- 5 new analytical H2s: chalk substrate + historical chalk pit, leaf-mulch economics (1-3kg/m² oak/beech/chestnut), slip-risk on long shaded drives, RBBC SUDS gate (matters on re-lays >100m²), CR5 mistakes, 7-step Chipstead workflow.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries (re-introduces BS 7533-101 for jointing-sand load-bearing context).
+- New Article schema JSON-LD — citation (7), dateModified 2026-05-21, en-GB.
+- Sitemap lastmod bumped to 2026-05-21.
+
+**Validation**: word 1,795 (≥1500) · 7 citations · OAC labelled · 7 source classes · 6/6 usefulness · 0 .html in href · 17 phone CTAs · 4 JSON-LD parse.
+
+**Sources newly added**: **0** — seventh compounding cycle in eight. Library at 24.
+
+**Findings status**: F-007 substrate-economics framework. F-008 microclimate + F-009 heritage both ready for promotion. F-010 motorway-corridor at 3-area threshold. CR5 introduces a non-promoted but useful pattern: scale economics on per-m² rates with fixed-cost crossover at ~80m².
+
+**Next cycle pick**: **areas/earlswood.html** (RH1) — south Redhill, alluvium + Weald Clay, RBBC. Predicted zero new sources.
+
+---
+
 ## 2026-05-21 — Cycle 31 (COMPLETE) — Area pillar #14: Betchworth (RH3) — REWRITE SHIPPED
 
 **Track**: (2c). Sixth zero-new-sources cycle in seven. First page where two finding-axes apply simultaneously: Mole Valley microclimate (Cycle 21 Dorking) + heritage-property soft-wash (Cycle 26 Godstone) — produces the tightest pure-residential cadence in our radius.
