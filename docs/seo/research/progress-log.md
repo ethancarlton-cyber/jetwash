@@ -4,6 +4,49 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 52 (COMPLETE) — Task (2f): NEW guide + Q-103 — limestone &amp; marble acid-free protocol pillar
+
+**Track**: (2f) DISCOVER GAP. Third consecutive new-pillar cycle. This is the explicit negative-space companion to Cycle 50's Q-101 rust pillar, which flagged limestone / marble as DO-NOT-USE-ACID. The chemistry rationale (CaCO&#8323; + acid &rarr; CaCl&#8322; + CO&#8322; + H&#8322;O dissolves the stone) needed its own pillar with hard substrate-compatibility rules.
+
+**New page**: `guides/limestone-marble-cleaning-uk.html` — 1,629 words, 7 sources, 17 inline `<sup>` citations.
+
+**Q-103 added**: "How to clean limestone and marble patio UK safely without etching" → `guides/limestone-marble-cleaning-uk.html`.
+
+**OAC**: "The limestone-and-marble substrate-compatibility matrix" — 6-row table mapping UK natural-stone categories (limestone, marble, Indian sandstone, York stone, slate, granite) against composition, safe chemistry and prohibited chemistry. Uniquely calls out the chemistry rationale (CaCO&#8323; vs SiO&#8322;) that determines whether acid attack will occur.
+
+**6 analytical H2s** beyond the OAC: chemistry-behind-the-rule (with the actual reaction equation), what pH-neutral cleaning means in practice, where limestone shows up in Surrey gardens, Surrey microclimate effect on cadence, slip-risk PTV thresholds, HSE COSHH for trade-grade pH-neutral products, the DIY decision framework, 6-step limestone workflow, 4 common limestone mistakes.
+
+**Sources newly added to sources-library.md**: 0 — all 7 citations reuse existing library entries (Lithofin pH-neutral range, Lithofin Algex, Marshalls, BSI, Met Office Wisley, UKSRG/HSE, HSE COSHH). Library remains at 26 entries.
+
+**Validation**:
+- ✅ minimumWordCount 1,629 (≥1,500)
+- ✅ openingFormat answer-first (CaCO&#8323; / acid-reaction stance + Lithofin pH-neutral protocol in first 60 words)
+- ✅ minimumAuthoritativeCitations 17 inline `<sup>` (vs 5 required)
+- ✅ originalAnalyticalContribution labelled in-page
+- ✅ sourcesSectionRequired (Sources H2 with 7 entries)
+- ✅ mustSpanSourceClasses ≥ 3 (Lithofin manufacturer × 2 + Marshalls + BSI + Met Office + UKSRG/HSE + HSE COSHH = 5 distinct classes)
+- ✅ mustIncludeAtLeastOnePrimaryDataSource (Met Office Wisley + HSE COSHH = two .gov.uk primary)
+- ✅ usefulnessCriteria 6 of 6 (counterintuitive: vinegar / lemon juice / Patio Magic all etch limestone; local: Reigate Hill / Kingswood / KT18 premium gardens named; actionable: 6-step workflow with vinegar test-patch; mistakes: 4 named limestone mistakes; numeric: pH 7 / pH 9-11 / pH 3-5 ranges sourced; framework: substrate × safe-chemistry hard rules)
+
+**Pre-flight checks**:
+- ✅ 0 `.html"` in href
+- ✅ 13 phone CTA instances
+- ✅ 3 JSON-LD blocks parse (Article + BreadcrumbList + FAQPage)
+- ✅ Article schema has citation array (7), inLanguage en-GB, dateModified 2026-05-21
+
+**Findings status**: F-012-candidate (substrate-compatibility ruleset for acid chemistry) introduced in Cycle 50 now has its own dedicated pillar, materially strengthening the cross-cycle finding. Worth promoting to formal F-012 once a third area also touches it (likely Q-104 / Q-105 candidates).
+
+**Stop condition status**:
+- ✅ (a) priorityQueries.length now 103 (up from 102)
+- ✅ (c) all 73 pillared pages have Sources H2 (5+) AND OAC AND ≥5 inline citations
+- ⏳ (b) aiCited: still 0/103 (Ethan-manual)
+- ✅ (d) sources verified within 30 days (holds until 2026-06-20)
+- ⏳ (e) ≥70/103 AI-cited (requires b)
+
+**Next cycle pick**: Continue task (2f). Candidates: (i) Q-104 water-consumption-per-clean economics (Thames Water tariff + Karcher K7 GPM at a metered tariff), (ii) Q-105 pressure-washing repair-after-DIY-damage paths (BS 7533-101 sub-base repair + Marshalls Register warranty paths), (iii) Q-106 pressure-washing electrical safety + RCD requirements (HSE PUWER + BS 7671 wiring regs).
+
+---
+
 ## 2026-05-21 — Cycle 51 (COMPLETE) — Task (2f): NEW guide + Q-102 — winter / frost-day pressure-washing pillar
 
 **Track**: (2f) DISCOVER GAP. Second consecutive new-pillar cycle. Existing pages on the site discuss "best time of year to clean" (Q-11 seasonal, Q-22 best-time-patio) but none have a frost-day operational decision matrix grounded in manufacturer operating-temperature minimums + Met Office Surrey frost-day baselines. This is the practical question every customer asks December-February and there was no dedicated guide.

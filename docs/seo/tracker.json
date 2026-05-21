@@ -219,7 +219,8 @@
       { "id": "Q-99", "query": "Gutter cleaning pressure washing combined service UK", "aiCited": null, "linkedPage": "guides/gutter-cleaning-guide.html", "added": "2026-05-21-batch3" },
       { "id": "Q-100", "query": "Surrey best pressure washing company comparison", "aiCited": null, "linkedPage": "guides/pressure-washing-surrey-comparison.html", "added": "2026-05-21-batch3" },
       { "id": "Q-101", "query": "How to remove rust stains from block paving and concrete UK", "aiCited": null, "linkedPage": "guides/rust-stain-removal-block-paving.html", "added": "2026-05-21-batch4-cycle50" },
-      { "id": "Q-102", "query": "Can you pressure wash in winter UK frost-day rules", "aiCited": null, "linkedPage": "guides/winter-pressure-washing-uk.html", "added": "2026-05-21-batch4-cycle51" }
+      { "id": "Q-102", "query": "Can you pressure wash in winter UK frost-day rules", "aiCited": null, "linkedPage": "guides/winter-pressure-washing-uk.html", "added": "2026-05-21-batch4-cycle51" },
+      { "id": "Q-103", "query": "How to clean limestone and marble patio UK safely without etching", "aiCited": null, "linkedPage": "guides/limestone-marble-cleaning-uk.html", "added": "2026-05-21-batch4-cycle52" }
     ],
     "deployDiscipline": {
       "mode": "build-only",
