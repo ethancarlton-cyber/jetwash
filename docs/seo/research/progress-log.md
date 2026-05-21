@@ -4,6 +4,31 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 34 (COMPLETE) — Area pillar #17: Nutfield (RH1) — REWRITE SHIPPED
+
+**Track**: (2c). Ninth zero-new-sources cycle in ten. Nutfield rural-fringe matrix uses the Oxted Limpsfield Chart clay-tracking pattern (Cycle 25) on a smaller scale.
+
+**Page**: `areas/nutfield.html`
+**Status**: ✅ Rewritten and committed locally.
+
+**What shipped**:
+- Answer-first H2 ("Why Nutfield needs a different cleaning playbook from the rest of RH1") with the rural-fringe + Wealden-clay-tracking + period-material stance in 60 words.
+- Labelled OAC: "The Nutfield rural-fringe contamination matrix" — 5-row table mapping location × substrate / contamination × price band × cadence × notes. £30-80 clay-tracking pre-treat surcharge on rural-lane properties.
+- 5 new analytical H2s: substrate split, Wealden clay tracking + rural-lane access, period York stone + Surrey sandstone protocols, RBBC SUDS gate, RH1 Nutfield mistakes, 8-step Nutfield workflow.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD — citation (7), dateModified 2026-05-21, en-GB.
+- Sitemap lastmod bumped to 2026-05-21.
+
+**Validation**: word 1,640 (≥1500) · 7 citations · OAC labelled · 7 source classes · 6/6 usefulness · 0 .html in href · 17 phone CTAs · 4 JSON-LD parse.
+
+**Sources newly added**: **0** — ninth compounding cycle in ten. Library at 24.
+
+**Findings status**: F-007 substrate framework; F-008 microclimate (3 areas, promotable); F-009 heritage (2 areas, promotable); F-010 motorway-corridor (3 areas, promotable); F-011 rural-lane Wealden-clay tracking (Oxted + Nutfield = 2 areas, promotable). Will write a batch findings update at end of areas track.
+
+**Next cycle pick**: **areas/rh2.html** — Reigate postcode page, shares all sources/angles with areas/reigate.html. Predicted zero new sources.
+
+---
+
 ## 2026-05-21 — Cycle 33 (COMPLETE) — Area pillar #16: Earlswood (RH1) — REWRITE SHIPPED
 
 **Track**: (2c). Eighth zero-new-sources cycle in nine. Earlswood is the third microclimate-driven area (after Dorking + Betchworth), confirming F-008 microclimate as a cross-cutting finding.
