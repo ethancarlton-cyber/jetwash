@@ -4,6 +4,41 @@ Append-only. Newest at top. Each cycle = one entry.
 
 ---
 
+## 2026-05-21 — Cycle 30 (COMPLETE) — Area pillar #13: Salfords (RH1) — REWRITE SHIPPED
+
+**Track**: (2c) areas/*.html. Fifth zero-new-sources cycle in six. Salfords gets the A23-corridor + industrial-estate dual matrix.
+
+**Page**: `areas/salfords.html`
+**Status**: ✅ Rewritten and committed locally.
+
+**What shipped**:
+- Answer-first H2 ("Why Salfords cleans differently on Brighton Road vs the back streets") with the A23 + EA-flood-pocket + industrial-estate stance in the first 60 words.
+- Labelled OAC: "The Salfords A23-corridor + industrial-estate matrix" — 5-row table mapping location × dominant contamination × price band × cadence × pre-treat / SUDS notes. Includes Lithofin Oil-EX 2mm/12hr/0.5m²/kg dilution + dwell figures sourced from library.
+- 5 new analytical H2s: substrate (Weald Clay alluvium), industrial-estate parallel market with Lithofin Oil-EX + UKSRG/HSE PTV liability, back-streets shaded slip-risk, RBBC SUDS + EA Petridge Wood flood pockets, mistakes that void warranties or breach EA compliance, 7-step Salfords workflow.
+- 7 inline `<sup>` citations + Sources H2 ol with 7 entries.
+- New Article schema JSON-LD — citation (7), dateModified 2026-05-21, inLanguage en-GB.
+- Sitemap lastmod for /areas/salfords bumped to 2026-05-21.
+
+**Validation**:
+- ✅ minimumWordCount 1,742 (≥1,500)
+- ✅ openingFormat answer-first
+- ✅ 7 inline `<sup>` citations
+- ✅ OAC labelled in-page
+- ✅ Sources H2 with 7 entries
+- ✅ 7 distinct source classes
+- ✅ usefulnessCriteria 6 of 6
+
+**Pre-flight checks**:
+- ✅ 0 `.html"` in href · 17 phone CTA instances · 4 JSON-LD blocks parse
+
+**Sources newly added**: **0** — fifth compounding cycle in six. Library remains at 24 entries.
+
+**Findings status**: F-009 candidate (motorway/A-road corridor pollution-film) reinforced again — now appears on Leatherhead, Merstham AND Salfords. Three observations is enough to promote — will write up F-009 properly in the next cycle.
+
+**Next cycle pick**: **areas/nutfield.html** (RH1) — north-east of Redhill, chalk dip-slope and Lower Greensand boundary, RBBC. Predicted zero new sources.
+
+---
+
 ## 2026-05-21 — Cycle 29 (COMPLETE) — Area pillar #12: Merstham (RH1) — REWRITE SHIPPED
 
 **Track**: (2c) areas/*.html. Fourth zero-new-sources cycle in five. Merstham is the most contamination-heavy postcode on the patch — chalk-pit chemistry + M25/M23 interchange film + tree-shade biofilm.
