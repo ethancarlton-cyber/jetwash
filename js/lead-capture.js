@@ -4,8 +4,9 @@
 //      instead of being teleported to a blank /quote page.
 //   2. Their name / postcode / email are stashed in sessionStorage so /quote
 //      can prefill the rest of the fields if they want a precise quote.
-// The full /quote page form (id="quoteForm") is NOT handled here — it has its
-// own handler in form.js.
+// The full /quote page form (id="quoteForm") is ALSO handled here — it submits
+// via AJAX and shows the same in-page success state (the legacy form.js handler
+// is orphaned/incompatible and is no longer used).
 
 (function () {
   function escapeHtml(s) {
@@ -91,9 +92,10 @@
           if (window.JWAnalytics && typeof JWAnalytics.trackQuoteSubmit === 'function') {
             try {
               JWAnalytics.trackQuoteSubmit({
-                source: 'lightweight',
+                source: form.id === 'quoteForm' ? 'quote_page' : 'lightweight',
                 postcode_area: postcodeArea(postcode),
-                contact_type: 'email'
+                contact_type: 'email',
+                service: (form.querySelector('[name="service"]') || {}).value || null
               });
             } catch (err) {}
           }
@@ -113,8 +115,6 @@
   function attachHandlers() {
     var forms = document.querySelectorAll('form.quote-form');
     Array.prototype.forEach.call(forms, function (form) {
-      // Skip the full /quote page form — it has its own handler.
-      if (form.id === 'quoteForm') return;
       // Only handle Web3Forms submissions.
       if (!form.action || form.action.indexOf('api.web3forms.com') === -1) return;
       // Idempotent — don't double-bind if script loads twice.
