@@ -222,12 +222,19 @@
                     <div class="calc-group">
                         <label class="calc-label" for="surface-type">Surface type</label>
                         <select id="surface-type" class="calc-input">
-                            <option value="driveway">Driveway</option>
-                            <option value="patio">Patio</option>
-                            <option value="block-paving">Block paving</option>
-                            <option value="decking">Decking</option>
-                            <option value="render">Render / walls</option>
-                            <option value="commercial">Commercial</option>
+                            <optgroup label="Per m² (instant estimate)">
+                                <option value="driveway">Driveway</option>
+                                <option value="patio">Patio</option>
+                                <option value="block-paving">Block paving</option>
+                                <option value="decking">Decking</option>
+                                <option value="render">Render / walls</option>
+                                <option value="commercial">Commercial</option>
+                            </optgroup>
+                            <optgroup label="Priced per job (tailored quote)">
+                                <option value="window">Window cleaning</option>
+                                <option value="fascia">Fascia, soffit &amp; cladding</option>
+                                <option value="solar">Solar panel cleaning</option>
+                            </optgroup>
                         </select>
                     </div>
 
@@ -413,6 +420,15 @@
 
         var minimumCharge = 80;
 
+        // Surfaces where an honest per-m² figure isn't defensible (priced per panel /
+        // per roofline / per access setup). Route these to a tailored quote rather than
+        // inventing a precise number.
+        var tailoredOnly = {
+            'window': { label: 'Window cleaning', note: 'Window cleaning is priced per property — it depends on the number of windows, storeys and access, not floor area. Tell us about the job for an exact price.' },
+            'fascia': { label: 'Fascia, soffit & cladding', note: 'Fascia, soffit and cladding cleaning is priced per roofline run and by access (height and reach), so it doesn’t fit a per-m² estimate. Get a quick tailored quote.' },
+            'solar':  { label: 'Solar panel cleaning', note: 'Solar panel cleaning is priced per panel and by roof access, not by area. Tell us your panel count for an exact price.' }
+        };
+
         var presetBtns = document.querySelectorAll('.preset-btn');
         var areaInput = document.getElementById('area-size');
 
@@ -436,6 +452,23 @@
             var hasSealing = document.getElementById('extra-sealing').checked;
             var hasMoss = document.getElementById('extra-moss').checked;
             var hasWeed = document.getElementById('extra-weed').checked;
+
+            // Tailored-quote surfaces: no honest per-m² number, so route to a quote.
+            if (tailoredOnly[surface]) {
+                var t = tailoredOnly[surface];
+                document.getElementById('result-placeholder').style.display = 'none';
+                document.getElementById('result-content').style.display = 'block';
+                document.getElementById('result-amount').textContent = 'Tailored quote';
+                document.getElementById('result-breakdown').innerHTML =
+                    '<div class="result-breakdown-item"><span>' + t.label + '</span><span>Priced per job</span></div>';
+                document.querySelector('#result-content .result-note').textContent = t.note;
+                var quoteLinkT = document.getElementById('quote-cta-link');
+                if (quoteLinkT) {
+                    quoteLinkT.href = '/quote?service=' + encodeURIComponent(surface);
+                    quoteLinkT.textContent = 'Get a tailored quote';
+                }
+                return;
+            }
 
             if (!area || area < 1) {
                 areaInput.focus();
@@ -505,6 +538,9 @@
             document.getElementById('result-placeholder').style.display = 'none';
             document.getElementById('result-content').style.display = 'block';
             document.getElementById('result-amount').textContent = '£' + totalLow + ' - £' + totalHigh;
+            // Restore the standard estimate note + CTA (may have been swapped by a tailored surface)
+            document.querySelector('#result-content .result-note').textContent =
+                'An estimate based on typical UK 2026 rates. Actual cost depends on access, condition and exact dimensions. £80 minimum applies.';
 
             var breakdownHtml = '';
             for (var i = 0; i < breakdownItems.length; i++) {
@@ -518,6 +554,7 @@
             // Update "Get an Exact Quote" link with calculator state
             var quoteLink = document.getElementById('quote-cta-link');
             if (quoteLink) {
+                quoteLink.textContent = 'Get an exact quote';
                 var params = '?surface=' + encodeURIComponent(surface)
                     + '&area=' + encodeURIComponent(area)
                     + '&condition=' + encodeURIComponent(condition)

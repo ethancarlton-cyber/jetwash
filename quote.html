@@ -160,6 +160,9 @@
                                     <option value="gutter">Gutter cleaning</option>
                                     <option value="soft-wash">Soft washing</option>
                                     <option value="commercial">Commercial</option>
+                                    <option value="window">Window cleaning</option>
+                                    <option value="fascia">Fascia, soffit &amp; cladding</option>
+                                    <option value="solar">Solar panel cleaning</option>
                                     <option value="other">Other</option>
                                 </select>
                             </label>
@@ -332,7 +335,8 @@
     // Pre-fill service from calculator URL parameters; NEVER prefill postcode
     (function() {
         var params = new URLSearchParams(window.location.search);
-        var surface = params.get('surface');
+        // Accept either ?surface= (from the calculator) or ?service= (service-page deep-links)
+        var surface = params.get('surface') || params.get('service');
         if (!surface) return;
         var serviceMap = {
             'driveway': 'driveway',
@@ -340,7 +344,10 @@
             'block-paving': 'block-paving',
             'decking': 'decking',
             'render': 'render',
-            'commercial': 'commercial'
+            'commercial': 'commercial',
+            'window': 'window',
+            'fascia': 'fascia',
+            'solar': 'solar'
         };
         var serviceSelect = document.getElementById('service');
         if (serviceSelect && serviceMap[surface]) {

@@ -11,6 +11,9 @@
 - Roof cleaning
 - Gutter cleaning
 - Soft washing
+- Window cleaning
+- Fascia, soffit & cladding cleaning
+- Solar panel cleaning
 
 ## Tools
 - Cost Calculator: /calculator — Free instant pressure washing cost estimator. Calculates prices based on surface type, area size, condition, and optional extras like sealing and moss removal. Based on UK 2026 market rates.
@@ -46,6 +49,31 @@ Reigate, Redhill, Horley, Crawley, Epsom, Banstead, Caterham, Oxted, Leatherhead
 - Render Cleaning Guide: /guides/render-cleaning-guide — Soft washing costs for K-Rend, monocouche, and silicone render, including why pressure washing causes damage to render surfaces
 - Decking Cleaning Guide: /guides/decking-cleaning-guide — Timber and composite decking cleaning costs, safety risks, oiling costs, and seasonal maintenance schedules
 - Commercial Pressure Washing Guide: /guides/commercial-pressure-washing-guide — Costs for car parks, forecourts, hotels, and offices, including regulations and maintenance contracts
+
+## Window Cleaning Guides
+- How Often Should You Clean Windows: /guides/how-often-should-you-clean-windows — Recommended cleaning frequency for homes by location, exposure, and window type
+- Window Cleaning Cost Surrey: /guides/window-cleaning-cost-surrey — Typical Surrey window cleaning prices by house size and method (pure water pole vs traditional)
+- Why Windows Look Spotty After Cleaning: /guides/why-windows-look-spotty-after-cleaning — Causes of streaks and water spots and how pure-water systems prevent them
+
+## Fascia, Soffit & Cladding Guides
+- Fascia & Soffit Cleaning Cost UK: /guides/fascia-soffit-cleaning-cost-uk — Pricing for fascia, soffit, and cladding cleaning by property size and access
+- Black Streaks on Fascia Removal: /guides/black-streaks-on-fascia-removal — Why uPVC fascias go streaky and how to remove black algae and oxidation safely
+- How Often to Clean Fascias, Soffits & Gutters: /guides/how-often-clean-fascias-soffits-gutters — Maintenance schedule for roofline cleaning to prevent staining and blockages
+
+## Solar Panel Cleaning Guides
+- Solar Panel Cleaning Cost UK: /guides/solar-panel-cleaning-cost-uk — Per-panel and per-system pricing, plus the output gains clean panels deliver
+- How Often to Clean Solar Panels UK: /guides/how-often-clean-solar-panels-uk — Recommended cleaning frequency by location, pitch, and surrounding environment
+- DIY vs Professional Solar Panel Cleaning: /guides/diy-vs-professional-solar-panel-cleaning — Safety, warranty, and results comparison for cleaning panels yourself vs hiring a pro
+
+## Gutter Cleaning Guides
+- How Often to Clean Gutters: /guides/how-often-clean-gutters — Recommended gutter cleaning frequency by tree cover and roof type
+- Gutter Vacuum vs Ladder: /guides/gutter-vacuum-vs-ladder — Comparing ground-level vacuum extraction with traditional ladder clearing for safety and results
+- Blocked Gutter Overflowing: /guides/blocked-gutter-overflowing — Warning signs of blocked gutters, the damage overflow causes, and how to fix it
+
+## Roof Cleaning Guides
+- Does Roof Cleaning Damage Tiles: /guides/does-roof-cleaning-damage-tiles — Why high pressure damages tiles and how soft washing cleans safely
+- How Often to Clean a Roof: /guides/how-often-clean-roof — Recommended roof cleaning frequency and the signs moss is causing harm
+- Roof Cleaning Before Selling a House: /guides/roof-cleaning-before-selling-house — How a clean roof affects buyer perception, surveys, and sale value
 
 ## Essential Resources
 - 50 Pressure Washing Questions Answered: /guides/pressure-washing-faq-50-questions — Comprehensive FAQ covering costs, safety, surfaces, equipment, and common concerns for UK homeowners
