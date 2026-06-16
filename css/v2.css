@@ -214,9 +214,26 @@ p { margin: 0 0 var(--space-3); }
     padding: 10px 18px;
     font-size: 0.9375rem;
 }
+/* Phone promoted to primary accent button in header */
+.header-cta__call {
+    display: none;
+    padding: 10px 18px;
+    font-size: 0.9375rem;
+    background: var(--accent);
+    color: var(--surface);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+.header-cta__call:hover {
+    background: var(--accent-hover);
+    color: var(--surface);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
 @media (min-width: 768px) {
     .nav-desktop { display: flex; }
     .header-cta__phone { display: inline-flex; }
+    .header-cta__call { display: inline-flex; }
     .header-cta__phone-icon { display: none; }
 }
 /* Header fits 390px viewport: tighten padding + shrink brand + shrink quote btn */
@@ -910,6 +927,91 @@ p { margin: 0 0 var(--space-3); }
 }
 
 /* ============================================================
+   In-guide CTA blocks + responsive tables (legacy guide classes)
+   ============================================================ */
+.urgency-block {
+    background: var(--mist);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-md);
+    padding: var(--space-3);
+    margin: var(--space-4) 0;
+}
+.urgency-block p { margin: 0; }
+
+.inline-cta {
+    background: var(--ink);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4) var(--space-3);
+    margin: var(--space-4) 0;
+    text-align: center;
+    color: var(--surface);
+}
+.inline-cta strong {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--surface);
+    margin-bottom: var(--space-3);
+    line-height: 1.25;
+}
+.inline-cta p { margin: var(--space-2) 0 0; color: rgba(255,255,255,0.85); }
+.inline-cta p a { color: var(--surface); font-weight: 700; }
+
+.btn-inline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border-radius: var(--radius-md);
+    background: var(--accent);
+    color: var(--surface);
+    font-weight: 700;
+    font-size: 1.0625rem;
+    text-decoration: none;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-inline:hover {
+    background: var(--accent-hover);
+    color: var(--surface);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.bridge-cta {
+    background: var(--mist);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4) var(--space-3);
+    margin: var(--space-4) 0;
+    text-align: center;
+}
+.bridge-cta h3 { margin: 0 0 var(--space-2); }
+.bridge-cta p { margin: 0 0 var(--space-3); color: var(--muted); }
+
+.table-responsive {
+    overflow-x: auto;
+    margin: var(--space-3) 0;
+    -webkit-overflow-scrolling: touch;
+}
+.table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+}
+.table-responsive th,
+.table-responsive td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid var(--line);
+}
+.table-responsive thead th {
+    background: var(--mist);
+    border-bottom: 2px solid var(--line);
+    font-weight: 700;
+}
+
+/* ============================================================
    Mobile sticky bar
    ============================================================ */
 .sticky-cta {
@@ -956,3 +1058,48 @@ body { padding-bottom: 70px; }
 }
 
 .vh { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+/* ============================================================
+   Quote page — top contact bar (call / WhatsApp co-equal with form)
+   Appended for Wave 1 CRO. Mobile-first.
+   ============================================================ */
+.quote-contact-bar {
+    background: var(--mist);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: var(--space-3);
+    margin-bottom: var(--space-3);
+}
+.quote-contact-bar__lead {
+    margin: 0 0 var(--space-2);
+    font-size: 1rem;
+    color: var(--ink);
+}
+.quote-contact-bar__actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+}
+.quote-contact-bar__btn {
+    width: 100%;
+}
+.quote-contact-bar__hours {
+    margin: var(--space-2) 0 0;
+    font-size: 0.8125rem;
+    color: var(--muted);
+    text-align: center;
+}
+.btn--whatsapp {
+    background: #25D366;
+    color: #ffffff;
+    box-shadow: var(--shadow-sm);
+}
+.btn--whatsapp:hover {
+    background: #1ebe5b;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+@media (min-width: 560px) {
+    .quote-contact-bar__actions { grid-template-columns: 1fr 1fr; }
+}
