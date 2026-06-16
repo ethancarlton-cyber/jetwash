@@ -61,9 +61,8 @@
     banner.setAttribute('aria-label', 'Cookie consent');
     banner.innerHTML = [
       '<div class="jw-consent-text">',
-      'We use cookies and analytics to understand how visitors use this site so we can make it better. ',
-      'No data is sold or shared with advertisers. ',
-      '<a href="/privacy">Privacy policy</a>.',
+      'We use cookies for analytics to improve this site. ',
+      '<a href="/privacy">Privacy</a>.',
       '</div>',
       '<div class="jw-consent-buttons">',
       '<button type="button" id="jw-consent-deny" class="jw-consent-btn jw-consent-deny">Decline</button>',
@@ -85,16 +84,16 @@
     var s = document.createElement('style');
     s.id = 'jw-consent-styles';
     s.textContent = [
-      '#jw-consent-banner{position:fixed;bottom:0;left:0;right:0;background:#1D3557;color:#fff;padding:1rem 1.25rem;z-index:9999;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;font-family:Inter,system-ui,sans-serif;font-size:.95rem;line-height:1.4;box-shadow:0 -4px 16px rgba(0,0,0,.2)}',
-      '#jw-consent-banner .jw-consent-text{flex:1 1 320px;min-width:280px}',
+      '#jw-consent-banner{position:fixed;bottom:0;left:0;right:0;background:#1D3557;color:#fff;padding:.7rem 1rem;z-index:9999;display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;font-family:Inter,system-ui,sans-serif;font-size:.85rem;line-height:1.35;box-shadow:0 -4px 16px rgba(0,0,0,.2)}',
+      '#jw-consent-banner .jw-consent-text{flex:1 1 320px;min-width:200px}',
       '#jw-consent-banner a{color:#90CDF4;text-decoration:underline}',
-      '#jw-consent-banner .jw-consent-buttons{display:flex;gap:.5rem}',
-      '#jw-consent-banner .jw-consent-btn{font-family:inherit;font-size:.95rem;padding:.6rem 1.2rem;border-radius:9999px;cursor:pointer;font-weight:600;border:none;transition:transform .1s ease,opacity .15s ease}',
+      '#jw-consent-banner .jw-consent-buttons{display:flex;gap:.5rem;flex:0 0 auto}',
+      '#jw-consent-banner .jw-consent-btn{font-family:inherit;font-size:.85rem;padding:.45rem 1rem;border-radius:9999px;cursor:pointer;font-weight:600;border:none;transition:transform .1s ease,opacity .15s ease}',
       '#jw-consent-banner .jw-consent-btn:hover{transform:translateY(-1px)}',
       '#jw-consent-banner .jw-consent-accept{background:#2196F3;color:#fff}',
       '#jw-consent-banner .jw-consent-deny{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}',
       '#jw-consent-banner .jw-consent-btn:focus{outline:2px solid #fff;outline-offset:2px}',
-      '@media (max-width:480px){#jw-consent-banner{flex-direction:column;align-items:stretch;text-align:center}#jw-consent-banner .jw-consent-buttons{justify-content:center}}'
+      '@media (max-width:600px){#jw-consent-banner{padding:.5rem .7rem;gap:.4rem .5rem;font-size:.76rem;line-height:1.3}#jw-consent-banner .jw-consent-text{flex:1 1 100%;min-width:0}#jw-consent-banner .jw-consent-buttons{width:100%;justify-content:flex-end;gap:.4rem}#jw-consent-banner .jw-consent-btn{padding:.38rem .85rem;font-size:.76rem}}'
     ].join('');
     if (document.head) document.head.appendChild(s);
     else document.addEventListener('DOMContentLoaded', function() { document.head.appendChild(s); });
