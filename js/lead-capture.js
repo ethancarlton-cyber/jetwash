@@ -25,6 +25,38 @@
     return m ? m[1] : null;
   }
 
+  // Permissive email: local@domain.tld.
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
+
+  // Normalise a UK phone to national digits (leading 0) so we validate by digit
+  // count, not a rigid pattern — accepts +44, 0044, (0), brackets, spaces, hyphens.
+  function normaliseUkPhone(value) {
+    var digits = (value || '').replace(/[^\d+]/g, '');
+    digits = digits
+      .replace(/^\+44/, '0')
+      .replace(/^0044/, '0')
+      .replace(/^44(?=\d{9,})/, '0');
+    digits = digits.replace(/\D/g, '');
+    digits = digits.replace(/^00(?=\d)/, '0');
+    return /^0[123789]\d{8,9}$/.test(digits) ? digits : '';
+  }
+
+  // Valid if EITHER a valid email OR a valid UK phone is present.
+  function validateContact(value) {
+    var cleaned = (value || '').trim();
+    if (!cleaned) {
+      return { valid: false, message: 'Please add a phone number or email so we can reach you' };
+    }
+    if (cleaned.indexOf('@') !== -1) {
+      return emailRegex.test(cleaned)
+        ? { valid: true, type: 'email', value: cleaned }
+        : { valid: false, message: 'That email doesn’t look right — please check it' };
+    }
+    return normaliseUkPhone(cleaned)
+      ? { valid: true, type: 'phone', value: cleaned }
+      : { valid: false, message: 'Enter a UK phone (e.g. 07123 456789 or 01737 652515) or an email' };
+  }
+
   function showSuccess(form, name) {
     var card = form.closest('.quote-card') || form.parentElement;
     if (!card) return;
@@ -54,14 +86,33 @@
 
     var nameEl = form.querySelector('input[name="name"]');
     var postcodeEl = form.querySelector('input[name="postcode"]');
-    var emailEl = form.querySelector('input[name="email"]');
+    // Prefer the combined "phone OR email" contact field; fall back to a legacy
+    // email-only field if a form still has one.
+    var contactEl = form.querySelector('[name="contact"]') || form.querySelector('input[name="email"]');
+    var contactErrorEl = form.querySelector('.error-message') ||
+      (contactEl && contactEl.getAttribute('aria-describedby')
+        ? document.getElementById(contactEl.getAttribute('aria-describedby'))
+        : null);
     var name = nameEl ? nameEl.value.trim() : '';
     var postcode = postcodeEl ? postcodeEl.value.trim() : '';
-    var email = emailEl ? emailEl.value.trim() : '';
 
-    // The required attribute on each input means the browser will block
-    // submission without these values, but double-check just in case.
-    if (!name || !postcode || !email) return;
+    // The required attribute blocks empty name/postcode; double-check name/postcode.
+    if (!name || !postcode || !contactEl) return;
+
+    // Contact must be a valid phone OR email.
+    var contactResult = validateContact(contactEl.value);
+    if (!contactResult.valid) {
+      if (contactErrorEl) {
+        contactErrorEl.textContent = contactResult.message;
+        contactErrorEl.style.color = '#ef4444';
+      }
+      if (window.JWAnalytics && JWAnalytics.trackQuoteValidationError) {
+        try { JWAnalytics.trackQuoteValidationError('contact', 'invalid_format'); } catch (err) {}
+      }
+      contactEl.focus();
+      return;
+    }
+    var email = contactResult.type === 'email' ? contactResult.value : '';
 
     try {
       sessionStorage.setItem('jw_lead', JSON.stringify({
@@ -79,7 +130,16 @@
       btn.disabled = true;
     }
 
+    // Map the combined contact field into the right named field so the emailed
+    // lead clearly shows "Phone" or "Email".
     var fd = new FormData(form);
+    fd.delete('contact');
+    if (contactResult.type === 'email') {
+      fd.set('email', contactResult.value);
+    } else {
+      fd.set('phone', contactResult.value);
+    }
+
     fetch(form.action, {
       method: 'POST',
       body: fd,
@@ -94,17 +154,23 @@
               JWAnalytics.trackQuoteSubmit({
                 source: form.id === 'quoteForm' ? 'quote_page' : 'lightweight',
                 postcode_area: postcodeArea(postcode),
-                contact_type: 'email',
+                contact_type: contactResult.type,
                 service: (form.querySelector('[name="service"]') || {}).value || null
               });
             } catch (err) {}
           }
-          if (window.JWAnalytics && typeof JWAnalytics.identifyLead === 'function') {
+          if (email && window.JWAnalytics && typeof JWAnalytics.identifyLead === 'function') {
             try { JWAnalytics.identifyLead(email, { name: name, postcode_area: postcodeArea(postcode) }); } catch (err) {}
           }
         } else {
           var msg = data && data.message ? data.message : 'Submission failed.';
-          showError(form, 'Sorry — ' + msg + ' Please call 01737 652 515 or try again.');
+          // A wrongly-flagged real lead should never dead-end: show the in-page
+          // success card pointing them to call instead of an error alert.
+          if (/spam/i.test(msg)) {
+            showSuccess(form, name);
+          } else {
+            showError(form, 'Sorry — ' + msg + ' Please call 01737 652 515 or try again.');
+          }
         }
       })
       .catch(function () {
@@ -121,6 +187,36 @@
       if (form.dataset.jwLeadCaptureBound === '1') return;
       form.dataset.jwLeadCaptureBound = '1';
       form.addEventListener('submit', function (e) { handleSubmit(form, e); });
+
+      // Real-time hint on the combined contact field (positive while typing,
+      // gentle correction on blur — never a hard mid-entry block).
+      var contactEl = form.querySelector('[name="contact"]');
+      var errEl = contactEl && contactEl.getAttribute('aria-describedby')
+        ? document.getElementById(contactEl.getAttribute('aria-describedby'))
+        : null;
+      if (contactEl && errEl) {
+        contactEl.addEventListener('input', function () {
+          if (!this.value.trim()) { errEl.textContent = ''; return; }
+          var r = validateContact(this.value);
+          if (r.valid) {
+            errEl.textContent = r.type === 'email' ? '✓ Email looks good' : '✓ Phone number looks good';
+            errEl.style.color = '#28a745';
+          } else if (errEl.style.color !== 'rgb(239, 68, 68)') {
+            errEl.textContent = '';
+          }
+        });
+        contactEl.addEventListener('blur', function () {
+          if (!this.value.trim()) { errEl.textContent = ''; return; }
+          var r = validateContact(this.value);
+          if (r.valid) {
+            errEl.textContent = r.type === 'email' ? '✓ Email looks good' : '✓ Phone number looks good';
+            errEl.style.color = '#28a745';
+          } else {
+            errEl.textContent = r.message;
+            errEl.style.color = '#ef4444';
+          }
+        });
+      }
     });
   }
 
@@ -143,6 +239,8 @@
       ['input[name="name"]', lead.name],
       ['input[name="postcode"]', lead.postcode],
       ['#postcode', lead.postcode],
+      // Quote page now uses a combined phone/email "contact" field.
+      ['#contact', lead.email],
       ['input[name="email"]', lead.email]
     ];
     var prefilled = false;
