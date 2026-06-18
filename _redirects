@@ -1,0 +1,18 @@
+# Cloudflare Pages _redirects — ported from vercel.json (samedayjetwash.com)
+# Format: <source> <destination> <status>
+# NOTE: Cloudflare Pages already auto-serves clean URLs and 308-redirects /foo.html -> /foo.
+# Google treats 308 as a permanent redirect (equivalent to 301 for SEO), so the bare
+# .html->clean stripping is handled by the platform. Only the CONTENT 301s need listing here.
+
+# --- Content 301s (must match vercel.json exactly to preserve link equity) ---
+/tips                                    /guides                                    301
+/tips.html                               /guides                                    301
+/driveway-cleaning-redhill               /areas/redhill                             301
+/areas/bletchingley                      /areas/betchworth                          301
+/guides/is-pressure-washing-worth-it     /guides/property-value-kerb-appeal         301
+
+# --- www -> apex ---
+# Preferred: do this with a Cloudflare zone-level "Redirect Rule" (dashboard) rather than here,
+# because _redirects is path-scoped to the Pages project, not host-aware. See CLOUDFLARE-MIGRATION.md.
+# If you instead attach BOTH apex + www to the Pages project, the rule below is a fallback that
+# only works when CF passes the full URL; the dashboard Redirect Rule is the robust route.
