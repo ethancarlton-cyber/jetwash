@@ -463,11 +463,17 @@ p { margin: 0 0 var(--space-3); }
     padding: 16px;
     font-size: 1.0625rem;
 }
+.quote-form__full {
+    grid-column: 1 / -1;
+}
 .quote-form__footnote {
     margin-top: var(--space-2);
     font-size: 0.8125rem;
     color: var(--muted);
     text-align: center;
+}
+@media (min-width: 600px) {
+    .quote-form { grid-template-columns: 1fr 1fr; }
 }
 @media (min-width: 768px) {
     .quote-card { padding: var(--space-5); }

@@ -124,12 +124,12 @@
                         <h2>Tell us about the job</h2>
                         <p class="quote-card__sub">Takes about 60 seconds. Required fields marked *.</p>
 
-                        <form id="quoteForm" class="quote-form" data-jw-lead-capture-bound="1" action="https://api.web3forms.com/submit" method="POST" style="grid-template-columns: 1fr 1fr;">
+                        <form id="quoteForm" class="quote-form" data-jw-lead-capture-bound="1" action="https://api.web3forms.com/submit" method="POST">
                             <input type="hidden" name="access_key" value="f044aff6-87ad-4305-8eda-d8fef4706e95">
                             <input type="hidden" name="subject" value="New Quote — Same Day JetWash">
                             <input type="hidden" name="from_name" value="SameDayJetWash Quote Form">
 
-                            <label style="grid-column: span 2; display: block;">
+                            <label class="quote-form__full" style="display: block;">
                                 <span style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 4px;">Your name *</span>
                                 <input type="text" name="name" required autocomplete="name" placeholder="First and last name" aria-label="Your name">
                             </label>
@@ -139,7 +139,7 @@
                                 <input type="text" id="postcode" name="postcode" required pattern="[A-Za-z]{1,2}[0-9]{1,2}[A-Za-z]?\s?[0-9][A-Za-z]{2}" autocomplete="postal-code" placeholder="e.g. RH1 2AB" aria-label="Your postcode">
                             </label>
 
-                            <label style="grid-column: span 2; display: block;">
+                            <label class="quote-form__full" style="display: block;">
                                 <span style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 4px;">Phone or email *</span>
                                 <input type="text" id="contact" name="contact" required autocomplete="off" inputmode="text" placeholder="07XXX XXXXXX or you@example.com" aria-label="Your phone number or email" aria-describedby="contactError">
                                 <span style="display: block; font-size: 0.8125rem; color: var(--muted); margin-top: 4px;">Either is fine &mdash; just one way to reach you.</span>
@@ -189,12 +189,12 @@
                                 </select>
                             </label>
 
-                            <label style="grid-column: span 2; display: block;">
+                            <label class="quote-form__full" style="display: block;">
                                 <span style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 4px;">Anything else we should know?</span>
                                 <textarea name="details" rows="4" placeholder="Surface type, condition, access, anything specific..." style="font-family: inherit; font-size: 1rem; padding: 14px 16px; border: 1.5px solid var(--line); border-radius: var(--radius-md); background: var(--surface); color: var(--ink); width: 100%; resize: vertical;"></textarea>
                             </label>
 
-                            <button type="submit" class="btn btn--accent btn--lg" style="grid-column: span 2; width: 100%; padding: 16px;">Get my free quote</button>
+                            <button type="submit" class="btn btn--accent btn--lg quote-form__full" style="width: 100%; padding: 16px;">Get my free quote</button>
                         </form>
 
                         <p class="quote-form__footnote">By submitting you agree to our <a href="/privacy" style="text-decoration: underline;">privacy policy</a>. We&rsquo;ll only use your details to send your quote.</p>
