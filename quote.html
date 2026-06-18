@@ -324,12 +324,27 @@
         var estimate = params.get('estimate');
         var area = params.get('area');
         var condition = params.get('condition');
-        if (estimate) {
+        var quoteForm = document.getElementById('quoteForm');
+
+        // Prefill the visible "Approx. area" field so the user sees what carried over.
+        if (area) {
+            var areaInput = document.querySelector('input[name="area"]');
+            if (areaInput && !areaInput.value) {
+                areaInput.value = area + ' m²';
+            }
+        }
+
+        // Carry the estimate + condition into a hidden field so it reaches Web3Forms.
+        if (estimate || area || condition) {
+            var contextParts = [];
+            if (area) contextParts.push(area + 'm²');
+            if (condition) contextParts.push(condition);
+            var contextDetail = contextParts.length ? ' (' + contextParts.join(', ') + ')' : '';
+            var priceDetail = (estimate && estimate !== 'tailored') ? ' — £' + estimate : ' — tailored quote';
             var hiddenCalc = document.createElement('input');
             hiddenCalc.type = 'hidden';
             hiddenCalc.name = 'calculator_context';
-            hiddenCalc.value = 'Calculator estimate: ' + surface + ' (' + (area || '?') + 'm², ' + (condition || 'unknown') + ') — £' + estimate;
-            var quoteForm = document.getElementById('quoteForm');
+            hiddenCalc.value = 'Calculator estimate: ' + surface + contextDetail + priceDetail;
             if (quoteForm) quoteForm.appendChild(hiddenCalc);
         }
     })();

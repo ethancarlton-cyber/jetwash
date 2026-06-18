@@ -470,11 +470,20 @@
                 document.querySelector('#result-content .result-note').textContent = t.note;
                 var quoteLinkT = document.getElementById('quote-cta-link');
                 if (quoteLinkT) {
-                    quoteLinkT.href = '/quote?service=' + encodeURIComponent(surface);
+                    // Carry area + condition through even though there's no per-m² price,
+                    // so the quote form still prefills what the user already told us.
+                    var tParams = '?surface=' + encodeURIComponent(surface)
+                        + '&condition=' + encodeURIComponent(condition);
+                    if (area && area >= 1) tParams += '&area=' + encodeURIComponent(area);
+                    quoteLinkT.href = '/quote' + tParams;
                     quoteLinkT.textContent = 'Get a tailored quote';
+                    quoteLinkT.setAttribute('data-jw-calc-surface', surface);
+                    quoteLinkT.setAttribute('data-jw-calc-area', (area && area >= 1) ? area : '');
+                    quoteLinkT.setAttribute('data-jw-calc-condition', condition);
+                    quoteLinkT.setAttribute('data-jw-calc-estimate', 'tailored');
                 }
                 if (!calcWasAuto && window.JWAnalytics && JWAnalytics.trackCalculatorUse) {
-                    JWAnalytics.trackCalculatorUse(surface, null, condition, [], 'tailored');
+                    JWAnalytics.trackCalculatorUse(surface, (area && area >= 1) ? area : null, condition, [], 'tailored');
                 }
                 return;
             }
@@ -560,15 +569,21 @@
             }
             document.getElementById('result-breakdown').innerHTML = breakdownHtml;
 
-            // Update "Get an Exact Quote" link with calculator state
+            // Update "Book this for £X" link with the full calculator state so the
+            // estimate, surface, area and condition all carry into the quote form.
+            var estimateStr = totalLow + '-' + totalHigh;
             var quoteLink = document.getElementById('quote-cta-link');
             if (quoteLink) {
-                quoteLink.textContent = 'Get an exact quote';
+                quoteLink.textContent = 'Book this for £' + totalLow + ' — get my exact quote';
                 var params = '?surface=' + encodeURIComponent(surface)
                     + '&area=' + encodeURIComponent(area)
                     + '&condition=' + encodeURIComponent(condition)
-                    + '&estimate=' + encodeURIComponent(totalLow + '-' + totalHigh);
+                    + '&estimate=' + encodeURIComponent(estimateStr);
                 quoteLink.href = '/quote' + params;
+                quoteLink.setAttribute('data-jw-calc-surface', surface);
+                quoteLink.setAttribute('data-jw-calc-area', area);
+                quoteLink.setAttribute('data-jw-calc-condition', condition);
+                quoteLink.setAttribute('data-jw-calc-estimate', estimateStr);
             }
 
             if (!calcWasAuto && window.JWAnalytics && JWAnalytics.trackCalculatorUse) {
@@ -579,6 +594,21 @@
                 JWAnalytics.trackCalculatorUse(surface, area, condition, calcExtras, totalLow + '-' + totalHigh);
             }
         });
+
+        // Track the calculator → quote handoff click (fail-silent if posthog is consent-gated / absent)
+        var quoteCtaLink = document.getElementById('quote-cta-link');
+        if (quoteCtaLink) {
+            quoteCtaLink.addEventListener('click', function() {
+                if (window.JWAnalytics && JWAnalytics.trackCalculatorToQuote) {
+                    JWAnalytics.trackCalculatorToQuote(
+                        quoteCtaLink.getAttribute('data-jw-calc-surface'),
+                        quoteCtaLink.getAttribute('data-jw-calc-area'),
+                        quoteCtaLink.getAttribute('data-jw-calc-condition'),
+                        quoteCtaLink.getAttribute('data-jw-calc-estimate')
+                    );
+                }
+            });
+        }
 
         // Auto-calculate on page load
         document.getElementById('calculate-btn').click();

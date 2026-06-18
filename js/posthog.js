@@ -224,6 +224,11 @@
         extras: Array.isArray(extras) ? extras : [], quoted_price: price
       }));
     },
+    trackCalculatorToQuote: function(surface, areaM2, condition, price) {
+      safeCapture('calculator_to_quote_click', Object.assign(pageMeta(), {
+        surface: surface, area_m2: areaM2 || null, condition: condition || null, quoted_price: price || null
+      }));
+    },
     identifyLead: function(email, props) {
       if (!initialised) return;
       try {
