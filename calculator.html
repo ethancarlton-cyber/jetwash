@@ -423,6 +423,7 @@
         };
 
         var minimumCharge = 80;
+        var calcRan = false; // skip analytics on the programmatic auto-calc that runs on page load
 
         // Surfaces where an honest per-m² figure isn't defensible (priced per panel /
         // per roofline / per access setup). Route these to a tailored quote rather than
@@ -456,6 +457,7 @@
             var hasSealing = document.getElementById('extra-sealing').checked;
             var hasMoss = document.getElementById('extra-moss').checked;
             var hasWeed = document.getElementById('extra-weed').checked;
+            var calcWasAuto = !calcRan; calcRan = true; // first run is the on-load auto-calc
 
             // Tailored-quote surfaces: no honest per-m² number, so route to a quote.
             if (tailoredOnly[surface]) {
@@ -470,6 +472,9 @@
                 if (quoteLinkT) {
                     quoteLinkT.href = '/quote?service=' + encodeURIComponent(surface);
                     quoteLinkT.textContent = 'Get a tailored quote';
+                }
+                if (!calcWasAuto && window.JWAnalytics && JWAnalytics.trackCalculatorUse) {
+                    JWAnalytics.trackCalculatorUse(surface, null, condition, [], 'tailored');
                 }
                 return;
             }
@@ -565,6 +570,14 @@
                     + '&estimate=' + encodeURIComponent(totalLow + '-' + totalHigh);
                 quoteLink.href = '/quote' + params;
             }
+
+            if (!calcWasAuto && window.JWAnalytics && JWAnalytics.trackCalculatorUse) {
+                var calcExtras = [];
+                if (hasSealing) calcExtras.push('sealing');
+                if (hasMoss) calcExtras.push('moss');
+                if (hasWeed) calcExtras.push('weed');
+                JWAnalytics.trackCalculatorUse(surface, area, condition, calcExtras, totalLow + '-' + totalHigh);
+            }
         });
 
         // Auto-calculate on page load
@@ -572,7 +585,7 @@
     })();
     </script>
     <script src="/js/consent.js?v=2" defer></script>
-    <script src="/js/posthog.js" defer></script>
+    <script src="/js/posthog.js?v=2" defer></script>
     <script src="/js/lead-capture.js" defer></script>
     <script src="/js/nav.js?v=3" defer></script>
 </body>
