@@ -188,7 +188,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/v2.css">
+    <link rel="stylesheet" href="/css/v2.css?v=3">
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to content</a>
@@ -202,7 +202,11 @@
                     </span>
                     <span>Same Day Jetwash</span>
                 </a>
-                <nav class="nav-desktop" aria-label="Primary">
+                <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
+                    <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+                </button>
+                <nav class="nav-desktop" id="primary-nav" aria-label="Primary">
                     <a href="/areas">Areas</a>
                     <a href="/guides">Guides</a>
                     <a href="/pricing">Pricing</a>
@@ -306,6 +310,8 @@
 <tr><td style="padding: 12px; border-bottom: 1px solid var(--line);">Warehouse</td><td style="padding: 12px; border-bottom: 1px solid var(--line);">Annual</td><td style="padding: 12px; border-bottom: 1px solid var(--line);">Bi-annual</td></tr>
 <tr><td style="padding: 12px; border-bottom: 1px solid var(--line);">Office cladding</td><td style="padding: 12px; border-bottom: 1px solid var(--line);">Annual</td><td style="padding: 12px; border-bottom: 1px solid var(--line);">Bi-annual to quarterly</td></tr>
 <tr><td style="padding: 12px;">Restaurant outdoor</td><td style="padding: 12px;">Bi-annual</td><td style="padding: 12px;">Quarterly</td></tr></tbody></table></div><p>Under-cleaning is a false economy. Quarterly stays in good condition with quick affordable cleans. Annual or less = much more intensive and expensive each time, plus the property looks neglected most of the year. Cost difference between quarterly and annual is often less than 50% extra; presentation difference is dramatic.</p>
+
+                    <p>Need a quote for a commercial site? See our <a href="/commercial-jetwashing">commercial pressure washing service</a> or <a href="/quote">request a free quote</a> &mdash; same-day availability across Surrey.</p>
 
                     <h2>Areas we cover</h2>
                     <p>We work right across Surrey within 20 miles of Redhill (RH1) &mdash; <a href="/areas/redhill">Redhill</a>, <a href="/areas/reigate">Reigate</a>, <a href="/areas/horley">Horley</a>, <a href="/areas/dorking">Dorking</a>, <a href="/areas/banstead">Banstead</a>, <a href="/areas/epsom">Epsom</a>, <a href="/areas/crawley">Crawley</a>, and <a href="/areas">all 15+ areas</a>.</p>
@@ -524,7 +530,8 @@
     </div>
 
     <script src="/js/consent.js?v=2" defer></script>
-    <script src="/js/posthog.js" defer></script>
+    <script src="/js/posthog.js?v=2" defer></script>
     <script src="/js/lead-capture.js" defer></script>
+    <script src="/js/nav.js?v=3" defer></script>
 </body>
 </html>

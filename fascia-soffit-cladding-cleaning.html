@@ -72,7 +72,9 @@
         {"@type": "Question", "name": "Will you need ladders or scaffolding on my house?", "acceptedAnswer": {"@type": "Answer", "text": "For most 2-3 storey homes we clean entirely from the ground with a water-fed pole, so there are no ladders leaning on your gutters and no scaffold cost. Awkward or very high rooflines may need extra access, which we will always flag before we start."}},
         {"@type": "Question", "name": "How often should fascias and soffits be cleaned?", "acceptedAnswer": {"@type": "Answer", "text": "Once a year is ideal for most homes, or twice a year if you are near trees or get heavy rain &mdash; roughly the same schedule as your gutters. Regular cleaning also keeps soffit ventilation slots clear so the roof space can breathe."}},
         {"@type": "Question", "name": "Do you clean cladding and weatherboarding too?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. uPVC, composite and timber-look cladding are soft-washed with a low-pressure biocide treatment, never high pressure. We can also add an optional anti-green treatment to keep it cleaner for longer between visits."}},
-        {"@type": "Question", "name": "Which areas do you cover?", "acceptedAnswer": {"@type": "Answer", "text": "Redhill, Reigate, Crawley, Horley, Gatwick, Dorking and Banstead, plus across RH, CR3, SM7 and KT postcodes within about 20 miles of Redhill (RH1)."}}
+        {"@type": "Question", "name": "Which areas do you cover?", "acceptedAnswer": {"@type": "Answer", "text": "Redhill, Reigate, Crawley, Horley, Gatwick, Dorking and Banstead, plus across RH, CR3, SM7 and KT postcodes within about 20 miles of Redhill (RH1)."}},
+        {"@type": "Question", "name": "How soon can you come out?", "acceptedAnswer": {"@type": "Answer", "text": "Often same day or next day, depending on the run. Call 01737 652 515 with your postcode and we'll book you in fast — Sundays too."}},
+        {"@type": "Question", "name": "What if I'm not happy with the result?", "acceptedAnswer": {"@type": "Answer", "text": "If a clean is ever not right, we'll come back and sort it — that's our redo-free guarantee."}}
       ]
     }
     </script>
@@ -80,7 +82,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/v2.css">
+    <link rel="stylesheet" href="/css/v2.css?v=3">
     <link rel="preload" href="/images/heroes/hero-fascia-soffit-cleaning.webp" as="image" fetchpriority="high">
 </head>
 <body>
@@ -96,7 +98,11 @@
                     </span>
                     <span>Same Day Jetwash</span>
                 </a>
-                <nav class="nav-desktop" aria-label="Primary">
+                <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
+                    <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+                </button>
+                <nav class="nav-desktop" id="primary-nav" aria-label="Primary">
                     <a href="/areas">Areas</a>
                     <a href="/guides">Guides</a>
                     <a href="/pricing">Pricing</a>
@@ -210,6 +216,7 @@
                     <p>uPVC, composite and aluminium boards must <strong>not</strong> be high-pressure washed. Excess pressure cracks panels, lifts paint, breaches the seals and can force water behind the boards and into the roof void. It is one of the most common ways a DIY job ends up costing more than it saved. We use a controlled soft-wash and water-fed-pole method instead: a dilute biocide does the work of killing and lifting the algae, and purified water rinses it clean. We also avoid abrasive pads and neat bleach, which scratch and dull uPVC and degrade the rubber seals over time.</p>
 
                     <h2>Why fascias go black and green</h2>
+                    <p><strong>The short answer:</strong> the streaking is living algae and rainwater run-off tide-lines off the gutter lip, not removable grime &mdash; worst on north-facing, shaded and tree-lined elevations, where Surrey's leafy roads and traffic film grey the boards within one to two years. It responds to a biocide soft-wash, not scrubbing.</p>
                     <p>The black streaks are not dirt you can scrub off &mdash; they are algae and rainwater run-off "tide lines" dripping off the lip of the gutter, worst on north-facing, shaded and tree-lined elevations. Surrey's leafy roads (oak, sycamore, lime) and the traffic film off busy roads and the Gatwick corridor grey the boards faster than you would expect, often within one to two years. They respond to a biocide soft-wash rather than scrubbing, which is why the right chemistry matters more than brute force. There is a maintenance angle too: algae-clogged soffit ventilation slots restrict roof-space airflow and trap moisture, which over time can lead to damp and warped roof timbers &mdash; so a clean is partly looking after the roof, not just the look of it.</p>
 
                     <h2>Done from the ground &mdash; no ladders, no scaffold cost</h2>
@@ -317,6 +324,8 @@
                 <div class="faq-item"><h3>How often should fascias and soffits be cleaned?</h3><p>Once a year is ideal for most homes, or twice a year if you&rsquo;re near trees or get heavy rain &mdash; roughly the same schedule as your gutters.</p></div>
                 <div class="faq-item"><h3>Do you clean cladding and weatherboarding too?</h3><p>Yes. uPVC, composite and timber-look cladding are soft-washed with a low-pressure biocide treatment, and we can add an optional anti-green treatment to keep it cleaner for longer.</p></div>
                 <div class="faq-item"><h3>Which areas do you cover?</h3><p>Redhill, Reigate, Crawley, Horley, Gatwick, Dorking and Banstead, plus across RH, CR3, SM7 and KT postcodes within about 20 miles of Redhill.</p></div>
+                <div class="faq-item"><h3>How soon can you come out?</h3><p>Often same day or next day, depending on the run. Tell us your postcode on 01737 652 515 and we&rsquo;ll book you in fast &mdash; Sundays too.</p></div>
+                <div class="faq-item"><h3>What if I&rsquo;m not happy with the result?</h3><p>If a clean is ever not right, we&rsquo;ll come back and sort it &mdash; that&rsquo;s our redo-free guarantee. We&rsquo;d rather fix it than leave you unhappy.</p></div>
             </div>
         </div>
     </section>
@@ -466,7 +475,8 @@
     </div>
 
     <script src="/js/consent.js?v=2" defer></script>
-    <script src="/js/posthog.js" defer></script>
+    <script src="/js/posthog.js?v=2" defer></script>
     <script src="/js/lead-capture.js" defer></script>
+    <script src="/js/nav.js?v=3" defer></script>
 </body>
 </html>

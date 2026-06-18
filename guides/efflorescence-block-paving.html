@@ -66,7 +66,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/v2.css">
+    <link rel="stylesheet" href="/css/v2.css?v=3">
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to content</a>
@@ -80,7 +80,11 @@
                     </span>
                     <span>Same Day Jetwash</span>
                 </a>
-                <nav class="nav-desktop" aria-label="Primary">
+                <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
+                    <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+                </button>
+                <nav class="nav-desktop" id="primary-nav" aria-label="Primary">
                     <a href="/areas">Areas</a>
                     <a href="/guides">Guides</a>
                     <a href="/pricing">Pricing</a>
@@ -182,6 +186,8 @@
                         <li><strong>Don&rsquo;t use a turbo nozzle.</strong> Marshalls&rsquo; cleaning guidelines specify medium pressure, 30&deg; lance, minimum 200mm standoff<sup><a href="#src-marshalls-clean">[4]</a></sup>. Concentrated jets can drive efflorescence deeper into the substrate, not remove it.</li>
                         <li><strong>Don&rsquo;t panic.</strong> The phenomenon is transient and cosmetic. BS 7533-101:2021<sup><a href="#src-bsi">[5]</a></sup> doesn&rsquo;t treat it as a structural defect.</li>
                     </ul>
+
+                    <p>Want it dealt with properly? See our <a href="/block-paving-cleaning">block paving cleaning service</a> or <a href="/quote">get a free quote</a>.</p>
 
                     <h2>Areas we cover</h2>
                     <p>We work across Surrey within 20 miles of Redhill (RH1) &mdash; <a href="/areas/redhill">Redhill</a>, <a href="/areas/reigate">Reigate</a>, <a href="/areas/horley">Horley</a>, <a href="/areas/dorking">Dorking</a>, <a href="/areas/banstead">Banstead</a>, and <a href="/areas">all 15+ areas</a>. For persistent efflorescence on 2+ year-old paving, call <a href="tel:+441737652515" style="font-weight: 700;">01737 652 515</a> &mdash; we&rsquo;ll talk you through whether intervention is actually worth it before quoting.</p>
@@ -288,7 +294,8 @@
     </div>
 
     <script src="/js/consent.js?v=2" defer></script>
-    <script src="/js/posthog.js" defer></script>
+    <script src="/js/posthog.js?v=2" defer></script>
     <script src="/js/lead-capture.js" defer></script>
+    <script src="/js/nav.js?v=3" defer></script>
 </body>
 </html>

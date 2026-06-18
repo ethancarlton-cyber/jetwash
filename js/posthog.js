@@ -112,7 +112,8 @@
 
   var SERVICE_SLUGS = [
     'driveway-cleaning','patio-cleaning','block-paving-cleaning','decking-cleaning',
-    'render-cleaning','roof-cleaning','gutter-cleaning','soft-washing','commercial-jetwashing'
+    'render-cleaning','roof-cleaning','gutter-cleaning','soft-washing','commercial-jetwashing',
+    'window-cleaning','fascia-soffit-cladding-cleaning','solar-panel-cleaning'
   ];
 
   function flushPageTypeEvent() {
@@ -143,6 +144,17 @@
           var locEl = anchor.closest('[data-cta-location]');
           var location = locEl ? locEl.getAttribute('data-cta-location') : 'inline';
           safeCapture('phone_click', Object.assign(pageMeta(), { location: location }));
+          return;
+        }
+        // Key conversion CTAs (quote / calculator links) — tracked sitewide without needing data-cta
+        var aPath = anchor.pathname || '';
+        if (anchor.host === window.location.host && (aPath === '/quote' || aPath === '/calculator')) {
+          var ctaLocEl = anchor.closest('[data-cta-location]');
+          safeCapture('cta_click', Object.assign(pageMeta(), {
+            cta_label: (anchor.textContent || '').trim().slice(0, 80) || aPath,
+            cta_destination: aPath,
+            location: ctaLocEl ? ctaLocEl.getAttribute('data-cta-location') : 'inline'
+          }));
           return;
         }
         if (anchor.host && anchor.host !== window.location.host && /^https?:/.test(anchor.protocol || '')) {

@@ -105,7 +105,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/v2.css">
+    <link rel="stylesheet" href="/css/v2.css?v=3">
     <link rel="preload" href="/images/heroes/hero-roof-cleaning.webp" as="image" fetchpriority="high">
 </head>
 <body>
@@ -121,7 +121,11 @@
                     </span>
                     <span>Same Day Jetwash</span>
                 </a>
-                <nav class="nav-desktop" aria-label="Primary">
+                <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
+                    <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+                </button>
+                <nav class="nav-desktop" id="primary-nav" aria-label="Primary">
                     <a href="/areas">Areas</a>
                     <a href="/guides">Guides</a>
                     <a href="/pricing">Pricing</a>
@@ -412,6 +416,10 @@
                     <div class="service-card__img"><img src="/images/bank/A7-soft-wash-render-equipment.webp" alt="Soft washing equipment" loading="lazy" width="1376" height="768"></div>
                     <div class="service-card__body"><h3>Soft washing</h3><p>Low-pressure cleaning for delicate surfaces.</p><span class="service-card__price">From £5/m²</span></div>
                 </a>
+                <a href="/solar-panel-cleaning" class="service-card">
+                    <div class="service-card__img"><img src="/images/heroes/hero-solar-panel-cleaning.webp" alt="Solar panels being cleaned on a roof" loading="lazy" width="1376" height="768"></div>
+                    <div class="service-card__body"><h3>Solar panel cleaning</h3><p>On the roof anyway — restore panel output, gently.</p><span class="service-card__price">From £80</span></div>
+                </a>
             </div>
         </div>
     </section>
@@ -516,7 +524,8 @@
     </div>
 
     <script src="/js/consent.js?v=2" defer></script>
-    <script src="/js/posthog.js" defer></script>
+    <script src="/js/posthog.js?v=2" defer></script>
     <script src="/js/lead-capture.js" defer></script>
+    <script src="/js/nav.js?v=3" defer></script>
 </body>
 </html>
