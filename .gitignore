@@ -61,3 +61,7 @@ gsc-reports/
 TODO.md
 voice/
 .build/
+
+# Local secrets (Vercel deploy hooks, API keys, etc.) — NEVER COMMIT
+CLAUDE.local.md
+*.local.md
