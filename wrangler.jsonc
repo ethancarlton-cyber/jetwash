@@ -1,0 +1,13 @@
+{
+  // Cloudflare Workers Static Assets config — serves samedayjetwash.com as a no-build
+  // static site (assets-only Worker, no script). Pairs with .assetsignore (excludes
+  // internal docs/tooling/secrets) and the existing _redirects / _headers files.
+  "name": "jetwash",
+  "compatibility_date": "2026-06-01",
+  "assets": {
+    "directory": "./",
+    // serves /foo.html at the clean URL /foo and 308-redirects /foo.html -> /foo
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}

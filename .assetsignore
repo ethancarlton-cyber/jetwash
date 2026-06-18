@@ -1,0 +1,45 @@
+# Files NOT to serve as public static assets on Cloudflare Workers.
+# Mirrors .vercelignore + excludes internal docs, tooling and secrets so they
+# can't be fetched at samedayjetwash.com/<file>. Cloudflare uploads the assets
+# directory MINUS these patterns.
+
+# --- build/tooling/deps ---
+node_modules/
+.git/
+.vercel/
+.build/
+.claude/
+test-results/
+playwright-report/
+screens/
+scripts/
+tools/
+voice/
+gsc-reports/
+package.json
+package-lock.json
+playwright.config.js
+*.py
+generate-*.js
+
+# --- source image working dirs (only /images is served) ---
+images-backup/
+imagesstock/
+imagesstock-resized/
+form-debug.png
+Gemini_Generated_Image*.png
+
+# --- internal docs (all markdown) + planning/context ---
+*.md
+docs/
+context/
+seo/
+
+# --- config + secrets (gitignored, but excluded here for local `wrangler deploy` too) ---
+.env.local
+*.local.md
+vercel.json
+wrangler.jsonc
+.assetsignore
+.gitignore
+.vercelignore
