@@ -1344,6 +1344,13 @@ body { padding-bottom: 70px; }
     /* 4) Tighter horizontal gutter (16px is the cross-platform standard) */
     .container { padding: 0 16px; }
 
+    /* 4b) Header: group the call icon next to the hamburger on the right.
+       The 3-item space-between header was stranding the lone phone icon in the
+       dead centre of the header; an auto margin on the brand packs both controls
+       to the right. */
+    .brand { margin-right: auto; }
+    .site-header__inner { gap: var(--space-1); }
+
     /* 5) Readable supporting text -> 16px floor (legibility + premium feel).
        True meta (footnotes, captions, eyebrows, postcodes, stat labels,
        footer fine-print) intentionally stays smaller. */
