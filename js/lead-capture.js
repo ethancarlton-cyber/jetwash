@@ -9,6 +9,30 @@
 // is orphaned/incompatible and is no longer used).
 
 (function () {
+  // UK numbers: landline (01/02/03) or mobile (07), optional +44, spaces allowed.
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var phoneRegex = /^(\+44\s?|0)[1237]\d[\d\s]{7,12}$/;
+
+  // Accepts EITHER a valid UK phone OR an email in a single "contact" field.
+  // Mirrors js/form.js so inline/sidebar forms are phone-OR-email (not email-required).
+  function validateContact(value) {
+    var cleaned = (value || '').trim();
+    if (!cleaned) {
+      return { valid: false, message: 'Please enter a phone number or email so we can reach you' };
+    }
+    if (cleaned.indexOf('@') !== -1) {
+      if (!emailRegex.test(cleaned)) {
+        return { valid: false, message: 'That email doesn’t look right — check it and try again' };
+      }
+      return { valid: true, type: 'email', value: cleaned, message: '' };
+    }
+    var stripped = cleaned.replace(/[\s()\-]/g, '');
+    if (!phoneRegex.test(stripped)) {
+      return { valid: false, message: 'Enter a valid UK phone (07… or 01…) or an email address' };
+    }
+    return { valid: true, type: 'phone', value: cleaned, message: '' };
+  }
+
   function escapeHtml(s) {
     return String(s).replace(/[&<>"'\/]/g, function (c) {
       return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;', '/': '&#47;' })[c];
@@ -23,6 +47,38 @@
     var p = (s || '').trim().toUpperCase();
     var m = p.match(/^([A-Z]{1,2}\d{1,2}[A-Z]?)/);
     return m ? m[1] : null;
+  }
+
+  // Permissive email: local@domain.tld.
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
+
+  // Normalise a UK phone to national digits (leading 0) so we validate by digit
+  // count, not a rigid pattern — accepts +44, 0044, (0), brackets, spaces, hyphens.
+  function normaliseUkPhone(value) {
+    var digits = (value || '').replace(/[^\d+]/g, '');
+    digits = digits
+      .replace(/^\+44/, '0')
+      .replace(/^0044/, '0')
+      .replace(/^44(?=\d{9,})/, '0');
+    digits = digits.replace(/\D/g, '');
+    digits = digits.replace(/^00(?=\d)/, '0');
+    return /^0[123789]\d{8,9}$/.test(digits) ? digits : '';
+  }
+
+  // Valid if EITHER a valid email OR a valid UK phone is present.
+  function validateContact(value) {
+    var cleaned = (value || '').trim();
+    if (!cleaned) {
+      return { valid: false, message: 'Please add a phone number or email so we can reach you' };
+    }
+    if (cleaned.indexOf('@') !== -1) {
+      return emailRegex.test(cleaned)
+        ? { valid: true, type: 'email', value: cleaned }
+        : { valid: false, message: 'That email doesn’t look right — please check it' };
+    }
+    return normaliseUkPhone(cleaned)
+      ? { valid: true, type: 'phone', value: cleaned }
+      : { valid: false, message: 'Enter a UK phone (e.g. 07123 456789 or 01737 652515) or an email' };
   }
 
   function showSuccess(form, name) {
@@ -49,19 +105,63 @@
     alert(msg || 'Sorry, something went wrong. Please call 01737 652 515 or try again.');
   }
 
+  function showContactError(form, msg) {
+    var contactEl = form.querySelector('[name="contact"]');
+    var slot = form.querySelector('.jw-contact-error');
+    if (!slot && contactEl) {
+      slot = document.createElement('p');
+      slot.className = 'jw-contact-error';
+      slot.setAttribute('role', 'alert');
+      slot.style.cssText = 'margin:4px 0 0;font-size:0.85rem;color:#ef4444;';
+      contactEl.insertAdjacentElement('afterend', slot);
+    }
+    if (slot) slot.textContent = msg || '';
+    if (contactEl) contactEl.focus();
+  }
+
   function handleSubmit(form, e) {
     e.preventDefault();
 
     var nameEl = form.querySelector('input[name="name"]');
     var postcodeEl = form.querySelector('input[name="postcode"]');
+    // New combined field; fall back to legacy email/phone inputs if a form
+    // hasn't been migrated yet.
+    var contactEl = form.querySelector('[name="contact"]');
     var emailEl = form.querySelector('input[name="email"]');
+    var phoneEl = form.querySelector('input[name="phone"]');
     var name = nameEl ? nameEl.value.trim() : '';
     var postcode = postcodeEl ? postcodeEl.value.trim() : '';
-    var email = emailEl ? emailEl.value.trim() : '';
 
-    // The required attribute on each input means the browser will block
-    // submission without these values, but double-check just in case.
-    if (!name || !postcode || !email) return;
+    if (!name || !postcode) return;
+
+    // Resolve the contact: phone OR email, from whichever field exists.
+    var contactType = null;
+    var contactValue = '';
+    if (contactEl) {
+      var result = validateContact(contactEl.value);
+      if (!result.valid) { showContactError(form, result.message); return; }
+      var slot = form.querySelector('.jw-contact-error');
+      if (slot) slot.textContent = '';
+      contactType = result.type;
+      contactValue = result.value;
+    } else {
+      // Legacy markup: accept phone OR email, neither hard-required.
+      var legacyEmail = emailEl ? emailEl.value.trim() : '';
+      var legacyPhone = phoneEl ? phoneEl.value.trim() : '';
+      if (legacyEmail) {
+        var er = validateContact(legacyEmail);
+        if (!er.valid) { if (emailEl) emailEl.focus(); return; }
+        contactType = 'email'; contactValue = legacyEmail;
+      } else if (legacyPhone) {
+        var pr = validateContact(legacyPhone);
+        if (!pr.valid) { if (phoneEl) phoneEl.focus(); return; }
+        contactType = 'phone'; contactValue = legacyPhone;
+      } else {
+        return; // nothing to send
+      }
+    }
+
+    var email = contactType === 'email' ? contactValue : '';
 
     try {
       sessionStorage.setItem('jw_lead', JSON.stringify({
@@ -79,7 +179,14 @@
       btn.disabled = true;
     }
 
+    // Map the single contact field into the correctly-named Web3Forms field
+    // so the notification email shows "Phone" or "Email" correctly.
     var fd = new FormData(form);
+    if (contactEl) {
+      fd.delete('contact');
+      if (contactType === 'email') fd.set('email', contactValue);
+      else if (contactType === 'phone') fd.set('phone', contactValue);
+    }
     fetch(form.action, {
       method: 'POST',
       body: fd,
@@ -94,17 +201,23 @@
               JWAnalytics.trackQuoteSubmit({
                 source: form.id === 'quoteForm' ? 'quote_page' : 'lightweight',
                 postcode_area: postcodeArea(postcode),
-                contact_type: 'email',
+                contact_type: contactType,
                 service: (form.querySelector('[name="service"]') || {}).value || null
               });
             } catch (err) {}
           }
-          if (window.JWAnalytics && typeof JWAnalytics.identifyLead === 'function') {
+          if (email && window.JWAnalytics && typeof JWAnalytics.identifyLead === 'function') {
             try { JWAnalytics.identifyLead(email, { name: name, postcode_area: postcodeArea(postcode) }); } catch (err) {}
           }
         } else {
           var msg = data && data.message ? data.message : 'Submission failed.';
-          showError(form, 'Sorry — ' + msg + ' Please call 01737 652 515 or try again.');
+          // A wrongly-flagged real lead should never dead-end: show the in-page
+          // success card pointing them to call instead of an error alert.
+          if (/spam/i.test(msg)) {
+            showSuccess(form, name);
+          } else {
+            showError(form, 'Sorry — ' + msg + ' Please call 01737 652 515 or try again.');
+          }
         }
       })
       .catch(function () {
@@ -121,6 +234,36 @@
       if (form.dataset.jwLeadCaptureBound === '1') return;
       form.dataset.jwLeadCaptureBound = '1';
       form.addEventListener('submit', function (e) { handleSubmit(form, e); });
+
+      // Real-time hint on the combined contact field (positive while typing,
+      // gentle correction on blur — never a hard mid-entry block).
+      var contactEl = form.querySelector('[name="contact"]');
+      var errEl = contactEl && contactEl.getAttribute('aria-describedby')
+        ? document.getElementById(contactEl.getAttribute('aria-describedby'))
+        : null;
+      if (contactEl && errEl) {
+        contactEl.addEventListener('input', function () {
+          if (!this.value.trim()) { errEl.textContent = ''; return; }
+          var r = validateContact(this.value);
+          if (r.valid) {
+            errEl.textContent = r.type === 'email' ? '✓ Email looks good' : '✓ Phone number looks good';
+            errEl.style.color = '#28a745';
+          } else if (errEl.style.color !== 'rgb(239, 68, 68)') {
+            errEl.textContent = '';
+          }
+        });
+        contactEl.addEventListener('blur', function () {
+          if (!this.value.trim()) { errEl.textContent = ''; return; }
+          var r = validateContact(this.value);
+          if (r.valid) {
+            errEl.textContent = r.type === 'email' ? '✓ Email looks good' : '✓ Phone number looks good';
+            errEl.style.color = '#28a745';
+          } else {
+            errEl.textContent = r.message;
+            errEl.style.color = '#ef4444';
+          }
+        });
+      }
     });
   }
 
@@ -143,6 +286,8 @@
       ['input[name="name"]', lead.name],
       ['input[name="postcode"]', lead.postcode],
       ['#postcode', lead.postcode],
+      // Quote page now uses a combined phone/email "contact" field.
+      ['#contact', lead.email],
       ['input[name="email"]', lead.email]
     ];
     var prefilled = false;

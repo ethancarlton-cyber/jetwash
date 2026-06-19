@@ -10,6 +10,7 @@
     --mist-strong: #ECEFF3;
     --accent: #1E6FE5;
     --accent-hover: #1857C7;
+    --accent-text: #1558C0;
     --muted: #5C6B7A;
     --line: #E5E9EE;
 
@@ -72,6 +73,17 @@ p { margin: 0 0 var(--space-3); }
     padding: var(--space-2); text-decoration: none;
 }
 .skip-link:focus { left: var(--space-2); top: var(--space-2); z-index: 999; }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.nav-toggle:focus-visible,
+[tabindex]:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+}
 
 .container {
     max-width: var(--content-max);
@@ -161,7 +173,11 @@ p { margin: 0 0 var(--space-3); }
     letter-spacing: -0.02em;
     color: var(--ink);
     white-space: nowrap;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+.brand__mark { flex: none; }
 @media (min-width: 480px) { .brand { font-size: 1.125rem; } }
 .brand__mark {
     width: 32px;
@@ -173,7 +189,23 @@ p { margin: 0 0 var(--space-3); }
     justify-content: center;
     color: var(--accent);
 }
-.brand__mark svg { width: 18px; height: 18px; }
+.brand__logo {
+    display: block;
+    height: 40px;
+    width: auto;
+}
+@media (min-width: 480px) { .brand__logo { height: 44px; } }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 .nav-desktop {
     display: none;
     align-items: center;
@@ -240,7 +272,7 @@ p { margin: 0 0 var(--space-3); }
 @media (max-width: 480px) {
     .site-header__inner { gap: var(--space-1); padding: 12px 0; }
     .brand { font-size: 0.9375rem; gap: 8px; }
-    .brand__mark { width: 30px; height: 30px; }
+    .brand__logo { height: 34px; }
     .header-cta__phone-icon { width: 38px; height: 38px; }
     .header-cta__quote { padding: 9px 14px; font-size: 0.875rem; }
     .container { padding: 0 16px; }
@@ -330,10 +362,11 @@ p { margin: 0 0 var(--space-3); }
 .hero__trust {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-2);
+    gap: var(--space-1) var(--space-3);
     color: rgba(255,255,255,0.85);
     font-size: 0.875rem;
     font-weight: 500;
+    margin-bottom: var(--space-2);
 }
 .hero__trust span {
     display: inline-flex;
@@ -453,9 +486,12 @@ p { margin: 0 0 var(--space-3); }
     transition: border-color 0.15s;
 }
 .quote-form input:focus {
-    outline: none;
     border-color: var(--accent);
     box-shadow: 0 0 0 3px rgba(30, 111, 229, 0.18);
+}
+.quote-form input:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
 }
 .quote-form button {
     margin-top: 4px;
@@ -463,11 +499,17 @@ p { margin: 0 0 var(--space-3); }
     padding: 16px;
     font-size: 1.0625rem;
 }
+.quote-form__full {
+    grid-column: 1 / -1;
+}
 .quote-form__footnote {
     margin-top: var(--space-2);
     font-size: 0.8125rem;
     color: var(--muted);
     text-align: center;
+}
+@media (min-width: 600px) {
+    .quote-form { grid-template-columns: 1fr 1fr; }
 }
 @media (min-width: 768px) {
     .quote-card { padding: var(--space-5); }
@@ -532,7 +574,7 @@ p { margin: 0 0 var(--space-3); }
     display: inline-flex;
     font-size: 0.875rem;
     font-weight: 600;
-    color: var(--accent);
+    color: var(--accent-text);
 }
 @media (min-width: 640px) {
     .services-grid { grid-template-columns: 1fr 1fr; }
@@ -546,7 +588,7 @@ p { margin: 0 0 var(--space-3); }
 }
 .services__see-all a {
     font-weight: 600;
-    color: var(--accent);
+    color: var(--accent-text);
 }
 .services__see-all a:hover { color: var(--accent-hover); }
 
@@ -836,7 +878,7 @@ p { margin: 0 0 var(--space-3); }
     line-height: 1.7;
 }
 .prose li { margin-bottom: 6px; }
-.prose a { color: var(--accent); font-weight: 500; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+.prose a { color: var(--accent-text); font-weight: 500; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
 .prose a:hover { color: var(--accent-hover); }
 .prose strong { font-weight: 700; }
 .prose blockquote {
@@ -1161,9 +1203,75 @@ body { padding-bottom: 70px; }
         border-bottom: 1px solid var(--mist);
     }
     .nav-desktop a:last-child { border-bottom: none; }
+    /* Hamburger carries nav; sticky bottom bar carries Quote+Call — drop the
+       header quote button across the whole mobile band to stop crowding/overflow. */
+    .header-cta__quote { display: none; }
 }
 @media (max-width: 480px) {
     .header-cta__phone-icon { width: 44px; height: 44px; }
-    /* Hamburger now carries nav; sticky bar carries Quote+Call — free header space */
-    .header-cta__quote { display: none; }
+}
+
+/* ============================================================
+   Guide-article conversion CTAs (injected by /js/guide-cta.js)
+   Mid-article + end-of-article enquiry prompts on /guides/* pages.
+   ============================================================ */
+.guide-cta {
+    display: block;
+    margin: var(--space-5) 0;
+    background: var(--ink);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+.guide-cta--end {
+    background: linear-gradient(135deg, var(--ink) 0%, var(--ink-soft) 100%);
+}
+.guide-cta__inner {
+    padding: var(--space-4);
+}
+/* Scoped with .guide-cta to outrank .prose h2 / .prose p colour rules. */
+.guide-cta .guide-cta__title {
+    margin: 0 0 var(--space-1);
+    color: var(--surface);
+    font-size: 1.375rem;
+    line-height: 1.25;
+}
+.guide-cta--end .guide-cta__title {
+    font-size: 1.5rem;
+}
+.guide-cta .guide-cta__sub {
+    margin: 0 0 var(--space-3);
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1rem;
+    line-height: 1.55;
+    max-width: 52ch;
+}
+.guide-cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+.guide-cta__actions .btn {
+    flex: 0 1 auto;
+    /* .prose a applies an underline; buttons must not inherit it. */
+    text-decoration: none;
+}
+/* The CTA lives inside .prose, whose `a` colour rule outranks .btn--accent and
+   would repaint the button labels. Re-assert the button text colours here. */
+.guide-cta__actions .guide-cta__quote,
+.guide-cta__actions .guide-cta__quote:hover {
+    color: var(--surface);
+}
+.guide-cta__actions .guide-cta__call,
+.guide-cta__actions .guide-cta__call:hover {
+    color: var(--surface);
+    /* accent-on-dark border that reads clearly against the navy panel */
+    border-color: rgba(255, 255, 255, 0.55);
+}
+@media (max-width: 560px) {
+    .guide-cta__inner { padding: var(--space-3); }
+    .guide-cta__title { font-size: 1.25rem; }
+    .guide-cta--end .guide-cta__title { font-size: 1.375rem; }
+    .guide-cta__actions { flex-direction: column; }
+    .guide-cta__actions .btn { width: 100%; text-align: center; }
 }
