@@ -151,10 +151,10 @@
                 <h2>Get a free quote in 30 seconds</h2>
                 <p class="quote-card__sub">No obligation. We&rsquo;ll call you back within 2 hours during business hours.</p>
                 <form class="quote-form quote-form--hero" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="service" value="homepage">
                     <input type="hidden" name="access_key" value="f044aff6-87ad-4305-8eda-d8fef4706e95">
                     <input type="hidden" name="subject" value="Quick Quote from Homepage">
                     <input type="hidden" name="from_name" value="SameDayJetWash Website">
-                    <input type="hidden" name="redirect" value="https://samedayjetwash.com/quote">
                     <!-- Honeypot: hidden from real users; reliable bot signal for Web3Forms. -->
                     <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
                     <input type="text" name="name" placeholder="Your name" required autocomplete="name" aria-label="Your name">
@@ -540,6 +540,6 @@
     <script src="/js/nav.js?v=3" defer></script>
     <script src="/js/consent.js?v=2" defer></script>
     <script src="/js/posthog.js?v=2" defer></script>
-    <script src="/js/lead-capture.js" defer></script>
+    <script src="/js/lead-capture.js?v=3" defer></script>
 </body>
 </html>
