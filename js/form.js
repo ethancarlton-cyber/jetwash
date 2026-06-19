@@ -11,9 +11,8 @@
     'use strict';
 
     // ---- validation helpers ------------------------------------------------
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    // UK numbers: landline (01/02/03) or mobile (07), optional +44, spaces allowed.
-    var phoneRegex = /^(\+44\s?|0)[1237]\d[\d\s]{7,12}$/;
+    // Permissive email: local@domain.tld — not over-strict, just sane shape.
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
 
     function escapeHtml(s) {
         return String(s).replace(/[&<>"'\/]/g, function (c) {
@@ -31,22 +30,37 @@
         return m ? m[1] : null;
     }
 
+    // Normalises a UK phone to national digits (leading 0) so we can validate by
+    // digit count rather than a rigid pattern — accepts +44, 0044, (0), brackets,
+    // spaces and hyphens. Returns '' if it doesn't look like a UK number.
+    function normaliseUkPhone(value) {
+        var digits = (value || '').replace(/[^\d+]/g, '');
+        digits = digits
+            .replace(/^\+44/, '0')          // +44 7… -> 07…
+            .replace(/^0044/, '0')          // 0044 7… -> 07…
+            .replace(/^44(?=\d{9,})/, '0'); // bare 44XXXXXXXXX -> 0…
+        digits = digits.replace(/\D/g, ''); // drop any stray '+'
+        digits = digits.replace(/^00(?=\d)/, '0'); // +44 (0)7… collapsed 00 -> 0
+        // UK numbers are 10–11 digits starting 0; 01/02/03 landline, 07 mobile,
+        // 08/09 non-geographic. Accept all so we never hard-block a real caller.
+        return /^0[123789]\d{8,9}$/.test(digits) ? digits : '';
+    }
+
     // Detects whether the single contact field holds a valid email OR UK phone.
     function validateContact(value) {
         var cleaned = (value || '').trim();
         if (!cleaned) {
-            return { valid: false, message: 'Please enter a phone number or email so we can reach you' };
+            return { valid: false, message: 'Please add a phone number or email so we can reach you' };
         }
         if (cleaned.indexOf('@') !== -1) {
             if (!emailRegex.test(cleaned)) {
-                return { valid: false, message: 'That email doesn’t look right — check it and try again' };
+                return { valid: false, message: 'That email doesn’t look right — please check it' };
             }
             return { valid: true, type: 'email', value: cleaned, message: '' };
         }
         // No @ — treat as a phone number.
-        var stripped = cleaned.replace(/[\s()\-]/g, '');
-        if (!phoneRegex.test(stripped)) {
-            return { valid: false, message: 'Enter a valid UK phone (07… or 01…) or an email address' };
+        if (!normaliseUkPhone(cleaned)) {
+            return { valid: false, message: 'Enter a UK phone (e.g. 07123 456789 or 01737 652515) or an email' };
         }
         return { valid: true, type: 'phone', value: cleaned, message: '' };
     }
@@ -63,6 +77,20 @@
                 '<h3 style="margin:0 0 var(--space-1);font-size:1.5rem;">' + greeting + '</h3>' +
                 '<p style="margin:0 0 var(--space-2);color:var(--muted);">We&rsquo;ve got your details. Patrick will be in touch within 2 hours during working hours.</p>' +
                 '<p style="margin:0;font-size:0.9rem;color:var(--muted);">In a hurry? Call now: <a href="tel:+441737652515" style="color:var(--accent);font-weight:600;">01737 652 515</a></p>' +
+            '</div>';
+    }
+
+    // Soft landing when the server-side spam filter wrongly rejects a real lead:
+    // keep them on a positive path (call now) instead of an error dead-end.
+    function showCallFallback(form) {
+        var card = form.closest('.quote-card') || form.parentElement;
+        if (!card) return;
+        card.innerHTML =
+            '<div style="text-align:center;padding:var(--space-3) var(--space-2);">' +
+                '<h3 style="margin:0 0 var(--space-1);font-size:1.5rem;">Almost there!</h3>' +
+                '<p style="margin:0 0 var(--space-2);color:var(--muted);">We couldn&rsquo;t process the form just now &mdash; the quickest way to get your quote is a 30-second call.</p>' +
+                '<p style="margin:0 0 var(--space-2);"><a href="tel:+441737652515" class="btn btn--accent btn--lg" style="display:inline-block;">Call 01737 652 515</a></p>' +
+                '<p style="margin:0;font-size:0.9rem;color:var(--muted);">Mon&ndash;Sat 8am&ndash;6pm &middot; Sun 9am&ndash;5pm</p>' +
             '</div>';
     }
 
@@ -178,7 +206,14 @@
                 } else {
                     var msg = data && data.message ? data.message : 'Form submission failed.';
                     if (window.JWAnalytics && JWAnalytics.trackQuoteSubmitError) JWAnalytics.trackQuoteSubmitError(msg);
-                    showError(form, btn, originalText, 'Sorry — ' + msg + ' Please call 01737 652 515 or try again.');
+                    // A real person can be wrongly flagged by the server-side spam
+                    // filter. Never dead-end them — show a friendly "call us" card
+                    // instead of a hard alert so the lead isn't lost.
+                    if (/spam/i.test(msg)) {
+                        showCallFallback(form);
+                    } else {
+                        showError(form, btn, originalText, 'Sorry — ' + msg + ' Please call 01737 652 515 or try again.');
+                    }
                 }
             })
             .catch(function (error) {
@@ -201,8 +236,23 @@
         var contactInput = form.querySelector('#contact') || form.querySelector('[name="contact"]');
         var contactError = document.getElementById('contactError');
 
-        // Real-time contact validation on blur.
+        // Real-time contact feedback. While typing we only ever show a positive
+        // confirmation (never nag mid-entry); the "looks off" hint is reserved for
+        // blur, so we don't hard-block someone halfway through a number.
         if (contactInput && contactError) {
+            contactInput.addEventListener('input', function () {
+                if (!this.value.trim()) { contactError.textContent = ''; return; }
+                var result = validateContact(this.value);
+                if (result.valid) {
+                    contactError.textContent = result.type === 'email'
+                        ? '✓ Email looks good'
+                        : '✓ Phone number looks good';
+                    contactError.style.color = '#28a745';
+                } else if (contactError.style.color !== 'rgb(239, 68, 68)') {
+                    // Don't surface the error while typing — clear stale positives only.
+                    contactError.textContent = '';
+                }
+            });
             contactInput.addEventListener('blur', function () {
                 if (!this.value.trim()) { contactError.textContent = ''; return; }
                 var result = validateContact(this.value);
@@ -213,7 +263,10 @@
                         JWAnalytics.trackQuoteValidationError('contact', 'invalid_format');
                     }
                 } else {
-                    contactError.textContent = '';
+                    contactError.textContent = result.type === 'email'
+                        ? '✓ Email looks good'
+                        : '✓ Phone number looks good';
+                    contactError.style.color = '#28a745';
                     if (window.JWAnalytics && JWAnalytics.trackQuoteFieldComplete) {
                         JWAnalytics.trackQuoteFieldComplete('contact');
                     }
