@@ -9,6 +9,30 @@
 // is orphaned/incompatible and is no longer used).
 
 (function () {
+  // UK numbers: landline (01/02/03) or mobile (07), optional +44, spaces allowed.
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var phoneRegex = /^(\+44\s?|0)[1237]\d[\d\s]{7,12}$/;
+
+  // Accepts EITHER a valid UK phone OR an email in a single "contact" field.
+  // Mirrors js/form.js so inline/sidebar forms are phone-OR-email (not email-required).
+  function validateContact(value) {
+    var cleaned = (value || '').trim();
+    if (!cleaned) {
+      return { valid: false, message: 'Please enter a phone number or email so we can reach you' };
+    }
+    if (cleaned.indexOf('@') !== -1) {
+      if (!emailRegex.test(cleaned)) {
+        return { valid: false, message: 'That email doesn’t look right — check it and try again' };
+      }
+      return { valid: true, type: 'email', value: cleaned, message: '' };
+    }
+    var stripped = cleaned.replace(/[\s()\-]/g, '');
+    if (!phoneRegex.test(stripped)) {
+      return { valid: false, message: 'Enter a valid UK phone (07… or 01…) or an email address' };
+    }
+    return { valid: true, type: 'phone', value: cleaned, message: '' };
+  }
+
   function escapeHtml(s) {
     return String(s).replace(/[&<>"'\/]/g, function (c) {
       return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;', '/': '&#47;' })[c];
@@ -81,38 +105,63 @@
     alert(msg || 'Sorry, something went wrong. Please call 01737 652 515 or try again.');
   }
 
+  function showContactError(form, msg) {
+    var contactEl = form.querySelector('[name="contact"]');
+    var slot = form.querySelector('.jw-contact-error');
+    if (!slot && contactEl) {
+      slot = document.createElement('p');
+      slot.className = 'jw-contact-error';
+      slot.setAttribute('role', 'alert');
+      slot.style.cssText = 'margin:4px 0 0;font-size:0.85rem;color:#ef4444;';
+      contactEl.insertAdjacentElement('afterend', slot);
+    }
+    if (slot) slot.textContent = msg || '';
+    if (contactEl) contactEl.focus();
+  }
+
   function handleSubmit(form, e) {
     e.preventDefault();
 
     var nameEl = form.querySelector('input[name="name"]');
     var postcodeEl = form.querySelector('input[name="postcode"]');
-    // Prefer the combined "phone OR email" contact field; fall back to a legacy
-    // email-only field if a form still has one.
-    var contactEl = form.querySelector('[name="contact"]') || form.querySelector('input[name="email"]');
-    var contactErrorEl = form.querySelector('.error-message') ||
-      (contactEl && contactEl.getAttribute('aria-describedby')
-        ? document.getElementById(contactEl.getAttribute('aria-describedby'))
-        : null);
+    // New combined field; fall back to legacy email/phone inputs if a form
+    // hasn't been migrated yet.
+    var contactEl = form.querySelector('[name="contact"]');
+    var emailEl = form.querySelector('input[name="email"]');
+    var phoneEl = form.querySelector('input[name="phone"]');
     var name = nameEl ? nameEl.value.trim() : '';
     var postcode = postcodeEl ? postcodeEl.value.trim() : '';
 
-    // The required attribute blocks empty name/postcode; double-check name/postcode.
-    if (!name || !postcode || !contactEl) return;
+    if (!name || !postcode) return;
 
-    // Contact must be a valid phone OR email.
-    var contactResult = validateContact(contactEl.value);
-    if (!contactResult.valid) {
-      if (contactErrorEl) {
-        contactErrorEl.textContent = contactResult.message;
-        contactErrorEl.style.color = '#ef4444';
+    // Resolve the contact: phone OR email, from whichever field exists.
+    var contactType = null;
+    var contactValue = '';
+    if (contactEl) {
+      var result = validateContact(contactEl.value);
+      if (!result.valid) { showContactError(form, result.message); return; }
+      var slot = form.querySelector('.jw-contact-error');
+      if (slot) slot.textContent = '';
+      contactType = result.type;
+      contactValue = result.value;
+    } else {
+      // Legacy markup: accept phone OR email, neither hard-required.
+      var legacyEmail = emailEl ? emailEl.value.trim() : '';
+      var legacyPhone = phoneEl ? phoneEl.value.trim() : '';
+      if (legacyEmail) {
+        var er = validateContact(legacyEmail);
+        if (!er.valid) { if (emailEl) emailEl.focus(); return; }
+        contactType = 'email'; contactValue = legacyEmail;
+      } else if (legacyPhone) {
+        var pr = validateContact(legacyPhone);
+        if (!pr.valid) { if (phoneEl) phoneEl.focus(); return; }
+        contactType = 'phone'; contactValue = legacyPhone;
+      } else {
+        return; // nothing to send
       }
-      if (window.JWAnalytics && JWAnalytics.trackQuoteValidationError) {
-        try { JWAnalytics.trackQuoteValidationError('contact', 'invalid_format'); } catch (err) {}
-      }
-      contactEl.focus();
-      return;
     }
-    var email = contactResult.type === 'email' ? contactResult.value : '';
+
+    var email = contactType === 'email' ? contactValue : '';
 
     try {
       sessionStorage.setItem('jw_lead', JSON.stringify({
@@ -130,16 +179,14 @@
       btn.disabled = true;
     }
 
-    // Map the combined contact field into the right named field so the emailed
-    // lead clearly shows "Phone" or "Email".
+    // Map the single contact field into the correctly-named Web3Forms field
+    // so the notification email shows "Phone" or "Email" correctly.
     var fd = new FormData(form);
-    fd.delete('contact');
-    if (contactResult.type === 'email') {
-      fd.set('email', contactResult.value);
-    } else {
-      fd.set('phone', contactResult.value);
+    if (contactEl) {
+      fd.delete('contact');
+      if (contactType === 'email') fd.set('email', contactValue);
+      else if (contactType === 'phone') fd.set('phone', contactValue);
     }
-
     fetch(form.action, {
       method: 'POST',
       body: fd,
@@ -154,7 +201,7 @@
               JWAnalytics.trackQuoteSubmit({
                 source: form.id === 'quoteForm' ? 'quote_page' : 'lightweight',
                 postcode_area: postcodeArea(postcode),
-                contact_type: contactResult.type,
+                contact_type: contactType,
                 service: (form.querySelector('[name="service"]') || {}).value || null
               });
             } catch (err) {}
