@@ -689,8 +689,9 @@ p { margin: 0 0 var(--space-3); }
 .layout-2col {
     display: grid;
     gap: var(--space-5);
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
 }
+.layout-2col > * { min-width: 0; }
 @media (min-width: 960px) {
     .layout-2col { grid-template-columns: 1fr 360px; }
 }
@@ -818,6 +819,17 @@ p { margin: 0 0 var(--space-3); }
     max-width: 70ch;
     color: var(--ink);
     font-size: 1.0625rem;
+    overflow-wrap: anywhere;
+}
+/* Mobile: keep wide tables scrolling inside their column instead of bursting the layout */
+@media (max-width: 959px) {
+    .prose table,
+    .layout-2col table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
 }
 .prose h2 {
     margin-top: var(--space-5);
