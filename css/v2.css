@@ -731,10 +731,22 @@ textarea:focus-visible,
 .layout-2col {
     display: grid;
     gap: var(--space-5);
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
 }
+.layout-2col > * { min-width: 0; }
 @media (min-width: 960px) {
     .layout-2col { grid-template-columns: 1fr 360px; }
+}
+@media (max-width: 959px) {
+    .layout-2col table,
+    .prose table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .prose,
+    .layout-2col { overflow-wrap: anywhere; }
 }
 
 .included-list {

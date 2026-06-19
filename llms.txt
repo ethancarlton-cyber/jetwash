@@ -75,6 +75,25 @@ Reigate, Redhill, Horley, Crawley, Epsom, Banstead, Caterham, Oxted, Leatherhead
 - How Often to Clean a Roof: /guides/how-often-clean-roof — Recommended roof cleaning frequency and the signs moss is causing harm
 - Roof Cleaning Before Selling a House: /guides/roof-cleaning-before-selling-house — How a clean roof affects buyer perception, surveys, and sale value
 
+## Service Pages by Town
+- Soft Washing Reigate: /soft-washing-reigate — Soft washing for render, roofs, and rendered walls across Reigate
+- Soft Washing Redhill: /soft-washing-redhill — Low-pressure soft washing for delicate surfaces in Redhill
+- Roof Cleaning Reigate: /roof-cleaning-reigate — Moss removal and soft-wash roof cleaning in Reigate
+- Roof Cleaning Redhill: /roof-cleaning-redhill — Roof moss removal and biocide treatment in Redhill
+- Gutter Cleaning Reigate: /gutter-cleaning-reigate — Gutter clearing and vacuum extraction in Reigate
+- Gutter Cleaning Redhill: /gutter-cleaning-redhill — Blocked gutter clearance and maintenance in Redhill
+- Window Cleaning Redhill: /window-cleaning-redhill — Pure-water window cleaning for homes in Redhill
+- Window Cleaning Reigate: /window-cleaning-reigate — Streak-free window cleaning in Reigate
+- Fascia, Soffit & Cladding Cleaning Banstead: /fascia-soffit-cladding-cleaning-banstead — Roofline and cladding cleaning in Banstead
+- Fascia, Soffit & Cladding Cleaning Horley: /fascia-soffit-cladding-cleaning-horley — uPVC fascia and soffit cleaning in Horley
+- Solar Panel Cleaning Oxted: /solar-panel-cleaning-oxted — Safe solar panel cleaning to restore output in Oxted
+- Solar Panel Cleaning Chipstead: /solar-panel-cleaning-chipstead — Pure-water solar panel cleaning in Chipstead
+
+## New Comparison & Method Guides
+- Soft Washing vs Pressure Washing: /guides/soft-washing-vs-pressure-washing — When to use low-pressure soft washing instead of high-pressure jet washing, and which surfaces need which
+- Soft Washing Roof Guide: /guides/soft-washing-roof-guide — How soft washing safely removes roof moss and algae without damaging tiles
+- Are Gutter Guards Worth It: /guides/are-gutter-guards-worth-it — Whether gutter guards reduce cleaning frequency and how they affect maintenance
+
 ## Essential Resources
 - 50 Pressure Washing Questions Answered: /guides/pressure-washing-faq-50-questions — Comprehensive FAQ covering costs, safety, surfaces, equipment, and common concerns for UK homeowners
 - Best Pressure Washers UK 2026: /guides/best-pressure-washers-uk — Expert reviews of top consumer and prosumer pressure washers with buying advice
