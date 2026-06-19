@@ -65,3 +65,4 @@ voice/
 # Local secrets (Vercel deploy hooks, API keys, etc.) — NEVER COMMIT
 CLAUDE.local.md
 *.local.md
+mobile-qa/

@@ -1287,3 +1287,81 @@ body { padding-bottom: 70px; }
     .guide-cta__actions { flex-direction: column; }
     .guide-cta__actions .btn { width: 100%; text-align: center; }
 }
+
+/* ============================================================
+   MOBILE DENSITY + QA POLISH  (2026-06-19, claude/mobile-qa-polish)
+   "Tight chrome, big targets" — tightening is MOBILE-ONLY (<=767px);
+   desktop (>=768px) layout/scale is unchanged. Tokens validated against
+   Apple HIG, Material 3, WCAG 2.5.5/2.5.8 and live Stripe/Linear/Vercel.
+   See docs/seo/MOBILE-DESIGN-SPEC-2026-06-19.md.
+   ============================================================ */
+
+/* Bug fix (all viewports): the service-city pages used .area-chip / .area-pill
+   but only .areas-chip was ever styled, so these rendered as bare inline links.
+   Alias them to the chip component so they read as proper >=42px tap pills. */
+.area-chip,
+.area-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 18px;
+    border: 1.5px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    transition: all 0.15s;
+}
+.area-chip:hover,
+.area-pill:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 767px) {
+    /* 1) Vertical rhythm: shrink the large spacing tokens on mobile only.
+       These drive hero/section/footer/CTA-banner vertical padding. The
+       min-width:768px desktop rules resolve the default (larger) values,
+       so desktop spacing is untouched. */
+    :root {
+        --space-5: 2.25rem;   /* 48 -> 36  (-25%) */
+        --space-6: 3rem;      /* 72 -> 48  (-33%) */
+        --space-7: 3.5rem;    /* 96 -> 56  (-42%) */
+    }
+
+    /* 2) Cap heading scale (clamp() floors were desktop-sized -> clunky on mobile) */
+    h1 { font-size: 2rem; line-height: 1.16; }       /* 36 -> 32px */
+    h2 { font-size: 1.5rem; }                         /* 28 -> 24px */
+    h3 { font-size: 1.25rem; }                        /* 22 -> 20px */
+    .section__head p { font-size: 1.0625rem; }        /* 18 -> 17px */
+
+    /* 3) Hero: remove the cavernous dead-space band (tighter than tokens alone) */
+    .hero__inner { padding: 2.75rem 0 3rem; }                  /* 44 / 48px (was 72/96) */
+    .hero--service .hero__inner { padding: 2.5rem 0 2.75rem; } /* 40 / 44px */
+
+    /* 4) Tighter horizontal gutter (16px is the cross-platform standard) */
+    .container { padding: 0 16px; }
+
+    /* 5) Readable supporting text -> 16px floor (legibility + premium feel).
+       True meta (footnotes, captions, eyebrows, postcodes, stat labels,
+       footer fine-print) intentionally stays smaller. */
+    .service-card__body p,
+    .faq-item p,
+    .process-step p,
+    .included-list li,
+    .price-card__rows li,
+    .quote-card__sub { font-size: 1rem; }             /* 15 -> 16px */
+    .service-card__price { font-size: 1rem; font-weight: 700; }  /* 14 -> 16px, prominent */
+
+    /* 6) Tap targets: secondary links/chips comfortable; CTAs + inputs stay big */
+    .site-footer__col li { margin-bottom: 2px; }
+    .site-footer__col li a { display: inline-block; padding: 9px 0; line-height: 1.3; } /* ~40px */
+    .sticky-cta a { min-height: 48px; }               /* primary mobile CTA >= 48px */
+
+    /* 7) Wide content tables stay scrollable (belt-and-braces) + tighter cells */
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .table-wrap th,
+    .table-wrap td { padding: 10px; }
+}
