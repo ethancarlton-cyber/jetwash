@@ -1071,42 +1071,38 @@ textarea:focus-visible,
    ============================================================ */
 .sticky-cta {
     position: fixed;
-    bottom: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     z-index: 40;
     display: flex;
-    gap: 8px;
-    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
-    background: rgba(255, 255, 255, 0.96);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-top: 1px solid var(--line);
+    gap: 10px;
+    margin: 0 12px calc(12px + env(safe-area-inset-bottom));
+    padding: 8px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 34px rgba(11, 27, 43, 0.16);
 }
 .sticky-cta a {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
-    padding: 12px;
+    gap: 7px;
+    padding: 14px;
     border-radius: var(--radius-md);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.9375rem;
+    white-space: nowrap;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
-.sticky-cta a:first-child {
-    background: var(--accent);
-    color: var(--surface);
-    flex: 2;
-}
-.sticky-cta a:first-child:hover { background: var(--accent-hover); color: var(--surface); }
-.sticky-cta a:last-child {
-    background: transparent;
-    border: 1.5px solid var(--line);
-    color: var(--ink);
-}
-body { padding-bottom: 70px; }
+.sticky-cta a[href^="tel:"] { background: var(--ink); color: var(--surface); }
+.sticky-cta a[href^="tel:"]:hover { background: var(--ink-soft); color: var(--surface); }
+.sticky-cta a:not([href^="tel:"]) { background: var(--accent); color: var(--surface); }
+.sticky-cta a:not([href^="tel:"]):hover { background: var(--accent-hover); color: var(--surface); }
+body { padding-bottom: 86px; }
 @media (min-width: 768px) {
     .sticky-cta { display: none; }
     body { padding-bottom: 0; }
