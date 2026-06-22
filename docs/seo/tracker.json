@@ -24,16 +24,18 @@
       "minimumWordCount": 1500,
       "openingFormat": "answer-first — the direct answer must appear within the first 60 words",
       "minimumAuthoritativeCitations": 5,
-      "originalAnalyticalContribution": {
+      "dataTableOrAnalysis": {
+        "_intent": "Every page must include at least ONE original data table, cost calculation, or synthesis the reader cannot get elsewhere. This is genuinely useful and helps AI assistants cite the page. It is a content requirement, not a labelling exercise.",
         "required": true,
         "examples": [
-          "Synthesised comparison table (e.g., PSI/GPM/flow-rate across 5 named consumer pressure washers, sourced from manufacturer datasheets)",
-          "Cost estimate calculated from first principles (e.g., £/m² for block paving cleaning derived from labour hourly rate × area-per-hour benchmark × consumables)",
-          "Cross-referenced data matrix (e.g., BS standard × surface type × recommended cleaning approach)",
-          "Methodology box explaining how a published figure was reached, with the source for each input",
-          "Met Office / EA data correlated with a maintenance recommendation (e.g., frost-thaw cycles in RH1 vs sealant lifespan)"
+          "A comparison table of named products (e.g. PSI, GPM and flow-rate for 5 named pressure washers, from manufacturer datasheets)",
+          "A cost worked out from first principles (e.g. £/m² for block paving, built from labour rate, area-per-hour and consumables)",
+          "A simple table that pairs a surface type with the recommended cleaning approach and the standard behind it",
+          "A short note explaining how a published figure was reached, with the source for each input",
+          "Local weather or council data tied to a practical recommendation (e.g. rainfall in RH1 vs how often a drive needs cleaning)"
         ]
       },
+      "presentationRule": "Introduce any data table or analysis with ONE plain trader sentence (e.g. 'Here is what the numbers actually look like in [Town]:'). Use plain descriptive English headings that name the thing (e.g. '[Town] driveway prices by surface'). NEVER use academic framing or the literal phrases 'Original analytical contribution', 'labelled OAC', 'OAC', 'protocol matrix', or 'splits cleanly into' anywhere in page copy, headings, or JSON-LD descriptions. No em-dashes.",
       "acceptedSourceClasses": [
         "BS / EN / ISO standards (e.g., BS 7976 pendulum slip resistance, BS EN 16933 drainage, BS 7533 paving)",
         "Manufacturer technical datasheets — Karcher, Bosch, Nilfisk, Husqvarna, Stihl, Makita, Kranzle",
@@ -5177,7 +5179,7 @@
       },
       "status": "pending",
       "type": "content",
-      "details": "New guide page (now build). Primary kw 'soft washing vs pressure washing', supporting Soft Washing. Must meet researchPillarStandard: 1500+ words, answer-first <=60 words, 5+ authoritative citations, original analytical contribution, ## Sources section. Article + BreadcrumbList + FAQPage schema (HowTo on soft-wash-roof). Guide->quote bridge CTA + final CTA with 01737 652515. See CONTENT-PLAN-2026-06-19.md section B.",
+      "details": "New guide page (now build). Primary kw 'soft washing vs pressure washing', supporting Soft Washing. Must meet researchPillarStandard: 1500+ words, answer-first <=60 words, 5+ authoritative citations, one original data table or calculation, introduced in plain trader English, ## Sources section. Article + BreadcrumbList + FAQPage schema (HowTo on soft-wash-roof). Guide->quote bridge CTA + final CTA with 01737 652515. See CONTENT-PLAN-2026-06-19.md section B.",
       "targetFiles": [
         "guides/soft-washing-vs-pressure-washing.html"
       ],
@@ -5204,7 +5206,7 @@
       },
       "status": "pending",
       "type": "content",
-      "details": "New guide page (now build). Primary kw 'what is soft washing a roof', supporting Roof Cleaning. Must meet researchPillarStandard: 1500+ words, answer-first <=60 words, 5+ authoritative citations, original analytical contribution, ## Sources section. Article + BreadcrumbList + FAQPage schema (HowTo on soft-wash-roof). Guide->quote bridge CTA + final CTA with 01737 652515. See CONTENT-PLAN-2026-06-19.md section B.",
+      "details": "New guide page (now build). Primary kw 'what is soft washing a roof', supporting Roof Cleaning. Must meet researchPillarStandard: 1500+ words, answer-first <=60 words, 5+ authoritative citations, one original data table or calculation, introduced in plain trader English, ## Sources section. Article + BreadcrumbList + FAQPage schema (HowTo on soft-wash-roof). Guide->quote bridge CTA + final CTA with 01737 652515. See CONTENT-PLAN-2026-06-19.md section B.",
       "targetFiles": [
         "guides/soft-washing-roof-guide.html"
       ],
@@ -5231,7 +5233,7 @@
       },
       "status": "pending",
       "type": "content",
-      "details": "New guide page (now build). Primary kw 'are gutter guards worth it UK', supporting Gutter Cleaning. Must meet researchPillarStandard: 1500+ words, answer-first <=60 words, 5+ authoritative citations, original analytical contribution, ## Sources section. Article + BreadcrumbList + FAQPage schema (HowTo on soft-wash-roof). Guide->quote bridge CTA + final CTA with 01737 652515. See CONTENT-PLAN-2026-06-19.md section B.",
+      "details": "New guide page (now build). Primary kw 'are gutter guards worth it UK', supporting Gutter Cleaning. Must meet researchPillarStandard: 1500+ words, answer-first <=60 words, 5+ authoritative citations, one original data table or calculation, introduced in plain trader English, ## Sources section. Article + BreadcrumbList + FAQPage schema (HowTo on soft-wash-roof). Guide->quote bridge CTA + final CTA with 01737 652515. See CONTENT-PLAN-2026-06-19.md section B.",
       "targetFiles": [
         "guides/are-gutter-guards-worth-it.html"
       ],
@@ -5258,7 +5260,7 @@
       },
       "status": "pending",
       "type": "content",
-      "details": "New guide page (deferred build). Primary kw 'how often soft wash house UK', supporting Soft Washing. Must meet researchPillarStandard: 1500+ words, answer-first <=60 words, 5+ authoritative citations, original analytical contribution, ## Sources section. Article + BreadcrumbList + FAQPage schema (HowTo on soft-wash-roof). Guide->quote bridge CTA + final CTA with 01737 652515. See CONTENT-PLAN-2026-06-19.md section B.",
+      "details": "New guide page (deferred build). Primary kw 'how often soft wash house UK', supporting Soft Washing. Must meet researchPillarStandard: 1500+ words, answer-first <=60 words, 5+ authoritative citations, one original data table or calculation, introduced in plain trader English, ## Sources section. Article + BreadcrumbList + FAQPage schema (HowTo on soft-wash-roof). Guide->quote bridge CTA + final CTA with 01737 652515. See CONTENT-PLAN-2026-06-19.md section B.",
       "targetFiles": [
         "guides/how-often-soft-wash.html"
       ],
@@ -5285,7 +5287,7 @@
       },
       "status": "pending",
       "type": "content",
-      "details": "New guide page (deferred build). Primary kw 'is soft washing worth it', supporting Soft Washing. Must meet researchPillarStandard: 1500+ words, answer-first <=60 words, 5+ authoritative citations, original analytical contribution, ## Sources section. Article + BreadcrumbList + FAQPage schema (HowTo on soft-wash-roof). Guide->quote bridge CTA + final CTA with 01737 652515. See CONTENT-PLAN-2026-06-19.md section B.",
+      "details": "New guide page (deferred build). Primary kw 'is soft washing worth it', supporting Soft Washing. Must meet researchPillarStandard: 1500+ words, answer-first <=60 words, 5+ authoritative citations, one original data table or calculation, introduced in plain trader English, ## Sources section. Article + BreadcrumbList + FAQPage schema (HowTo on soft-wash-roof). Guide->quote bridge CTA + final CTA with 01737 652515. See CONTENT-PLAN-2026-06-19.md section B.",
       "targetFiles": [
         "guides/is-soft-washing-worth-it.html"
       ],
@@ -5312,7 +5314,7 @@
       },
       "status": "pending",
       "type": "content",
-      "details": "New guide page (deferred build). Primary kw 'roof coating scam UK', supporting Roof Cleaning. Must meet researchPillarStandard: 1500+ words, answer-first <=60 words, 5+ authoritative citations, original analytical contribution, ## Sources section. Article + BreadcrumbList + FAQPage schema (HowTo on soft-wash-roof). Guide->quote bridge CTA + final CTA with 01737 652515. See CONTENT-PLAN-2026-06-19.md section B.",
+      "details": "New guide page (deferred build). Primary kw 'roof coating scam UK', supporting Roof Cleaning. Must meet researchPillarStandard: 1500+ words, answer-first <=60 words, 5+ authoritative citations, one original data table or calculation, introduced in plain trader English, ## Sources section. Article + BreadcrumbList + FAQPage schema (HowTo on soft-wash-roof). Guide->quote bridge CTA + final CTA with 01737 652515. See CONTENT-PLAN-2026-06-19.md section B.",
       "targetFiles": [
         "guides/roof-coating-scam-uk.html"
       ],

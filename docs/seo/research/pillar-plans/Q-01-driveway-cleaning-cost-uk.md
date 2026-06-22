@@ -2,7 +2,7 @@
 
 **Query**: "How much does it cost to clean a driveway UK 2026"
 **Linked page**: `guides/driveway-cleaning-cost-uk.html`
-**Status**: ✅ **DONE** — research complete AND article rewritten with 7 inline citations, build-up table (labelled originalAnalyticalContribution), Sources section, schema citations, all 6 of 6 usefulness criteria satisfied. Committed locally on `claude/research-pillar-loop` 2026-05-21 (Cycle 2).
+**Status**: ✅ **DONE** — research complete AND article rewritten with 7 inline citations, a £/m² cost build-up table, Sources section, schema citations, all 6 of 6 usefulness criteria satisfied. Committed locally on `claude/research-pillar-loop` 2026-05-21 (Cycle 2).
 **Priority**: P0 — highest commercial intent in the priorityQueries list
 **Last touched**: 2026-05-21 (Cycle 2 — rewrite shipped)
 
@@ -16,7 +16,7 @@ This is differentiated from every competitor because they all quote £3-6/m² wi
 
 ---
 
-## Original analytical contribution
+## The £/m² cost build-up table
 
 **First-principles cost build-up for a 40m² block paving driveway in Surrey, 2026.**
 
@@ -77,7 +77,7 @@ Keep the existing strong elements (Surrey area focus, table of contents, sticky 
 
 1. Hero — keep, but tighten the lede to lead with the floor-vs-range insight
 2. Key Facts box — replace one bullet with the Wisley counterintuitive finding
-3. **NEW section** "What goes into a £/m² rate — the build-up" — the first-principles table (this is the original analytical contribution)
+3. **NEW section** "What goes into a £/m² rate — the build-up" — the first-principles table (the original data table for this page)
 4. **NEW section** "How to spot a sub-floor quote" — using the build-up to identify red flags
 5. Existing "Cost by size" + "Cost by material" — keep, but add inline citation for each range
 6. Existing "What's included" + "What pushes the price up" — keep, add Marshalls-cited technique constraints
@@ -106,7 +106,7 @@ Existing schema has Article, BreadcrumbList, FAQPage. Add `citation` property to
 
 ✅ **Q-01 is DONE** as of 2026-05-21 (Cycle 2). The rewrite shipped with:
 - 7 inline `<sup>` citations linking to anchored Sources section entries (`src-wisley`, `src-thames`, `src-nlw`, `src-marshalls`, `src-karcher`, `src-bsi`, `src-phoenix`)
-- Two new H2 sections: "The £/m² build-up" (labelled originalAnalyticalContribution + inputs table + maths) and "How to spot a sub-floor quote" (red-flag checklist)
+- Two new H2 sections: "The £/m² build-up" (inputs table + maths, introduced in plain trader English) and "How to spot a sub-floor quote" (red-flag checklist)
 - Lede rewritten to lead with the floor-vs-range stance
 - Key Facts box re-bulleted with sourced Surrey-specific data
 - Surrey-prices section gained "One thing the cost guides get wrong about Surrey" subhead with Wisley/Met Office data

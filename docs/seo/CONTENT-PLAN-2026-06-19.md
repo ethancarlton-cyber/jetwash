@@ -153,7 +153,7 @@ follows roofline/render stock).
 
 All three PASS the cannibalization check against the existing 60 guides and meet the
 `researchPillarStandard` (1500+ words, answer-first <60 words, 5+ authoritative citations,
-original analytical contribution, `## Sources`). SERP-steal structural targets weighted to the
+one original data table or calculation, introduced in plain trader English, `## Sources`). SERP-steal structural targets weighted to the
 two tighter competitors, not long-tail outliers.
 
 1. **Soft Washing vs Pressure Washing: Which Does Your Home Need? (UK 2026)**
@@ -169,7 +169,7 @@ two tighter competitors, not long-tail outliers.
    **Roof Cleaning**. Soft washing is the site's core method yet has no dedicated roof guide.
    Method/how-it-works-led (chemistry, process, PPE, materials, aftercare) — links to (does not
    re-argue) `does-roof-cleaning-damage-tiles` and `roof-cleaning-cost-uk`. Out-cites uncited
-   competitors with Lithofin/Met Office/HSE/BGS + the tile-type protocol matrix + real
+   competitors with Lithofin/Met Office/HSE/BGS + a tile-type cleaning table + real
    before/after. **SERP target: ~2,700 words, 11 H2, 3 images.**
 
 3. **Are Gutter Guards Worth It? An Honest Surrey Verdict (2026)**
