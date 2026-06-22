@@ -25,7 +25,7 @@ Reigate, Redhill, Horley, Crawley, Epsom, Banstead, Caterham, Oxted, Leatherhead
 20-mile radius from RH1 (Redhill, Surrey). All RH postcodes (RH1-RH11), SM7, CR3, KT17-KT24.
 
 ## Guides
-16 detailed guides covering costs, methods, and maintenance for UK homeowners:
+31 detailed guides covering costs, methods, and maintenance for UK homeowners:
 - Driveway cleaning cost UK 2026
 - Patio cleaning cost UK 2026
 - Block paving cleaning cost UK 2026
@@ -69,6 +69,9 @@ Reigate, Redhill, Horley, Crawley, Epsom, Banstead, Caterham, Oxted, Leatherhead
 - How Often to Clean Gutters: /guides/how-often-clean-gutters — Recommended gutter cleaning frequency by tree cover and roof type
 - Gutter Vacuum vs Ladder: /guides/gutter-vacuum-vs-ladder — Comparing ground-level vacuum extraction with traditional ladder clearing for safety and results
 - Blocked Gutter Overflowing: /guides/blocked-gutter-overflowing — Warning signs of blocked gutters, the damage overflow causes, and how to fix it
+- Can Blocked Gutters Cause Damp: /guides/can-blocked-gutters-cause-damp — How overflowing gutters cause penetrating damp inside the home, the warning signs and the fix
+- 7 Signs You Need Your Gutters Cleaned: /guides/signs-you-need-gutters-cleaned — The seven warning signs that gutters are overdue a clean and what each one means
+- Autumn Gutter-Cleaning Checklist: /guides/autumn-gutter-cleaning-checklist — Practical autumn gutter-cleaning checklist for Surrey homes, timing, the 8 steps and the downpipe flush
 
 ## Roof Cleaning Guides
 - Does Roof Cleaning Damage Tiles: /guides/does-roof-cleaning-damage-tiles — Why high pressure damages tiles and how soft washing cleans safely

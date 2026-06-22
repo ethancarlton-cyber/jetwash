@@ -8,9 +8,9 @@
 
 Rust stains are iron oxide bonded into porous concrete or block-paving surfaces. Pressure washing alone smears the contamination across the surface and grinds residue deeper into joints. The standard chemistry is oxalic acid — either via Lithofin Rust-EX trade product or DIY-grade oxalic acid (wood bleach) at 5–10% solution. Apply, dwell 10–30 minutes, agitate gently, rinse per Marshalls technique. HSE COSHH handling rules apply at all concentrations.
 
-## Original analytical contribution
+## Rust-removal chemistry table
 
-**The two-acid rust-removal protocol matrix** — 5-row table mapping rust-stain type / age against named acid chemistry (Lithofin Rust-EX / oxalic / citric finishing), concentration (3–10%), dwell time (10–30 min) and post-treat re-sand requirement per BS 7533-101. Uniquely flags **DO NOT USE ACID** for limestone / marble (acid etches permanently).
+**A rust-removal table** — 5 rows mapping rust-stain type and age against named acid chemistry (Lithofin Rust-EX / oxalic / citric finishing), concentration (3–10%), dwell time (10–30 min) and post-treat re-sand requirement per BS 7533-101. Uniquely flags **DO NOT USE ACID** for limestone / marble (acid etches permanently).
 
 ## Sources cited (7)
 
@@ -31,7 +31,7 @@ Q-07 (oil-stain removal) and Q-80 (Lithofin Oil-EX coverage) cover oil-stain che
 - 1,556 words ≥ 1,500 minimum ✓
 - 16 inline `<sup>` citations (vs 5 required) ✓
 - 7 source classes spanned (Lithofin × 2 + Marshalls + BSI + HSE × 2 + Met Office + UKSRG) ✓
-- OAC labelled in-page ✓
+- No academic OAC framing in page copy ✓
 - Sources H2 with 7 entries ✓
 - 6 of 6 usefulnessCriteria satisfied ✓
 - 0 `.html` in href, 13 phone CTA instances ✓

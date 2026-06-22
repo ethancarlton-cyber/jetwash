@@ -8,9 +8,9 @@
 
 Limestone and marble are calcium carbonate (CaCO₃). Acid (H⁺) reacts with the surface and etches permanently — the calcium ion dissolves, CO₂ escapes, water is left behind. There is no recovery. The protocol is pH-neutral chemistry only: Lithofin Multi-Cleaner range, soft-wash technique below the Marshalls medium-pressure ceiling, Lithofin Algex biocide. HSE COSHH applies even to neutral products at trade concentrations.
 
-## Original analytical contribution
+## Natural-stone safe-cleaning table
 
-**The limestone-and-marble substrate-compatibility matrix** — 6-row table mapping UK natural-stone categories (limestone, marble, Indian sandstone, York stone, slate, granite) against composition, safe chemistry and prohibited chemistry. Negative-space companion to Q-101 rust pillar.
+**A natural-stone safe-cleaning table** — 6 rows mapping UK natural-stone categories (limestone, marble, Indian sandstone, York stone, slate, granite) against composition, safe chemistry and prohibited chemistry. Negative-space companion to Q-101 rust pillar.
 
 ## Sources cited (7)
 
@@ -31,7 +31,7 @@ Q-14 / Q-15 cover Indian sandstone. Q-101 covers rust on block paving / sandston
 - 1,629 words ≥ 1,500 minimum ✓
 - 17 inline `<sup>` citations (vs 5 required) ✓
 - 5 source classes spanned ✓
-- OAC labelled in-page ✓
+- No academic OAC framing in page copy ✓
 - Sources H2 with 7 entries ✓
 - 6 of 6 usefulnessCriteria satisfied ✓
 - 0 `.html` in href, 13 phone CTA instances ✓
