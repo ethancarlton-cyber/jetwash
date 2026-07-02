@@ -7,7 +7,6 @@
 # --- Content 301s (must match vercel.json exactly to preserve link equity) ---
 /tips                                    /guides                                    301
 /tips.html                               /guides                                    301
-/driveway-cleaning-redhill               /areas/redhill                             301
 /areas/bletchingley                      /areas/betchworth                          301
 /guides/is-pressure-washing-worth-it     /guides/property-value-kerb-appeal         301
 
