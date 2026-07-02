@@ -280,6 +280,9 @@
         var started = false;
         function markStarted(field) {
             if (started) return;
+            // Don't burn the one-shot flag before consent: pre-consent the
+            // tracker call is a no-op, so wait until analytics can actually fire.
+            if (window.JWConsent && JWConsent.status && JWConsent.status() !== 'accepted') return;
             started = true;
             if (window.JWAnalytics && JWAnalytics.trackQuoteStart) JWAnalytics.trackQuoteStart(field);
         }

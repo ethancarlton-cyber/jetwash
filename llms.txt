@@ -79,6 +79,8 @@ Reigate, Redhill, Horley, Crawley, Epsom, Banstead, Caterham, Oxted, Leatherhead
 - Roof Cleaning Before Selling a House: /guides/roof-cleaning-before-selling-house — How a clean roof affects buyer perception, surveys, and sale value
 
 ## Service Pages by Town
+- Driveway Cleaning Redhill: /driveway-cleaning-redhill — Block paving, tarmac and concrete drives cleaned across RH1, kiln-dried re-sanding included, same-day slots
+- Patio Cleaning Reigate: /patio-cleaning-reigate — Indian sandstone, black spot and moss treated properly across RH2, from £3 per square metre
 - Soft Washing Reigate: /soft-washing-reigate — Soft washing for render, roofs, and rendered walls across Reigate
 - Soft Washing Redhill: /soft-washing-redhill — Low-pressure soft washing for delicate surfaces in Redhill
 - Roof Cleaning Reigate: /roof-cleaning-reigate — Moss removal and soft-wash roof cleaning in Reigate
@@ -92,7 +94,12 @@ Reigate, Redhill, Horley, Crawley, Epsom, Banstead, Caterham, Oxted, Leatherhead
 - Solar Panel Cleaning Oxted: /solar-panel-cleaning-oxted — Safe solar panel cleaning to restore output in Oxted
 - Solar Panel Cleaning Chipstead: /solar-panel-cleaning-chipstead — Pure-water solar panel cleaning in Chipstead
 
+## Hosepipe Bans & Timely Guides (2026)
+- Pressure Washing During a Hosepipe Ban: /guides/pressure-washing-hosepipe-ban-uk — UK July 2026 rules on jet washing during a hosepipe ban, the business-use exemption, water-butt loophole, and fines (re-verified weekly)
+- Hosepipe Ban in Surrey: /guides/hosepipe-ban-surrey — Town-by-town hosepipe ban status across Surrey, which water company serves each town, and why SES Water (Redhill, Reigate) has no ban
+
 ## New Comparison & Method Guides
+- Black Spot on Indian Sandstone: /guides/black-spot-indian-sandstone — What black spot lichen is, why pressure washing alone fails, DIY removers compared, and professional removal cost
 - Soft Washing vs Pressure Washing: /guides/soft-washing-vs-pressure-washing — When to use low-pressure soft washing instead of high-pressure jet washing, and which surfaces need which
 - Soft Washing Roof Guide: /guides/soft-washing-roof-guide — How soft washing safely removes roof moss and algae without damaging tiles
 - Are Gutter Guards Worth It: /guides/are-gutter-guards-worth-it — Whether gutter guards reduce cleaning frequency and how they affect maintenance
