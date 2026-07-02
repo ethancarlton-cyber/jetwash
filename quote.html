@@ -142,7 +142,7 @@
 
                             <label style="display: block;">
                                 <span style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 4px;">Postcode *</span>
-                                <input type="text" id="postcode" name="postcode" required pattern="[A-Za-z]{1,2}[0-9]{1,2}[A-Za-z]?\s?[0-9][A-Za-z]{2}" autocomplete="postal-code" placeholder="e.g. RH1 2AB" aria-label="Your postcode">
+                                <input type="text" id="postcode" name="postcode" required pattern="^[A-Za-z]{1,2}[0-9][A-Za-z0-9]?([ ]?[0-9][A-Za-z]{2})?$" autocomplete="postal-code" placeholder="e.g. RH1 or RH1 6AB" title="Full postcode or just the first part, e.g. RH1 or RH1 6AB" aria-label="Your postcode">
                             </label>
 
                             <label class="quote-form__full" style="display: block;">
@@ -363,7 +363,7 @@
     </script>
     <script src="/js/consent.js?v=3" defer></script>
     <script src="/js/posthog.js?v=2" defer></script>
-    <script src="/js/form.js?v=3" defer></script>
+    <script src="/js/form.js?v=4" defer></script>
     <script src="/js/lead-capture.js?v=3" defer></script>
     <script src="/js/nav.js?v=3" defer></script>
 </body>
