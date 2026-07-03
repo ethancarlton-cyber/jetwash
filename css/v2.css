@@ -1368,3 +1368,53 @@ body { padding-bottom: 86px; }
     .table-wrap th,
     .table-wrap td { padding: 10px; }
 }
+
+/* ---- In-guide conversion widget (2026-07-02) ---- */
+.quote-card--inguide {
+    margin: var(--space-4) 0;
+    border-top: 4px solid var(--accent);
+}
+.quote-card--inguide h3 {
+    font-size: 1.3rem;
+    margin: 0 0 var(--space-1);
+}
+.quote-card--inguide .quote-card__sub {
+    margin-bottom: var(--space-2);
+}
+.quote-card__call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 56px;
+    font-size: 1.1rem;
+}
+/* The widget lives inside .prose, whose `a` rule outranks .btn--accent
+   (underline + accent text). Re-assert button styling here. */
+.prose .quote-card__call,
+.prose .quote-card__call:hover {
+    color: var(--surface);
+    text-decoration: none;
+    font-weight: 700;
+}
+.quote-card__call-note {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin: var(--space-1) 0 0;
+}
+.quote-card__or {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin: var(--space-2) 0;
+}
+.quote-card__or::before,
+.quote-card__or::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+}
