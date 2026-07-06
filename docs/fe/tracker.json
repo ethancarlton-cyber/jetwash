@@ -1,14 +1,14 @@
 {
   "meta": {
     "version": 1,
-    "lastUpdated": "2026-04-12",
+    "lastUpdated": "2026-07-06",
     "lastRunDate": "2026-04-12",
     "lastRunId": "fe-run-064",
     "lastRunSummary": "SESSION COMPLETE. 47 commits, 80+ pages optimized. Final health check: phone 80/80, hero CTAs 76, inline forms 73, first-person CTAs 80, autocomplete 74, redirects 72, How It Works 29, inline styles reduced 84% (450→73). All major conversion and code quality work done.",
     "totalRuns": 64,
     "lastAuditDate": "2026-04-13",
     "nextAuditDue": "2026-05-13",
-    "nextTaskId": 8,
+    "nextTaskId": 9,
     "lastCheckedIndex": 79,
     "lastVerifiedCommit": "de69bc6",
     "lastResearchTopic": "inline style cleanup — tables + trust badges",
@@ -220,6 +220,19 @@
       "fixedDate": "2026-04-13",
       "fixedRun": "fe-run-041",
       "fixNote": "Added min-height:44px + inline-flex + align-items:center to .nav-link. WCAG touch target compliance."
+    },
+    {
+      "id": "FE-008",
+      "type": "footer-cta-overlap",
+      "page": "guides/* (mobile) — reported on guides/hosepipe-ban-surrey",
+      "breakpoint": "mobile",
+      "element": "footer / sticky mobile CTA bar + in-guide conversion widget",
+      "detail": "On mobile, the bottom of guide pages looks cluttered/broken: the sticky mobile CTA bar (\"Call now\" / \"Get quote\") overlaps with the in-guide call-first conversion widget (\"Call 01737 652515\" / \"Get a free quote\", added in commit 841ce57) and the cookie banner. Multiple stacked CTA blocks pile up at the bottom of the viewport and overlap each other. Reported by Ethan with screenshot (IMG_0270, 06 Jul 2026). Needs: dedupe/space the stacked bottom CTAs so the footer area reads cleanly on mobile.",
+      "priority": "P2",
+      "status": "open",
+      "foundDate": "2026-07-06",
+      "foundRun": "user-report",
+      "source": "Ethan screenshot IMG_0270 (mobile, samedayjetwash.com hosepipe-ban guide)"
     }
   ],
   "pageResults": {
@@ -975,7 +988,17 @@
         {
           "type": "pattern",
           "text": "Service page cta-sections were inconsistent with area/guide pages: only had 1 button (Get Free Quote) vs 2 buttons (quote + phone). The phone button was the highest-value conversion action missing from the final CTA on money pages. Now consistent: all final CTA sections have 2 buttons sitewide.",
-          "pages": ["driveway-cleaning.html", "patio-cleaning.html", "block-paving-cleaning.html", "render-cleaning.html", "decking-cleaning.html", "commercial-jetwashing.html", "roof-cleaning.html", "gutter-cleaning.html", "soft-washing.html"],
+          "pages": [
+            "driveway-cleaning.html",
+            "patio-cleaning.html",
+            "block-paving-cleaning.html",
+            "render-cleaning.html",
+            "decking-cleaning.html",
+            "commercial-jetwashing.html",
+            "roof-cleaning.html",
+            "gutter-cleaning.html",
+            "soft-washing.html"
+          ],
           "confidence": "high",
           "actionable": false,
           "appliesTo": "service-pages",
@@ -1028,7 +1051,9 @@
         {
           "type": "pattern",
           "text": "Service pages had complete multi-point CTA coverage (hero + bridge + final cta-section + sticky) but area pages were missing the final cta-section. Now all 22 area pages have localized final CTA sections with town names. Area pages now match service page conversion architecture.",
-          "pages": ["areas/*.html"],
+          "pages": [
+            "areas/*.html"
+          ],
           "confidence": "high",
           "actionable": false,
           "appliesTo": "area-pages",
@@ -1060,7 +1085,11 @@
         {
           "type": "pattern",
           "text": "Seasonal urgency coverage was inconsistent: service pages 9/9, area pages 22/22, but hub pages only 2/5 (homepage + quote). Calculator, pricing, and FAQ were missing. Fixed — now 100% coverage on all high-intent pages.",
-          "pages": ["calculator.html", "pricing.html", "faq.html"],
+          "pages": [
+            "calculator.html",
+            "pricing.html",
+            "faq.html"
+          ],
           "confidence": "high",
           "actionable": false,
           "appliesTo": "hub-pages",
@@ -1114,7 +1143,10 @@
         {
           "type": "pattern",
           "text": "Bridge CTA coverage now 100%. Redhill and reigate were the only 2 area pages missing bridge CTAs — ironic since they are the PRIMARY area pages (most traffic). All 80 pages now have: hero CTAs (76), bridge CTAs (all content pages), sticky bar CTAs (80), footer CTAs (80).",
-          "pages": ["areas/redhill.html", "areas/reigate.html"],
+          "pages": [
+            "areas/redhill.html",
+            "areas/reigate.html"
+          ],
           "confidence": "high",
           "actionable": false,
           "appliesTo": "all"
@@ -1178,7 +1210,9 @@
         {
           "type": "pattern",
           "text": "All 22 area pages had same gap as service pages: trust badges in hero but NO tappable CTA buttons. This is now a confirmed sitewide pattern — any page with .page-hero and .trust-badges likely has this gap. Fixed for service (9) and area (22) pages. Guide pages and hub pages still need checking.",
-          "pages": ["areas/*.html"],
+          "pages": [
+            "areas/*.html"
+          ],
           "confidence": "high",
           "actionable": true,
           "appliesTo": "all-page-hero-pages",
@@ -1187,7 +1221,9 @@
         {
           "type": "hypothesis",
           "text": "Adding hero CTA buttons to area pages should increase conversions from local search visitors. These visitors searched for '[town] pressure washing' — they have high intent and confirming service + easy contact should convert them.",
-          "pages": ["areas/*.html"],
+          "pages": [
+            "areas/*.html"
+          ],
           "confidence": "high",
           "actionable": true,
           "appliesTo": "area-pages",
@@ -1220,7 +1256,17 @@
         {
           "type": "pattern",
           "text": "All 9 service pages had trust badges in hero but NO tappable CTA buttons (Get Quote or Call). Homepage had both but service pages only had span elements. This was a significant conversion gap on the highest-intent pages.",
-          "pages": ["driveway-cleaning.html", "patio-cleaning.html", "block-paving-cleaning.html", "render-cleaning.html", "decking-cleaning.html", "commercial-jetwashing.html", "roof-cleaning.html", "gutter-cleaning.html", "soft-washing.html"],
+          "pages": [
+            "driveway-cleaning.html",
+            "patio-cleaning.html",
+            "block-paving-cleaning.html",
+            "render-cleaning.html",
+            "decking-cleaning.html",
+            "commercial-jetwashing.html",
+            "roof-cleaning.html",
+            "gutter-cleaning.html",
+            "soft-washing.html"
+          ],
           "confidence": "high",
           "actionable": false,
           "appliesTo": "service-pages",
@@ -1237,7 +1283,9 @@
         {
           "type": "page-insight",
           "text": "Quote page is heavily optimized: 13 visible trust elements, 8 unique trust keywords, phone prominent, seasonal urgency, satisfaction guarantee. Form has 4 fields (service, postcode, name, contact). Quote page is the strongest converting page on the site.",
-          "pages": ["quote.html"],
+          "pages": [
+            "quote.html"
+          ],
           "confidence": "high",
           "actionable": false,
           "appliesTo": "specific"
@@ -1245,7 +1293,17 @@
         {
           "type": "hypothesis",
           "text": "Adding hero CTA buttons to service pages should increase quote form submissions and phone calls from service pages. These are high-intent pages where visitors know what service they need — a prominent CTA removes friction.",
-          "pages": ["driveway-cleaning.html", "patio-cleaning.html", "block-paving-cleaning.html", "render-cleaning.html", "decking-cleaning.html", "commercial-jetwashing.html", "roof-cleaning.html", "gutter-cleaning.html", "soft-washing.html"],
+          "pages": [
+            "driveway-cleaning.html",
+            "patio-cleaning.html",
+            "block-paving-cleaning.html",
+            "render-cleaning.html",
+            "decking-cleaning.html",
+            "commercial-jetwashing.html",
+            "roof-cleaning.html",
+            "gutter-cleaning.html",
+            "soft-washing.html"
+          ],
           "confidence": "high",
           "actionable": true,
           "appliesTo": "service-pages",
@@ -1817,7 +1875,7 @@
     }
   ],
   "counters": {
-    "open": 5,
+    "open": 6,
     "inProgress": 0,
     "fixed": 0,
     "wontfix": 0
