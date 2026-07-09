@@ -1,13 +1,13 @@
 {
   "meta": {
     "version": 1,
-    "lastUpdated": "2026-06-19",
-    "lastRunDate": "2026-05-21",
+    "lastUpdated": "2026-07-10",
+    "lastRunDate": "2026-07-10",
     "lastResearchTopic": "Q-12-repoint-to-how-often-clean-driveway",
-    "lastRunId": "research-cycle-013",
-    "lastRunSummary": "Service-city + guide content batch (content-plan-2026-06-19): queued 80 service-city pages (one per remaining weak-service cell, type=content, category=transactional, priority by tier, ICE derived from cell scores) + 6 guide topics (3 build-now: soft-washing-vs-pressure-washing, soft-washing-roof-guide, are-gutter-guards-worth-it; 3 deferred-queue). Added 86 priorityQueries (aiCited null, linkedPage set, tag 2026-06-19-service-city). No pages built this run - slow-ramp queue only (Wave 1 builds 0; service-city pages await Ethan photos + GBP categories).",
-    "totalRuns": 60,
-    "nextTaskId": 141,
+    "lastRunId": "seo-push-pr53-2026-07-10",
+    "lastRunSummary": "Overnight town-money-page push (PR #53, merged + verified live + IndexNow submitted 2026-07-10). Shipped 5 new commercial-intent town pages chosen by a 3-strategist debate: driveway-cleaning-reigate, patio-cleaning-redhill, pressure-washing-horley, driveway-cleaning-banstead, driveway-cleaning-dorking. block-paving-cleaning-reigate was KILLED (hub already ranks page one for the town query, would cannibalise) and Crawley was DEFERRED (same-day credibility, lead-resale economics, West Sussex branding; revisit once GBP proximity data exists). Sitewide conversion + linking batch: footer tap-to-call on 126 legacy pages, call-weighted sticky CTA, trust-strip CSS, consent-gated PostHog call_click attribution, hub/pillar/area/sibling links to the new pages, sitemap now 131 URLs, llms.txt refreshed, hosepipe-ban-surrey guide updated (Surrey NOT banned via SES Water; Kent + Hants/IoW bans noted). Outreach kit standardised (NAP 'Same Day JetWash' / '01737 652 515', unsourced stats softened, dofollow-first checklist, MORNING-RUNBOOK-2026-07-10.md added).",
+    "totalRuns": 61,
+    "nextTaskId": 150,
     "fullScanDate": "2026-05-04",
     "nextFullScanDue": "2026-08-04"
   },
@@ -1427,6 +1427,51 @@
         "aiCited": null,
         "linkedPage": "guides/roof-coating-scam-uk.html",
         "added": "2026-06-19-service-city"
+      },
+      {
+        "id": "SEO-141-PQ",
+        "query": "Driveway cleaning Reigate",
+        "aiCited": null,
+        "linkedPage": "driveway-cleaning-reigate",
+        "added": "2026-07-10-town-money-page",
+        "built": true,
+        "builtDate": "2026-07-10"
+      },
+      {
+        "id": "SEO-142-PQ",
+        "query": "Patio cleaning Redhill",
+        "aiCited": null,
+        "linkedPage": "patio-cleaning-redhill",
+        "added": "2026-07-10-town-money-page",
+        "built": true,
+        "builtDate": "2026-07-10"
+      },
+      {
+        "id": "SEO-143-PQ",
+        "query": "Pressure washing Horley",
+        "aiCited": null,
+        "linkedPage": "pressure-washing-horley",
+        "added": "2026-07-10-town-money-page",
+        "built": true,
+        "builtDate": "2026-07-10"
+      },
+      {
+        "id": "SEO-144-PQ",
+        "query": "Driveway cleaning Banstead",
+        "aiCited": null,
+        "linkedPage": "driveway-cleaning-banstead",
+        "added": "2026-07-10-town-money-page",
+        "built": true,
+        "builtDate": "2026-07-10"
+      },
+      {
+        "id": "SEO-145-PQ",
+        "query": "Driveway cleaning Dorking",
+        "aiCited": null,
+        "linkedPage": "driveway-cleaning-dorking",
+        "added": "2026-07-10-town-money-page",
+        "built": true,
+        "builtDate": "2026-07-10"
       }
     ],
     "deployDiscipline": {
@@ -5327,6 +5372,242 @@
       "staleAfterDays": 60,
       "service": "Roof Cleaning",
       "buildPhase": "deferred"
+    },
+    {
+      "id": "SEO-141",
+      "task": "Build town money page: Driveway Cleaning in Reigate",
+      "category": "transactional",
+      "priority": "P1",
+      "iceScore": 432,
+      "ice": {
+        "impact": 9,
+        "confidence": 8,
+        "ease": 6
+      },
+      "status": "completed",
+      "type": "content",
+      "details": "Flagship high-ticket money page for the co-primary affluent town (RH2, Reigate Hill premium homes). Hand-written, genuinely-localised, cloned from the proven driveway-cleaning-redhill template: answer-first BLUF, cited Key facts box, prices table (size x surface x local example), what's-included list, sibling cross-links, call-first Web3Forms widget (hidden service = page slug) in the top third, sticky sidebar form, FAQPage synced to visible FAQ. Schema: HomeAndConstructionBusiness + Service + Offer + Article + BreadcrumbList + FAQPage. Phone CTA 01737 652515. Slate chosen by 3-strategist debate.",
+      "targetFiles": [
+        "driveway-cleaning-reigate.html"
+      ],
+      "createdDate": "2026-07-10",
+      "source": "seo-push-pr53-2026-07-10",
+      "completedDate": "2026-07-10",
+      "completedNotes": "Shipped in PR #53, merged + verified live + IndexNow submitted 2026-07-10. Live at /driveway-cleaning-reigate.",
+      "attemptCount": 1,
+      "maxAttempts": 3,
+      "staleAfterDays": 90,
+      "tier": "Tier 1",
+      "service": "Driveway Cleaning",
+      "town": "Reigate"
+    },
+    {
+      "id": "SEO-142",
+      "task": "Build town money page: Patio Cleaning in Redhill",
+      "category": "transactional",
+      "priority": "P1",
+      "iceScore": 408,
+      "ice": {
+        "impact": 8,
+        "confidence": 8,
+        "ease": 6
+      },
+      "status": "completed",
+      "type": "content",
+      "details": "Second flagship service on the home-base town (RH1, GBP/map-pack proximity); patio previously only had a Reigate page. Hand-written, genuinely-localised on the proven template: answer-first BLUF, cited Key facts, prices table, what's-included, sibling cross-links, call-first Web3Forms widget top third, sticky sidebar form, FAQPage synced to visible FAQ. Schema: HomeAndConstructionBusiness + Service + Offer + Article + BreadcrumbList + FAQPage. Phone CTA 01737 652515.",
+      "targetFiles": [
+        "patio-cleaning-redhill.html"
+      ],
+      "createdDate": "2026-07-10",
+      "source": "seo-push-pr53-2026-07-10",
+      "completedDate": "2026-07-10",
+      "completedNotes": "Shipped in PR #53, merged + verified live + IndexNow submitted 2026-07-10. Live at /patio-cleaning-redhill.",
+      "attemptCount": 1,
+      "maxAttempts": 3,
+      "staleAfterDays": 90,
+      "tier": "Tier 1",
+      "service": "Patio Cleaning",
+      "town": "Redhill"
+    },
+    {
+      "id": "SEO-143",
+      "task": "Build town money page: Pressure Washing in Horley",
+      "category": "transactional",
+      "priority": "P1",
+      "iceScore": 384,
+      "ice": {
+        "impact": 8,
+        "confidence": 8,
+        "ease": 6
+      },
+      "status": "completed",
+      "type": "content",
+      "details": "Broad-intent pressure washing money page for RH6 / Gatwick corridor: large town with mixed residential and commercial forecourt demand. Hand-written, genuinely-localised on the proven template: answer-first BLUF, cited Key facts, prices table, what's-included, sibling cross-links, call-first Web3Forms widget top third, sticky sidebar form, FAQPage synced to visible FAQ. Schema: HomeAndConstructionBusiness + Service + Offer + Article + BreadcrumbList + FAQPage. Phone CTA 01737 652515.",
+      "targetFiles": [
+        "pressure-washing-horley.html"
+      ],
+      "createdDate": "2026-07-10",
+      "source": "seo-push-pr53-2026-07-10",
+      "completedDate": "2026-07-10",
+      "completedNotes": "Shipped in PR #53, merged + verified live + IndexNow submitted 2026-07-10. Live at /pressure-washing-horley.",
+      "attemptCount": 1,
+      "maxAttempts": 3,
+      "staleAfterDays": 90,
+      "tier": "Tier 1",
+      "service": "Pressure Washing",
+      "town": "Horley"
+    },
+    {
+      "id": "SEO-144",
+      "task": "Build town money page: Driveway Cleaning in Banstead",
+      "category": "transactional",
+      "priority": "P1",
+      "iceScore": 384,
+      "ice": {
+        "impact": 8,
+        "confidence": 8,
+        "ease": 6
+      },
+      "status": "completed",
+      "type": "content",
+      "details": "High-ticket driveway money page for affluent SM7 / North Downs chalk (premium pricing per the Banstead area page). Hand-written, genuinely-localised on the proven template: answer-first BLUF, cited Key facts, prices table, what's-included, sibling cross-links, call-first Web3Forms widget top third, sticky sidebar form, FAQPage synced to visible FAQ. Schema: HomeAndConstructionBusiness + Service + Offer + Article + BreadcrumbList + FAQPage. Phone CTA 01737 652515.",
+      "targetFiles": [
+        "driveway-cleaning-banstead.html"
+      ],
+      "createdDate": "2026-07-10",
+      "source": "seo-push-pr53-2026-07-10",
+      "completedDate": "2026-07-10",
+      "completedNotes": "Shipped in PR #53, merged + verified live + IndexNow submitted 2026-07-10. Live at /driveway-cleaning-banstead.",
+      "attemptCount": 1,
+      "maxAttempts": 3,
+      "staleAfterDays": 90,
+      "tier": "Tier 1",
+      "service": "Driveway Cleaning",
+      "town": "Banstead"
+    },
+    {
+      "id": "SEO-145",
+      "task": "Build town money page: Driveway Cleaning in Dorking",
+      "category": "transactional",
+      "priority": "P1",
+      "iceScore": 360,
+      "ice": {
+        "impact": 8,
+        "confidence": 7,
+        "ease": 6
+      },
+      "status": "completed",
+      "type": "content",
+      "details": "High-ticket driveway money page for affluent RH4 AONB market town; documented damp Mole Valley microclimate means faster re-soiling and repeat demand. Hand-written, genuinely-localised on the proven template: answer-first BLUF, cited Key facts, prices table, what's-included, sibling cross-links, call-first Web3Forms widget top third, sticky sidebar form, FAQPage synced to visible FAQ. Schema: HomeAndConstructionBusiness + Service + Offer + Article + BreadcrumbList + FAQPage. Phone CTA 01737 652515.",
+      "targetFiles": [
+        "driveway-cleaning-dorking.html"
+      ],
+      "createdDate": "2026-07-10",
+      "source": "seo-push-pr53-2026-07-10",
+      "completedDate": "2026-07-10",
+      "completedNotes": "Shipped in PR #53, merged + verified live + IndexNow submitted 2026-07-10. Live at /driveway-cleaning-dorking.",
+      "attemptCount": 1,
+      "maxAttempts": 3,
+      "staleAfterDays": 90,
+      "tier": "Tier 1",
+      "service": "Driveway Cleaning",
+      "town": "Dorking"
+    },
+    {
+      "id": "SEO-146",
+      "task": "Sitewide conversion + internal-linking batch for the 5 town money pages",
+      "category": "conversion",
+      "priority": "P1",
+      "iceScore": 448,
+      "ice": {
+        "impact": 8,
+        "confidence": 8,
+        "ease": 7
+      },
+      "status": "completed",
+      "type": "content",
+      "details": "Sitewide push accompanying the 5 new town pages: footer phone tap-to-call added to 126 legacy pages; sticky CTA re-weighted call-first; trust-strip CSS; consent-gated PostHog call_click attribution; hub, pillar, area and sibling internal links pointing into the new money pages; sitemap.xml raised to 131 URLs; llms.txt refreshed; guides/hosepipe-ban-surrey.html refreshed (Surrey not banned via SES Water, Kent + Hants/IoW bans noted).",
+      "targetFiles": [
+        "sitemap.xml",
+        "llms.txt",
+        "guides/hosepipe-ban-surrey.html"
+      ],
+      "createdDate": "2026-07-10",
+      "source": "seo-push-pr53-2026-07-10",
+      "completedDate": "2026-07-10",
+      "completedNotes": "Shipped in PR #53, merged + verified live + IndexNow submitted 2026-07-10.",
+      "attemptCount": 1,
+      "maxAttempts": 3,
+      "staleAfterDays": 90
+    },
+    {
+      "id": "SEO-147",
+      "task": "GSC: request indexing for the 5 new town money pages",
+      "category": "indexing",
+      "priority": "P1",
+      "iceScore": 490,
+      "ice": {
+        "impact": 7,
+        "confidence": 10,
+        "ease": 7
+      },
+      "status": "pending",
+      "type": "manual",
+      "details": "In GSC URL Inspection, request indexing for /driveway-cleaning-reigate, /patio-cleaning-redhill, /pressure-washing-horley, /driveway-cleaning-banstead, /driveway-cleaning-dorking. IndexNow already fired for Bing/Yandex at deploy; Google has no free API so these need manual clicks (mind the daily quota).",
+      "targetFiles": [],
+      "createdDate": "2026-07-10",
+      "source": "seo-push-pr53-2026-07-10",
+      "completedDate": null,
+      "completedNotes": null,
+      "attemptCount": 0,
+      "maxAttempts": 1,
+      "staleAfterDays": 14
+    },
+    {
+      "id": "SEO-148",
+      "task": "Run the morning backlink runbook (seo/outreach/MORNING-RUNBOOK-2026-07-10.md)",
+      "category": "outreach",
+      "priority": "P1",
+      "iceScore": 336,
+      "ice": {
+        "impact": 6,
+        "confidence": 8,
+        "ease": 7
+      },
+      "status": "pending",
+      "type": "manual",
+      "details": "Human-only, ~60-75 min. Work seo/outreach/MORNING-RUNBOOK-2026-07-10.md: dofollow-first directory submissions (FreeIndex, Cylex, Brownbook) then 01737.co.uk, Locally-Minded, Fyple, Substack x2, using the standardised NAP 'Same Day JetWash' / '01737 652 515'.",
+      "targetFiles": [],
+      "createdDate": "2026-07-10",
+      "source": "seo-push-pr53-2026-07-10",
+      "completedDate": null,
+      "completedNotes": null,
+      "attemptCount": 0,
+      "maxAttempts": 1,
+      "staleAfterDays": 30
+    },
+    {
+      "id": "SEO-149",
+      "task": "Monitor GSC indexation of the 5 new town pages after 7 days",
+      "category": "monitoring",
+      "priority": "P2",
+      "iceScore": 336,
+      "ice": {
+        "impact": 6,
+        "confidence": 8,
+        "ease": 7
+      },
+      "status": "pending",
+      "type": "automated",
+      "details": "After 2026-07-17, check GSC coverage for the 5 PR #53 town pages: confirm each is Indexed (not Discovered/Crawled-not-indexed), capture first impressions/clicks/position per page, and flag any still unindexed for a fresh indexing request. Update siteStats with the readout.",
+      "targetFiles": [],
+      "createdDate": "2026-07-10",
+      "source": "seo-push-pr53-2026-07-10",
+      "completedDate": null,
+      "completedNotes": null,
+      "attemptCount": 0,
+      "maxAttempts": 2,
+      "staleAfterDays": 21
     }
   ],
   "manualTasks": [
@@ -5819,15 +6100,14 @@
     }
   ],
   "counters": {
-    "pending": 5,
-    "pendingAutomated": 0,
-    "pendingManual": 5,
+    "pending": 8,
+    "pendingAutomated": 1,
+    "pendingManual": 7,
     "blocked": 0,
-    "completed": 34,
+    "completed": 40,
     "expired": 0,
     "lastBatchCommits": [
-      "d228235",
-      "68692b3"
+      "9d1feda"
     ]
   }
 }
