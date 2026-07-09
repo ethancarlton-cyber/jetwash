@@ -36,15 +36,15 @@ When outdoor surfaces aren't cleaned regularly, the damage goes beyond cosmetics
 
 Rendered walls are particularly vulnerable. Algae growth on render traps moisture against the surface, which can lead to cracking, staining that becomes permanent, and in severe cases, the render itself beginning to fail. In areas with high rainfall and limited sunlight, this process accelerates considerably during autumn and winter.
 
-The cost of replacing a block paving driveway runs into thousands of pounds — typically £3,000-£8,000 depending on the area and materials. Re-rendering a house front is similarly expensive, often £2,000-£5,000 or more. Regular professional cleaning, by contrast, typically costs a few hundred pounds and prevents these problems from developing in the first place.
+The cost of replacing a block paving driveway runs into thousands of pounds, typically £3,000-£8,000 depending on the area and materials. Re-rendering a house front is similarly expensive, often £2,000-£5,000 or more. Regular professional cleaning, by contrast, typically costs a few hundred pounds and prevents these problems from developing in the first place.
 
 ## The UK Climate Factor
 
 The British climate is particularly harsh on outdoor surfaces. The combination of frequent rainfall, high humidity, mild winters, and limited UV exposure creates ideal conditions for biological growth. Unlike drier climates where surfaces stay relatively clean between seasonal rains, UK driveways and patios are under constant assault from moisture.
 
-North and west-facing surfaces are worst affected, receiving less direct sunlight and staying damp for longer periods. Properties surrounded by trees face additional challenges from leaf litter, sap deposits, and increased shade — all of which accelerate moss and algae colonisation.
+North and west-facing surfaces are worst affected, receiving less direct sunlight and staying damp for longer periods. Properties surrounded by trees face additional challenges from leaf litter, sap deposits, and increased shade, all of which accelerate moss and algae colonisation.
 
-This is why annual or biannual cleaning isn't optional maintenance in the UK — it's essential surface preservation. Left unchecked for two or three years, what starts as a cosmetic issue becomes a structural problem that costs significantly more to resolve.
+This is why annual or biannual cleaning isn't optional maintenance in the UK: it's essential surface preservation. Left unchecked for two or three years, what starts as a cosmetic issue becomes a structural problem that costs significantly more to resolve.
 
 ## How Often Should You Clean?
 
@@ -84,7 +84,7 @@ Professional pressure washing is one of the simplest, most cost-effective ways t
 
 Many homeowners consider hiring a domestic pressure washer from a tool hire shop. While this can work for small, straightforward jobs, there are important differences to understand.
 
-Professional-grade equipment operates at significantly higher pressures and flow rates than consumer models. Commercial machines also offer heated water capability, which is far more effective at breaking down grease, oil, and embedded organic matter. A professional rotary surface cleaner delivers consistent, streak-free results across large areas — something a standard lance simply cannot achieve.
+Professional-grade equipment operates at significantly higher pressures and flow rates than consumer models. Commercial machines also offer heated water capability, which is far more effective at breaking down grease, oil, and embedded organic matter. A professional rotary surface cleaner delivers consistent, streak-free results across large areas, something a standard lance simply cannot achieve.
 
 There's also the risk factor. Incorrect technique with a pressure washer can permanently damage surfaces. Using too much pressure on natural stone can etch the surface. Holding the lance too close to block paving can blast out jointing sand and displace individual blocks. Pointing a high-pressure jet at render can crack or remove sections entirely. These mistakes are expensive to repair and often cost more than hiring a professional would have in the first place.
 

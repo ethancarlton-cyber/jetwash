@@ -8,7 +8,7 @@ For property owners, landlords, and estate agents across Surrey, understanding t
 
 Research from estate agents and property valuation firms consistently shows that kerb appeal influences buyer perception by 5-10%. On a property valued at £500,000 (roughly average for many parts of Surrey), that's a £25,000-£50,000 swing in perceived value based purely on first impressions.
 
-A 2023 Barclays study found that 58% of UK homebuyers said the exterior appearance of a property significantly influenced their willingness to make an offer. The Royal Institution of Chartered Surveyors (RICS) has noted that poor exterior maintenance is among the most commonly cited reasons for reduced offers.
+Surveys of UK homebuyers consistently find that the exterior appearance of a property significantly influences their willingness to make an offer, and property professionals regularly cite poor exterior maintenance as one of the most common reasons for reduced offers.
 
 The striking part is that addressing exterior appearance is often remarkably affordable compared to the value it protects.
 
@@ -56,4 +56,4 @@ Professional pressure washing is one of those rare property improvements where t
 
 ---
 
-*[Same Day JetWash](https://samedayjetwash.com) provides professional pressure washing services across Redhill, Reigate, and Surrey. We offer free quotes with a 2-hour callback guarantee for residential and commercial properties. Contact us at 01737 652515 or visit [samedayjetwash.com](https://samedayjetwash.com).*
+*[Same Day JetWash](https://samedayjetwash.com) provides professional pressure washing services across Redhill, Reigate, and Surrey. We offer free quotes with a 2-hour callback guarantee for residential and commercial properties. Contact us at 01737 652 515 or visit [samedayjetwash.com](https://samedayjetwash.com).*

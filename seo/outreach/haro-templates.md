@@ -1,11 +1,11 @@
 # Journalist Response Templates
 
 > **Note:** HARO (Help a Reporter Out) shut down in 2023 and was replaced by Connectively, which itself closed in Dec 2024. Use these current alternatives instead:
-> - **Qwoted** — https://www.qwoted.com (free for sources)
-> - **SourceBottle** — https://www.sourcebottle.com (free, popular with UK/AU journalists)
-> - **Featured.com** — https://featured.com (HARO's successor, relaunched 2025)
-> - **#journorequest on X/BlueSky** — search this hashtag daily for UK journalist queries
-> - **Response Source** — https://www.responsesource.com (UK/European journalists, free for sources)
+> - **Qwoted:** https://www.qwoted.com (free for sources)
+> - **SourceBottle:** https://www.sourcebottle.com (free, popular with UK/AU journalists)
+> - **Featured.com:** https://featured.com (HARO's successor, relaunched 2025)
+> - **#journorequest on X/BlueSky:** search this hashtag daily for UK journalist queries
+> - **Response Source:** https://www.responsesource.com (UK/European journalists, free for sources)
 
 Use these templates when responding to journalist queries on any of the platforms above. Customise the opening line to match the specific query.
 
@@ -45,9 +45,9 @@ Research from estate agents and property valuation firms suggests kerb appeal ca
 
 The three highest-impact exterior cleaning tasks before selling are:
 
-1. **Driveway cleaning** — Removes the green algae, moss, and oil stains that make a property look neglected. The colour transformation on block paving is often dramatic.
-2. **Patio and path cleaning** — Buyers notice garden areas. Clean, bright paving signals a well-maintained home.
-3. **Render or facade cleaning** — Green streaks on rendered walls are one of the most visible signs of poor maintenance from the street.
+1. **Driveway cleaning:** Removes the green algae, moss, and oil stains that make a property look neglected. The colour transformation on block paving is often dramatic.
+2. **Patio and path cleaning:** Buyers notice garden areas. Clean, bright paving signals a well-maintained home.
+3. **Render or facade cleaning:** Green streaks on rendered walls are one of the most visible signs of poor maintenance from the street.
 
 The results are immediate (most jobs completed in a day) and last several months, making it one of the most cost-effective pre-sale improvements available. I'd recommend booking 1-2 weeks before the property goes on the market.
 
@@ -65,7 +65,7 @@ The results are immediate (most jobs completed in a day) and last several months
 
 As a professional pressure washer serving properties across Surrey, here's what I'd recommend for seasonal exterior maintenance.
 
-**Spring (March-May)** is the best time for a comprehensive exterior clean. Winter leaves driveways and patios covered in moss, algae, and leaf debris. Cleaning in spring removes everything that's accumulated over the wet months and gives you clean outdoor surfaces for summer use. It's also when decking should be cleaned — wooden decking becomes dangerously slippery with algae growth over winter.
+**Spring (March-May)** is the best time for a comprehensive exterior clean. Winter leaves driveways and patios covered in moss, algae, and leaf debris. Cleaning in spring removes everything that's accumulated over the wet months and gives you clean outdoor surfaces for summer use. It's also when decking should be cleaned: wooden decking becomes dangerously slippery with algae growth over winter.
 
 **Autumn (September-October)** is ideal for a secondary clean or targeted maintenance. Clearing leaf debris from driveways and paths before winter prevents staining and reduces the organic matter that fuels moss growth.
 

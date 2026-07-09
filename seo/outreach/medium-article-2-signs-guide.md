@@ -74,11 +74,11 @@ Regular maintenance is also more cost-effective in the long run. A driveway clea
 
 When choosing a pressure washing service, check for:
 
-- **Public liability insurance** - Protects your property against accidental damage
-- **Professional-grade equipment** - Commercial machines deliver far better results than domestic hire equipment
-- **Surface-specific techniques** - Different surfaces need different pressure settings and treatments
-- **Transparent pricing** - Free quotes with no hidden costs
-- **Local knowledge** - A company familiar with Surrey properties understands local challenges (clay soil staining, lichen on sandstone, moss in shaded areas)
+- **Public liability insurance:** Protects your property against accidental damage
+- **Professional-grade equipment:** Commercial machines deliver far better results than domestic hire equipment
+- **Surface-specific techniques:** Different surfaces need different pressure settings and treatments
+- **Transparent pricing:** Free quotes with no hidden costs
+- **Local knowledge:** A company familiar with Surrey properties understands local challenges (clay soil staining, lichen on sandstone, moss in shaded areas)
 
 ## Ready to Restore Your Driveway?
 
@@ -88,4 +88,4 @@ If any of these signs sound familiar, your driveway is telling you it's time for
 
 ---
 
-*Written by the team at [Same Day JetWash](https://samedayjetwash.com), professional pressure washing specialists serving Redhill, Reigate, and Surrey. 2-hour callback guarantee on all quotes. Call 01737 652515 or [request a quote online](https://samedayjetwash.com/quote).*
+*Written by the team at [Same Day JetWash](https://samedayjetwash.com), professional pressure washing specialists serving Redhill, Reigate, and Surrey. 2-hour callback guarantee on all quotes. Call 01737 652 515 or [request a quote online](https://samedayjetwash.com/quote).*

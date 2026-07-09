@@ -144,6 +144,7 @@
           var locEl = anchor.closest('[data-cta-location]');
           var location = locEl ? locEl.getAttribute('data-cta-location') : 'inline';
           safeCapture('phone_click', Object.assign(pageMeta(), { location: location }));
+          safeCapture('call_click', { page: window.location.pathname });
           return;
         }
         // Key conversion CTAs (quote / calculator links) — tracked sitewide without needing data-cta

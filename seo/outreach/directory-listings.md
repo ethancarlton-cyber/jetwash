@@ -1,4 +1,4 @@
-# Directory Listing Content — Same Day JetWash
+# Directory Listing Content: Same Day JetWash
 
 Use the appropriate description length for each directory platform. Copy and paste directly.
 
@@ -38,7 +38,7 @@ We guarantee a callback within 2 hours of any quote request submitted during bus
 
 Whether you need a one-off deep clean for a property sale, regular maintenance to keep your home looking its best, or commercial cleaning for your business premises, we deliver professional results at competitive prices.
 
-Contact us today for a free, no-obligation quote. Call 01737 652515 or visit samedayjetwash.com.
+Contact us today for a free, no-obligation quote. Call 01737 652 515 or visit samedayjetwash.com.
 
 ---
 
