@@ -13,7 +13,7 @@ Same Day JetWash
 
 We provide professional pressure washing and jetwashing services across Surrey, specialising in driveways, patios, block paving, render, decking, and commercial properties.
 
-Our commercial-grade equipment (3000+ PSI, heated water, rotary surface cleaners) delivers results that domestic machines cannot match. We adjust pressure and technique for every surface type — gentle soft washing for render and natural stone, high-pressure cleaning for concrete and tarmac, and specialist degreasing for oil-stained surfaces.
+Our commercial-grade equipment (3000+ PSI, heated water, rotary surface cleaners) delivers results that domestic machines cannot match. We adjust pressure and technique for every surface type: gentle soft washing for render and natural stone, high-pressure cleaning for concrete and tarmac, and specialist degreasing for oil-stained surfaces.
 
 Every quote is free and tailored to your specific property. We guarantee a callback within 2 hours during business hours and offer same-day availability where possible. Transparent pricing with no hidden costs, no call-out charges, and full public liability insurance.
 
@@ -39,7 +39,7 @@ Postcodes: RH1-RH11, SM7, CR3, KT17-KT24
 - Same-day availability (subject to schedule)
 - Commercial-grade 3000+ PSI equipment with heated water
 - Full public liability insurance
-- Transparent pricing — no hidden costs
+- Transparent pricing: no hidden costs
 - Available 7 days a week
 - Free, no-obligation quotes
 
@@ -70,10 +70,10 @@ Free quotes with a 2-hour callback guarantee. Fully insured. Based in Redhill, c
 Surrey-wide: Redhill, Reigate, Horley, Dorking, Banstead, Crawley, Epsom, Caterham, Oxted, Leatherhead, Merstham, Earlswood, and surrounding areas. All RH postcodes, SM7, CR3, KT17-KT24.
 
 ### Key Selling Points
-- Free quotes — 2-hour callback guarantee
+- Free quotes: 2-hour callback guarantee
 - Commercial-grade equipment (3000+ PSI, heated water)
 - Full public liability insurance
-- No hidden costs — price quoted is price paid
+- No hidden costs: price quoted is price paid
 - 7-day availability
 - Surface-specific techniques for safe, effective cleaning
 
@@ -97,4 +97,4 @@ We use commercial-grade equipment rated at 3000+ PSI with heated water capabilit
 
 Every job includes pre-treatment for stubborn stains, debris removal, and protection of surrounding areas. We carry full public liability insurance.
 
-Our pricing is transparent — no hidden costs, no call-out charges, and no obligation to proceed after receiving a quote. We guarantee a callback within 2 hours during business hours (Mon-Sat 8am-6pm) and offer same-day availability where possible.
+Our pricing is transparent: no hidden costs, no call-out charges, and no obligation to proceed after receiving a quote. We guarantee a callback within 2 hours during business hours (Mon-Sat 8am-6pm) and offer same-day availability where possible.

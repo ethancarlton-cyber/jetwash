@@ -626,6 +626,51 @@ textarea:focus-visible,
     .trust-strip__grid { grid-template-columns: repeat(4, 1fr); }
 }
 
+/* Trust strip, plain div > ul > li variant (money pages), slim + light.
+   Scoped to .trust-strip:has(> ul) / .trust-strip > ul / .trust-strip > ul > li
+   so it never touches the roof-cleaning ul.trust-strip > li (own inline SVG ticks). */
+.trust-strip:has(> ul) {
+    background: var(--mist);
+    color: var(--ink);
+    padding: var(--space-2) 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+.trust-strip > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2);
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 0 var(--space-3);
+}
+.trust-strip > ul > li {
+    position: relative;
+    flex: 1 1 45%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--ink);
+}
+.trust-strip > ul > li::before {
+    content: "\2713";
+    display: inline-block;
+    margin-right: 6px;
+    color: var(--accent);
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    .trust-strip > ul {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .trust-strip > ul > li {
+        flex: 0 1 auto;
+    }
+}
+
 /* ============================================================
    Operator block
    ============================================================ */
@@ -1098,11 +1143,11 @@ textarea:focus-visible,
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
 }
-.sticky-cta a[href^="tel:"] { background: var(--ink); color: var(--surface); }
-.sticky-cta a[href^="tel:"]:hover { background: var(--ink-soft); color: var(--surface); }
-.sticky-cta a:not([href^="tel:"]) { background: var(--accent); color: var(--surface); }
-.sticky-cta a:not([href^="tel:"]):hover { background: var(--accent-hover); color: var(--surface); }
-body { padding-bottom: 86px; }
+.sticky-cta a[href^="tel:"] { flex: 1.5; background: var(--accent); color: var(--surface); }
+.sticky-cta a[href^="tel:"]:hover { background: var(--accent-hover); color: var(--surface); }
+.sticky-cta a:not([href^="tel:"]) { flex: 1; background: var(--ink); color: var(--surface); }
+.sticky-cta a:not([href^="tel:"]):hover { background: var(--ink-soft); color: var(--surface); }
+body { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
 @media (min-width: 768px) {
     .sticky-cta { display: none; }
     body { padding-bottom: 0; }

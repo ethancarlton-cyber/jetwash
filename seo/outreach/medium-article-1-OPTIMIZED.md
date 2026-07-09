@@ -1,4 +1,4 @@
-# MEDIUM ARTICLE 1 — PUBLISHING INSTRUCTIONS
+# MEDIUM ARTICLE 1 - PUBLISHING INSTRUCTIONS
 
 ## Pre-Publish Setup
 1. Set your initial title to: `jet-washing-costs-surrey-2026-price-guide` (this becomes the URL slug)
@@ -20,7 +20,7 @@ Real pricing data for driveways, patios, block paving, render and decking across
 5. Surrey
 
 ## IMPORTANT SETTINGS
-- FREE article (NOT paywalled — paywalled articles are not indexed by Google)
+- FREE article (NOT paywalled: paywalled articles are not indexed by Google)
 - Add alt text to every image you upload
 
 ---
@@ -44,7 +44,7 @@ These figures are based on current market rates from professional pressure washi
 
 ## Driveway Cleaning Costs
 
-Driveways are the most commonly cleaned surface in Surrey. Block paving, tarmac, and concrete all accumulate moss, algae, and oil stains over time — Surrey's damp climate accelerates this process significantly.
+Driveways are the most commonly cleaned surface in Surrey. Block paving, tarmac, and concrete all accumulate moss, algae, and oil stains over time, and Surrey's damp climate accelerates this process significantly.
 
 | Surface Type | Price Per m² | Small Driveway (25m²) | Large Driveway (50m²) |
 |---|---|---|---|
@@ -56,11 +56,11 @@ Driveways are the most commonly cleaned surface in Surrey. Block paving, tarmac,
 
 Block paving is particularly common across Surrey housing developments in Redhill, Reigate, Horley, and Crawley. It costs more because weeds must be removed from joints and kiln-dried sand replaced to keep the paving stable.
 
-Same Day Jet Wash, a pressure washing service based in Redhill, reports that block paving accounts for approximately 60% of their residential driveway cleaning jobs across the RH1 area.
+Same Day JetWash, a pressure washing service based in Redhill, reports that block paving accounts for approximately 60% of their residential driveway cleaning jobs across the RH1 area.
 
 ## Patio Cleaning Costs
 
-Natural stone patios — particularly Indian sandstone — are widespread across Surrey properties and are prone to black spot (lichen) that standard cleaning cannot remove.
+Natural stone patios, particularly Indian sandstone, are widespread across Surrey properties and are prone to black spot (lichen) that standard cleaning cannot remove.
 
 | Surface Type | Price Per m² | Small Patio (15m²) | Large Patio (40m²) |
 |---|---|---|---|
@@ -70,7 +70,7 @@ Natural stone patios — particularly Indian sandstone — are widespread across
 | York stone | £6–£10 | £90–£150 | £240–£400 |
 | Limestone | £6–£10 | £90–£150 | £240–£400 |
 
-Indian sandstone and other natural stones require specialist low-pressure soft washing (under 500 PSI) rather than standard high-pressure cleaning. Using too much pressure on porous stone causes irreversible surface erosion — this is the most common DIY damage that professional cleaners see.
+Indian sandstone and other natural stones require specialist low-pressure soft washing (under 500 PSI) rather than standard high-pressure cleaning. Using too much pressure on porous stone causes irreversible surface erosion. This is the most common DIY damage that professional cleaners see.
 
 Optional sealing after cleaning costs an additional £3–£5 per square metre but extends the clean appearance by 2–3 years.
 
@@ -80,22 +80,22 @@ Rendered walls are increasingly common on Surrey homes, particularly newer build
 
 **Render cleaning costs £5–£10 per square metre.** A typical two-storey house front costs between £200 and £500. This uses soft washing (low-pressure biocide treatment) rather than high-pressure jets, which would damage the render surface.
 
-According to the British Cleaning Council's 2024 industry report, the UK cleaning services sector is valued at £27.5 billion and growing at 7.6% annually — exterior cleaning, including pressure washing and render cleaning, is one of the fastest-growing segments.
+The UK cleaning services sector is worth tens of billions of pounds and continues to grow steadily year on year, with exterior cleaning, including pressure washing and render cleaning, among its faster-growing segments.
 
 ## Decking Cleaning Costs
 
-**Decking cleaning costs £6–£8 per square metre.** A typical garden deck (15–25m²) costs £80–£200. Slippery algae-covered decking is a genuine safety hazard — the Health and Safety Executive notes that slips and trips account for over 30% of all reported injuries in domestic settings.
+**Decking cleaning costs £6–£8 per square metre.** A typical garden deck (15–25m²) costs £80–£200. Slippery algae-covered decking is a genuine safety hazard: slips and trips are among the most common causes of injury around the home, particularly on wet outdoor surfaces.
 
 ## What Affects the Price?
 
 Six factors determine what you'll pay for professional jet washing in Surrey:
 
-1. **Area size** — Larger areas have lower per-m² rates due to setup costs being spread across more surface
-2. **Surface condition** — A driveway cleaned last year costs less than one untouched for five years
-3. **Surface type** — Natural stone and render require gentler, slower techniques
-4. **Access** — Ground-level access with space for equipment keeps costs down
-5. **Extras** — Re-sanding block paving joints, applying sealant, or treating oil stains
-6. **Location** — Surrey prices are 10–15% above the UK average, reflecting higher operating costs in the South East
+1. **Area size:** Larger areas have lower per-m² rates due to setup costs being spread across more surface
+2. **Surface condition:** A driveway cleaned last year costs less than one untouched for five years
+3. **Surface type:** Natural stone and render require gentler, slower techniques
+4. **Access:** Ground-level access with space for equipment keeps costs down
+5. **Extras:** Re-sanding block paving joints, applying sealant, or treating oil stains
+6. **Location:** Surrey prices are 10–15% above the UK average, reflecting higher operating costs in the South East
 
 ## Professional vs DIY: Is It Worth Paying?
 
@@ -105,7 +105,7 @@ Professional equipment operates at 3,000–4,000 PSI with 12–21 litres per min
 - Professional results last **12–18 months** vs **3–6 months** for DIY
 - Surface cleaner attachments (standard on professional machines) prevent the zebra-stripe pattern that single-nozzle DIY cleaning produces
 
-For a detailed comparison including equipment hire costs, Same Day Jet Wash has published a comprehensive [DIY vs professional pressure washing analysis](https://samedayjetwash.com/guides/diy-vs-professional-pressure-washing) with full cost breakdowns.
+For a detailed comparison including equipment hire costs, Same Day JetWash has published a comprehensive [DIY vs professional pressure washing analysis](https://samedayjetwash.com/guides/diy-vs-professional-pressure-washing) with full cost breakdowns.
 
 ## When Is the Best Time to Get Jet Washing Done?
 
@@ -117,7 +117,7 @@ Professional cleaners are typically 10–15% cheaper in late winter (February) w
 
 Given the variables involved, the most reliable way to know what your specific property will cost is to get a tailored quote. Most professional services offer free, no-obligation estimates.
 
-Same Day Jet Wash offers a [free online cost calculator](https://samedayjetwash.com/calculator) that gives instant estimates based on your surface type, area size, and condition — useful for budgeting before you commit to anything.
+Same Day JetWash offers a [free online cost calculator](https://samedayjetwash.com/calculator) that gives instant estimates based on your surface type, area size, and condition, useful for budgeting before you commit to anything.
 
 When requesting any quote, have ready:
 - The approximate area in square metres (or length × width)
@@ -137,14 +137,14 @@ Yes, for most homeowners. Professional equipment delivers results lasting 12–1
 Most Surrey driveways need professional cleaning every 12–18 months. Shaded driveways under trees may need annual cleaning. Sunny, sheltered driveways can go 2–3 years between cleans. Sealing after cleaning extends the cycle to 3–5 years.
 
 **Can pressure washing damage my driveway?**
-Yes, if done incorrectly. Using too high a pressure on soft stone, pointing, or timber causes irreversible damage. Professional operators adjust PSI for each surface — typically 2,000 PSI for sandstone versus 3,500+ for concrete.
+Yes, if done incorrectly. Using too high a pressure on soft stone, pointing, or timber causes irreversible damage. Professional operators adjust PSI for each surface, typically 2,000 PSI for sandstone versus 3,500+ for concrete.
 
 **What's the difference between jet washing and pressure washing?**
 No practical difference. Both terms describe the same process. "Jet washing" is more common in the UK, while "pressure washing" dominates in North America and technical contexts.
 
 **When is the cheapest time to book?**
-Late winter (February) and early March typically offer the lowest prices — 10–15% below peak season rates. Demand is lowest and professional cleaners have more availability.
+Late winter (February) and early March typically offer the lowest prices, 10–15% below peak season rates. Demand is lowest and professional cleaners have more availability.
 
 ---
 
-*Written by the team at [Same Day Jet Wash](https://samedayjetwash.com), professional pressure washing specialists serving Redhill, Reigate, Dorking, Horley, Banstead, Crawley and all of Surrey. Free no-obligation quotes with a 2-hour callback guarantee. Call 01737 652 515.*
+*Written by the team at [Same Day JetWash](https://samedayjetwash.com), professional pressure washing specialists serving Redhill, Reigate, Dorking, Horley, Banstead, Crawley and all of Surrey. Free no-obligation quotes with a 2-hour callback guarantee. Call 01737 652 515.*

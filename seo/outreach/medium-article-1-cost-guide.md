@@ -62,17 +62,17 @@ For businesses, car parks, forecourts, and warehouse yards, commercial pressure 
 
 Several factors influence the final cost of pressure washing:
 
-**1. Size of the area** - This is the biggest factor. Larger areas cost more in total but usually have a lower per-square-metre rate.
+**1. Size of the area:** This is the biggest factor. Larger areas cost more in total but usually have a lower per-square-metre rate.
 
-**2. Surface condition** - A lightly soiled driveway that was cleaned last year will cost less than one that hasn't been touched in five years and is covered in deep-rooted moss and oil stains.
+**2. Surface condition:** A lightly soiled driveway that was cleaned last year will cost less than one that hasn't been touched in five years and is covered in deep-rooted moss and oil stains.
 
-**3. Surface type** - Some materials require more careful handling. Natural stone and render need gentler techniques, while concrete can withstand higher pressure.
+**3. Surface type:** Some materials require more careful handling. Natural stone and render need gentler techniques, while concrete can withstand higher pressure.
 
-**4. Access** - Easy, ground-level access with space for equipment keeps costs down. Difficult access, steps, or narrow passages may add to the price.
+**4. Access:** Easy, ground-level access with space for equipment keeps costs down. Difficult access, steps, or narrow passages may add to the price.
 
-**5. Additional services** - Re-sanding block paving joints, applying sealant, or treating specific stains are typically quoted as extras on top of the base cleaning price.
+**5. Additional services:** Re-sanding block paving joints, applying sealant, or treating specific stains are typically quoted as extras on top of the base cleaning price.
 
-**6. Location** - Most Surrey-based services include travel within their core area at no extra charge. Properties on the outskirts of a company's service radius may see a small travel surcharge.
+**6. Location:** Most Surrey-based services include travel within their core area at no extra charge. Properties on the outskirts of a company's service radius may see a small travel surcharge.
 
 ## How to Get an Accurate Quote
 
@@ -110,4 +110,4 @@ All prices are typical for the Surrey area as of 2026 and include VAT. Actual co
 
 ---
 
-*Written by the team at [Same Day JetWash](https://samedayjetwash.com), providing professional pressure washing services across Redhill, Reigate, and Surrey. We offer free, no-obligation quotes with a 2-hour callback guarantee. Call 01737 652515 or [get a free quote online](https://samedayjetwash.com/quote).*
+*Written by the team at [Same Day JetWash](https://samedayjetwash.com), providing professional pressure washing services across Redhill, Reigate, and Surrey. We offer free, no-obligation quotes with a 2-hour callback guarantee. Call 01737 652 515 or [get a free quote online](https://samedayjetwash.com/quote).*
