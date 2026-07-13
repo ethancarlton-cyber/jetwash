@@ -896,4 +896,30 @@
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
+
+    <!-- New Reports/Research Assets - 2026-07-13 -->
+    <url>
+        <loc>https://samedayjetwash.com/guides/listed-building-cleaning-surrey</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://samedayjetwash.com/guides/uk-cleaning-frequency-index</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://samedayjetwash.com/guides/dirty-solar-panels-cost-report</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://samedayjetwash.com/guides/paved-front-gardens-flood-risk</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
 </urlset>
