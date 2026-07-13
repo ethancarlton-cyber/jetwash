@@ -2593,7 +2593,7 @@
         "confidence": 8,
         "ease": 7
       },
-      "status": "pending",
+      "status": "completed",
       "type": "manual",
       "details": "Deep research piece: compile pricing data across UK regions, surfaces, seasons. Include comparison tables, original statistics, seasonal patterns. Designed to earn backlinks and AI citations. Original research = 40% more AI visibility, 4.7x more backlinks.",
       "targetFiles": [
@@ -2603,7 +2603,9 @@
       "source": "strategy-pivot",
       "attemptCount": 0,
       "maxAttempts": 1,
-      "staleAfterDays": 60
+      "staleAfterDays": 60,
+      "completedDate": "2026-07-12",
+      "completedNotes": "Folded into uk-pressure-washing-statistics rebuild (PR #58) per cannibalisation analysis: separate cost-report page would collide with commercial guide (#4 for prices UK 2026) and driveway-cleaning-cost-uk (#4 regional)."
     },
     {
       "id": "SEO-043",
@@ -2858,7 +2860,7 @@
         "confidence": 8,
         "ease": 8
       },
-      "status": "pending",
+      "status": "completed",
       "type": "manual",
       "details": "Only ONE UK pressure washing statistics page exists online (theupsurge.co.uk). Create a comprehensive stats hub with 50+ data points: market size (Â£27.5B cleaning sector), residential/commercial split (65/35), seasonal demand (70% Mar-Sep), eco trends (25% green preference), cost data by region, equipment market data, employment stats. Format: answer-first, tables, key facts boxes. This type of page earns links passively â€” bloggers and journalists cite statistics pages when writing articles. Original research = 4.7x more backlinks + 40% more AI citations.",
       "targetFiles": [
@@ -2868,7 +2870,9 @@
       "source": "research-linkable-content",
       "attemptCount": 0,
       "maxAttempts": 1,
-      "staleAfterDays": 30
+      "staleAfterDays": 30,
+      "completedDate": "2026-07-12",
+      "completedNotes": "Rebuilt guides/uk-pressure-washing-statistics as citable mega-asset (PR #58): 38-claim fact audit, original 200-town+12-firm regional analysis, Dataset schema, cite block; inbound internal links 4->21; IndexNow 19 URLs."
     },
     {
       "id": "SEO-054",
@@ -6097,6 +6101,10 @@
       "result": "queue grew from 53 to 139 tasks; nextTaskId bumped to 141; priorityQueries grew by 86; new completedPhases entry (phase-10) + this learnings entry recorded. No HTML pages built. JSON re-serialised and validated.",
       "patterns": "type=content/category=transactional with tier->priority (T1=P1/T2=P2/T3=P3) and ICE derived from cell score (impact=round(score) clamped 3-9, confidence by tier, ease=6 for handwritten local CRO). Each task carries cellScore/tier/service/town for later sorting. Slow-ramp build order lives in the plan, not the queue.",
       "next": "Build the 3 build-now guides first, then Wave 2 T1 service-city cells (soft-washing-banstead, roof-cleaning-dorking, soft-washing-dorking). All service-city pages gated on Ethan's real photos + GBP service categories."
+    },
+    {
+      "date": "2026-07-12",
+      "insight": "Stats page was weakly/not indexed despite 3 weeks live with only 4 inbound links; linkable assets need internal-link wiring + IndexNow + GSC request at launch, not after. Old page contained unsourced stats (fabrication risk) - all stats now require primary-source URLs."
     }
   ],
   "counters": {
@@ -6109,5 +6117,8 @@
     "lastBatchCommits": [
       "9d1feda"
     ]
-  }
+  },
+  "totalRuns": 1,
+  "lastRunId": "seo-backlink-asset-pr58-2026-07-12",
+  "lastRunDate": "2026-07-12"
 }
