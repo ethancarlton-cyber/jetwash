@@ -59,7 +59,7 @@ Post this on the Google Business Profile (edit freely, keep the link and phone):
 
 ## STEP 4 - Source of Sources signup (~5 min)
 
-Register free as a source at https://sourceofsources.com (the free HARO successor). Use the business email, expertise: pressure washing, exterior cleaning, home maintenance costs. Response templates are in `haro-templates.md`; note that file still points at Qwoted/SourceBottle/ResponseSource and needs repointing to include Source of Sources.
+Register free as a source at https://sourceofsources.com (the free HARO successor). Use the business email, expertise: pressure washing, exterior cleaning, home maintenance costs. Response templates are in `haro-templates.md` (now lists Source of Sources as the primary platform at the top).
 
 ## STEP 5 - Publish the 2 Substack posts (~10 min, dofollow)
 

@@ -1,11 +1,12 @@
 # Journalist Response Templates
 
-> **Note:** HARO (Help a Reporter Out) shut down in 2023 and was replaced by Connectively, which itself closed in Dec 2024. Use these current alternatives instead:
+> **Note:** HARO (Help a Reporter Out) shut down in 2023, was replaced by Connectively, which itself closed in Dec 2024. Register on these current, free-for-sources alternatives instead (start with the first one — it is today's STEP 4 in the morning runbook):
+> - **Source of Sources:** https://sourceofsources.com (the free HARO successor, launched 2024 by HARO's original founder; register with the business email, expertise: pressure washing, exterior cleaning, home maintenance costs) — **PRIMARY**
 > - **Qwoted:** https://www.qwoted.com (free for sources)
 > - **SourceBottle:** https://www.sourcebottle.com (free, popular with UK/AU journalists)
-> - **Featured.com:** https://featured.com (HARO's successor, relaunched 2025)
-> - **#journorequest on X/BlueSky:** search this hashtag daily for UK journalist queries
+> - **Featured.com:** https://featured.com (paid HARO-style successor, relaunched 2025 — free query browsing, paid to pitch at volume)
 > - **Response Source:** https://www.responsesource.com (UK/European journalists, free for sources)
+> - **#journorequest on X/BlueSky:** search this hashtag daily for UK journalist queries
 
 Use these templates when responding to journalist queries on any of the platforms above. Customise the opening line to match the specific query.
 
