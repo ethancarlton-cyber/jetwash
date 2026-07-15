@@ -1,5 +1,26 @@
 # JetWash Lead Generation Website - Project Documentation
 
+## DEPLOY DISCIPLINE — DO NOT ASK, JUST FOLLOW
+
+**This is a fixed workflow. Do not ask Ethan whether to commit, push, open a PR, or deploy — just do the steps below. He has explicitly said he does not want to be asked about any of it.**
+
+**`main` is the only branch that deploys to production.** `vercel.json` restricts Vercel to building `main` only — non-main branches never deploy. GitHub branch protection rejects direct pushes to `main` outright; the only way changes reach `main` is via PR merge.
+
+**Workflow for every task — execute without asking:**
+1. **Branch.** If you're on `main` (or any pre-existing branch you didn't create), create + switch to `claude/<short-task-name>`. One branch per task.
+2. **Commit.** Commit your work with a clear conventional message.
+3. **Push.** `git push -u origin claude/<task-name>` — always. Don't ask permission.
+4. **Open a draft PR to `main`** via `gh pr create --draft --base main --head claude/<task-name> --title "..." --body "..."`. Don't ask permission.
+5. **Stop.** Ethan reviews + merges in the GitHub UI. The merge IS the deploy.
+
+**Never:**
+- Push to `main` directly (GitHub will reject it)
+- Run `vercel deploy` / `vercel --prod`
+- Auto-merge your own PR
+- Ask "should I commit / push / open the PR?" — the answer is always yes
+
+**Abandoning work:** never merged = never deployed. Delete branches freely.
+
 ## Project Overview
 Local jetwashing/pressure washing lead generation website targeting the RH1 (Redhill & Reigate, Surrey) area and surrounding 20-mile radius.
 
