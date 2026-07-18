@@ -1,8 +1,9 @@
 # Cloudflare Pages _redirects — ported from vercel.json (samedayjetwash.com)
 # Format: <source> <destination> <status>
-# NOTE: Cloudflare Pages already auto-serves clean URLs and 308-redirects /foo.html -> /foo.
-# Google treats 308 as a permanent redirect (equivalent to 301 for SEO), so the bare
-# .html->clean stripping is handled by the platform. Only the CONTENT 301s need listing here.
+# NOTE: Cloudflare auto-serves clean URLs, but its built-in /foo.html -> /foo redirect
+# is 307 TEMPORARY (verified live 2026-07-18), NOT the 308 originally assumed. Google
+# does not consolidate temporary redirects, so every legacy .html URL needs an explicit
+# 301 rule below (see the 2026-07-18 block at the end of this file).
 
 # --- Content 301s (must match vercel.json exactly to preserve link equity) ---
 /tips                                    /guides                                    301
@@ -15,3 +16,150 @@
 # because _redirects is path-scoped to the Pages project, not host-aware. See CLOUDFLARE-MIGRATION.md.
 # If you instead attach BOTH apex + www to the Pages project, the rule below is a fallback that
 # only works when CF passes the full URL; the dashboard Redirect Rule is the robust route.
+
+# --- Explicit 301s: legacy .html -> clean URL (2026-07-18) ---
+# Cloudflare's built-in html_handling redirect is 307 TEMPORARY, which Google
+# never consolidates (GSC 'Page with redirect' / 'Redirect error' stuck since the
+# Vercel->Cloudflare cutover). These explicit rules take precedence and are 301
+# permanent. google98e...html (GSC verification) is deliberately NOT redirected.
+/guides/is-pressure-washing-worth-it.html              /guides/property-value-kerb-appeal                301
+/areas.html                                            /areas                                            301
+/areas/banstead.html                                   /areas/banstead                                   301
+/areas/betchworth.html                                 /areas/betchworth                                 301
+/areas/caterham.html                                   /areas/caterham                                   301
+/areas/chipstead.html                                  /areas/chipstead                                  301
+/areas/crawley.html                                    /areas/crawley                                    301
+/areas/dorking.html                                    /areas/dorking                                    301
+/areas/earlswood.html                                  /areas/earlswood                                  301
+/areas/epsom.html                                      /areas/epsom                                      301
+/areas/godstone.html                                   /areas/godstone                                   301
+/areas/horley.html                                     /areas/horley                                     301
+/areas/leatherhead.html                                /areas/leatherhead                                301
+/areas/merstham.html                                   /areas/merstham                                   301
+/areas/nutfield.html                                   /areas/nutfield                                   301
+/areas/oxted.html                                      /areas/oxted                                      301
+/areas/redhill.html                                    /areas/redhill                                    301
+/areas/reigate.html                                    /areas/reigate                                    301
+/areas/rh2.html                                        /areas/rh2                                        301
+/areas/rh4.html                                        /areas/rh4                                        301
+/areas/rh6.html                                        /areas/rh6                                        301
+/areas/rh8.html                                        /areas/rh8                                        301
+/areas/salfords.html                                   /areas/salfords                                   301
+/areas/sm7.html                                        /areas/sm7                                        301
+/block-paving-cleaning.html                            /block-paving-cleaning                            301
+/calculator.html                                       /calculator                                       301
+/commercial-jetwashing.html                            /commercial-jetwashing                            301
+/decking-cleaning.html                                 /decking-cleaning                                 301
+/driveway-cleaning-banstead.html                       /driveway-cleaning-banstead                       301
+/driveway-cleaning-dorking.html                        /driveway-cleaning-dorking                        301
+/driveway-cleaning-redhill.html                        /driveway-cleaning-redhill                        301
+/driveway-cleaning-reigate.html                        /driveway-cleaning-reigate                        301
+/driveway-cleaning.html                                /driveway-cleaning                                301
+/faq.html                                              /faq                                              301
+/fascia-soffit-cladding-cleaning-banstead.html         /fascia-soffit-cladding-cleaning-banstead         301
+/fascia-soffit-cladding-cleaning-horley.html           /fascia-soffit-cladding-cleaning-horley           301
+/fascia-soffit-cladding-cleaning.html                  /fascia-soffit-cladding-cleaning                  301
+/guides.html                                           /guides                                           301
+/guides/algae-removal-driveways-patios.html            /guides/algae-removal-driveways-patios            301
+/guides/are-gutter-guards-worth-it.html                /guides/are-gutter-guards-worth-it                301
+/guides/autumn-gutter-cleaning-checklist.html          /guides/autumn-gutter-cleaning-checklist          301
+/guides/best-detergent-block-paving.html               /guides/best-detergent-block-paving               301
+/guides/best-pressure-washers-uk.html                  /guides/best-pressure-washers-uk                  301
+/guides/best-time-patio-cleaning.html                  /guides/best-time-patio-cleaning                  301
+/guides/black-spot-indian-sandstone.html               /guides/black-spot-indian-sandstone               301
+/guides/black-streaks-on-fascia-removal.html           /guides/black-streaks-on-fascia-removal           301
+/guides/block-paving-cleaning-cost-uk.html             /guides/block-paving-cleaning-cost-uk             301
+/guides/block-paving-sealing-guide.html                /guides/block-paving-sealing-guide                301
+/guides/blocked-gutter-overflowing.html                /guides/blocked-gutter-overflowing                301
+/guides/can-blocked-gutters-cause-damp.html            /guides/can-blocked-gutters-cause-damp            301
+/guides/can-pressure-washing-damage-driveway.html      /guides/can-pressure-washing-damage-driveway      301
+/guides/commercial-pressure-washing-guide.html         /guides/commercial-pressure-washing-guide         301
+/guides/concrete-driveway-cleaning.html                /guides/concrete-driveway-cleaning                301
+/guides/decking-cleaning-guide.html                    /guides/decking-cleaning-guide                    301
+/guides/dirty-solar-panels-cost-report.html            /guides/dirty-solar-panels-cost-report            301
+/guides/diy-vs-professional-pressure-washing.html      /guides/diy-vs-professional-pressure-washing      301
+/guides/diy-vs-professional-solar-panel-cleaning.html  /guides/diy-vs-professional-solar-panel-cleaning  301
+/guides/does-roof-cleaning-damage-tiles.html           /guides/does-roof-cleaning-damage-tiles           301
+/guides/driveway-cleaning-cost-uk.html                 /guides/driveway-cleaning-cost-uk                 301
+/guides/driveway-cleaning-sealing-cost.html            /guides/driveway-cleaning-sealing-cost            301
+/guides/driveway-types-uk-comparison.html              /guides/driveway-types-uk-comparison              301
+/guides/efflorescence-block-paving.html                /guides/efflorescence-block-paving                301
+/guides/fascia-soffit-cleaning-cost-uk.html            /guides/fascia-soffit-cleaning-cost-uk            301
+/guides/gutter-cleaning-guide.html                     /guides/gutter-cleaning-guide                     301
+/guides/gutter-vacuum-vs-ladder.html                   /guides/gutter-vacuum-vs-ladder                   301
+/guides/hosepipe-ban-surrey.html                       /guides/hosepipe-ban-surrey                       301
+/guides/how-often-clean-driveway.html                  /guides/how-often-clean-driveway                  301
+/guides/how-often-clean-fascias-soffits-gutters.html   /guides/how-often-clean-fascias-soffits-gutters   301
+/guides/how-often-clean-gutters.html                   /guides/how-often-clean-gutters                   301
+/guides/how-often-clean-roof.html                      /guides/how-often-clean-roof                      301
+/guides/how-often-clean-solar-panels-uk.html           /guides/how-often-clean-solar-panels-uk           301
+/guides/how-often-should-you-clean-windows.html        /guides/how-often-should-you-clean-windows        301
+/guides/how-to-clean-indian-sandstone-patio.html       /guides/how-to-clean-indian-sandstone-patio       301
+/guides/is-pressure-washing-worth-it.html              /guides/is-pressure-washing-worth-it              301
+/guides/jet-washing-prices-uk.html                     /guides/jet-washing-prices-uk                     301
+/guides/limestone-marble-cleaning-uk.html              /guides/limestone-marble-cleaning-uk              301
+/guides/listed-building-cleaning-surrey.html           /guides/listed-building-cleaning-surrey           301
+/guides/moss-removal-from-driveways.html               /guides/moss-removal-from-driveways               301
+/guides/patio-cleaning-cost-uk.html                    /guides/patio-cleaning-cost-uk                    301
+/guides/paved-front-gardens-flood-risk.html            /guides/paved-front-gardens-flood-risk            301
+/guides/prepare-driveway-for-pressure-washing.html     /guides/prepare-driveway-for-pressure-washing     301
+/guides/pressure-washer-hire-vs-professional.html      /guides/pressure-washer-hire-vs-professional      301
+/guides/pressure-washing-before-after-expectations.html/guides/pressure-washing-before-after-expectations301
+/guides/pressure-washing-faq-50-questions.html         /guides/pressure-washing-faq-50-questions         301
+/guides/pressure-washing-hosepipe-ban-uk.html          /guides/pressure-washing-hosepipe-ban-uk          301
+/guides/pressure-washing-myths-debunked.html           /guides/pressure-washing-myths-debunked           301
+/guides/pressure-washing-seasonal-guide.html           /guides/pressure-washing-seasonal-guide           301
+/guides/pressure-washing-service-tiers.html            /guides/pressure-washing-service-tiers            301
+/guides/pressure-washing-surrey-comparison.html        /guides/pressure-washing-surrey-comparison        301
+/guides/pressure-washing-vs-jet-washing.html           /guides/pressure-washing-vs-jet-washing           301
+/guides/property-value-kerb-appeal.html                /guides/property-value-kerb-appeal                301
+/guides/remove-oil-stains-driveway.html                /guides/remove-oil-stains-driveway                301
+/guides/render-cleaning-guide.html                     /guides/render-cleaning-guide                     301
+/guides/resin-driveway-cleaning.html                   /guides/resin-driveway-cleaning                   301
+/guides/roof-cleaning-before-selling-house.html        /guides/roof-cleaning-before-selling-house        301
+/guides/roof-cleaning-cost-uk.html                     /guides/roof-cleaning-cost-uk                     301
+/guides/rust-stain-removal-block-paving.html           /guides/rust-stain-removal-block-paving           301
+/guides/signs-you-need-gutters-cleaned.html            /guides/signs-you-need-gutters-cleaned            301
+/guides/soft-washing-roof-guide.html                   /guides/soft-washing-roof-guide                   301
+/guides/soft-washing-vs-pressure-washing.html          /guides/soft-washing-vs-pressure-washing          301
+/guides/solar-panel-cleaning-cost-uk.html              /guides/solar-panel-cleaning-cost-uk              301
+/guides/stain-removal-guide-driveways-patios.html      /guides/stain-removal-guide-driveways-patios      301
+/guides/surface-comparison-pressure-washing.html       /guides/surface-comparison-pressure-washing       301
+/guides/tarmac-driveway-cleaning.html                  /guides/tarmac-driveway-cleaning                  301
+/guides/uk-cleaning-frequency-index.html               /guides/uk-cleaning-frequency-index               301
+/guides/uk-pressure-washing-statistics.html            /guides/uk-pressure-washing-statistics            301
+/guides/weed-removal-block-paving.html                 /guides/weed-removal-block-paving                 301
+/guides/why-windows-look-spotty-after-cleaning.html    /guides/why-windows-look-spotty-after-cleaning    301
+/guides/window-cleaning-cost-surrey.html               /guides/window-cleaning-cost-surrey               301
+/guides/winter-pressure-washing-uk.html                /guides/winter-pressure-washing-uk                301
+/gutter-cleaning-redhill.html                          /gutter-cleaning-redhill                          301
+/gutter-cleaning-reigate.html                          /gutter-cleaning-reigate                          301
+/gutter-cleaning.html                                  /gutter-cleaning                                  301
+/image-bank.html                                       /image-bank                                       301
+/index.html                                            /                                                 301
+/logo-mockup.html                                      /logo-mockup                                      301
+/patio-cleaning-redhill.html                           /patio-cleaning-redhill                           301
+/patio-cleaning-reigate.html                           /patio-cleaning-reigate                           301
+/patio-cleaning.html                                   /patio-cleaning                                   301
+/pressure-washing-guide.html                           /pressure-washing-guide                           301
+/pressure-washing-horley.html                          /pressure-washing-horley                          301
+/pricing.html                                          /pricing                                          301
+/privacy.html                                          /privacy                                          301
+/quote.html                                            /quote                                            301
+/render-cleaning.html                                  /render-cleaning                                  301
+/review-all.html                                       /review-all                                       301
+/review.html                                           /review                                           301
+/roof-cleaning-redhill.html                            /roof-cleaning-redhill                            301
+/roof-cleaning-reigate.html                            /roof-cleaning-reigate                            301
+/roof-cleaning.html                                    /roof-cleaning                                    301
+/soft-washing-redhill.html                             /soft-washing-redhill                             301
+/soft-washing-reigate.html                             /soft-washing-reigate                             301
+/soft-washing.html                                     /soft-washing                                     301
+/solar-panel-cleaning-chipstead.html                   /solar-panel-cleaning-chipstead                   301
+/solar-panel-cleaning-oxted.html                       /solar-panel-cleaning-oxted                       301
+/solar-panel-cleaning.html                             /solar-panel-cleaning                             301
+/style-test.html                                       /style-test                                       301
+/terms.html                                            /terms                                            301
+/window-cleaning-redhill.html                          /window-cleaning-redhill                          301
+/window-cleaning-reigate.html                          /window-cleaning-reigate                          301
+/window-cleaning.html                                  /window-cleaning                                  301
