@@ -905,6 +905,39 @@ a:hover {
     border: 1px solid var(--border-color);
 }
 
+/* Lightweight-form fields (direct children): keep the service <select> matched
+   to the text/phone/email inputs. */
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    transition: var(--transition);
+    background: var(--white);
+    color: var(--dark-gray);
+}
+.quote-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+/* Greyed placeholder option until a real service is chosen */
+.quote-form select:required:invalid { color: var(--medium-gray); }
+.quote-form select option { color: var(--dark-gray); }
+.quote-form select option[value=""] { color: var(--medium-gray); }
+
 .form-group {
     margin-bottom: var(--spacing-md);
 }

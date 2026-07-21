@@ -1,8 +1,10 @@
 // JetWash — /quote form handler
 // Owns the #quoteForm on /quote. Submits via AJAX to Web3Forms, shows an
 // in-page success state, and fires PostHog tracking — the same behaviour
-// lead-capture.js gives the lightweight forms, but with a single combined
-// "Phone OR email" contact field (at least one valid contact required, not both).
+// lead-capture.js gives the lightweight forms.
+//
+// Fields are natively named: phone (required) + email (optional) + a required
+// service <select>. No contact -> phone/email remap.
 //
 // The form carries data-jw-lead-capture-bound="1" so lead-capture.js skips it
 // and this handler is the sole owner — no double submit.
@@ -44,25 +46,6 @@
         // UK numbers are 10–11 digits starting 0; 01/02/03 landline, 07 mobile,
         // 08/09 non-geographic. Accept all so we never hard-block a real caller.
         return /^0[123789]\d{8,9}$/.test(digits) ? digits : '';
-    }
-
-    // Detects whether the single contact field holds a valid email OR UK phone.
-    function validateContact(value) {
-        var cleaned = (value || '').trim();
-        if (!cleaned) {
-            return { valid: false, message: 'Please add a phone number or email so we can reach you' };
-        }
-        if (cleaned.indexOf('@') !== -1) {
-            if (!emailRegex.test(cleaned)) {
-                return { valid: false, message: 'That email doesn’t look right — please check it' };
-            }
-            return { valid: true, type: 'email', value: cleaned, message: '' };
-        }
-        // No @ — treat as a phone number.
-        if (!normaliseUkPhone(cleaned)) {
-            return { valid: false, message: 'Enter a UK phone (e.g. 07123 456789 or 01737 652515) or an email' };
-        }
-        return { valid: true, type: 'phone', value: cleaned, message: '' };
     }
 
     // ---- success / error UI ------------------------------------------------
@@ -107,13 +90,16 @@
         e.preventDefault();
 
         var nameInput = form.querySelector('input[name="name"]');
-        var postcodeInput = form.querySelector('input[name="postcode"]');
-        var contactInput = form.querySelector('#contact') || form.querySelector('[name="contact"]');
-        var contactError = document.getElementById('contactError');
+        var phoneInput = form.querySelector('#phone') || form.querySelector('[name="phone"]');
+        var emailInput = form.querySelector('#email') || form.querySelector('[name="email"]');
+        var serviceInput = form.querySelector('#service') || form.querySelector('[name="service"]');
+        var phoneError = document.getElementById('phoneError');
 
-        if (contactError) contactError.textContent = '';
+        if (phoneError) phoneError.textContent = '';
 
         var name = nameInput ? nameInput.value.trim() : '';
+        var phone = phoneInput ? phoneInput.value.trim() : '';
+        var email = emailInput ? emailInput.value.trim() : '';
         var isValid = true;
 
         // Name (browser also enforces required; double-check).
@@ -121,27 +107,42 @@
             isValid = false;
         }
 
-        // Contact: phone OR email.
-        var contactResult = { valid: false };
-        if (contactInput) {
-            contactResult = validateContact(contactInput.value);
-            if (!contactResult.valid) {
-                if (contactError) {
-                    contactError.textContent = contactResult.message;
-                    contactError.style.color = '#ef4444';
-                }
-                if (window.JWAnalytics && JWAnalytics.trackQuoteValidationError) {
-                    JWAnalytics.trackQuoteValidationError('contact', 'invalid_format');
-                }
-                isValid = false;
+        // Phone: required + valid UK number.
+        if (!normaliseUkPhone(phone)) {
+            if (phoneError) {
+                phoneError.textContent = 'Enter a valid UK phone (e.g. 07123 456789 or 01737 652515)';
+                phoneError.style.color = '#ef4444';
             }
+            if (window.JWAnalytics && JWAnalytics.trackQuoteValidationError) {
+                JWAnalytics.trackQuoteValidationError('phone', 'invalid_format');
+            }
+            isValid = false;
+        }
+
+        // Email: optional — validate only if the user typed something.
+        if (email && !emailRegex.test(email)) {
+            if (phoneError) {
+                phoneError.textContent = 'That email doesn’t look right — check it or leave it blank';
+                phoneError.style.color = '#ef4444';
+            }
+            if (window.JWAnalytics && JWAnalytics.trackQuoteValidationError) {
+                JWAnalytics.trackQuoteValidationError('email', 'invalid_format');
+            }
+            isValid = false;
+        }
+
+        // Service: required (browser enforces too; guard anyway).
+        if (serviceInput && !serviceInput.value) {
+            isValid = false;
         }
 
         if (!isValid) {
-            if (contactInput && !contactResult.valid) contactInput.focus();
+            if (!normaliseUkPhone(phone) && phoneInput) phoneInput.focus();
+            else if (email && !emailRegex.test(email) && emailInput) emailInput.focus();
             return;
         }
 
+        var postcodeInput = form.querySelector('input[name="postcode"]');
         var postcode = postcodeInput ? postcodeInput.value.trim() : '';
 
         // Stash for cross-page prefill (mirrors lead-capture.js behaviour).
@@ -149,20 +150,18 @@
             sessionStorage.setItem('jw_lead', JSON.stringify({
                 name: name,
                 postcode: postcode,
-                email: contactResult.type === 'email' ? contactResult.value : '',
+                phone: phone,
+                email: email,
+                service_requested: serviceInput ? serviceInput.value : '',
                 t: Date.now()
             }));
         } catch (err) { /* private mode — non-fatal */ }
 
-        // Build the payload: feed the detected contact into the right named field
-        // so the Web3Forms email shows "Phone" or "Email" correctly.
+        // Fields are natively named — submit as-is. Trim validated values and drop
+        // an empty optional email so it never shows blank in the notification.
         var formData = new FormData(form);
-        formData.delete('contact');
-        if (contactResult.type === 'email') {
-            formData.set('email', contactResult.value);
-        } else if (contactResult.type === 'phone') {
-            formData.set('phone', contactResult.value);
-        }
+        formData.set('phone', phone);
+        if (email) formData.set('email', email); else formData.delete('email');
 
         var btn = form.querySelector('button[type="submit"]');
         var originalText = btn ? btn.textContent : '';
@@ -171,7 +170,7 @@
             btn.disabled = true;
         }
 
-        var serviceVal = (form.querySelector('[name="service"]') || {}).value || null;
+        var serviceVal = serviceInput ? serviceInput.value : ((form.querySelector('[name="service"]') || {}).value || null);
 
         fetch(form.action, {
             method: 'POST',
@@ -187,14 +186,14 @@
                                 JWAnalytics.trackQuoteSubmit({
                                     source: 'quote_page',
                                     postcode_area: postcodeArea(postcode),
-                                    contact_type: contactResult.type || null,
+                                    contact_type: email ? 'phone_email' : 'phone',
                                     service: serviceVal
                                 });
                             } catch (err) {}
                         }
-                        if (contactResult.type === 'email' && JWAnalytics.identifyLead) {
+                        if (email && JWAnalytics.identifyLead) {
                             try {
-                                JWAnalytics.identifyLead(contactResult.value, {
+                                JWAnalytics.identifyLead(email, {
                                     name: name || null,
                                     postcode_area: postcodeArea(postcode),
                                     service: serviceVal
@@ -233,43 +232,49 @@
         // Belt-and-braces: ensure lead-capture.js never also binds this form.
         form.dataset.jwLeadCaptureBound = '1';
 
-        var contactInput = form.querySelector('#contact') || form.querySelector('[name="contact"]');
-        var contactError = document.getElementById('contactError');
+        var phoneInput = form.querySelector('#phone') || form.querySelector('[name="phone"]');
+        var emailInput = form.querySelector('#email') || form.querySelector('[name="email"]');
+        var phoneError = document.getElementById('phoneError');
 
-        // Real-time contact feedback. While typing we only ever show a positive
+        // Real-time phone feedback. While typing we only ever show a positive
         // confirmation (never nag mid-entry); the "looks off" hint is reserved for
         // blur, so we don't hard-block someone halfway through a number.
-        if (contactInput && contactError) {
-            contactInput.addEventListener('input', function () {
-                if (!this.value.trim()) { contactError.textContent = ''; return; }
-                var result = validateContact(this.value);
-                if (result.valid) {
-                    contactError.textContent = result.type === 'email'
-                        ? '✓ Email looks good'
-                        : '✓ Phone number looks good';
-                    contactError.style.color = '#28a745';
-                } else if (contactError.style.color !== 'rgb(239, 68, 68)') {
+        if (phoneInput && phoneError) {
+            phoneInput.addEventListener('input', function () {
+                if (!this.value.trim()) { phoneError.textContent = ''; return; }
+                if (normaliseUkPhone(this.value)) {
+                    phoneError.textContent = '✓ Phone number looks good';
+                    phoneError.style.color = '#28a745';
+                } else if (phoneError.style.color !== 'rgb(239, 68, 68)') {
                     // Don't surface the error while typing — clear stale positives only.
-                    contactError.textContent = '';
+                    phoneError.textContent = '';
                 }
             });
-            contactInput.addEventListener('blur', function () {
-                if (!this.value.trim()) { contactError.textContent = ''; return; }
-                var result = validateContact(this.value);
-                if (!result.valid) {
-                    contactError.textContent = result.message;
-                    contactError.style.color = '#ef4444';
+            phoneInput.addEventListener('blur', function () {
+                if (!this.value.trim()) { phoneError.textContent = ''; return; }
+                if (!normaliseUkPhone(this.value)) {
+                    phoneError.textContent = 'Enter a valid UK phone (e.g. 07123 456789 or 01737 652515)';
+                    phoneError.style.color = '#ef4444';
                     if (window.JWAnalytics && JWAnalytics.trackQuoteValidationError) {
-                        JWAnalytics.trackQuoteValidationError('contact', 'invalid_format');
+                        JWAnalytics.trackQuoteValidationError('phone', 'invalid_format');
                     }
                 } else {
-                    contactError.textContent = result.type === 'email'
-                        ? '✓ Email looks good'
-                        : '✓ Phone number looks good';
-                    contactError.style.color = '#28a745';
+                    phoneError.textContent = '✓ Phone number looks good';
+                    phoneError.style.color = '#28a745';
                     if (window.JWAnalytics && JWAnalytics.trackQuoteFieldComplete) {
-                        JWAnalytics.trackQuoteFieldComplete('contact');
+                        JWAnalytics.trackQuoteFieldComplete('phone');
                     }
+                }
+            });
+        }
+
+        // Light email feedback on blur (optional field — only flag if clearly wrong).
+        if (emailInput && phoneError) {
+            emailInput.addEventListener('blur', function () {
+                var v = this.value.trim();
+                if (v && !emailRegex.test(v)) {
+                    phoneError.textContent = 'That email doesn’t look right — check it or leave it blank';
+                    phoneError.style.color = '#ef4444';
                 }
             });
         }

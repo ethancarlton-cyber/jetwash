@@ -146,10 +146,11 @@
                             </label>
 
                             <label class="quote-form__full" style="display: block;">
-                                <span style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 4px;">Phone or email *</span>
-                                <input type="text" id="contact" name="contact" required autocomplete="on" inputmode="text" placeholder="07XXX XXXXXX or you@example.com" aria-label="Your phone number or email" aria-describedby="contactError">
-                                <span style="display: block; font-size: 0.8125rem; color: var(--muted); margin-top: 4px;">Either is fine, just one way to reach you.</span>
-                                <span id="contactError" class="error-message" role="alert" aria-live="polite" style="display: block; font-size: 0.8125rem; margin-top: 4px;"></span>
+                                <span style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 4px;">Phone number *</span>
+                                <input type="tel" id="phone" name="phone" required inputmode="tel" autocomplete="tel" pattern="[0-9 +\(\)]{7,}" placeholder="Phone number *" aria-label="Your phone number" aria-describedby="phoneError">
+                                <input type="email" id="email" name="email" autocomplete="email" placeholder="Email (optional)" aria-label="Your email (optional)">
+                                <span style="display: block; font-size: 0.8125rem; color: var(--muted); margin-top: 4px;">A phone number is best, email is optional.</span>
+                                <span id="phoneError" class="error-message" role="alert" aria-live="polite" style="display: block; font-size: 0.8125rem; margin-top: 4px;"></span>
                             </label>
 
                             <label style="display: block;">
