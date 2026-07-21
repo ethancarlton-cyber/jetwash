@@ -92,7 +92,7 @@
         var nameInput = form.querySelector('input[name="name"]');
         var phoneInput = form.querySelector('#phone') || form.querySelector('[name="phone"]');
         var emailInput = form.querySelector('#email') || form.querySelector('[name="email"]');
-        var serviceInput = form.querySelector('#service') || form.querySelector('[name="service"]');
+        var serviceInput = form.querySelector('#service_requested') || form.querySelector('[name="service_requested"]');
         var phoneError = document.getElementById('phoneError');
 
         if (phoneError) phoneError.textContent = '';
@@ -170,7 +170,7 @@
             btn.disabled = true;
         }
 
-        var serviceVal = serviceInput ? serviceInput.value : ((form.querySelector('[name="service"]') || {}).value || null);
+        var serviceVal = serviceInput ? serviceInput.value : ((form.querySelector('[name="service_requested"]') || {}).value || null);
 
         fetch(form.action, {
             method: 'POST',

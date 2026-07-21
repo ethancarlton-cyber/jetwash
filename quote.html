@@ -155,7 +155,7 @@
 
                             <label style="display: block;">
                                 <span style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 4px;">Service *</span>
-                                <select id="service" name="service" required style="font-family: inherit; font-size: 1rem; padding: 14px 16px; border: 1.5px solid var(--line); border-radius: var(--radius-md); background: var(--surface); color: var(--ink); width: 100%;">
+                                <select id="service_requested" name="service_requested" required style="font-family: inherit; font-size: 1rem; padding: 14px 16px; border: 1.5px solid var(--line); border-radius: var(--radius-md); background: var(--surface); color: var(--ink); width: 100%;">
                                     <option value="">Select a service</option>
                                     <option value="driveway">Driveway cleaning</option>
                                     <option value="patio">Patio cleaning</option>
@@ -330,7 +330,7 @@
             'fascia': 'fascia',
             'solar': 'solar'
         };
-        var serviceSelect = document.getElementById('service');
+        var serviceSelect = document.getElementById('service_requested');
         if (serviceSelect && serviceMap[surface]) {
             serviceSelect.value = serviceMap[surface];
         }
