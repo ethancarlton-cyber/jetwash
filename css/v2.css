@@ -958,6 +958,13 @@ textarea:focus-visible,
 .prose li { margin-bottom: 6px; }
 .prose a { color: var(--accent-text); font-weight: 500; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
 .prose a:hover { color: var(--accent-hover); }
+/* Button-styled links placed inside .prose (in-guide forms, the CTA callout,
+   the postcode ban-checker result buttons) must not inherit the prose link
+   colour/underline, which would repaint accent buttons blue-on-blue. Re-assert
+   button styling. Mirrors the scoped fixes at .guide-cta__actions and the widget. */
+.prose a.btn { text-decoration: none; }
+.prose a.btn--accent,
+.prose a.btn--accent:hover { color: var(--surface); }
 .prose strong { font-weight: 700; }
 .prose blockquote {
     border-left: 3px solid var(--accent);
