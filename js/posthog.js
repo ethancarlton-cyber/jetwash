@@ -9,6 +9,18 @@
   var POSTHOG_HOST = 'https://eu.i.posthog.com';
   var initialised = false;
 
+  // ===== Internal traffic exclusion =====
+  (function() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('internal') === '1') localStorage.setItem('jw_internal', '1');
+      if (params.get('internal') === '0') localStorage.removeItem('jw_internal');
+    } catch (e) {}
+  })();
+  function isInternalTraffic() {
+    try { return localStorage.getItem('jw_internal') === '1'; } catch (e) { return false; }
+  }
+
   // ===== PII scrubbing =====
   var EMAIL_RE = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
   var UK_PHONE_RE = /(?:\+44\s?|0)(?:7\d{3}|1\d{3}|2\d|3\d{2})[\s\d]{6,}\d/g;
@@ -59,6 +71,7 @@
 
   function initPostHog() {
     if (initialised) return;
+    if (isInternalTraffic()) return;
     try {
       loadPostHogSnippet();
       window.posthog.init(POSTHOG_KEY, {

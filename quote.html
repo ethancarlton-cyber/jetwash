@@ -126,6 +126,7 @@
                     <div class="quote-card">
                         <h2>Tell us about the job</h2>
                         <p class="quote-card__sub">Takes about 60 seconds. Required fields marked *.</p>
+                        <p id="hosepipe-ban-notice" style="display: none; background: var(--mist); border-left: 3px solid var(--accent); border-radius: var(--radius-md); padding: var(--space-2) var(--space-3); margin: 0 0 var(--space-3); font-size: 0.9375rem;">Coming from our hosepipe ban guide? Professional cleaning is exempt from the ban, so your booking goes ahead as normal.</p>
 
                         <form id="quoteForm" class="quote-form" data-jw-lead-capture-bound="1" action="https://api.web3forms.com/submit" method="POST">
                             <input type="hidden" name="access_key" value="f044aff6-87ad-4305-8eda-d8fef4706e95">
@@ -173,33 +174,38 @@
                                 </select>
                             </label>
 
-                            <label style="display: block;">
-                                <span style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 4px;">Property type</span>
-                                <select name="property_type" style="font-family: inherit; font-size: 1rem; padding: 14px 16px; border: 1.5px solid var(--line); border-radius: var(--radius-md); background: var(--surface); color: var(--ink); width: 100%;">
-                                    <option value="residential">Residential</option>
-                                    <option value="commercial">Commercial</option>
-                                </select>
-                            </label>
+                            <details class="quote-form__full" style="border: 1.5px solid var(--line); border-radius: var(--radius-md); padding: 14px 16px;">
+                                <summary style="cursor: pointer; font-weight: 600; font-size: 0.9375rem;">Add job details (optional)</summary>
+                                <p style="margin: 4px 0 var(--space-3); font-size: 0.8125rem; color: var(--muted);">The more you tell us, the more accurate the quote.</p>
 
-                            <label style="display: block;">
-                                <span style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 4px;">Approx. area</span>
-                                <input type="text" name="area" placeholder="e.g. 40 m² or single drive" aria-label="Approximate area">
-                            </label>
+                                <label style="display: block; margin-bottom: var(--space-2);">
+                                    <span style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 4px;">Property type</span>
+                                    <select name="property_type" style="font-family: inherit; font-size: 1rem; padding: 14px 16px; border: 1.5px solid var(--line); border-radius: var(--radius-md); background: var(--surface); color: var(--ink); width: 100%;">
+                                        <option value="residential">Residential</option>
+                                        <option value="commercial">Commercial</option>
+                                    </select>
+                                </label>
 
-                            <label style="display: block;">
-                                <span style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 4px;">Best time to call</span>
-                                <select name="contact_time" style="font-family: inherit; font-size: 1rem; padding: 14px 16px; border: 1.5px solid var(--line); border-radius: var(--radius-md); background: var(--surface); color: var(--ink); width: 100%;">
-                                    <option value="">Any time during business hours</option>
-                                    <option value="morning">Morning (8&ndash;12)</option>
-                                    <option value="afternoon">Afternoon (12&ndash;5)</option>
-                                    <option value="evening">Evening (5&ndash;6)</option>
-                                </select>
-                            </label>
+                                <label style="display: block; margin-bottom: var(--space-2);">
+                                    <span style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 4px;">Approx. area</span>
+                                    <input type="text" name="area" placeholder="e.g. 40 m² or single drive" aria-label="Approximate area">
+                                </label>
 
-                            <label class="quote-form__full" style="display: block;">
-                                <span style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 4px;">Anything else we should know?</span>
-                                <textarea name="details" rows="4" placeholder="Surface type, condition, access, anything specific..." style="font-family: inherit; font-size: 1rem; padding: 14px 16px; border: 1.5px solid var(--line); border-radius: var(--radius-md); background: var(--surface); color: var(--ink); width: 100%; resize: vertical;"></textarea>
-                            </label>
+                                <label style="display: block; margin-bottom: var(--space-2);">
+                                    <span style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 4px;">Best time to call</span>
+                                    <select name="contact_time" style="font-family: inherit; font-size: 1rem; padding: 14px 16px; border: 1.5px solid var(--line); border-radius: var(--radius-md); background: var(--surface); color: var(--ink); width: 100%;">
+                                        <option value="">Any time during business hours</option>
+                                        <option value="morning">Morning (8&ndash;12)</option>
+                                        <option value="afternoon">Afternoon (12&ndash;5)</option>
+                                        <option value="evening">Evening (5&ndash;6)</option>
+                                    </select>
+                                </label>
+
+                                <label style="display: block;">
+                                    <span style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 4px;">Anything else we should know?</span>
+                                    <textarea name="details" rows="4" placeholder="Surface type, condition, access, anything specific..." style="font-family: inherit; font-size: 1rem; padding: 14px 16px; border: 1.5px solid var(--line); border-radius: var(--radius-md); background: var(--surface); color: var(--ink); width: 100%; resize: vertical;"></textarea>
+                                </label>
+                            </details>
 
                             <button type="submit" class="btn btn--accent btn--lg quote-form__full" style="width: 100%; padding: 16px;">Get my free quote</button>
                         </form>
@@ -313,6 +319,14 @@
     </div>
 
     <script>
+    // Reveal a hosepipe-ban reassurance line when arriving from the ban guides (?src=hosepipe-ban)
+    (function() {
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('src') !== 'hosepipe-ban') return;
+        var banNotice = document.getElementById('hosepipe-ban-notice');
+        if (banNotice) banNotice.style.display = 'block';
+    })();
+
     // Pre-fill service from calculator URL parameters; NEVER prefill postcode
     (function() {
         var params = new URLSearchParams(window.location.search);
@@ -353,7 +367,7 @@
             if (area) contextParts.push(area + 'm²');
             if (condition) contextParts.push(condition);
             var contextDetail = contextParts.length ? ' (' + contextParts.join(', ') + ')' : '';
-            var priceDetail = (estimate && estimate !== 'tailored') ? ' — £' + estimate : ' — tailored quote';
+            var priceDetail = (estimate && estimate !== 'tailored') ? ' (£' + estimate + ')' : ' (tailored quote)';
             var hiddenCalc = document.createElement('input');
             hiddenCalc.type = 'hidden';
             hiddenCalc.name = 'calculator_context';
