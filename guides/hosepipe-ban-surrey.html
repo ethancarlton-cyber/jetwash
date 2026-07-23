@@ -258,6 +258,126 @@
                         <p class="quote-form__footnote">Free, no obligation &middot; callback within 2 hours</p>
                     </div>
 
+                    <div class="ban-checker" id="ban-checker" style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-md); padding: var(--space-3); margin: var(--space-4) 0;">
+                        <h2 style="margin-top: 0;">Is there a hosepipe ban at my postcode?</h2>
+                        <p style="margin-bottom: var(--space-2);">Type your postcode below for an instant answer, based on the table above.</p>
+                        <div style="display: flex; gap: var(--space-2); flex-wrap: wrap; align-items: flex-end;">
+                            <div style="flex: 1 1 200px;">
+                                <label for="ban-checker-postcode" style="display: block; font-weight: 700; margin-bottom: 4px; font-size: 0.9375rem;">Your postcode</label>
+                                <input type="text" id="ban-checker-postcode" placeholder="e.g. RH1 1AA" inputmode="text" autocomplete="postal-code" aria-label="Your postcode" style="width: 100%; padding: 10px 12px; border: 1.5px solid var(--line); border-radius: var(--radius-sm); font-size: 1rem;">
+                            </div>
+                            <button type="button" id="ban-checker-btn" class="btn btn--accent">Check my postcode</button>
+                        </div>
+                        <div id="ban-checker-result" aria-live="polite" style="margin-top: var(--space-2);"></div>
+                    </div>
+
+                    <script>
+                    (function () {
+                        var SUPPLIERS = {
+                            "CR3":{s:"ses",town:"Caterham"},"CR5":{s:"ses",town:"Coulsdon"},
+                            "GU1":{s:"thames",town:"Guildford"},"GU2":{s:"thames",town:"Guildford"},"GU3":{s:"sew",town:"Guildford (Normandy)"},"GU4":{s:"thames",town:"Guildford (Merrow)"},"GU7":{s:"thames",town:"Godalming"},
+                            "GU9":{s:"sew",town:"Farnham"},"GU10":{s:"sew",town:"Farnham"},"GU15":{s:"sew",town:"Camberley"},"GU16":{s:"sew",town:"Frimley"},"GU17":{s:"sew",town:"Blackwater"},
+                            "GU21":{s:"affinity",town:"Woking"},"GU22":{s:"affinity",town:"Woking"},"GU23":{s:"affinity",town:"Ripley, Send"},"GU24":{s:"affinity",town:"Chobham, Bisley"},
+                            "KT1":{s:"thames",town:"Kingston"},"KT2":{s:"thames",town:"Kingston"},"KT3":{s:"thames",town:"New Malden"},"KT6":{s:"thames",town:"Surbiton"},
+                            "KT12":{s:"affinity",town:"Walton-on-Thames"},"KT13":{s:"affinity",town:"Weybridge"},"KT14":{s:"affinity",town:"Byfleet"},"KT15":{s:"affinity",town:"Addlestone"},"KT16":{s:"affinity",town:"Chertsey"},
+                            "KT17":{s:"ses",town:"Epsom"},"KT18":{s:"ses",town:"Epsom"},"KT19":{s:"ses",town:"Ewell"},"KT20":{s:"ses",town:"Tadworth"},"KT21":{s:"ses",town:"Ashtead"},"KT22":{s:"ses",town:"Leatherhead"},"KT23":{s:"ses",town:"Bookham"},"KT24":{s:"ses",town:"Fetcham, Effingham"},
+                            "RH1":{s:"ses",town:"Redhill"},"RH2":{s:"ses",town:"Reigate"},"RH3":{s:"ses",town:"Betchworth"},"RH4":{s:"ses",town:"Dorking"},"RH5":{s:"ses",town:"Ockley"},"RH6":{s:"ses",town:"Horley"},"RH7":{s:"ses",town:"Lingfield"},"RH8":{s:"ses",town:"Oxted"},"RH9":{s:"ses",town:"Godstone"},
+                            "RH19":{s:"sew",town:"East Grinstead"},"SM7":{s:"ses",town:"Banstead"}
+                        };
+
+                        var SUPPLIER_INFO = {
+                            ses: {name: "SES Water", banned: false, status: "no hosepipe ban, and none planned"},
+                            thames: {name: "Thames Water", banned: true, status: "hosepipe ban in force since 23 July 2026"},
+                            affinity: {name: "Affinity Water", banned: true, status: "hosepipe ban in force since 17 July 2026"},
+                            sew: {name: "South East Water", banned: true, status: "hosepipe ban from 25 July 2026"}
+                        };
+
+                        function parseDistrict(raw) {
+                            var cleaned = (raw || "").toUpperCase().replace(/[^A-Z0-9]/g, "");
+                            if (!cleaned) { return ""; }
+                            // Outward code = 1-2 letters, a digit, then an optional letter/digit,
+                            // followed by an optional inward code (digit + 2 letters). The $ anchor
+                            // plus backtracking resolves both "GU15" (bare district) and "RH19AA"
+                            // (RH1 + 9AA) correctly.
+                            var match = cleaned.match(/^([A-Z]{1,2}[0-9][A-Z0-9]?)(?:[0-9][A-Z]{2})?$/);
+                            return match ? match[1] : "";
+                        }
+
+                        var TONE_COLORS = {
+                            success: {bg: "#EAF6EC", border: "#B7DFC0", text: "#1A5C29"},
+                            warning: {bg: "#FDF3E3", border: "#F0CE8E", text: "#7A4E06"},
+                            neutral: {bg: "#F5F7F9", border: "#E5E9EE", text: "#33414D"}
+                        };
+
+                        function renderResult(html, tone) {
+                            var c = TONE_COLORS[tone] || TONE_COLORS.neutral;
+                            var result = document.getElementById("ban-checker-result");
+                            result.innerHTML = '<div style="background: ' + c.bg + '; border: 1px solid ' + c.border + '; color: ' + c.text + '; border-radius: var(--radius-md); padding: var(--space-2);">' + html + '</div>';
+                        }
+
+                        var CAVEAT = '<p style="margin: var(--space-1) 0 0; font-size: 0.8125rem;">Based on your postcode district. Suppliers can vary street by street, so check your water bill if you are unsure.</p>';
+
+                        function checkPostcode() {
+                            var input = document.getElementById("ban-checker-postcode");
+                            var district = parseDistrict(input.value);
+
+                            if (!district) {
+                                renderResult('<p style="margin: 0;">Enter a postcode like RH1 or GU15 to check.</p>', "neutral");
+                                return;
+                            }
+
+                            var entry = SUPPLIERS[district];
+
+                            if (!entry) {
+                                renderResult(
+                                    '<p style="margin: 0 0 var(--space-1); font-weight: 700;">We cannot tell from that postcode alone.</p>' +
+                                    '<p style="margin: 0;">Your area may sit on a boundary between water companies. Check the supplier named on your latest water bill. Either way, professional cleaning is exempt from every current ban, so your booking with us goes ahead.</p>' +
+                                    '<p style="margin: var(--space-2) 0 0;"><a href="/quote?src=hosepipe-ban" class="btn btn--accent">Get a free quote</a></p>' +
+                                    CAVEAT,
+                                    "neutral"
+                                );
+                                if (window.posthog && typeof window.posthog.capture === "function") {
+                                    try { window.posthog.capture("ban_checker_used", {district: district, banned: null}); } catch (e) {}
+                                }
+                                return;
+                            }
+
+                            var supplier = SUPPLIER_INFO[entry.s];
+                            var town = entry.town;
+
+                            if (!supplier.banned) {
+                                renderResult(
+                                    '<p style="margin: 0 0 var(--space-1); font-weight: 700;">Good news: no hosepipe ban in ' + town + '.</p>' +
+                                    '<p style="margin: 0;">' + town + ' is supplied by ' + supplier.name + ', which has ' + supplier.status + '. And even in banned areas, professional cleaning is exempt, so your booking goes ahead either way.</p>' +
+                                    '<p style="margin: var(--space-2) 0 0;"><a href="/quote?src=hosepipe-ban" class="btn btn--accent">Get a free quote</a></p>' +
+                                    CAVEAT,
+                                    "success"
+                                );
+                            } else {
+                                renderResult(
+                                    '<p style="margin: 0 0 var(--space-1); font-weight: 700;">There is a hosepipe ban in ' + town + '.</p>' +
+                                    '<p style="margin: 0;">It is supplied by ' + supplier.name + ', which has a ' + supplier.status + '. But professional pressure washing is exempt from the ban, so you can still book a clean with us.</p>' +
+                                    '<p style="margin: var(--space-2) 0 0;"><a href="/quote?src=hosepipe-ban" class="btn btn--accent">Book your exempt clean</a></p>' +
+                                    CAVEAT,
+                                    "warning"
+                                );
+                            }
+
+                            if (window.posthog && typeof window.posthog.capture === "function") {
+                                try { window.posthog.capture("ban_checker_used", {district: district, banned: supplier.banned}); } catch (e) {}
+                            }
+                        }
+
+                        document.getElementById("ban-checker-btn").addEventListener("click", checkPostcode);
+                        document.getElementById("ban-checker-postcode").addEventListener("keydown", function (e) {
+                            if (e.key === "Enter") {
+                                e.preventDefault();
+                                checkPostcode();
+                            }
+                        });
+                    })();
+                    </script>
+
                     <p><strong>Updated 23 July 2026:</strong> Thames Water&rsquo;s Temporary Use Ban is now in force across its entire supply area, including west and north Surrey<sup><a href="#src-thames">[8]</a></sup>. South East Water confirmed on 20 July that its Kent ban is extending to Sussex, Surrey, Hampshire and Berkshire from 25 July, its first restriction in those counties in 14 years, since 2012<sup><a href="#src-sew">[3]</a></sup><sup><a href="#src-surreylive2">[10]</a></sup>. Affinity Water&rsquo;s ban, covering the Woking area, has been running since 17 July<sup><a href="#src-affinity">[9]</a></sup>. None of that touches our core patch: SES Water, formerly Sutton and East Surrey Water and still the supplier for Redhill and Reigate, has no ban and none planned. And even where a ban is in force, professional cleaning is specifically exempt as day-to-day business use, so a booking with us goes ahead regardless of postcode.</p>
 
                     <!-- Standard mobile CTA block, top third -->
